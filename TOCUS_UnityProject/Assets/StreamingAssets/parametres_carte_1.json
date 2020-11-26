@@ -1,0 +1,45 @@
+{
+    "o_reglages":
+	{
+		"arr_s_batiments_disponibles":["Autel","Cave","Fosse"],
+		"arr_s_tours_disponibles":["TourMitraillette","TourShotGun"],
+		"arr_s_unites_disponibles":["Soldat","Chevalier"],
+		"arr_s_superunites_disponibles":["SuperSoldat","SuperChevalier"],
+		"arr_s_unites_speciales_disponibles":["Assassin","Barbare"],
+		"arr_s_ennemis_disponibles":["MonstresBase","MonstresBoxeurs"]
+	},
+	"o_vagues":
+	{
+		"i_nb_rounds_avant_premiere_vague":10,
+		"o_structure_vagues":
+		[
+			{
+				"i_tps":0,
+				"s_chemin_1":"MonstresBase",
+				"s_chemin_2":" ",
+				"s_chemin_3":"MonstresBase"
+			},
+			{
+				"i_tps":1,
+				"s_chemin_1":"MonstresBase",
+				"s_chemin_2":"MonstresBoxeurs",
+				"s_chemin_3":"MonstresBase"
+			},
+			{
+				"i_tps":2,
+				"s_chemin_1":" ",
+				"s_chemin_2":"MonstresBoxeurs",
+				"s_chemin_3":" "
+			},
+			
+			
+
+			{
+				"i_tps":10,
+				"s_chemin_1":"MonstresBase",
+				"s_chemin_2":" ",
+				"s_chemin_3":"MonstresBase"
+			}
+		]
+	}
+}

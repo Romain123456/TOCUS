@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c148ac0591ef9964ab3d79eef9238133, type: 3}
+  m_Name: SuperChevalier
+  m_EditorClassIdentifier: 
+  uniteNom: Super Chevalier
+  uniteBoxCollSize: {x: 1.5, y: 1.7}
+  uniteScale: {x: 0.3, y: 0.3}
+  unitePositionCanvas: {x: 0, y: 1}
+  uniteScaleCanvas: {x: 0.5, y: 0.5}
+  uniteTypeVitalite: 4
+  uniteTypeInitiative: 4
+  uniteTypeDegats: 5
+  uniteSpriteBase:
+  - {fileID: 9030459049769729838, guid: a631b0adedc70b447a6942147f840315, type: 3}
+  - {fileID: 5105534447250023900, guid: 586c657afd0850743bcdd5fca23d3d56, type: 3}
+  unitePrixBle: 0
+  uniteListeOrdre: 1
+  uniteAnimatorController:
+  - {fileID: 9100000, guid: 51791f6d0e4ac9e4aaf9f978d81b1003, type: 2}
+  - {fileID: 9100000, guid: 3e2a87ca7bf752d4d8eb88aee534c617, type: 2}
+  unitePrixFer: 2

@@ -1,0 +1,1700 @@
+fileFormatVersion: 2
+guid: bb2adfffc00e3374997be38c5fcfd7e8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8559538030723491834
+    second: MarcheDroit1
+  - first:
+      213: -1254314452190441129
+    second: MarcheDroit2
+  - first:
+      213: -6640711540273866136
+    second: MarcheDroit3
+  - first:
+      213: -1935746186517255823
+    second: MarcheDroit4
+  - first:
+      213: 2093206670275075301
+    second: MarcheDroit5
+  - first:
+      213: 8251687401399791907
+    second: MarcheDroit6
+  - first:
+      213: -4257702480119691686
+    second: MarcheDroit7
+  - first:
+      213: 2691200331039558937
+    second: MarcheDroit8
+  - first:
+      213: 8989373886713628878
+    second: MarcheDroit9
+  - first:
+      213: -7655346497802259128
+    second: Idle1
+  - first:
+      213: 8145514355958437141
+    second: Idle2
+  - first:
+      213: 6921239427154307464
+    second: Idle3
+  - first:
+      213: -8956740696613607781
+    second: Idle4
+  - first:
+      213: 5671559515679197806
+    second: Idle5
+  - first:
+      213: -1613191610782276567
+    second: MarcheGauche1
+  - first:
+      213: 3210249412808436392
+    second: MarcheGauche2
+  - first:
+      213: 7991107036192965661
+    second: MarcheGauche3
+  - first:
+      213: 609075711420737761
+    second: MarcheGauche4
+  - first:
+      213: -8102647341141648761
+    second: MarcheGauche5
+  - first:
+      213: 1699346383934111006
+    second: MarcheGauche6
+  - first:
+      213: -2635713221877327177
+    second: MarcheGauche7
+  - first:
+      213: 5814237354434210325
+    second: MarcheGauche8
+  - first:
+      213: -642750821614792345
+    second: MarcheGauche9
+  - first:
+      213: -5174463893916331231
+    second: MarcheFront1
+  - first:
+      213: -3119286420558933738
+    second: MarcheFront2
+  - first:
+      213: -8153579267144976947
+    second: MarcheBack1
+  - first:
+      213: 8770987952080026105
+    second: MarcheBack2
+  - first:
+      213: 6412970279443896337
+    second: AttackGauche01
+  - first:
+      213: -6179851578791654075
+    second: AttackGauche02
+  - first:
+      213: -6689078475274962688
+    second: AttackGauche03
+  - first:
+      213: -4586228064194807026
+    second: AttackGauche04
+  - first:
+      213: 8366224046762089030
+    second: AttackGauche05
+  - first:
+      213: -6986884841249607143
+    second: AttackGauche06
+  - first:
+      213: 4842128501282825115
+    second: AttackGauche07
+  - first:
+      213: 876665252015193930
+    second: AttackGauche08
+  - first:
+      213: 4737745378358867273
+    second: AttackGauche09
+  - first:
+      213: 1094289417725185500
+    second: AttackGauche10
+  - first:
+      213: -3307582913999560147
+    second: AttackGauche11
+  - first:
+      213: -375788005509782375
+    second: AttackGauche12
+  - first:
+      213: 6671027429105906956
+    second: AttackDroit01
+  - first:
+      213: 2193547296510554799
+    second: AttackDroit02
+  - first:
+      213: -7596116691041196069
+    second: AttackDroit03
+  - first:
+      213: 1473790680448052360
+    second: AttackDroit04
+  - first:
+      213: 7304976193292831851
+    second: AttackDroit05
+  - first:
+      213: -8090492797478804061
+    second: AttackDroit06
+  - first:
+      213: 102778089110489081
+    second: AttackDroit07
+  - first:
+      213: 2803418290127553814
+    second: AttackDroit08
+  - first:
+      213: 109920010435813752
+    second: AttackDroit09
+  - first:
+      213: -8304889789718640851
+    second: AttackDroit10
+  - first:
+      213: 1503330707928872299
+    second: AttackDroit11
+  - first:
+      213: 3960135680105231774
+    second: AttackDroit12
+  - first:
+      213: 5776106676859275689
+    second: MortGauche1
+  - first:
+      213: -8381044561125168371
+    second: animation soldat rouge correction_52
+  - first:
+      213: -8260636825340210947
+    second: MortGauche2
+  - first:
+      213: -2575383359741350953
+    second: MortGauche3
+  - first:
+      213: 6385940798382937389
+    second: MortGauche4
+  - first:
+      213: 3024726275203896272
+    second: MortGauche5
+  - first:
+      213: -1108176518618388251
+    second: MortGauche6
+  - first:
+      213: 641655321206308091
+    second: MortGauche7
+  - first:
+      213: -1265723262644322521
+    second: MortDroite7
+  - first:
+      213: -5858206961814531433
+    second: MortDroite6
+  - first:
+      213: -9082644106857894344
+    second: MortDroite5
+  - first:
+      213: -7854764275742514163
+    second: MortDroite4
+  - first:
+      213: -6930630218151623620
+    second: MortDroite3
+  - first:
+      213: 6599896661651647846
+    second: MortDroite2
+  - first:
+      213: -3956686412606348561
+    second: MortDroite1
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MarcheDroit1
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 1527
+        width: 251
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af768b21d7699c670800000000000000
+      internalID: 8559538030723491834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarcheDroit2
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 1535
+        width: 256
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 751dc80c6a7c79ee0800000000000000
+      internalID: -1254314452190441129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarcheDroit3
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 1541
+        width: 235
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86a9322c90477d3a0800000000000000
+      internalID: -6640711540273866136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarcheDroit4
+      rect:
+        serializedVersion: 2
+        x: 1541
+        y: 1544
+        width: 222
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17962517919d225e0800000000000000
+      internalID: -1935746186517255823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarcheDroit5
+      rect:
+        serializedVersion: 2
+        x: 1965
+        y: 1541
+        width: 200
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec593750609c0d10800000000000000
+      internalID: 2093206670275075301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarcheDroit6
+      rect:
+        serializedVersion: 2
+        x: 2441
+        y: 1549
+        width: 216
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3213006e8f1e38270800000000000000
+      internalID: 8251687401399791907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarcheDroit7
+      rect:
+        serializedVersion: 2
+        x: 2839
+        y: 1538
+        width: 223
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a568a21172a99e4c0800000000000000
+      internalID: -4257702480119691686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarcheDroit8
+      rect:
+        serializedVersion: 2
+        x: 3246
+        y: 1527
+        width: 227
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91dc6074170195520800000000000000
+      internalID: 2691200331039558937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarcheDroit9
+      rect:
+        serializedVersion: 2
+        x: 3708
+        y: 1530
+        width: 243
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec80db61ceba0cc70800000000000000
+      internalID: 8989373886713628878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle1
+      rect:
+        serializedVersion: 2
+        x: 4138
+        y: 1495
+        width: 136
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84537f58beeb2c590800000000000000
+      internalID: -7655346497802259128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle2
+      rect:
+        serializedVersion: 2
+        x: 4438
+        y: 1522
+        width: 153
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5155fb3662eaa0170800000000000000
+      internalID: 8145514355958437141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle3
+      rect:
+        serializedVersion: 2
+        x: 4702
+        y: 1522
+        width: 173
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 889e5f4b69e2d0060800000000000000
+      internalID: 6921239427154307464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle4
+      rect:
+        serializedVersion: 2
+        x: 4999
+        y: 1522
+        width: 168
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b96af019ac343b380800000000000000
+      internalID: -8956740696613607781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle5
+      rect:
+        serializedVersion: 2
+        x: 5305
+        y: 1522
+        width: 137
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6a8b8e845d65be40800000000000000
+      internalID: 5671559515679197806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarcheGauche1
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 1176
+        width: 189
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 924aeace6cacc99e0800000000000000
+      internalID: -1613191610782276567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarcheGauche2
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 1179
+        width: 166
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa6ad215d81d8c20800000000000000
+      internalID: 3210249412808436392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarcheGauche3
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 1190
+        width: 219
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d14086eb28d16ee60800000000000000
+      internalID: 7991107036192965661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarcheGauche4
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 1179
+        width: 238
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e82d8ce12fd37800800000000000000
+      internalID: 609075711420737761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarcheGauche5
+      rect:
+        serializedVersion: 2
+        x: 2014
+        y: 1192
+        width: 251
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a1df24c2d9d8f80800000000000000
+      internalID: -8102647341141648761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarcheGauche6
+      rect:
+        serializedVersion: 2
+        x: 2487
+        y: 1195
+        width: 235
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1dbcbc588a459710800000000000000
+      internalID: 1699346383934111006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarcheGauche7
+      rect:
+        serializedVersion: 2
+        x: 2871
+        y: 1184
+        width: 229
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba93301ac01c6bd0800000000000000
+      internalID: -2635713221877327177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarcheGauche8
+      rect:
+        serializedVersion: 2
+        x: 3324
+        y: 1179
+        width: 222
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51aabd6911250b050800000000000000
+      internalID: 5814237354434210325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarcheGauche9
+      rect:
+        serializedVersion: 2
+        x: 3792
+        y: 1179
+        width: 202
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7615f8e788d7417f0800000000000000
+      internalID: -642750821614792345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarcheFront1
+      rect:
+        serializedVersion: 2
+        x: 4202
+        y: 1201
+        width: 184
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1235804018c9038b0800000000000000
+      internalID: -5174463893916331231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarcheFront2
+      rect:
+        serializedVersion: 2
+        x: 4535
+        y: 1203
+        width: 181
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61192e5f68116b4d0800000000000000
+      internalID: -3119286420558933738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarcheBack1
+      rect:
+        serializedVersion: 2
+        x: 4875
+        y: 1201
+        width: 176
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc575d52bdaa8de80800000000000000
+      internalID: -8153579267144976947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarcheBack2
+      rect:
+        serializedVersion: 2
+        x: 5199
+        y: 1201
+        width: 181
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f9f5fc521fc8b970800000000000000
+      internalID: 8770987952080026105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackGauche01
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 825
+        width: 217
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1181465ed727ff850800000000000000
+      internalID: 6412970279443896337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackGauche02
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 817
+        width: 202
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54d8c793bb1cc3aa0800000000000000
+      internalID: -6179851578791654075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackGauche03
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 817
+        width: 156
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0093686219e9b23a0800000000000000
+      internalID: -6689078475274962688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackGauche04
+      rect:
+        serializedVersion: 2
+        x: 1658
+        y: 817
+        width: 253
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0bbdbedfd17a50c0800000000000000
+      internalID: -4586228064194807026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackGauche05
+      rect:
+        serializedVersion: 2
+        x: 2071
+        y: 820
+        width: 270
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64ad592c17cca1470800000000000000
+      internalID: 8366224046762089030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackGauche06
+      rect:
+        serializedVersion: 2
+        x: 2482
+        y: 817
+        width: 245
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91271c64149990f90800000000000000
+      internalID: -6986884841249607143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackGauche07
+      rect:
+        serializedVersion: 2
+        x: 2892
+        y: 816
+        width: 227
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b93e1cb9732b23340800000000000000
+      internalID: 4842128501282825115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackGauche08
+      rect:
+        serializedVersion: 2
+        x: 3349
+        y: 814
+        width: 240
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4f3b45e66a8a2c00800000000000000
+      internalID: 876665252015193930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackGauche09
+      rect:
+        serializedVersion: 2
+        x: 3822
+        y: 816
+        width: 248
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9453459e15adfb140800000000000000
+      internalID: 4737745378358867273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackGauche10
+      rect:
+        serializedVersion: 2
+        x: 4202
+        y: 779
+        width: 219
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdd8af87d62bf2f00800000000000000
+      internalID: 1094289417725185500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackGauche11
+      rect:
+        serializedVersion: 2
+        x: 4559
+        y: 812
+        width: 230
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d22a7e13dda1912d0800000000000000
+      internalID: -3307582913999560147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackGauche12
+      rect:
+        serializedVersion: 2
+        x: 5021
+        y: 825
+        width: 281
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 994acbccccee8caf0800000000000000
+      internalID: -375788005509782375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackDroit01
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 482
+        width: 204
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c05beb62a10449c50800000000000000
+      internalID: 6671027429105906956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackDroit02
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 482
+        width: 197
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa2b78ee4ab017e10800000000000000
+      internalID: 2193547296510554799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackDroit03
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 479
+        width: 157
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd7e21e8d1c259690800000000000000
+      internalID: -7596116691041196069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackDroit04
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 479
+        width: 250
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88c236db0d4f37410800000000000000
+      internalID: 1473790680448052360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackDroit05
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 482
+        width: 266
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c87e5f42d706560800000000000000
+      internalID: 7304976193292831851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackDroit06
+      rect:
+        serializedVersion: 2
+        x: 2373
+        y: 477
+        width: 238
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a56b6c7aabc8bf80800000000000000
+      internalID: -8090492797478804061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackDroit07
+      rect:
+        serializedVersion: 2
+        x: 2787
+        y: 479
+        width: 218
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f7cf14a0242d6100800000000000000
+      internalID: 102778089110489081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackDroit08
+      rect:
+        serializedVersion: 2
+        x: 3227
+        y: 482
+        width: 241
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 615c2ebe41eb7e620800000000000000
+      internalID: 2803418290127553814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackDroit09
+      rect:
+        serializedVersion: 2
+        x: 3686
+        y: 482
+        width: 257
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 871ebb7caa3868100800000000000000
+      internalID: 109920010435813752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackDroit10
+      rect:
+        serializedVersion: 2
+        x: 4138
+        y: 488
+        width: 283
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d274d09ccba1fbc80800000000000000
+      internalID: -8304889789718640851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackDroit11
+      rect:
+        serializedVersion: 2
+        x: 4651
+        y: 474
+        width: 230
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b65790a5057ecd410800000000000000
+      internalID: 1503330707928872299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackDroit12
+      rect:
+        serializedVersion: 2
+        x: 5021
+        y: 442
+        width: 219
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e95b50b5b6a35f630800000000000000
+      internalID: 3960135680105231774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MortGauche1
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 112
+        width: 197
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a985f26b6ad82050800000000000000
+      internalID: 5776106676859275689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation soldat rouge correction_52
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 185
+        width: 49
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b2a67506c80bb80800000000000000
+      internalID: -8381044561125168371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MortGauche2
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 118
+        width: 213
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df01617f2925c5d80800000000000000
+      internalID: -8260636825340210947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MortGauche3
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 104
+        width: 240
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7db2a22ba76624cd0800000000000000
+      internalID: -2575383359741350953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MortGauche4
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 99
+        width: 238
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d251a4c625b6f9850800000000000000
+      internalID: 6385940798382937389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MortGauche5
+      rect:
+        serializedVersion: 2
+        x: 1622
+        y: 82
+        width: 211
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d39158858cf9f920800000000000000
+      internalID: 3024726275203896272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MortGauche6
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 82
+        width: 205
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e86253e357fe90f0800000000000000
+      internalID: -1108176518618388251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MortGauche7
+      rect:
+        serializedVersion: 2
+        x: 2355
+        y: 69
+        width: 208
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfcbdb07d1e97e800800000000000000
+      internalID: 641655321206308091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MortDroite7
+      rect:
+        serializedVersion: 2
+        x: 2900
+        y: 77
+        width: 211
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72ff222166f3f6ee0800000000000000
+      internalID: -1265723262644322521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MortDroite6
+      rect:
+        serializedVersion: 2
+        x: 3262
+        y: 77
+        width: 205
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 792135c6ec773bea0800000000000000
+      internalID: -5858206961814531433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MortDroite5
+      rect:
+        serializedVersion: 2
+        x: 3649
+        y: 77
+        width: 194
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ea0758e47f3f180800000000000000
+      internalID: -9082644106857894344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MortDroite4
+      rect:
+        serializedVersion: 2
+        x: 4016
+        y: 96
+        width: 213
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0460fde1854ef290800000000000000
+      internalID: -7854764275742514163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MortDroite3
+      rect:
+        serializedVersion: 2
+        x: 4335
+        y: 101
+        width: 216
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c340c71698471df90800000000000000
+      internalID: -6930630218151623620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MortDroite2
+      rect:
+        serializedVersion: 2
+        x: 4689
+        y: 115
+        width: 189
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66d6808cb0b879b50800000000000000
+      internalID: 6599896661651647846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MortDroite1
+      rect:
+        serializedVersion: 2
+        x: 5024
+        y: 107
+        width: 165
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe2ebf0dba60719c0800000000000000
+      internalID: -3956686412606348561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 7cf5895db285a914ca7e9340c71203f1
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

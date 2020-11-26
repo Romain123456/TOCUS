@@ -1,0 +1,1364 @@
+fileFormatVersion: 2
+guid: d82dcb9c77e32bb4599706642ce063e4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8770402592996735436
+    second: MarcheDroit1
+  - first:
+      213: 7826323140916989096
+    second: MarcheDroit2
+  - first:
+      213: -5021826266862443798
+    second: MarcheDroit3
+  - first:
+      213: -336856702983680651
+    second: MarcheDroit4
+  - first:
+      213: 4669472379492915190
+    second: MarcheDroit5
+  - first:
+      213: -2707748310166304072
+    second: MarcheDroit6
+  - first:
+      213: -6685363462638451970
+    second: MarcheGauche6
+  - first:
+      213: 6902014722171453534
+    second: MarcheGauche5
+  - first:
+      213: 5545943522834246831
+    second: MarcheGauche4
+  - first:
+      213: 1376893439817236243
+    second: MarcheGauche3
+  - first:
+      213: 2124067562127918677
+    second: MarcheGauche2
+  - first:
+      213: 4747274165405538256
+    second: MarcheGauche1
+  - first:
+      213: -4608449503692922461
+    second: AttackDroit1
+  - first:
+      213: -6143356040975379467
+    second: AttackDroit2
+  - first:
+      213: -3906526444092135715
+    second: AttackDroit3
+  - first:
+      213: 7000642047802550290
+    second: animation monstre base_15
+  - first:
+      213: -6166441693774848088
+    second: AttackDroit4
+  - first:
+      213: -7868295478234189533
+    second: animation monstre base_17
+  - first:
+      213: 7029222986554115537
+    second: AttackDroit5
+  - first:
+      213: 3849814228717805124
+    second: AttackDroit6
+  - first:
+      213: -1596757938552042889
+    second: AttackGauche6
+  - first:
+      213: 7133212337714648000
+    second: AttackGauche5
+  - first:
+      213: -8841681301730566225
+    second: AttackGauche4
+  - first:
+      213: 6128459709251349309
+    second: AttackGauche3
+  - first:
+      213: 7268375810619562079
+    second: AttackGauche2
+  - first:
+      213: 3059714367341598305
+    second: AttackGauche1
+  - first:
+      213: -163866774120798342
+    second: animation monstre base_26
+  - first:
+      213: -5876917257862269872
+    second: animation monstre base_27
+  - first:
+      213: 978243903659686081
+    second: animation monstre base_28
+  - first:
+      213: -1542984559668767089
+    second: animation monstre base_29
+  - first:
+      213: 1920769522813904581
+    second: animation monstre base_30
+  - first:
+      213: -810222058793526439
+    second: animation monstre base_31
+  - first:
+      213: 5490859457917618462
+    second: animation monstre base_32
+  - first:
+      213: 7567616685797147661
+    second: MarcheFront1
+  - first:
+      213: -1319712127400207356
+    second: MarcheFront2
+  - first:
+      213: 3818896319653022955
+    second: MarcheBack1
+  - first:
+      213: -3106508958381823942
+    second: MarcheBack2
+  - first:
+      213: -3342863300821789972
+    second: Mort1
+  - first:
+      213: 2941188201055503325
+    second: Mort2
+  - first:
+      213: -2235039994710808046
+    second: Mort3
+  - first:
+      213: 8408602016903110237
+    second: animation monstre base_40
+  - first:
+      213: 851756200554823768
+    second: animation monstre base_41
+  - first:
+      213: -8744071729579152073
+    second: Mort4
+  - first:
+      213: -8966909410307940410
+    second: animation monstre base_43
+  - first:
+      213: 8893686423052232167
+    second: animation monstre base_44
+  - first:
+      213: 6935316636779975463
+    second: animation monstre base_45
+  - first:
+      213: 7992780427144635947
+    second: animation monstre base_46
+  - first:
+      213: 2578495000122095009
+    second: animation monstre base_47
+  - first:
+      213: -7053093359536979458
+    second: animation monstre base_48
+  - first:
+      213: -9130650085771457702
+    second: animation monstre base_49
+  - first:
+      213: -519205549473434170
+    second: animation monstre base_50
+  - first:
+      213: 6514089868568134799
+    second: animation monstre base_51
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MarcheDroit1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1227
+        width: 362
+        height: 344
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 436c34b2f45494680800000000000000
+      internalID: -8770402592996735436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarcheDroit2
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 1202
+        width: 348
+        height: 369
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8acc6c75e6fac9c60800000000000000
+      internalID: 7826323140916989096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarcheDroit3
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 1191
+        width: 348
+        height: 380
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae220f7fd93ee4ab0800000000000000
+      internalID: -5021826266862443798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarcheDroit4
+      rect:
+        serializedVersion: 2
+        x: 1618
+        y: 1191
+        width: 348
+        height: 380
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57dc2760d9e335bf0800000000000000
+      internalID: -336856702983680651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarcheDroit5
+      rect:
+        serializedVersion: 2
+        x: 2198
+        y: 1202
+        width: 348
+        height: 369
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f75c24a36c4dc040800000000000000
+      internalID: 4669472379492915190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarcheDroit6
+      rect:
+        serializedVersion: 2
+        x: 2786
+        y: 1234
+        width: 351
+        height: 337
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ba8f5712452c6ad0800000000000000
+      internalID: -2707748310166304072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarcheGauche6
+      rect:
+        serializedVersion: 2
+        x: 4087
+        y: 1234
+        width: 348
+        height: 337
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef24f0fe951d833a0800000000000000
+      internalID: -6685363462638451970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarcheGauche5
+      rect:
+        serializedVersion: 2
+        x: 4677
+        y: 1202
+        width: 348
+        height: 369
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e50cb8542d1e8cf50800000000000000
+      internalID: 6902014722171453534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarcheGauche4
+      rect:
+        serializedVersion: 2
+        x: 5257
+        y: 1191
+        width: 348
+        height: 380
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: face9e6104627fc40800000000000000
+      internalID: 5545943522834246831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarcheGauche3
+      rect:
+        serializedVersion: 2
+        x: 5823
+        y: 1191
+        width: 348
+        height: 380
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f3fd5d945bb1310800000000000000
+      internalID: 1376893439817236243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarcheGauche2
+      rect:
+        serializedVersion: 2
+        x: 6319
+        y: 1202
+        width: 348
+        height: 369
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5568097a1343a7d10800000000000000
+      internalID: 2124067562127918677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarcheGauche1
+      rect:
+        serializedVersion: 2
+        x: 6780
+        y: 1227
+        width: 358
+        height: 344
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d7d26883b4b1e140800000000000000
+      internalID: 4747274165405538256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackDroit1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 774
+        width: 372
+        height: 355
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a1ee0fc79f7b00c0800000000000000
+      internalID: -4608449503692922461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackDroit2
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 774
+        width: 410
+        height: 355
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f399e8ca3a6ebaa0800000000000000
+      internalID: -6143356040975379467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackDroit3
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 774
+        width: 348
+        height: 355
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd6e73295ea39c9c0800000000000000
+      internalID: -3906526444092135715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation monstre base_15
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 941
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2182feaf9d6472160800000000000000
+      internalID: 7000642047802550290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackDroit4
+      rect:
+        serializedVersion: 2
+        x: 1854
+        y: 774
+        width: 362
+        height: 355
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8af546263f56c6aa0800000000000000
+      internalID: -6166441693774848088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation monstre base_17
+      rect:
+        serializedVersion: 2
+        x: 2217
+        y: 941
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 321f90853f23ec290800000000000000
+      internalID: -7868295478234189533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackDroit5
+      rect:
+        serializedVersion: 2
+        x: 2485
+        y: 770
+        width: 376
+        height: 359
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d581985011dc8160800000000000000
+      internalID: 7029222986554115537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackDroit6
+      rect:
+        serializedVersion: 2
+        x: 3130
+        y: 770
+        width: 348
+        height: 359
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44e18f1d4a94d6530800000000000000
+      internalID: 3849814228717805124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackGauche6
+      rect:
+        serializedVersion: 2
+        x: 3833
+        y: 749
+        width: 348
+        height: 362
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77a02586d1d27d9e0800000000000000
+      internalID: -1596757938552042889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackGauche5
+      rect:
+        serializedVersion: 2
+        x: 4449
+        y: 752
+        width: 377
+        height: 359
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c35ae8e3d24ef260800000000000000
+      internalID: 7133212337714648000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackGauche4
+      rect:
+        serializedVersion: 2
+        x: 5091
+        y: 753
+        width: 366
+        height: 358
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fafd22983b90c4580800000000000000
+      internalID: -8841681301730566225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackGauche3
+      rect:
+        serializedVersion: 2
+        x: 5739
+        y: 752
+        width: 348
+        height: 359
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3b6836b2a9ac0550800000000000000
+      internalID: 6128459709251349309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackGauche2
+      rect:
+        serializedVersion: 2
+        x: 6269
+        y: 754
+        width: 409
+        height: 357
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f58550e4a457ed460800000000000000
+      internalID: 7268375810619562079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackGauche1
+      rect:
+        serializedVersion: 2
+        x: 6845
+        y: 752
+        width: 370
+        height: 359
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1661e8b810a467a20800000000000000
+      internalID: 3059714367341598305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation monstre base_26
+      rect:
+        serializedVersion: 2
+        x: 5080
+        y: 920
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a776a028904d9bdf0800000000000000
+      internalID: -163866774120798342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation monstre base_27
+      rect:
+        serializedVersion: 2
+        x: 5711
+        y: 921
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 054b1c624eef07ea0800000000000000
+      internalID: -5876917257862269872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation monstre base_28
+      rect:
+        serializedVersion: 2
+        x: 2409
+        y: 564
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c8b35db5ab639d00800000000000000
+      internalID: 978243903659686081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation monstre base_29
+      rect:
+        serializedVersion: 2
+        x: 2920
+        y: 557
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f86d703d7b7369ae0800000000000000
+      internalID: -1542984559668767089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation monstre base_30
+      rect:
+        serializedVersion: 2
+        x: 3489
+        y: 564
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c628be44b1f7aa10800000000000000
+      internalID: 1920769522813904581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation monstre base_31
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 557
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95b1d6c845381c4f0800000000000000
+      internalID: -810222058793526439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation monstre base_32
+      rect:
+        serializedVersion: 2
+        x: 5725
+        y: 441
+        width: 98
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1906ccc593733c40800000000000000
+      internalID: 5490859457917618462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarcheFront1
+      rect:
+        serializedVersion: 2
+        x: 2111
+        y: 234
+        width: 370
+        height: 330
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d040241e743950960800000000000000
+      internalID: 7567616685797147661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarcheFront2
+      rect:
+        serializedVersion: 2
+        x: 2619
+        y: 234
+        width: 373
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c1980ffc07fade0800000000000000
+      internalID: -1319712127400207356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarcheBack1
+      rect:
+        serializedVersion: 2
+        x: 3191
+        y: 234
+        width: 370
+        height: 330
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bec07f628f17ff430800000000000000
+      internalID: 3818896319653022955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarcheBack2
+      rect:
+        serializedVersion: 2
+        x: 3699
+        y: 234
+        width: 370
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a382514bf8673e4d0800000000000000
+      internalID: -3106508958381823942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mort1
+      rect:
+        serializedVersion: 2
+        x: 4268
+        y: 332
+        width: 148
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce2d3d50a83cb91d0800000000000000
+      internalID: -3342863300821789972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mort2
+      rect:
+        serializedVersion: 2
+        x: 4630
+        y: 303
+        width: 203
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd3cb75f51331d820800000000000000
+      internalID: 2941188201055503325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mort3
+      rect:
+        serializedVersion: 2
+        x: 5109
+        y: 278
+        width: 312
+        height: 281
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21aa87077fa8bf0e0800000000000000
+      internalID: -2235039994710808046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation monstre base_40
+      rect:
+        serializedVersion: 2
+        x: 5228
+        y: 415
+        width: 95
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e9423dbfa51b470800000000000000
+      internalID: 8408602016903110237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation monstre base_41
+      rect:
+        serializedVersion: 2
+        x: 5258
+        y: 408
+        width: 148
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8508e4960cb02db00800000000000000
+      internalID: 851756200554823768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mort4
+      rect:
+        serializedVersion: 2
+        x: 5587
+        y: 242
+        width: 354
+        height: 353
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73d26eb0711d6a680800000000000000
+      internalID: -8744071729579152073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation monstre base_43
+      rect:
+        serializedVersion: 2
+        x: 5794
+        y: 426
+        width: 141
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cfdc7966632f8380800000000000000
+      internalID: -8966909410307940410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation monstre base_44
+      rect:
+        serializedVersion: 2
+        x: 5149
+        y: 288
+        width: 68
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e52eb55ea8bc6b70800000000000000
+      internalID: 8893686423052232167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation monstre base_45
+      rect:
+        serializedVersion: 2
+        x: 5156
+        y: 372
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 723902c7cb13f3060800000000000000
+      internalID: 6935316636779975463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation monstre base_46
+      rect:
+        serializedVersion: 2
+        x: 5225
+        y: 281
+        width: 43
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b26a6af637f0cee60800000000000000
+      internalID: 7992780427144635947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation monstre base_47
+      rect:
+        serializedVersion: 2
+        x: 5257
+        y: 321
+        width: 105
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a5f5698a87a8c320800000000000000
+      internalID: 2578495000122095009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation monstre base_48
+      rect:
+        serializedVersion: 2
+        x: 5623
+        y: 353
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef1c12955f06e1e90800000000000000
+      internalID: -7053093359536979458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation monstre base_49
+      rect:
+        serializedVersion: 2
+        x: 5642
+        y: 263
+        width: 47
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5bc33d8f1a694180800000000000000
+      internalID: -9130650085771457702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation monstre base_50
+      rect:
+        serializedVersion: 2
+        x: 5718
+        y: 252
+        width: 43
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c5793abd496bc8f0800000000000000
+      internalID: -519205549473434170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation monstre base_51
+      rect:
+        serializedVersion: 2
+        x: 5787
+        y: 274
+        width: 86
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8489fae832b66a50800000000000000
+      internalID: 6514089868568134799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 43d480ea52397e349bde368a5ec29ef0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46ac842a16976464b9e094bc8e593130, type: 3}
+  m_Name: Soldat
+  m_EditorClassIdentifier: 
+  uniteNom: Soldat
+  uniteBoxCollSize: {x: 1.5, y: 1.7}
+  uniteScale: {x: 0.2, y: 0.2}
+  unitePositionCanvas: {x: 0, y: 1}
+  uniteScaleCanvas: {x: 0.5, y: 0.5}
+  uniteTypeVitalite: 3
+  uniteTypeInitiative: 1
+  uniteTypeDegats: 4
+  uniteSpriteBase:
+  - {fileID: -947651009046627900, guid: 8bb029e9cc0f2a54bb7610fed9bb3f0b, type: 3}
+  - {fileID: 6671027429105906956, guid: bb2adfffc00e3374997be38c5fcfd7e8, type: 3}
+  unitePrixBle: 1
+  uniteListeOrdre: 0
+  uniteAnimatorController:
+  - {fileID: 9100000, guid: 80058aa663c6e83468d233c836019b98, type: 2}
+  - {fileID: 9100000, guid: 8b05b07f6955a1e4498381603ddbffe2, type: 2}

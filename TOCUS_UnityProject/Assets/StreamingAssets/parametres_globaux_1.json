@@ -1,0 +1,397 @@
+{
+	"o_divers":
+	{
+		"i_vitalite_porte": 100,
+		"arr_cout_reparation_porte":[0,8,4,0],
+		"i_gain_solidarite_reparation_porte":2,
+
+		"i_gain_solidarite_par_batiment_public":4,
+
+		"i_gain_victoire_par_ennemi_mort":1,
+		"i_gain_victoire_de_autel":2,
+		"i_gain_victoire_du_monument_aux_morts":1,
+		"i_gain_victoire_de_la_fosse":1,
+
+		"arr_cout_achat_tours_selon_nombre":
+		[
+			[0,4,0,4],
+			[0,4,0,4],
+			[0,5,0,5],
+			[0,5,0,5],
+			[0,6,0,6],
+			[0,6,0,6],
+			[0,7,0,7],
+			[0,7,0,7]
+		],
+		"o_tir_mortier":
+		{
+			"arr_cout_tirer_mortier":[0,0,2,0],
+			"s_forme":"cercle",
+			"s_puissance":"tres_forte"
+		},
+		
+
+		"arr_cout_unite_a_la_caserne":[1,0,0,0],
+		"arr_cout_creation_super_soldat":[0,0,2,0],
+		"i_nb_assassin_max_par_joueur":2
+
+	},
+	"o_batiments":
+	{
+		"arr_cout_fortin":				[4,4,4,4],
+		"arr_cout_ecole_de_magie":		[4,4,4,4],
+		"arr_cout_autel":				[0,0,8,0],
+		"arr_cout_tente_de_soin":		[8,1,1,0],
+		"arr_cout_monument_aux_morts":	[0,0,0,6],
+		"arr_cout_fosse":				[0,4,0,4],
+		"arr_cout_portail_demoniaque":	[0,0,6,6],
+
+		"arr_cout_guilde_assassin":		[0,2,2,4],
+		"arr_cout_hutte_barbare":		[4,4,0,0],
+		"arr_cout_auberge_bagarreur":	[4,2,0,2],
+
+		"arr_cout_maison":				[2,3,0,3],
+		"arr_cout_hopital":				[4,4,2,2],
+		"arr_cout_mortier":				[0,4,0,8],
+		"arr_cout_marche":				[8,2,2,2],
+		"arr_cout_cabane_de_eclaireur":	[4,4,2,0],
+		"arr_cout_hache_de_guerre":		[0,3,4,3],
+		"arr_cout_camp_entrainement":	[4,2,4,0],
+
+		"arr_cout_moulin":				[0,0,1,2],
+		"arr_cout_stock_de_pierre":		[0,0,0,2],
+		"arr_cout_stock_de_bois":		[0,2,0,0],
+		"arr_cout_fourneau":			[0,0,2,0],
+		"arr_cout_feu_de_camp":			[0,2,0,0],
+		"arr_cout_palissade":			[0,8,0,0],
+		"arr_cout_entrepot":			[2,4,2,2],
+		"arr_cout_grue":				[0,4,6,0],
+	},
+	"o_tours":
+	{
+		"o_dictionaires_des_valeurs_textuelles_des_tours":
+		{
+			"dico_valeurs_textuelles_portee":
+			[
+				{"contact":1},
+				{"tres_courte":2},
+				{"courte":5},
+				{"normale":10},
+				{"lointaine":20},
+				{"tres_lointaine":50},
+				{"absolue":1000}
+			],
+			"dico_valeurs_textuelles_cadence":
+			[
+				{"tres_lente":40},
+				{"lente":20},
+				{"normale":10},
+				{"rapide":6},
+				{"tres_rapide":4},
+				{"permanente":0}
+			],
+			"dico_valeurs_textuelles_puissance":
+			[
+				{"nulle":0},
+				{"tres_faible":1},
+				{"faible":2},
+				{"normale":3},
+				{"forte":4},
+				{"tres_forte":5},
+				{"enorme":10},
+				{"exponentielle":-1}
+			],
+			"dico_valeurs_textuelles_duree_degats":
+			[
+				{"ponctuelle":0},
+				{"courte":2},
+				{"longue":5},
+				{"tres_longue":8},
+				{"permanente":1000}
+			]
+		},
+		"o_toutes_les_tours":
+		{
+			"o_sniper":
+			{
+				"s_forme":"ligne",
+				"s_portee":"lointaine",
+				"s_cadence":"lente",
+				"s_puissance":"forte",
+				"s_impact":"individuel",
+				"s_duree_degats":"ponctuelle",
+				"arr_ameliorations":
+				[
+					[ ["portee"], ["circulaire_centree"], ["portee"] ],
+					[ ["cadence"], ["puissance"], ["cadence"] ]
+				]
+			},
+			"o_mitraillette":
+			{
+				"s_forme":"circulaire_centree",
+				"s_portee":"normale",
+				"s_cadence":"rapide",
+				"s_puissance":"faible",
+				"s_impact":"individuel",
+				"s_duree_degats":"ponctuelle",
+				"arr_ameliorations":
+				[
+					[ ["portee"], ["cadence"], ["puissance"] ],
+					[ ["puissance"], ["puissance"], ["cadence"] ]
+				]
+			},
+			"o_shotgun":
+			{
+				"s_forme":"cone",
+				"s_portee":"courte",
+				"s_cadence":"lente",
+				"s_puissance":"forte",
+				"s_impact":"double",
+				"s_duree_degats":"ponctuelle",
+				"arr_ameliorations":
+				[
+					[ ["portee"], ["double_cone"], ["puissance"] ],
+					[ ["puissance"], ["cadence"], ["triple"] ]
+				]
+			},
+			"o_canon":
+			{
+				"s_forme":"circulaire_decentree",
+				"s_portee":"normale",
+				"s_cadence":"lente",
+				"s_puissance":"normale",
+				"s_impact":"zone",
+				"s_duree_degats":"ponctuelle",
+				"arr_ameliorations":
+				[
+					[ ["impact"], ["impact_zone"], ["cadence"] ],
+					[ ["portee"], ["deux_circulaires_decentrees"], ["cadence"] ]
+				]
+			},
+			"o_poison":
+			{
+				"s_forme":"cone",
+				"s_portee":"courte",
+				"s_cadence":"normale",
+				"s_puissance":"faible",
+				"s_impact":"individuel",
+				"s_duree_degats":"permanente",
+				"arr_ameliorations":
+				[
+					[ ["puissance"], ["cadence"], ["puissance"] ],
+					[ ["portee"], ["duree_degats"], ["double_cone"] ]
+				]
+			},
+			"o_feu":
+			{
+				"s_forme":"double_cone",
+				"s_portee":"contact",
+				"s_cadence":"permanente",
+				"s_puissance":"faible",
+				"s_impact":"traversant",
+				"s_duree_degats":"courte",
+				"arr_ameliorations":
+				[
+					[ ["portee"], ["traversant_temporaire_large"], ["puissance"] ],
+					[ ["circulaire_centre"], ["double_tir"], ["duree_degats"] ]
+				]
+			},
+			"o_electrique":
+			{
+				"s_forme":"circulaire_centree",
+				"s_portee":"normale",
+				"s_cadence":"rapide",
+				"s_puissance":"faible",
+				"s_impact":"rebondissant",
+				"s_duree_degats":"ponctuelle",
+				"arr_ameliorations":
+				[
+					[ ["impact_rebondissant"], ["impact_rebondissant"], ["portee"] ],
+					[ ["puissance"], ["puissance"], ["cadence"] ]
+				]
+			},
+			"o_laser":
+			{
+				"s_forme":"ligne",
+				"s_portee":"normale",
+				"s_cadence":"permanente",
+				"s_puissance":"exponentielle",
+				"s_impact":"individuel",
+				"s_duree_degats":"ponctuelle",
+				"arr_ameliorations":
+				[
+					[ ["exponentielle"], ["portee"], ["exponentielle"] ],
+					[ ["portee"], ["ligne_large"], ["portee"] ]
+				]
+			},
+			"o_tromblon":
+			{
+				"s_forme":"cone",
+				"s_portee":"courte",
+				"s_cadence":"lente",
+				"s_puissance":"forte",
+				"s_impact":"triple",
+				"s_duree_degats":"ponctuelle",
+				"arr_ameliorations":
+				[
+					[ ["double_cone"], ["cadence"], ["quadruple"] ],
+					[ ["quadruple"], ["puissance"], ["quintuple"] ]
+				]
+			}
+		}
+	},
+	"o_unites_et_monstres":
+	{
+		"o_dictionaires_des_valeurs_textuelles_des_unites_et_monstres":
+		{
+			"dico_valeurs_textuelles_vitalite":
+			[
+				{"1pv":1},
+				{"tres_faible":2},
+				{"faible":5},
+				{"normale":10},
+				{"forte":20},
+				{"tres_forte":50},
+				{"enorme":500}
+			],
+			"dico_valeurs_textuelles_armure":
+			[
+				{"aucune":0},
+				{"tres_faible":0},
+				{"faible":1},
+				{"normale":2},
+				{"forte":3},
+				{"tres_forte":5},
+				{"enorme":20}
+			],
+			"dico_valeurs_textuelles_initiative":
+			[
+				{"dernier":-1},
+				{"tres_lente":1},
+				{"lente":2},
+				{"normale":3},
+				{"rapide":4},
+				{"tres_rapide":5},
+				{"premier":10}
+			],
+			"dico_valeurs_textuelles_degats":
+			[
+				{"aucun":0},
+				{"tres_faibles":1},
+				{"faibles":2},
+				{"normaux":3},
+				{"forts":4},
+				{"tres_forts":5},
+				{"enormes":10},
+				{"one_shot":1000}
+			],
+			"dico_valeurs_textuelles_portee":
+			[
+				{"courte":1},
+				{"longue":2},
+				{"longue_traversante":2},
+				{"tres_longue":4},
+				{"lointaine":6},
+				{"tres_lointaine":10}
+			]
+		},
+		"o_unites":
+		{
+			"o_soldat":
+			{
+				"s_vitalite":"normale",
+				"s_armure":"normale",
+				"s_initiative":"normale",
+				"s_degats":"normale",
+				"s_portee":"courte"
+			},
+			"o_chevalier":
+			{
+				"s_vitalite":"normale",
+				"s_armure":"forte",
+				"s_initiative":"lente",
+				"s_degats":"forts",
+				"s_portee":"courte"
+			},
+			"o_assassin":
+			{
+				"s_vitalite":"tres_faible",
+				"s_armure":"aucune",
+				"s_initiative":"tres_rapide",
+				"s_degats":"tres_forts",
+				"s_portee":"courte"
+			},
+			"o_bagarreur":
+			{
+				"s_vitalite":"tres_forte",
+				"s_armure":"faible",
+				"s_initiative":"rapide",
+				"s_degats":"tres_faibles",
+				"s_portee":"courte"
+			},
+			"o_barbare":
+			{
+				"s_vitalite":"tres_forte",
+				"s_armure":"faible",
+				"s_initiative":"lente",
+				"s_degats":"forts",
+				"s_portee":"courte"
+			},
+			"o_lancier":
+			{
+				"s_vitalite":"faible",
+				"s_armure":"normale",
+				"s_initiative":"rapide",
+				"s_degats":"faibles",
+				"s_portee":"longue_traversante"
+			},
+			"o_archer":
+			{
+				"s_vitalite":"faible",
+				"s_armure":"faible",
+				"s_initiative":"normale",
+				"s_degats":"normaux",
+				"s_portee":"tres_longue"
+			},
+			"o_mage":
+			{
+				"s_vitalite":"tres_faible",
+				"s_armure":"tres_faible",
+				"s_initiative":"normale",
+				"s_degats":"normaux",
+				"s_portee":"lointaine"
+			}
+		},
+		"o_monstres":
+		{
+			"o_basique":
+			{
+				"s_vitalite":"tres_faible",
+				"s_armure":"normale",
+				"s_initiative":"normale",
+				"s_degats":"normale",
+				"s_portee":"courte"
+			},
+			"o_costaud":
+			{
+				"s_vitalite":"tres_forte",
+				"s_armure":"tres_faible",
+				"s_initiative":"lente",
+				"s_degats":"forts",
+				"s_portee":"courte"
+			},
+			"o_boxeur":
+			{
+				"s_vitalite":"forte",
+				"s_armure":"faible",
+				"s_initiative":"normale",
+				"s_degats":"tres_faibles",
+				"s_portee":"courte"
+			},
+		},
+		"o_boss":
+		{
+
+		}
+	}
+}

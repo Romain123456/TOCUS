@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87cff0f03fa2f8a4aafe12b29ef101c4, type: 3}
+  m_Name: MonstresBase
+  m_EditorClassIdentifier: 
+  uniteNom: Montres Base
+  uniteBoxCollSize: {x: 1.5, y: 1.7}
+  uniteScale: {x: 0.15, y: 0.15}
+  unitePositionCanvas: {x: 0, y: 1}
+  uniteScaleCanvas: {x: 0.5, y: 0.5}
+  uniteTypeVitalite: 3
+  uniteTypeInitiative: 0
+  uniteTypeDegats: 4
+  ennemiSpeedMove: 0.5
+  ennemiSprite: {fileID: 7567616685797147661, guid: d82dcb9c77e32bb4599706642ce063e4,
+    type: 3}
+  ennemiAnimatorController: {fileID: 9100000, guid: ca8ab1b9fa83a3d4f810550a64833cc1,
+    type: 2}
+  nbPointsVictoire: 1

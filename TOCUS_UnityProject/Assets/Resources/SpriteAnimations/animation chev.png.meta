@@ -1,0 +1,2012 @@
+fileFormatVersion: 2
+guid: a631b0adedc70b447a6942147f840315
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9185620066820425245
+    second: AttackGauche1
+  - first:
+      213: 7780299788607637025
+    second: animation chev_1
+  - first:
+      213: 9030459049769729838
+    second: AttackGauche2
+  - first:
+      213: -1340790554990739823
+    second: animation chev_3
+  - first:
+      213: -6427801329312455011
+    second: AttackGauche4
+  - first:
+      213: -2537521250168141082
+    second: animation chev_5
+  - first:
+      213: -5256325760134838468
+    second: AttackGauche5
+  - first:
+      213: -199869299543300992
+    second: AttackGauche6
+  - first:
+      213: -3920467411371783850
+    second: AttackGauche7
+  - first:
+      213: -5597909236850498536
+    second: animation chev_9
+  - first:
+      213: -6053414754026249910
+    second: AttackGauche3
+  - first:
+      213: 7721680800632625017
+    second: animation chev_11
+  - first:
+      213: 149912598165495694
+    second: AttackGauche8
+  - first:
+      213: -3206378714974368185
+    second: animation chev_13
+  - first:
+      213: -6522286443276129565
+    second: AttackDroit1
+  - first:
+      213: -5977748050710186951
+    second: animation chev_15
+  - first:
+      213: 9123601152970532612
+    second: animation chev_16
+  - first:
+      213: -5952206235649335063
+    second: AttackDroit5
+  - first:
+      213: -8681115983971875609
+    second: AttackDroit6
+  - first:
+      213: 6531141465597101021
+    second: AttackDroit2
+  - first:
+      213: 5269337785573939328
+    second: animation chev_20
+  - first:
+      213: 7379231824567230806
+    second: AttackDroit3
+  - first:
+      213: 5332770014247204539
+    second: AttackDroit4
+  - first:
+      213: 3101007415413042745
+    second: AttackDroit7
+  - first:
+      213: 4326853122493291873
+    second: animation chev_24
+  - first:
+      213: -8526031692946177681
+    second: animation chev_25
+  - first:
+      213: -3969807177427513623
+    second: AttackDroit8
+  - first:
+      213: 2151961040501252679
+    second: animation chev_27
+  - first:
+      213: -3084686565579191029
+    second: animation chev_28
+  - first:
+      213: 2275400896944457389
+    second: animation chev_29
+  - first:
+      213: 1204600307838066140
+    second: animation chev_30
+  - first:
+      213: -5926937046054230804
+    second: animation chev_31
+  - first:
+      213: 4353808336073600308
+    second: animation chev_32
+  - first:
+      213: -8252916282981516768
+    second: animation chev_33
+  - first:
+      213: -2235347911611456925
+    second: animation chev_34
+  - first:
+      213: 4636192674052513032
+    second: animation chev_35
+  - first:
+      213: 7195159681780544125
+    second: animation chev_36
+  - first:
+      213: 546549164189586669
+    second: animation chev_37
+  - first:
+      213: 1147777116003110732
+    second: animation chev_38
+  - first:
+      213: -2277955484265157563
+    second: animation chev_39
+  - first:
+      213: -9154051245853181885
+    second: animation chev_40
+  - first:
+      213: -7096320600093247626
+    second: animation chev_41
+  - first:
+      213: -6394803613957257016
+    second: animation chev_42
+  - first:
+      213: 1457639733478023998
+    second: animation chev_43
+  - first:
+      213: 707650183517722780
+    second: Idle1
+  - first:
+      213: 5264998146147308255
+    second: animation chev_45
+  - first:
+      213: 6731170321144103295
+    second: animation chev_46
+  - first:
+      213: 1560466084500213332
+    second: MortDroit1
+  - first:
+      213: 8268166483197641461
+    second: animation chev_48
+  - first:
+      213: -4635359333932653049
+    second: animation chev_49
+  - first:
+      213: 132710045925381707
+    second: Idle2
+  - first:
+      213: 7288276444835533226
+    second: MortDroit2
+  - first:
+      213: 2233437688776465232
+    second: animation chev_52
+  - first:
+      213: -8413687326517263025
+    second: animation chev_53
+  - first:
+      213: 8061838049561284196
+    second: animation chev_54
+  - first:
+      213: -5912886574563889670
+    second: MortDroit3
+  - first:
+      213: 3566897729312317456
+    second: animation chev_56
+  - first:
+      213: 1818969677876864657
+    second: animation chev_57
+  - first:
+      213: -1748382696553558417
+    second: animation chev_58
+  - first:
+      213: -3026634148315731054
+    second: MortDroit4
+  - first:
+      213: 2659166529612229454
+    second: animation chev_60
+  - first:
+      213: 4166227632735582328
+    second: animation chev_61
+  - first:
+      213: -185462855765080748
+    second: animation chev_62
+  - first:
+      213: -6111993496985604726
+    second: MortGauche1
+  - first:
+      213: 4832853116623132343
+    second: animation chev_64
+  - first:
+      213: -4859691486511580960
+    second: animation chev_65
+  - first:
+      213: 4380079029633136288
+    second: MortGauche2
+  - first:
+      213: -1841232201478159555
+    second: animation chev_67
+  - first:
+      213: -8032408311708462113
+    second: animation chev_68
+  - first:
+      213: 4504674331219689991
+    second: animation chev_69
+  - first:
+      213: 6158111588957343094
+    second: MortGauche3
+  - first:
+      213: -3445981222179234215
+    second: animation chev_71
+  - first:
+      213: -3580286890736306979
+    second: animation chev_72
+  - first:
+      213: -2287855915598188107
+    second: animation chev_73
+  - first:
+      213: 7219679306375027148
+    second: MortGauche4
+  - first:
+      213: 3130499640349542097
+    second: animation chev_75
+  - first:
+      213: 5178857426647487532
+    second: animation chev_76
+  - first:
+      213: -242630629132546460
+    second: animation chev_77
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AttackGauche1
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 4911
+        width: 322
+        height: 283
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d16088488c0e97f70800000000000000
+      internalID: 9185620066820425245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_1
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 5191
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 126410a9f6d29fb60800000000000000
+      internalID: 7780299788607637025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackGauche2
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 4925
+        width: 308
+        height: 269
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2f7c3c09a2a25d70800000000000000
+      internalID: 9030459049769729838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_3
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 5191
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19ef393181e846de0800000000000000
+      internalID: -1340790554990739823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackGauche4
+      rect:
+        serializedVersion: 2
+        x: 2307
+        y: 4925
+        width: 348
+        height: 269
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d962c873fbcdbc6a0800000000000000
+      internalID: -6427801329312455011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_5
+      rect:
+        serializedVersion: 2
+        x: 2439
+        y: 5191
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ea09b90ed9e8ccd0800000000000000
+      internalID: -2537521250168141082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackGauche5
+      rect:
+        serializedVersion: 2
+        x: 2767
+        y: 4925
+        width: 305
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c378d630297cd07b0800000000000000
+      internalID: -5256325760134838468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackGauche6
+      rect:
+        serializedVersion: 2
+        x: 3239
+        y: 4929
+        width: 231
+        height: 370
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08427375eebe93df0800000000000000
+      internalID: -199869299543300992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackGauche7
+      rect:
+        serializedVersion: 2
+        x: 3666
+        y: 4893
+        width: 297
+        height: 311
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65980bf29a3b799c0800000000000000
+      internalID: -3920467411371783850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_9
+      rect:
+        serializedVersion: 2
+        x: 4471
+        y: 5183
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 814e5a4453b3052b0800000000000000
+      internalID: -5597909236850498536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackGauche3
+      rect:
+        serializedVersion: 2
+        x: 1723
+        y: 4915
+        width: 341
+        height: 268
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4128248a53fdfba0800000000000000
+      internalID: -6053414754026249910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_11
+      rect:
+        serializedVersion: 2
+        x: 2297
+        y: 5075
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97759a6e6cbe82b60800000000000000
+      internalID: 7721680800632625017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackGauche8
+      rect:
+        serializedVersion: 2
+        x: 4257
+        y: 4893
+        width: 286
+        height: 282
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f9209b6b8941200800000000000000
+      internalID: 149912598165495694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_13
+      rect:
+        serializedVersion: 2
+        x: 4250
+        y: 4958
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74e449efb87a083d0800000000000000
+      internalID: -3206378714974368185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackDroit1
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 4429
+        width: 322
+        height: 282
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ea2e21590f2c75a0800000000000000
+      internalID: -6522286443276129565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_15
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 4708
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 934b2a0c1d5ca0da0800000000000000
+      internalID: -5977748050710186951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_16
+      rect:
+        serializedVersion: 2
+        x: 2349
+        y: 4699
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4072723e8ea8d9e70800000000000000
+      internalID: 9123601152970532612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackDroit5
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 4429
+        width: 305
+        height: 311
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e0a14ef6f3856da0800000000000000
+      internalID: -5952206235649335063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackDroit6
+      rect:
+        serializedVersion: 2
+        x: 3224
+        y: 4429
+        width: 232
+        height: 369
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e40461d10b768780800000000000000
+      internalID: -8681115983971875609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackDroit2
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 4432
+        width: 310
+        height: 268
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd34dba3f8643aa50800000000000000
+      internalID: 6531141465597101021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_20
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 4697
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0889dae3cc2702940800000000000000
+      internalID: 5269337785573939328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackDroit3
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 4432
+        width: 341
+        height: 268
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65166926f3c486660800000000000000
+      internalID: 7379231824567230806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackDroit4
+      rect:
+        serializedVersion: 2
+        x: 2144
+        y: 4436
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb63f00e21ec10a40800000000000000
+      internalID: 5332770014247204539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackDroit7
+      rect:
+        serializedVersion: 2
+        x: 3706
+        y: 4385
+        width: 297
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93eeb8180ddf80b20800000000000000
+      internalID: 3101007415413042745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_24
+      rect:
+        serializedVersion: 2
+        x: 4399
+        y: 4672
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d90818df11c0c30800000000000000
+      internalID: 4326853122493291873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_25
+      rect:
+        serializedVersion: 2
+        x: 2494
+        y: 4583
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f61883e19537da980800000000000000
+      internalID: -8526031692946177681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackDroit8
+      rect:
+        serializedVersion: 2
+        x: 4337
+        y: 4381
+        width: 286
+        height: 283
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ee03a2b76968e8c0800000000000000
+      internalID: -3969807177427513623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_27
+      rect:
+        serializedVersion: 2
+        x: 4620
+        y: 4447
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 742ae8d2a2d4ddd10800000000000000
+      internalID: 2151961040501252679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_28
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 3957
+        width: 322
+        height: 283
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0d8b3779edf035d0800000000000000
+      internalID: -3084686565579191029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_29
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 4237
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da6caf76f09d39f10800000000000000
+      internalID: 2275400896944457389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_30
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 3957
+        width: 322
+        height: 283
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdd9305099997b010800000000000000
+      internalID: 1204600307838066140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_31
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 4237
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce4a5dba82a4fbda0800000000000000
+      internalID: -5926937046054230804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_32
+      rect:
+        serializedVersion: 2
+        x: 1727
+        y: 3957
+        width: 322
+        height: 283
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43d2dcb3d95db6c30800000000000000
+      internalID: 4353808336073600308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_33
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 4237
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02a79dfcd50c77d80800000000000000
+      internalID: -8252916282981516768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_34
+      rect:
+        serializedVersion: 2
+        x: 2301
+        y: 3957
+        width: 323
+        height: 283
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 362ecf2fae27af0e0800000000000000
+      internalID: -2235347911611456925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_35
+      rect:
+        serializedVersion: 2
+        x: 2431
+        y: 4237
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d1b276ca0175040800000000000000
+      internalID: 4636192674052513032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_36
+      rect:
+        serializedVersion: 2
+        x: 2905
+        y: 3957
+        width: 323
+        height: 283
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d72fdb6eb975ad360800000000000000
+      internalID: 7195159681780544125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_37
+      rect:
+        serializedVersion: 2
+        x: 3036
+        y: 4237
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de49ecfa19bb59700800000000000000
+      internalID: 546549164189586669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_38
+      rect:
+        serializedVersion: 2
+        x: 3616
+        y: 3957
+        width: 322
+        height: 283
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4f00b0b439bdef00800000000000000
+      internalID: 1147777116003110732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_39
+      rect:
+        serializedVersion: 2
+        x: 3746
+        y: 4237
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54ce8326e831360e0800000000000000
+      internalID: -2277955484265157563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_40
+      rect:
+        serializedVersion: 2
+        x: 4214
+        y: 3957
+        width: 322
+        height: 283
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 348f23364e646f080800000000000000
+      internalID: -9154051245853181885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_41
+      rect:
+        serializedVersion: 2
+        x: 4341
+        y: 4237
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 677b72b130ec48d90800000000000000
+      internalID: -7096320600093247626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_42
+      rect:
+        serializedVersion: 2
+        x: 4790
+        y: 3957
+        width: 322
+        height: 283
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c881b58ef71147a0800000000000000
+      internalID: -6394803613957257016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_43
+      rect:
+        serializedVersion: 2
+        x: 4921
+        y: 4237
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e33e37c5d939a3410800000000000000
+      internalID: 1457639733478023998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle1
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 3548
+        width: 297
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9850d5b71412d900800000000000000
+      internalID: 707650183517722780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_45
+      rect:
+        serializedVersion: 2
+        x: 1858
+        y: 3439
+        width: 282
+        height: 359
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd253343be7011940800000000000000
+      internalID: 5264998146147308255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_46
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 3424
+        width: 267
+        height: 377
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f71427a6ebbe96d50800000000000000
+      internalID: 6731170321144103295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MortDroit1
+      rect:
+        serializedVersion: 2
+        x: 3032
+        y: 3515
+        width: 322
+        height: 283
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45e0eaad2a3e7a510800000000000000
+      internalID: 1560466084500213332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_48
+      rect:
+        serializedVersion: 2
+        x: 3163
+        y: 3796
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f249ce1c9d6eb270800000000000000
+      internalID: 8268166483197641461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_49
+      rect:
+        serializedVersion: 2
+        x: 3627
+        y: 3791
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70627a6be35ebafb0800000000000000
+      internalID: -4635359333932653049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle2
+      rect:
+        serializedVersion: 2
+        x: 1267
+        y: 3548
+        width: 282
+        height: 246
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b461289651b77d100800000000000000
+      internalID: 132710045925381707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MortDroit2
+      rect:
+        serializedVersion: 2
+        x: 3550
+        y: 3534
+        width: 370
+        height: 238
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa1d447cfc8252560800000000000000
+      internalID: 7288276444835533226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_52
+      rect:
+        serializedVersion: 2
+        x: 3638
+        y: 3769
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05b9d73aeb3cefe10800000000000000
+      internalID: 2233437688776465232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_53
+      rect:
+        serializedVersion: 2
+        x: 4388
+        y: 3751
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f458bb344f39c3b80800000000000000
+      internalID: -8413687326517263025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_54
+      rect:
+        serializedVersion: 2
+        x: 4404
+        y: 3733
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46e04dc1ef661ef60800000000000000
+      internalID: 8061838049561284196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MortDroit3
+      rect:
+        serializedVersion: 2
+        x: 4337
+        y: 3533
+        width: 377
+        height: 196
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afd61fdfcf431fda0800000000000000
+      internalID: -5912886574563889670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_56
+      rect:
+        serializedVersion: 2
+        x: 5015
+        y: 3697
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 010eec9269a208130800000000000000
+      internalID: 3566897729312317456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_57
+      rect:
+        serializedVersion: 2
+        x: 3631
+        y: 3530
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 196ae03e8474e3910800000000000000
+      internalID: 1818969677876864657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_58
+      rect:
+        serializedVersion: 2
+        x: 3648
+        y: 3533
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6e4c78633f7cb7e0800000000000000
+      internalID: -1748382696553558417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MortDroit4
+      rect:
+        serializedVersion: 2
+        x: 4989
+        y: 3511
+        width: 363
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29be294274c3ff5d0800000000000000
+      internalID: -3026634148315731054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_60
+      rect:
+        serializedVersion: 2
+        x: 4477
+        y: 3508
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4b252caed147e420800000000000000
+      internalID: 2659166529612229454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_61
+      rect:
+        serializedVersion: 2
+        x: 4493
+        y: 3515
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 878fe9655f961d930800000000000000
+      internalID: 4166227632735582328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_62
+      rect:
+        serializedVersion: 2
+        x: 5182
+        y: 3501
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 455c71be38a1d6df0800000000000000
+      internalID: -185462855765080748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MortGauche1
+      rect:
+        serializedVersion: 2
+        x: 2905
+        y: 3036
+        width: 322
+        height: 283
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8deca61c46dd2ba0800000000000000
+      internalID: -6111993496985604726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_64
+      rect:
+        serializedVersion: 2
+        x: 3087
+        y: 3316
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b616f3dd4eb11340800000000000000
+      internalID: 4832853116623132343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_65
+      rect:
+        serializedVersion: 2
+        x: 3747
+        y: 3287
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e8bc7c3758ee8cb0800000000000000
+      internalID: -4859691486511580960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MortGauche2
+      rect:
+        serializedVersion: 2
+        x: 3463
+        y: 3030
+        width: 370
+        height: 238
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a6bb69bbaa29cc30800000000000000
+      internalID: 4380079029633136288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_67
+      rect:
+        serializedVersion: 2
+        x: 3739
+        y: 3265
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3342e96111a276e0800000000000000
+      internalID: -1841232201478159555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_68
+      rect:
+        serializedVersion: 2
+        x: 4491
+        y: 3243
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd3d8b1b237278090800000000000000
+      internalID: -8032408311708462113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_69
+      rect:
+        serializedVersion: 2
+        x: 4475
+        y: 3225
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7028b2dff61d38e30800000000000000
+      internalID: 4504674331219689991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MortGauche3
+      rect:
+        serializedVersion: 2
+        x: 4177
+        y: 3026
+        width: 377
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67dc403fcd1067550800000000000000
+      internalID: 6158111588957343094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_71
+      rect:
+        serializedVersion: 2
+        x: 5225
+        y: 3173
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95e1755065a6d20d0800000000000000
+      internalID: -3445981222179234215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_72
+      rect:
+        serializedVersion: 2
+        x: 3721
+        y: 3029
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd4bca3ca04405ec0800000000000000
+      internalID: -3580286890736306979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_73
+      rect:
+        serializedVersion: 2
+        x: 3739
+        y: 3026
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b17e759a27ef30e0800000000000000
+      internalID: -2287855915598188107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MortGauche4
+      rect:
+        serializedVersion: 2
+        x: 4899
+        y: 2986
+        width: 365
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc9d8b0e314713460800000000000000
+      internalID: 7219679306375027148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_75
+      rect:
+        serializedVersion: 2
+        x: 4384
+        y: 3007
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d6c58836d4c17b20800000000000000
+      internalID: 3130499640349542097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_76
+      rect:
+        serializedVersion: 2
+        x: 4399
+        y: 3000
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2497b9046ffed740800000000000000
+      internalID: 5178857426647487532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animation chev_77
+      rect:
+        serializedVersion: 2
+        x: 5055
+        y: 2975
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46ecce27ab002acf0800000000000000
+      internalID: -242630629132546460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

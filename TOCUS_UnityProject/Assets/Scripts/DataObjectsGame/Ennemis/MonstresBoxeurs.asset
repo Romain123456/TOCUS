@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87cff0f03fa2f8a4aafe12b29ef101c4, type: 3}
+  m_Name: MonstresBoxeurs
+  m_EditorClassIdentifier: 
+  uniteNom: Monstres Boxeurs
+  uniteBoxCollSize: {x: 1.5, y: 1.7}
+  uniteScale: {x: 0.15, y: 0.15}
+  unitePositionCanvas: {x: 0, y: 1}
+  uniteScaleCanvas: {x: 0.5, y: 0.5}
+  uniteTypeVitalite: 3
+  uniteTypeInitiative: 0
+  uniteTypeDegats: 2
+  ennemiSpeedMove: 1
+  ennemiSprite: {fileID: -7046045881008828468, guid: 9e9bd451e94a9c346ad0314f97989c1e,
+    type: 3}
+  ennemiAnimatorController: {fileID: 9100000, guid: d70b03d6e094b034c8453fcb499addda,
+    type: 2}
+  nbPointsVictoire: 1
