@@ -9,6 +9,6 @@ public class EnnemiObject : Unite_Objects
     public Sprite ennemiSprite;         //Sprite principale
 
     public RuntimeAnimatorController ennemiAnimatorController;               //Animator Controller de l'ennemi
-    public int nbPointsVictoire;            //Combien de points de victoire donne l'ennemi ?
+    //public int nbPointsVictoire;            //Combien de points de victoire donne l'ennemi ?
 }
 

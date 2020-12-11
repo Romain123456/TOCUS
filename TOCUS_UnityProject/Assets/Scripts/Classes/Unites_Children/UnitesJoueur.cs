@@ -12,7 +12,7 @@ public class UnitesJoueur : Unites
     [HideInInspector] public Unite_Objects.typeInitiative uniteInitiativeBase;              //Initiative de base de l'unité
     [HideInInspector] public Unite_Objects.typeDegats uniteDegatsBase;                      //Degats de base de l'unité
 
-    [HideInInspector] public int victoryPointPerDeath = 1;          //Nombre de points de victoire si l'unité meurt et que le joueur possède le Monument aux morts
+    [HideInInspector] public int victoryPointPerDeath;          //Nombre de points de victoire si l'unité meurt et que le joueur possède le Monument aux morts
 
     //Fonciton Constructeur de la classe unité. Affecteur les valeurs spécifiques aux variables, tag, script de CallBacks, puis désactive l'unité à son instanciation
     public UnitesJoueur(Sprite _maSpriteBase, Vector2 _SizeBoxCollider, Vector2 _ScaleCanvasHealthBar, Vector2 _PositionCanvasHealthBar, string _MonTag)
@@ -36,6 +36,8 @@ public class UnitesJoueur : Unites
             monGO.GetComponent<CallBacksUnitesJoueur>().monUniteJoueur = this;
         }
         monGO.SetActive(false);
+
+        victoryPointPerDeath = JsonParametresGlobaux.ficParamGlobaux.objet_divers.o_divers.i_gain_victoire_monument_aux_morts;
     }
 
 

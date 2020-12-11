@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   batimentNom: Market
   batimentSprite: {fileID: 21300006, guid: 2979f69b46dab40498b062cf4f1149d5, type: 3}
-  batimentPrixBle: 0
-  batimentPrixBois: 1
-  batimentPrixFer: 0
-  batimentPrixPierre: 0
+  batimentPrixBle: 8
+  batimentPrixBois: 2
+  batimentPrixFer: 2
+  batimentPrixPierre: 2
   scaleBatiment: {x: 0.3, y: 0.4, z: 1}
   nombreBatimentMaxParJoueur: 1000

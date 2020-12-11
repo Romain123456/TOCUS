@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 87cff0f03fa2f8a4aafe12b29ef101c4, type: 3}
-  m_Name: MonstresBase
+  m_Name: MonstresCostauds
   m_EditorClassIdentifier: 
-  uniteNom: Montres Base
+  uniteNom: Montres Costauds
   uniteBoxCollSize: {x: 1.5, y: 1.7}
   uniteScale: {x: 0.15, y: 0.15}
   unitePositionCanvas: {x: 0, y: 1}
   uniteScaleCanvas: {x: 0.5, y: 0.5}
-  uniteTypeVitalite: 5
-  uniteTypeInitiative: 3
-  uniteTypeDegats: 4
+  uniteTypeVitalite: 1
+  uniteTypeInitiative: 4
+  uniteTypeDegats: 3
   ennemiSpeedMove: 0.5
   ennemiSprite: {fileID: 7567616685797147661, guid: d82dcb9c77e32bb4599706642ce063e4,
     type: 3}

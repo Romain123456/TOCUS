@@ -136,15 +136,28 @@ public class Tours : MonoBehaviour
     #region Portee
     public void TourMiseEnPlacePortee()
     {
-        if(_TypePortee == "Lointaine")
+        if (_TypePortee == "Absolue")
         {
-            coeffPorteeVisee = 1.0f;
+            coeffPorteeVisee = JsonParametresGlobaux.ficParamGlobaux.objet_tours_valeurs_textuelles_portee.o_tours_valeurs_textuelles_portee.absolue;
+        } else if (_TypePortee == "Tres_Lointaine")
+        {
+            coeffPorteeVisee = JsonParametresGlobaux.ficParamGlobaux.objet_tours_valeurs_textuelles_portee.o_tours_valeurs_textuelles_portee.tres_lointaine;
+        } else if (_TypePortee == "Lointaine")
+        {
+            coeffPorteeVisee = JsonParametresGlobaux.ficParamGlobaux.objet_tours_valeurs_textuelles_portee.o_tours_valeurs_textuelles_portee.lointaine;
         } else if(_TypePortee == "Normale")
         {
-            coeffPorteeVisee = 0.75f;
+            coeffPorteeVisee = JsonParametresGlobaux.ficParamGlobaux.objet_tours_valeurs_textuelles_portee.o_tours_valeurs_textuelles_portee.normale;
         } else if(_TypePortee == "Courte")
         {
-            coeffPorteeVisee = 0.5f;
+            coeffPorteeVisee = JsonParametresGlobaux.ficParamGlobaux.objet_tours_valeurs_textuelles_portee.o_tours_valeurs_textuelles_portee.lointaine;
+        } else if(_TypePortee == "Tres_Courte")
+        {
+            coeffPorteeVisee = JsonParametresGlobaux.ficParamGlobaux.objet_tours_valeurs_textuelles_portee.o_tours_valeurs_textuelles_portee.tres_courte;
+        }
+        else if (_TypePortee == "Contact")
+        {
+            coeffPorteeVisee = JsonParametresGlobaux.ficParamGlobaux.objet_tours_valeurs_textuelles_portee.o_tours_valeurs_textuelles_portee.contact;
         }
     }
 
@@ -266,23 +279,57 @@ public class Tours : MonoBehaviour
     #region Tir
     public void TourCadenceTirInit()
     {
-        if(_TypeCadence.ToString() == "Rapide")
+        if(_TypeCadence.ToString() == "Permanente")
         {
-            cadenceTir = 0.5f;
+            cadenceTir = JsonParametresGlobaux.ficParamGlobaux.objet_tours_valeurs_textuelles_cadence.o_tours_valeurs_textuelles_cadence.permanente;
+        } else if(_TypeCadence.ToString() == "Tres_Rapide")
+        {
+            cadenceTir = JsonParametresGlobaux.ficParamGlobaux.objet_tours_valeurs_textuelles_cadence.o_tours_valeurs_textuelles_cadence.tres_rapide;
+        } else if(_TypeCadence.ToString() == "Rapide")
+        {
+            cadenceTir = JsonParametresGlobaux.ficParamGlobaux.objet_tours_valeurs_textuelles_cadence.o_tours_valeurs_textuelles_cadence.rapide;
+        } else if(_TypeCadence.ToString() == "Normale")
+        {
+            cadenceTir = JsonParametresGlobaux.ficParamGlobaux.objet_tours_valeurs_textuelles_cadence.o_tours_valeurs_textuelles_cadence.normale;
         } else if(_TypeCadence.ToString() == "Lente")
         {
-            cadenceTir = 2.0f;
+            cadenceTir = JsonParametresGlobaux.ficParamGlobaux.objet_tours_valeurs_textuelles_cadence.o_tours_valeurs_textuelles_cadence.lente;
+        } else if(_TypeCadence.ToString() == "Tres_Lente")
+        {
+            cadenceTir = JsonParametresGlobaux.ficParamGlobaux.objet_tours_valeurs_textuelles_cadence.o_tours_valeurs_textuelles_cadence.tres_lente;
         }
 
-        if(_TypePuissance.ToString() == "Faible")
+        if(_TypePuissance.ToString() == "Nulle")
         {
-            puissanceTour = 1;
-        } else if(_TypePuissance.ToString() == "Forte")
+            puissanceTour = JsonParametresGlobaux.ficParamGlobaux.objet_tours_valeurs_textuelles_puissance.o_tours_valeurs_textuelles_puissance.nulle;
+        }
+        else if (_TypePuissance.ToString() == "Tres_Faible")
         {
-            puissanceTour = 3;
-        } else if(_TypePuissance.ToString() == "Importante")
+            puissanceTour = JsonParametresGlobaux.ficParamGlobaux.objet_tours_valeurs_textuelles_puissance.o_tours_valeurs_textuelles_puissance.tres_faible;
+        }
+        else if(_TypePuissance.ToString() == "Faible")
         {
-            puissanceTour = 5;
+            puissanceTour = JsonParametresGlobaux.ficParamGlobaux.objet_tours_valeurs_textuelles_puissance.o_tours_valeurs_textuelles_puissance.faible;
+        }
+        else if (_TypePuissance.ToString() == "Normale")
+        {
+            puissanceTour = JsonParametresGlobaux.ficParamGlobaux.objet_tours_valeurs_textuelles_puissance.o_tours_valeurs_textuelles_puissance.normale;
+        }
+        else if(_TypePuissance.ToString() == "Forte")
+        {
+            puissanceTour = JsonParametresGlobaux.ficParamGlobaux.objet_tours_valeurs_textuelles_puissance.o_tours_valeurs_textuelles_puissance.forte;
+        }
+        else if (_TypePuissance.ToString() == "Tres_Forte")
+        {
+            puissanceTour = JsonParametresGlobaux.ficParamGlobaux.objet_tours_valeurs_textuelles_puissance.o_tours_valeurs_textuelles_puissance.tres_forte;
+        }
+        else if (_TypePuissance.ToString() == "Enorme")
+        {
+            puissanceTour = JsonParametresGlobaux.ficParamGlobaux.objet_tours_valeurs_textuelles_puissance.o_tours_valeurs_textuelles_puissance.enorme;
+        }
+        else if (_TypePuissance.ToString() == "Exponentielle")
+        {
+            puissanceTour = JsonParametresGlobaux.ficParamGlobaux.objet_tours_valeurs_textuelles_puissance.o_tours_valeurs_textuelles_puissance.exponentielle;
         }
     }
 

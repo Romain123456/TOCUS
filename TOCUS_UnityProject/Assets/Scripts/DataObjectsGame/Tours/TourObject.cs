@@ -15,7 +15,7 @@ public class TourObject : ScriptableObject
     public Vector3 positionTour;            //Position de la tour par rapport à l'emplacement
     public Vector3 scaleTour;               //Scale de la tour
 
-    public enum typeVisee { Ligne, CirculaireCentree, Cone };       //Liste des types de Visée
+    public enum typeVisee { Ligne, CirculaireCentree,CirculaireDecentree, Cone,DoubleCone };       //Liste des types de Visée
     public typeVisee tourTypeVisee;             //Type de visée de la tour
 
     //public Vector2 offsetColliderVisee;              //Offset du Collider de la visée de la tour;
@@ -24,13 +24,13 @@ public class TourObject : ScriptableObject
                                                     //Pour Cercle : Size = 1
     //public Sprite viseeSprite;          //Sprite de la visée de la tour (Valable pour visée circulaire et Cone)
 
-    public enum typeCadence { Rapide, Lente };        //Liste des types de cadences de tir
+    public enum typeCadence {Permanente,Tres_Rapide, Rapide,Normale, Lente,Tres_Lente };        //Liste des types de cadences de tir
     public typeCadence tourTypeCadence;             //Type de cadence de tir
 
-    public enum typePuissance { Importante, Forte, Faible};        //Liste des types de puissance
+    public enum typePuissance {Exponentielle,Enorme,Tres_Forte, Forte,Normale, Faible,Tres_Faible,Nulle};        //Liste des types de puissance
     public typePuissance tourTypePuissance;         //Type de puissance
 
 
-    public enum typePortee { Lointaine, Normale, Courte};           //Liste des types de portées
+    public enum typePortee {Absolue,Tres_Lointaine, Lointaine, Normale, Courte,Tres_Courte,Contact};           //Liste des types de portées
     public typePortee tourTypePortee;           //Type de Portée
 }

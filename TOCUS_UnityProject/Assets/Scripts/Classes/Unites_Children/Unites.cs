@@ -122,75 +122,99 @@ public class Unites : MonoBehaviour
     {
         if (uniteVitalite.ToString() == "_1PV")
         {
-            pvMax = 1;
+            pvMax = JsonParametresGlobaux.ficParamGlobaux.objet_unites_monstres_valeurs_textuelles_vitalite.o_unites_monstres_valeurs_textuelles_vitalite._1pv;
+        }
+        else if (uniteVitalite.ToString() == "Tres_Faible")
+        {
+            pvMax = JsonParametresGlobaux.ficParamGlobaux.objet_unites_monstres_valeurs_textuelles_vitalite.o_unites_monstres_valeurs_textuelles_vitalite.tres_faible;
         }
         else if (uniteVitalite.ToString() == "Faible")
         {
-            pvMax = 5;
+            pvMax = JsonParametresGlobaux.ficParamGlobaux.objet_unites_monstres_valeurs_textuelles_vitalite.o_unites_monstres_valeurs_textuelles_vitalite.faible;
         }
         else if (uniteVitalite.ToString() == "Normale")
         {
-            pvMax = 10;
+            pvMax = JsonParametresGlobaux.ficParamGlobaux.objet_unites_monstres_valeurs_textuelles_vitalite.o_unites_monstres_valeurs_textuelles_vitalite.normale;
         }
-        else if (uniteVitalite.ToString() == "Importante")
+        else if (uniteVitalite.ToString() == "Forte")
         {
-            pvMax = 20;
+            pvMax = JsonParametresGlobaux.ficParamGlobaux.objet_unites_monstres_valeurs_textuelles_vitalite.o_unites_monstres_valeurs_textuelles_vitalite.forte;
+        }
+        else if (uniteVitalite.ToString() == "Tres_Forte")
+        {
+            pvMax = JsonParametresGlobaux.ficParamGlobaux.objet_unites_monstres_valeurs_textuelles_vitalite.o_unites_monstres_valeurs_textuelles_vitalite.tres_forte;
         }
         else if (uniteVitalite.ToString() == "Enorme")
         {
-            pvMax = 100;
+            pvMax = JsonParametresGlobaux.ficParamGlobaux.objet_unites_monstres_valeurs_textuelles_vitalite.o_unites_monstres_valeurs_textuelles_vitalite.enorme;
         }
     }
 
     public void AttributionInitiative()
     {
-        if (uniteInitiative.ToString() == "First")
+        if (uniteInitiative.ToString() == "Premier")
         {
-            uniteVitesseInitiative = 5;
+            uniteVitesseInitiative = JsonParametresGlobaux.ficParamGlobaux.objet_unites_monstres_valeurs_textuelles_initiative.o_unites_monstres_valeurs_textuelles_initiative.premier;
+        }
+        else if (uniteInitiative.ToString() == "Tres_Rapide")
+        {
+            uniteVitesseInitiative = JsonParametresGlobaux.ficParamGlobaux.objet_unites_monstres_valeurs_textuelles_initiative.o_unites_monstres_valeurs_textuelles_initiative.tres_rapide;
         }
         else if (uniteInitiative.ToString() == "Rapide")
         {
-            uniteVitesseInitiative = 4;
+            uniteVitesseInitiative = JsonParametresGlobaux.ficParamGlobaux.objet_unites_monstres_valeurs_textuelles_initiative.o_unites_monstres_valeurs_textuelles_initiative.rapide;
         }
         else if (uniteInitiative.ToString() == "Normale")
         {
-            uniteVitesseInitiative = 3;
+            uniteVitesseInitiative = JsonParametresGlobaux.ficParamGlobaux.objet_unites_monstres_valeurs_textuelles_initiative.o_unites_monstres_valeurs_textuelles_initiative.normale;
         }
         else if (uniteInitiative.ToString() == "Lente")
         {
-            uniteVitesseInitiative = 2;
+            uniteVitesseInitiative = JsonParametresGlobaux.ficParamGlobaux.objet_unites_monstres_valeurs_textuelles_initiative.o_unites_monstres_valeurs_textuelles_initiative.lente;
         }
-        else if (uniteInitiative.ToString() == "Last")
+        else if (uniteInitiative.ToString() == "Tres_Lente")
         {
-            uniteVitesseInitiative = 1;
+            uniteVitesseInitiative = JsonParametresGlobaux.ficParamGlobaux.objet_unites_monstres_valeurs_textuelles_initiative.o_unites_monstres_valeurs_textuelles_initiative.tres_lente;
+        }
+        else if (uniteInitiative.ToString() == "Dernier")
+        {
+            uniteVitesseInitiative = JsonParametresGlobaux.ficParamGlobaux.objet_unites_monstres_valeurs_textuelles_initiative.o_unites_monstres_valeurs_textuelles_initiative.dernier;
         }
     }
 
     public void AttributionDegats()
     {
-        if (uniteDegats.ToString() == "Enorme")
+        if (uniteDegats.ToString() == "OneShot")
         {
-            uniteDegatsValue = 10;
+            uniteDegatsValue = JsonParametresGlobaux.ficParamGlobaux.objet_unites_monstres_valeurs_textuelles_degats.o_unites_monstres_valeurs_textuelles_degats.one_shot;
         }
-        else if (uniteDegats.ToString() == "OneShot")
+        else if (uniteDegats.ToString() == "Enormes")
         {
-            uniteDegatsValue = 10000;
+            uniteDegatsValue = JsonParametresGlobaux.ficParamGlobaux.objet_unites_monstres_valeurs_textuelles_degats.o_unites_monstres_valeurs_textuelles_degats.enormes;
         }
-        else if (uniteDegats.ToString() == "Important")
+        else if (uniteDegats.ToString() == "Tres_Forts")
         {
-            uniteDegatsValue = 7;
+            uniteDegatsValue = JsonParametresGlobaux.ficParamGlobaux.objet_unites_monstres_valeurs_textuelles_degats.o_unites_monstres_valeurs_textuelles_degats.tres_forts;
         }
-        else if (uniteDegats.ToString() == "Normal")
+        else if (uniteDegats.ToString() == "Forts")
         {
-            uniteDegatsValue = 5;
+            uniteDegatsValue = JsonParametresGlobaux.ficParamGlobaux.objet_unites_monstres_valeurs_textuelles_degats.o_unites_monstres_valeurs_textuelles_degats.forts;
         }
-        else if (uniteDegats.ToString() == "Faible")
+        else if (uniteDegats.ToString() == "Normaux")
         {
-            uniteDegatsValue = 3;
+            uniteDegatsValue = JsonParametresGlobaux.ficParamGlobaux.objet_unites_monstres_valeurs_textuelles_degats.o_unites_monstres_valeurs_textuelles_degats.normaux;
         }
-        else if (uniteDegats.ToString() == "_1PV")
+        else if (uniteDegats.ToString() == "Faibles")
         {
-            uniteDegatsValue = 1;
+            uniteDegatsValue = JsonParametresGlobaux.ficParamGlobaux.objet_unites_monstres_valeurs_textuelles_degats.o_unites_monstres_valeurs_textuelles_degats.faibles;
+        }
+        else if (uniteDegats.ToString() == "Tres_Faibles")
+        {
+            uniteDegatsValue = JsonParametresGlobaux.ficParamGlobaux.objet_unites_monstres_valeurs_textuelles_degats.o_unites_monstres_valeurs_textuelles_degats.tres_faibles;
+        }
+        else if (uniteDegats.ToString() == "Aucun")
+        {
+            uniteDegatsValue = JsonParametresGlobaux.ficParamGlobaux.objet_unites_monstres_valeurs_textuelles_degats.o_unites_monstres_valeurs_textuelles_degats.aucun;
         }
     }
 

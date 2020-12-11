@@ -30,7 +30,7 @@ public class Chateau : ObjetsGeneralites
         }
 
 
-        _GainSolidarityPoints = 2;
+        _GainSolidarityPoints = JsonParametresGlobaux.ficParamGlobaux.objet_divers.o_divers.i_gain_solidarite_reparation_porte;
         _PvPorteReparer = 25;
     }
 
@@ -60,23 +60,30 @@ public class Chateau : ObjetsGeneralites
     public void Chateau_ReparerPorte()
     {
         //Teste pour savoir si on a les ressources
-        //if(levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[])
-
-        //Répare un peu la porte
-        levelManager._PorteVille.pv += _PvPorteReparer;
-        if(levelManager._PorteVille.pv>= levelManager._PorteVille.pvMax)
+        if (levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[0] >= JsonParametresGlobaux.ficParamGlobaux.objet_divers.o_divers.arr_cout_reparation_porte[0] &&
+            levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[1] >= JsonParametresGlobaux.ficParamGlobaux.objet_divers.o_divers.arr_cout_reparation_porte[1] &&
+            levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[2] >= JsonParametresGlobaux.ficParamGlobaux.objet_divers.o_divers.arr_cout_reparation_porte[2] &&
+            levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[3] >= JsonParametresGlobaux.ficParamGlobaux.objet_divers.o_divers.arr_cout_reparation_porte[3])
         {
-            levelManager._PorteVille.pv = levelManager._PorteVille.pvMax;
+            //Répare un peu la porte
+            levelManager._PorteVille.pv += _PvPorteReparer;
+            if (levelManager._PorteVille.pv >= levelManager._PorteVille.pvMax)
+            {
+                levelManager._PorteVille.pv = levelManager._PorteVille.pvMax;
+            }
+            levelManager._PorteVille.FillAmountHealthBarImage();
+
+            //Gagner points de solidarité
+            levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._SolidarityPoints += _GainSolidarityPoints;
+            levelManager.tableauJoueurs[levelManager._JoueurActif - 1].AffichePointVictoireSolidarite(levelManager.tableauJoueurs[levelManager._JoueurActif - 1].solidarityPointText, levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._SolidarityPoints);
+
+            levelManager.panelParentBatimentInterract.gameObject.SetActive(false);                      //Ferme le panel
+                                                                                                        //Changer le tour de jeu
+            ChangeJoueurActif();
+        } else
+        {
+            levelManager.PopUpsFonction("Pas assez de ressources !!", levelManager.textPopUps);
         }
-        levelManager._PorteVille.FillAmountHealthBarImage();
-
-        //Gagner points de solidarité
-        levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._SolidarityPoints += _GainSolidarityPoints;
-        levelManager.tableauJoueurs[levelManager._JoueurActif - 1].AffichePointVictoireSolidarite(levelManager.tableauJoueurs[levelManager._JoueurActif - 1].solidarityPointText, levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._SolidarityPoints);
-
-        levelManager.panelParentBatimentInterract.gameObject.SetActive(false);                      //Ferme le panel
-        //Changer le tour de jeu
-        ChangeJoueurActif();
 
 
     }

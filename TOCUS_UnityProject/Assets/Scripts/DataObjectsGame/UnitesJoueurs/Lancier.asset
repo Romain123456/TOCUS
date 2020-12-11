@@ -10,21 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 46ac842a16976464b9e094bc8e593130, type: 3}
-  m_Name: Soldat
+  m_Name: Lancier
   m_EditorClassIdentifier: 
-  uniteNom: Soldat
+  uniteNom: Lancier
   uniteBoxCollSize: {x: 1.5, y: 1.7}
   uniteScale: {x: 0.2, y: 0.2}
   unitePositionCanvas: {x: 0, y: 1}
   uniteScaleCanvas: {x: 0.5, y: 0.5}
-  uniteTypeVitalite: 3
-  uniteTypeInitiative: 3
-  uniteTypeDegats: 4
+  uniteTypeVitalite: 4
+  uniteTypeInitiative: 2
+  uniteTypeDegats: 5
   uniteSpriteBase:
-  - {fileID: -947651009046627900, guid: 8bb029e9cc0f2a54bb7610fed9bb3f0b, type: 3}
-  - {fileID: 6671027429105906956, guid: bb2adfffc00e3374997be38c5fcfd7e8, type: 3}
+  - {fileID: -6522286443276129565, guid: a631b0adedc70b447a6942147f840315, type: 3}
+  - {fileID: 58927763964944925, guid: 586c657afd0850743bcdd5fca23d3d56, type: 3}
   unitePrixBle: 1
-  uniteListeOrdre: 0
+  uniteListeOrdre: 1
   uniteAnimatorController:
-  - {fileID: 9100000, guid: 80058aa663c6e83468d233c836019b98, type: 2}
-  - {fileID: 9100000, guid: 8b05b07f6955a1e4498381603ddbffe2, type: 2}
+  - {fileID: 9100000, guid: 51791f6d0e4ac9e4aaf9f978d81b1003, type: 2}
+  - {fileID: 9100000, guid: 3e2a87ca7bf752d4d8eb88aee534c617, type: 2}

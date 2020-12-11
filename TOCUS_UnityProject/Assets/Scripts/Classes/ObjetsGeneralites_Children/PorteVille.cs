@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class PorteVille : ObjetsGeneralites
 {
     //Variables portes
-    public float pvMax = 100;          //PvMax de la porte
+    public float pvMax;          //PvMax de la porte
     public float pv;                    //Pv en cours de la porte
 
     [HideInInspector] public Image healthBarImage;              //Image de la barre de vie évolutive de la porte
@@ -24,6 +24,7 @@ public class PorteVille : ObjetsGeneralites
         Destroy(batimentConstruit);
         Destroy(spritesUnitesFiles);
 
+        pvMax = (float)JsonParametresGlobaux.ficParamGlobaux.objet_divers.o_divers.i_vitalite_porte;
         pv = pvMax;
         healthBarMax_GO.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 0.6f);
         healthBarMax_GO.GetComponent<RectTransform>().localScale = new Vector3(0.2f, 0.2f, 1);

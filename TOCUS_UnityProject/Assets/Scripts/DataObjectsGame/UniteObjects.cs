@@ -14,13 +14,13 @@ public class Unite_Objects : ScriptableObject
 
 
     //Caractéristiques
-    public enum typeVitalite { Enorme, Importante, Normale, Faible, _1PV };       //Liste des types de vitalité
+    public enum typeVitalite { Enorme,Tres_Forte, Forte, Normale, Faible, Tres_Faible, _1PV };       //Liste des types de vitalité
     public typeVitalite uniteTypeVitalite;      //Type de vitalité de l'unité
 
-    public enum typeInitiative { First, Rapide, Normale, Lente, Last };       //Liste des types d'Initiative
+    public enum typeInitiative { Premier,Tres_Rapide, Rapide, Normale, Lente, Tres_Lente, Dernier };       //Liste des types d'Initiative
     public typeInitiative uniteTypeInitiative;              //Type de l'initiative de l'unité
 
-    public enum typeDegats { Enorme, OneShot, Important, Normal, Faible, _1PV };       //Liste des types de dégats
+    public enum typeDegats { OneShot, Enormes,Tres_Forts, Forts, Normaux, Faibles, Tres_Faibles, Aucun };       //Liste des types de dégats
     public typeDegats uniteTypeDegats;          //Type de dégats de l'unité
 }
 
