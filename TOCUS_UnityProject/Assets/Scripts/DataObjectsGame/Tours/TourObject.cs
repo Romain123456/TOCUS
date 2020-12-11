@@ -15,7 +15,7 @@ public class TourObject : ScriptableObject
     public Vector3 positionTour;            //Position de la tour par rapport à l'emplacement
     public Vector3 scaleTour;               //Scale de la tour
 
-    public enum typeVisee { Ligne, CirculaireCentree,CirculaireDecentree, Cone,DoubleCone };       //Liste des types de Visée
+    public enum typeVisee { Ligne, Circulaire, Cone,DoubleCone };       //Liste des types de Visée
     public typeVisee tourTypeVisee;             //Type de visée de la tour
 
     //public Vector2 offsetColliderVisee;              //Offset du Collider de la visée de la tour;
@@ -33,4 +33,10 @@ public class TourObject : ScriptableObject
 
     public enum typePortee {Absolue,Tres_Lointaine, Lointaine, Normale, Courte,Tres_Courte,Contact};           //Liste des types de portées
     public typePortee tourTypePortee;           //Type de Portée
+
+    public enum typeDureeDegats { Ponctuelle,Courte,Longue,Tres_Longue,Permanente};     //Liste des types de durées de dégâts
+    public typeDureeDegats tourTypeDureeDegats;     //Type de durée de dégats
+
+    public enum typeLargeurVisee { Grande,Normale,Petite};      //Liste des types de largeur de visée
+    public typeLargeurVisee tourTypeLargeurVisee;           //Type de largeur de visée
 }

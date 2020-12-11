@@ -38,6 +38,8 @@ public class Unites : MonoBehaviour
     public int uniteVitesseInitiative;              //Int pour traduire l'initiative de l'unité
     public Unite_Objects.typeDegats uniteDegats;                      //Type de valeur de dégats de l'unité
     public float uniteDegatsValue;                  //Float de valeur de dégats de l'unité
+    public Unite_Objects.typeArmure uniteArmure;    //Type de valeur d'armure
+    public float uniteArmureValue;                  //Float de la valeur d'armure
     public Vector2 scaleUnite;                      //Echelle de l'unité
     public string nomUnite;                         //Nom de l'unité
     public float speedMove;                         //Vitesse de déplacement de l'unité
@@ -218,6 +220,33 @@ public class Unites : MonoBehaviour
         }
     }
 
+    //Attribution type armure
+    public void AttributionArmure()
+    {
+        if(uniteArmure.ToString() == "Aucune")
+        {
+            uniteArmureValue = JsonParametresGlobaux.ficParamGlobaux.objet_unites_monstres_valeurs_textuelles_armure.o_unites_monstres_valeurs_textuelles_armure.aucune;
+        } else if(uniteArmure.ToString() == "Tres_Faible")
+        {
+            uniteArmureValue = JsonParametresGlobaux.ficParamGlobaux.objet_unites_monstres_valeurs_textuelles_armure.o_unites_monstres_valeurs_textuelles_armure.tres_faible;
+        } else if(uniteArmure.ToString() == "Faible")
+        {
+            uniteArmureValue = JsonParametresGlobaux.ficParamGlobaux.objet_unites_monstres_valeurs_textuelles_armure.o_unites_monstres_valeurs_textuelles_armure.faible;
+        } else if(uniteArmure.ToString() == "Normale")
+        {
+            uniteArmureValue = JsonParametresGlobaux.ficParamGlobaux.objet_unites_monstres_valeurs_textuelles_armure.o_unites_monstres_valeurs_textuelles_armure.normale;
+        } else if(uniteArmure.ToString() == "Forte")
+        {
+            uniteArmureValue = JsonParametresGlobaux.ficParamGlobaux.objet_unites_monstres_valeurs_textuelles_armure.o_unites_monstres_valeurs_textuelles_armure.forte;
+        } else if(uniteArmure.ToString() == "Tres_Forte")
+        {
+            uniteArmureValue = JsonParametresGlobaux.ficParamGlobaux.objet_unites_monstres_valeurs_textuelles_armure.o_unites_monstres_valeurs_textuelles_armure.tres_forte;
+        } else if(uniteArmure.ToString() == "Enorme")
+        {
+            uniteArmureValue = JsonParametresGlobaux.ficParamGlobaux.objet_unites_monstres_valeurs_textuelles_armure.o_unites_monstres_valeurs_textuelles_armure.enorme;
+        }
+    }
+
     public void AttributionCaracteristiques()
     {
         //PV
@@ -228,6 +257,9 @@ public class Unites : MonoBehaviour
 
         //Dégats
         AttributionDegats();
+
+        //Armure
+        AttributionArmure();
     }
 
 
@@ -266,21 +298,30 @@ public class Unites : MonoBehaviour
     }
 
     //Attaque : Mise à jour PV et affichage
-    public void AttaquePV_MaJ(float _Degats)        //Cas (Super)UnitéJoueur vs Ennemi
+    public void AttaquePV_MaJ(float _Degats,float _Armure)        //Cas (Super)UnitéJoueur vs Ennemi
     {
-        pv -= _Degats;
+        if (_Degats > _Armure)
+        {
+            pv = pv - (_Degats - _Armure);
+        }
         HealthBar_MaJ();
     }
 
-    public void AttaquePV_MaJ(float _Degats, CallBacksUnitesJoueur monJoueur)      //Cas Ennemi vs Unité Joueur
+    public void AttaquePV_MaJ(float _Degats,float _Armure , CallBacksUnitesJoueur monJoueur)      //Cas Ennemi vs Unité Joueur
     {
-        monJoueur.monUniteJoueur.pv -= _Degats;
+        if (_Degats > _Armure)
+        {
+            monJoueur.monUniteJoueur.pv = monJoueur.monUniteJoueur.pv - (_Degats - _Armure);
+        }
         monJoueur.monUniteJoueur.HealthBar_MaJ();
     }
 
-    public void AttaquePV_MaJ(float _Degats, CallBacksSuperUnitesJoueur monJoueur)      //Cas Ennemi vs SuperUnité Joueur
+    public void AttaquePV_MaJ(float _Degats, float _Armure, CallBacksSuperUnitesJoueur monJoueur)      //Cas Ennemi vs SuperUnité Joueur
     {
-        monJoueur.maSuperUniteJoueur.pv -= _Degats;
+        if (_Degats > _Armure)
+        {
+            monJoueur.maSuperUniteJoueur.pv = monJoueur.maSuperUniteJoueur.pv - (_Degats - _Armure);
+        }
         monJoueur.maSuperUniteJoueur.HealthBar_MaJ();
     }
 

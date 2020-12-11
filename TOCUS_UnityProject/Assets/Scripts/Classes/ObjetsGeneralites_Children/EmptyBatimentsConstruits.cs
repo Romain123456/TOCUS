@@ -130,6 +130,8 @@ public class EmptyBatimentsConstruits : ObjetsGeneralites
         nouvelleTourConstruite._TypePuissance = batimentGestion.tourConstruite.tourTypePuissance;    //Puissance affectée à la tour
         nouvelleTourConstruite._TypePortee = batimentGestion.tourConstruite.tourTypePortee.ToString();
         nouvelleTourConstruite.joueurOwner = levelManager._JoueurActif - 1;
+        nouvelleTourConstruite._DureeDegats = batimentGestion.tourConstruite.tourTypeDureeDegats;
+        nouvelleTourConstruite._LargeurViseeTir = batimentGestion.tourConstruite.tourTypeLargeurVisee;
 
         if (levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._HasEcoleDeMagie)
         {
@@ -240,6 +242,13 @@ public class EmptyBatimentsConstruits : ObjetsGeneralites
         //Fonction du batiment construit
         batimentGestion.levelManager.AttributeFonctionBatiment(batimentConstruit.transform.GetChild(0).GetChild(0).GetComponent<Button>());
 
+
+        //Si le batiment est public, on ajoute des points de solidarité
+        if (batimentGestion.batimentBuild.isBatimentPublic)
+        {
+            levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._SolidarityPoints += JsonParametresGlobaux.ficParamGlobaux.objet_divers.o_divers.i_gain_solidarite_par_batiment_public;
+            levelManager.tableauJoueurs[levelManager._JoueurActif - 1].AffichePointVictoireSolidarite(levelManager.tableauJoueurs[levelManager._JoueurActif - 1].solidarityPointText, levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._SolidarityPoints);
+        }
 
         //Paiment des ressources
         levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[0] -= batimentGestion.batimentBuild.batimentPrixBle;

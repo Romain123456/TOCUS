@@ -16,4 +16,6 @@ public class BatimentObject : ScriptableObject
     public Vector3 scaleBatiment;       //Scale du batiment
 
     public int nombreBatimentMaxParJoueur;          //Combien de bâtiments maximum le joueur peut construire ?
+
+    public bool isBatimentPublic;                   //Est-ce que le bâtiment est public ou privé ?
 }

@@ -13,23 +13,28 @@ public class ViseurTours_Collision : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Ennemi" && parentTourScript.tourTarget == null)
+        if(collision.tag == "Ennemi" && !parentTourScript.tirLaunch)
         {
             parentTourScript.tourTarget = collision.transform;
+            StartCoroutine(parentTourScript.TourTirOnTriggerCooldown(parentTourScript.cadenceTir));
         }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.tag == "Ennemi" && parentTourScript.tourTarget == null)
+        if (collision.tag == "Ennemi")
         {
             parentTourScript.tourTarget = collision.transform;
+            if (!parentTourScript.tirLaunch && !parentTourScript.tirLaunch)
+            {
+                StartCoroutine(parentTourScript.TourTirOnTriggerCooldown(parentTourScript.cadenceTir));
+            }
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if(collision.tag == "Ennemi" && parentTourScript.tourTarget != null)
+        if(collision.tag == "Ennemi")
         {
             parentTourScript.tourTarget = null;
         }

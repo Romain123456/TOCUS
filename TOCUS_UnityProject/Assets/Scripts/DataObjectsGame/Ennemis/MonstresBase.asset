@@ -20,6 +20,7 @@ MonoBehaviour:
   uniteTypeVitalite: 5
   uniteTypeInitiative: 3
   uniteTypeDegats: 4
+  uniteTypeArmure: 3
   ennemiSpeedMove: 0.5
   ennemiSprite: {fileID: 7567616685797147661, guid: d82dcb9c77e32bb4599706642ce063e4,
     type: 3}

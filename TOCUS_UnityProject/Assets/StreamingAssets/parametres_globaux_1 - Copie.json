@@ -1,8 +1,6 @@
 {
 	"o_divers":
 	{
-	//Manque PV réparation porte
-		"i_gain_solidarite_par_batiment_public":4,
 	},
 
 	"o_cout_achat_tours_selon_nombre":
@@ -42,20 +40,9 @@
 		"arr_cout_grue":				[0,4,6,0]
 	},
 
-
-	"o_tours_valeurs_textuelles_duree_degats":
-	{
-		"ponctuelle":0,
-		"courte":2,
-		"longue":5,
-		"tres_longue":8,
-		"permanente":1000
-	},
-
 	"o_tours_sniper":
 	{
 		"s_impact":"individuel",
-		"s_duree_degats":"ponctuelle",
 		"arr_ameliorations":
 		[
 			 "portee","circulaire_centree", "portee",
@@ -66,7 +53,6 @@
 	"o_tours_mitraillette":
 	{
 		"s_impact":"individuel",
-		"s_duree_degats":"ponctuelle",
 		"arr_ameliorations":
 		[
 			"portee", "cadence", "puissance",
@@ -77,7 +63,6 @@
 	"o_tours_shotgun":
 	{
 		"s_impact":"double",
-		"s_duree_degats":"ponctuelle",
 		"arr_ameliorations":
 		[
 			"portee", "double_cone", "puissance",
@@ -88,7 +73,6 @@
 	"o_tours_canon":
 	{
 		"s_impact":"zone",
-		"s_duree_degats":"ponctuelle",
 		"arr_ameliorations":
 		[
 			"impact", "impact_zone", "cadence",
@@ -99,7 +83,6 @@
 	"o_tours_poison":
 	{
 		"s_impact":"individuel",
-		"s_duree_degats":"permanente",
 		"arr_ameliorations":
 		[
 			"puissance", "cadence", "puissance",
@@ -110,7 +93,6 @@
 	"o_tours_feu":
 	{
 		"s_impact":"traversant",
-		"s_duree_degats":"courte",
 		"arr_ameliorations":
 		[
 			"portee", "traversant_temporaire_large", "puissance",
@@ -121,7 +103,6 @@
 	"o_tours_electrique":
 	{
 		"s_impact":"rebondissant",
-		"s_duree_degats":"ponctuelle",
 		"arr_ameliorations":
 		[
 			"impact_rebondissant", "impact_rebondissant", "portee",
@@ -132,7 +113,6 @@
 	"o_tours_laser":
 	{
 		"s_impact":"individuel",
-		"s_duree_degats":"ponctuelle",
 		"arr_ameliorations":
 		[
 			"exponentielle", "portee", "exponentielle",
@@ -143,27 +123,12 @@
 	"o_tours_tromblon":
 	{
 		"s_impact":"triple",
-		"s_duree_degats":"ponctuelle",
 		"arr_ameliorations":
 		[
 			"double_cone", "cadence", "quadruple",
 			"quadruple", "puissance", "quintuple"
 		]
 	},
-
-
-
-	"o_unites_monstres_valeurs_textuelles_armure":
-	{
-		"aucune":0,
-		"tres_faible":0,
-		"faible":1,
-		"normale":2,
-		"forte":3,
-		"tres_forte":5,
-		"enorme":20
-	},
-
 
 
 	"o_unites_monstres_valeurs_textuelles_portee":
@@ -178,67 +143,56 @@
 
 	"o_unites_soldat":
 	{
-		"s_armure":"normale",
 		"s_portee":"courte"
 	},
 
 	"o_unites_chevalier":
 	{
-		"s_armure":"forte",
 		"s_portee":"courte"
 	},
 
 	"o_unites_assassin":
 	{
-		"s_armure":"aucune",
 		"s_portee":"courte"
 	},
 
 	"o_unites_bagarreur":
 	{
-		"s_armure":"faible",
 		"s_portee":"courte"
 	},
 
 	"o_unites_barbare":
 	{
-		"s_armure":"faible",
 		"s_portee":"courte"
 	},
 
 	"o_unites_lancier":
 	{
-		"s_armure":"normale",
 		"s_portee":"longue_traversante"
 	},
 
 	"o_unites_archer":
 	{
-		"s_armure":"faible",
 		"s_portee":"tres_longue"
 	},
 
 	"o_unites_mage":
 	{
-		"s_armure":"tres_faible",
 		"s_portee":"lointaine"
 	},
 
 	"o_monstres_basique":
 	{
-		"s_armure":"normale",
 		"s_portee":"courte"
 	},
 
 	"o_monstres_costaud":
 	{
-		"s_armure":"tres_faible",
 		"s_portee":"courte"
 	},
 
 	"o_monstres_boxeur":
 	{
-		"s_armure":"faible",
 		"s_portee":"courte"
 	},
 
