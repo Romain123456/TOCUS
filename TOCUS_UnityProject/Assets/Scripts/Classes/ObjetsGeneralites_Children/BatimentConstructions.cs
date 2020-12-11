@@ -21,6 +21,9 @@ public class BatimentConstructions : ObjetsGeneralites
     //Nombre de boutons à activer au démarrage du jeu
     [HideInInspector] public int nbBoutonInterractionsPossible;
 
+    //Est-ce que le bâtiment est public ?
+    [HideInInspector] public bool isBatimentPublic;     
+
 
     //Propre à la Caserne       //Sprite des unités en attente
     [HideInInspector] public int nbUniteRecrutable;

@@ -24,6 +24,8 @@ public class Tours : MonoBehaviour
     [HideInInspector] public Sprite viseeSprite;
     #endregion
 
+
+
     #region Tir
     private float countTir;
     public float cadenceTir;
@@ -34,10 +36,23 @@ public class Tours : MonoBehaviour
     public float puissanceTour;
 
     [HideInInspector] public float speedTir = 10f;
+
+    [HideInInspector] public bool tirLaunch;
     #endregion
 
     #region Rotation Tour
 
+    #endregion
+
+
+    #region Durée Dégâts
+    public string _DureeDegats;
+    public float tempsDureeDegats;
+    #endregion
+
+    #region Largeur visée tir
+    public string _LargeurViseeTir;
+    public float tailleViseur;
     #endregion
 
 
@@ -54,8 +69,10 @@ public class Tours : MonoBehaviour
 
         //SpriteVisee();
         CreationEmptyVisee();
+        TourMiseEnPlaceLargeurTailleVisee();
         TourMiseEnPlacePortee();
         TourMiseEnPlaceVisee();
+        TourMiseEnPlaceDureeDegats();
         TourCadenceTirInit();
         InstantiationMunitions();
 
@@ -69,11 +86,49 @@ public class Tours : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        TourTirOnTrigger(cadenceTir);
         PutRotationTour();
     }
 
 
+    #region Durée Dégâts
+    //Durée des dégats 
+    public void TourMiseEnPlaceDureeDegats()
+    {
+
+        if(_DureeDegats == "Ponctuelle")
+        {
+            tempsDureeDegats = JsonParametresGlobaux.ficParamGlobaux.objet_tours_valeurs_textuelles_duree_degats.o_tours_valeurs_textuelles_duree_degats.ponctuelle;
+        } else if(_DureeDegats == "Courte")
+        {
+            tempsDureeDegats = JsonParametresGlobaux.ficParamGlobaux.objet_tours_valeurs_textuelles_duree_degats.o_tours_valeurs_textuelles_duree_degats.courte;
+        } else if(_DureeDegats == "Longue")
+        {
+            tempsDureeDegats = JsonParametresGlobaux.ficParamGlobaux.objet_tours_valeurs_textuelles_duree_degats.o_tours_valeurs_textuelles_duree_degats.longue;
+        } else if(_DureeDegats == "Tres_Longue")
+        {
+            tempsDureeDegats = JsonParametresGlobaux.ficParamGlobaux.objet_tours_valeurs_textuelles_duree_degats.o_tours_valeurs_textuelles_duree_degats.tres_longue;
+        } else if(_DureeDegats == "Permanente")
+        {
+            tempsDureeDegats = JsonParametresGlobaux.ficParamGlobaux.objet_tours_valeurs_textuelles_duree_degats.o_tours_valeurs_textuelles_duree_degats.permanente;
+        }
+    }
+    #endregion
+
+    #region Largeur visée tir
+    public void TourMiseEnPlaceLargeurTailleVisee()
+    {
+        if(_LargeurViseeTir == "Petite")
+        {
+            tailleViseur = JsonParametresGlobaux.ficParamGlobaux.objet_tours_valeurs_textuelles_largeur_visee.o_tours_valeurs_textuelles_largeur_visee.petite;
+        } else if(_LargeurViseeTir == "Normale")
+        {
+            tailleViseur = JsonParametresGlobaux.ficParamGlobaux.objet_tours_valeurs_textuelles_largeur_visee.o_tours_valeurs_textuelles_largeur_visee.normale;
+        } else if(_LargeurViseeTir == "Grande")
+        {
+            tailleViseur = JsonParametresGlobaux.ficParamGlobaux.objet_tours_valeurs_textuelles_largeur_visee.o_tours_valeurs_textuelles_largeur_visee.grande;
+        }
+    }
+    #endregion
 
     //Fonctions de la mise en place de la tour
     #region Instantiation Munitions
@@ -93,21 +148,6 @@ public class Tours : MonoBehaviour
 
     #endregion
 
-
-
-    /*void SpriteVisee()
-    {
-        if(_FormeVisee == "Ligne")
-        {
-            
-        } else if(_FormeVisee == "CirculaireCentree")
-        {
-            viseeSprite = scriptManager.repertoireSprites.tourCirculaireVisee;
-        } else if(_FormeVisee == "Cone")
-        {
-            viseeSprite = scriptManager.repertoireSprites.tourConeVisee;
-        }
-    }*/
 
 
     #region Creation Empty Visee
@@ -180,22 +220,23 @@ public class Tours : MonoBehaviour
             ViseeLigneBoxColliderParametrisation(maBoxCollider);              //Paramétrisation de la BoxCollider
             ViseeLigneLineRendererParametrisation(maBoxCollider);
 
-            viseurTour.transform.localScale = new Vector3(coeffPorteeVisee, 1, 1);
+            viseurTour.transform.localPosition = new Vector3(0, -tailleViseur, 0);
+            viseurTour.transform.localScale = new Vector3(coeffPorteeVisee, tailleViseur, 1);
             //Mettre les valeurs des paramètres pour la ligne
         }
-        else if(_FormeVisee == "CirculaireCentree")
+        else if(_FormeVisee == "Circulaire")
         {
             viseurTour.gameObject.AddComponent<CircleCollider2D>();     //Ajout du CircleCollider
             CircleCollider2D monCircleCollider = viseurTour.GetComponent<CircleCollider2D>();       //Variable pour avoir le CircleCollider
             viseurTour.gameObject.AddComponent<SpriteRenderer>();       //Ajout du SpriteRenderer
             SpriteRenderer monSpriteRenderer = viseurTour.GetComponent<SpriteRenderer>();   //Variable du SpriteRenderer            
-            offsetColliderVisee = new Vector2(5, -2);
+            //offsetColliderVisee = new Vector2(5, -2);
             sizesColliderVisee = new Vector2[1];
-            sizesColliderVisee[0] = new Vector2(2, 2);
+            sizesColliderVisee[0] = new Vector2(tailleViseur, tailleViseur);                      //Taille de la portée
             ViseeCirculaireSpriteParametrisation(monSpriteRenderer);            //Param du SpriteRenderer
             ViseeCirculaireColliderParametrisation(monCircleCollider);      //Param du Collider
 
-            viseurTour.transform.localPosition = new Vector3(6*coeffPorteeVisee, 0, 0);
+            viseurTour.transform.localPosition = new Vector3(coeffPorteeVisee, 0, 0);
         }
         else if(_FormeVisee == "Cone")
         {
@@ -204,8 +245,8 @@ public class Tours : MonoBehaviour
             ViseeConeColliderParametrisation(monPolygonCollider);
             viseurTour.gameObject.AddComponent<LineRenderer>();
             LineRenderer viseurRender = viseurTour.GetComponent<LineRenderer>();
+            viseurTour.transform.localScale = new Vector3(coeffPorteeVisee, tailleViseur, 1);
             ViseeConeSpriteParametrisation(viseurRender);
-            viseurTour.transform.localScale = new Vector3(coeffPorteeVisee, 1, 1);
         }
 
     }
@@ -264,7 +305,7 @@ public class Tours : MonoBehaviour
     void ViseeConeSpriteParametrisation(LineRenderer _monSpriteRenderer)
     {
         _monSpriteRenderer.useWorldSpace = false;
-        _monSpriteRenderer.widthCurve = AnimationCurve.Linear(0, 0, 1, 1);
+        _monSpriteRenderer.widthCurve = AnimationCurve.Linear(0, 0, 1, tailleViseur);
         Vector3[] lineViseur = new Vector3[2];
         lineViseur[0] = new Vector3(0, 0, 0);
         lineViseur[1] = new Vector3(10, 0, 0);
@@ -333,17 +374,23 @@ public class Tours : MonoBehaviour
         }
     }
 
-    void TourTirOnTrigger(float _CadenceTir)
+
+
+    public IEnumerator TourTirOnTriggerCooldown(float _CadenceTir)
     {
-        if(tourTarget != null)
+        TirTourPooling();
+        float tempsCoolDown = _CadenceTir;
+        tirLaunch = true;
+        while (tempsCoolDown > 0)
         {
-            countTir += FonctionsVariablesUtiles.deltaTime;
-            if(countTir >= cadenceTir)
+            tempsCoolDown -= FonctionsVariablesUtiles.deltaTime;
+            yield return new WaitForSeconds(FonctionsVariablesUtiles.deltaTime);
+            if(tempsCoolDown <= 0)
             {
-                countTir = 0;
-                TirTourPooling();
+                break;
             }
         }
+        tirLaunch = false;
     }
     
     void TirTourPooling()
@@ -353,22 +400,13 @@ public class Tours : MonoBehaviour
             if (!munitionList[ii].activeInHierarchy)
             {
                 munitionList[ii].SetActive(true);
-                //StartCoroutine(DesactivationMunition(munitionList[ii], cadenceTir * 2));
                 StartCoroutine(TirMunition(munitionList[ii], tourTarget,2.0f));
                 break;
             }
         }
     }
 
-    IEnumerator DesactivationMunition(GameObject _MaMunition,float _TpsVieMunition)
-    {
-        yield return new WaitForSeconds(_TpsVieMunition);
-        _MaMunition.SetActive(false);
-        _MaMunition.transform.localPosition = Vector3.zero;
-    }
-    
-
-
+ 
     public IEnumerator TirMunition(GameObject _MaMunition,Transform _TargetTir,float _Amplitude)
     {
         Vector3 directionTir = _TargetTir.position - _MaMunition.transform.position;
@@ -384,17 +422,10 @@ public class Tours : MonoBehaviour
             if (nbTir < nbStepTir / 2)
             {
                 //Phase montée
-                //Debug.Log("Phase 1, "+nbTir);
                 newPosY += dy1;
-            } else if(nbTir == nbStepTir / 2)
-            {
-                //Phase plane
-                //Debug.Log("Phase 2, " + nbTir);
-                newPosY = newPosY;
             } else if(nbTir > nbStepTir/2 && nbTir <= nbStepTir)
             {
                 //Phase descente
-                //Debug.Log("Phase 3, " + nbTir);
                 newPosY -= dy2;
             }
             _MaMunition.transform.position = new Vector3(_MaMunition.transform.position.x + dx, newPosY, _MaMunition.transform.position.z);

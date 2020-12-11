@@ -52,6 +52,7 @@ public class RepertoireDesSprites : MonoBehaviour
             ennemiData[ii].uniteTypeVitalite = listeEnnemiObject[ii].uniteTypeVitalite;
             ennemiData[ii].uniteTypeInitiative = listeEnnemiObject[ii].uniteTypeInitiative;
             ennemiData[ii].uniteTypeDegats = listeEnnemiObject[ii].uniteTypeDegats;
+            ennemiData[ii].uniteTypeArmure = listeEnnemiObject[ii].uniteTypeArmure;
             ennemiData[ii].ennemiSpeedMove = listeEnnemiObject[ii].ennemiSpeedMove;
             ennemiData[ii].ennemiSprite = listeEnnemiObject[ii].ennemiSprite;
             ennemiData[ii].ennemiAnimatorController = listeEnnemiObject[ii].ennemiAnimatorController;
@@ -102,6 +103,7 @@ public class RepertoireDesSprites : MonoBehaviour
             unitesJoueurData[ii].uniteTypeVitalite = listeUniteJoueurObject[ii].uniteTypeVitalite;
             unitesJoueurData[ii].uniteTypeInitiative = listeUniteJoueurObject[ii].uniteTypeInitiative;
             unitesJoueurData[ii].uniteTypeDegats = listeUniteJoueurObject[ii].uniteTypeDegats;
+            unitesJoueurData[ii].uniteTypeArmure = listeUniteJoueurObject[ii].uniteTypeArmure;
             unitesJoueurData[ii].uniteSpriteBase = listeUniteJoueurObject[ii].uniteSpriteBase;
             unitesJoueurData[ii].unitePrixBle = listeUniteJoueurObject[ii].unitePrixBle;
 
@@ -138,6 +140,7 @@ public class RepertoireDesSprites : MonoBehaviour
                 unitesSpecialesData[ii].uniteTypeVitalite = listeUniteSpecialesObject[ii].uniteTypeVitalite;
                 unitesSpecialesData[ii].uniteTypeInitiative = listeUniteSpecialesObject[ii].uniteTypeInitiative;
                 unitesSpecialesData[ii].uniteTypeDegats = listeUniteSpecialesObject[ii].uniteTypeDegats;
+                unitesSpecialesData[ii].uniteTypeArmure = listeUniteSpecialesObject[ii].uniteTypeArmure;
                 unitesSpecialesData[ii].uniteSpriteBase = listeUniteSpecialesObject[ii].uniteSpriteBase;
                 unitesSpecialesData[ii].unitePrixBle = listeUniteSpecialesObject[ii].unitePrixBle;
 
@@ -176,6 +179,7 @@ public class RepertoireDesSprites : MonoBehaviour
             superUnitesJoueurData[ii].uniteTypeVitalite = listeSuperUniteJoueurObject[ii].uniteTypeVitalite;
             superUnitesJoueurData[ii].uniteTypeInitiative = listeSuperUniteJoueurObject[ii].uniteTypeInitiative;
             superUnitesJoueurData[ii].uniteTypeDegats = listeSuperUniteJoueurObject[ii].uniteTypeDegats;
+            superUnitesJoueurData[ii].uniteTypeArmure = listeSuperUniteJoueurObject[ii].uniteTypeArmure;
             superUnitesJoueurData[ii].uniteSpriteBase = listeSuperUniteJoueurObject[ii].uniteSpriteBase;
             superUnitesJoueurData[ii].unitePrixBle = listeSuperUniteJoueurObject[ii].unitePrixBle;
             superUnitesJoueurData[ii].unitePrixFer = listeSuperUniteJoueurObject[ii].unitePrixFer;
@@ -235,6 +239,8 @@ public class RepertoireDesSprites : MonoBehaviour
             toursData[ii].tourTypeCadence = listeToursObject[listToursHasard[ii]].tourTypeCadence;
             toursData[ii].tourTypePuissance = listeToursObject[listToursHasard[ii]].tourTypePuissance;
             toursData[ii].tourTypePortee = listeToursObject[listToursHasard[ii]].tourTypePortee.ToString();
+            toursData[ii].tourTypeDureeDegats = listeToursObject[listToursHasard[ii]].tourTypeDureeDegats.ToString();
+            toursData[ii].tourTypeLargeurVisee = listeToursObject[listToursHasard[ii]].tourTypeLargeurVisee.ToString();
         }
     }
     #endregion
@@ -275,6 +281,8 @@ public class RepertoireDesSprites : MonoBehaviour
             batimentsData[ii].batimentPrixPierre = listeBatiments[listBatimentHasard[ii]].batimentPrixPierre;
             batimentsData[ii].scaleBatiment = listeBatiments[listBatimentHasard[ii]].scaleBatiment;
             batimentsData[ii].nombreBatimentMaxParJoueur = listeBatiments[listBatimentHasard[ii]].nombreBatimentMaxParJoueur;
+            batimentsData[ii].isBatimentPublic = listeBatiments[listBatimentHasard[ii]].isBatimentPublic;
+
         }
     }
     #endregion
@@ -336,6 +344,7 @@ public class UnitesRepertoire
     public Unite_Objects.typeVitalite uniteTypeVitalite;      //Type de vitalité de l'unité
     public Unite_Objects.typeInitiative uniteTypeInitiative;              //Type de l'initiative de l'unité
     public Unite_Objects.typeDegats uniteTypeDegats;          //Type de dégats de l'unité
+    public Unite_Objects.typeArmure uniteTypeArmure;            //Type d'armure de l'unité
 }
 
 [System.Serializable]
@@ -400,6 +409,10 @@ public class ToursRepertoire
     public TourObject.typePuissance tourTypePuissance;         //Type de puissance
 
     public string tourTypePortee;            //Type de portée
+
+    public string tourTypeDureeDegats;      //Type de durée de dégâts
+
+    public string tourTypeLargeurVisee;     //Type de largeur de visée
 }
 
 #endregion
@@ -417,6 +430,7 @@ public class BatimentsRepertoire
     public int batimentPrixPierre;      //Prix en pierre du batiment
     public Vector3 scaleBatiment;       //Scale du batiment
     public int nombreBatimentMaxParJoueur;      //Combien de bâtiments maximum le joueur peut construire ?
+    public bool isBatimentPublic;           //Est-ce que le bâtiment est public ?
 }
 
 

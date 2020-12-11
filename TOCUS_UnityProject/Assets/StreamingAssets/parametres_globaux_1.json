@@ -4,6 +4,7 @@
 		"i_vitalite_porte": 100,
 		"arr_cout_reparation_porte":[0,8,4,0],
 		"i_gain_solidarite_reparation_porte":2,
+		"i_gain_pv_repartion_porte" : 25,
 
 		"i_gain_solidarite_par_batiment_public":4,
 
@@ -14,19 +15,21 @@
 
 		"arr_cout_unite_a_la_caserne":[1,0,0,0],
 		"arr_cout_creation_super_soldat":[0,0,2,0],
-		"i_nb_assassin_max_par_joueur":2
+		"i_nb_assassin_max_par_joueur":2,
+
+		"f_temps_entre_hit_degats_tours":0.5
 	},
 
 	"o_cout_achat_tours_selon_nombre":
 	{
-		"arr_1":[0,4,0,4],
-		"arr_2":[0,4,0,4],
-		"arr_3":[0,5,0,5],
-		"arr_4":[0,5,0,5],
-		"arr_5":[0,6,0,6],
-		"arr_6":[0,6,0,6],
-		"arr_7":[0,7,0,7],
-		"arr_8":[0,7,0,7]
+		"arr_cout_achat_tour_joueur_possede_1":[0,4,0,4],
+		"arr_cout_achat_tour_joueur_possede_2":[0,4,0,4],
+		"arr_cout_achat_tour_joueur_possede_3":[0,5,0,5],
+		"arr_cout_achat_tour_joueur_possede_4":[0,5,0,5],
+		"arr_cout_achat_tour_joueur_possede_5":[0,6,0,6],
+		"arr_cout_achat_tour_joueur_possede_6":[0,6,0,6],
+		"arr_cout_achat_tour_joueur_possede_7":[0,7,0,7],
+		"arr_cout_achat_tour_joueur_possede_8":[0,7,0,7]
 	},
 
 	"o_tir_mortier":
@@ -70,13 +73,20 @@
 
 	"o_tours_valeurs_textuelles_portee":
 	{
-		"contact":1,
+		"contact":0,
 		"tres_courte":2,
 		"courte":5,
 		"normale":10,
 		"lointaine":20,
 		"tres_lointaine":50,
 		"absolue":1000
+	},
+
+	"o_tours_valeurs_textuelles_largeur_visee" :
+	{
+		"petite":2,
+		"normale":4,
+		"grande":6
 	},
 
 	"o_tours_valeurs_textuelles_cadence":
@@ -86,7 +96,7 @@
 		"normale":10,
 		"rapide":6,
 		"tres_rapide":4,
-		"permanente":0
+		"permanente":0.02
 	},
 
 	"o_tours_valeurs_textuelles_puissance":

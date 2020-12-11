@@ -22,6 +22,9 @@ public class Unite_Objects : ScriptableObject
 
     public enum typeDegats { OneShot, Enormes,Tres_Forts, Forts, Normaux, Faibles, Tres_Faibles, Aucun };       //Liste des types de dégats
     public typeDegats uniteTypeDegats;          //Type de dégats de l'unité
+
+    public enum typeArmure { Aucune, Tres_Faible, Faible, Normale,Forte,Tres_Forte,Enorme};     //Liste des types d'armure
+    public typeArmure uniteTypeArmure;
 }
 
 

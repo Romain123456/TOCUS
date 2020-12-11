@@ -28,13 +28,10 @@ public class CallBacksEnnemis : MonoBehaviour
         {
             if (collision.transform.parent.GetComponent<Tours>() != null)       //Pour les tours
             {
-                //L'ennemi perd des pv
-                monEnnemi.pv -= collision.transform.parent.GetComponent<Tours>().puissanceTour;
-                monEnnemi.HealthBar_MaJ();
-                //Si ses pv sont <= 0, l'ennemi est désactivé
-                if (monEnnemi.pv <= 0)
+                PerteEnnemiPV(collision.transform.parent.GetComponent<Tours>());
+                if(collision.transform.parent.GetComponent<Tours>()._DureeDegats != "Ponctuelle")
                 {
-                    monEnnemi.joueurHiting = collision.transform.parent.GetComponent<Tours>().joueurOwner;
+                    StartCoroutine(DegatsDuree(collision.gameObject));
                 }
             } else if(collision.transform.parent.name == "Mortier")
             {
@@ -49,6 +46,39 @@ public class CallBacksEnnemis : MonoBehaviour
 
         }
     }
+
+    //Coroutine de dégats sur la durée
+    public IEnumerator DegatsDuree(GameObject _monCollider)
+    {
+        float tempsEntreHitDegats = JsonParametresGlobaux.ficParamGlobaux.objet_divers.o_divers.f_temps_entre_hit_degats_tours;
+        float tempsDegats = _monCollider.transform.parent.GetComponent<Tours>().tempsDureeDegats;
+
+        yield return new WaitForSeconds(tempsEntreHitDegats);
+        while (tempsDegats > 0)
+        {
+            PerteEnnemiPV(_monCollider.transform.parent.GetComponent<Tours>());
+            tempsDegats -= tempsEntreHitDegats;
+            yield return new WaitForSeconds(tempsEntreHitDegats);
+            if (tempsDegats <= 0)
+            {
+                break;
+            }
+        }
+    }
+
+
+    public void PerteEnnemiPV(Tours maTour)
+    {
+        //L'ennemi perd des pv
+        monEnnemi.pv -= maTour.puissanceTour;
+        monEnnemi.HealthBar_MaJ();
+        //Si ses pv sont <= 0, l'ennemi est désactivé
+        if (monEnnemi.pv <= 0)
+        {
+            monEnnemi.joueurHiting = maTour.joueurOwner;
+        }
+    }
+
 
     private void OnTriggerExit2D(Collider2D collision)
     {

@@ -20,7 +20,9 @@ MonoBehaviour:
   tourPrixPierre: 0
   positionTour: {x: 0, y: 0, z: 0}
   scaleTour: {x: 0.25, y: 0.25, z: 1}
-  tourTypeVisee: 4
+  tourTypeVisee: 1
   tourTypeCadence: 0
   tourTypePuissance: 5
   tourTypePortee: 6
+  tourTypeDureeDegats: 1
+  tourTypeLargeurVisee: 0

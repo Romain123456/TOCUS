@@ -5506,7 +5506,6 @@ MonoBehaviour:
   stockTotalTours:
   - {fileID: 11400000, guid: 72da5c1aee02a764eb0c1fb02b4fb07b, type: 2}
   - {fileID: 11400000, guid: f582708de291cf447890a388ccf0bf29, type: 2}
-  - {fileID: 11400000, guid: 85e89e7ad90471641a9f8e8afcfd18e8, type: 2}
   nbDataTours: 0
   tourCirculaireVisee: {fileID: 21300002, guid: 5fd53940b7c1b4c4e8be5f7025e586da,
     type: 3}

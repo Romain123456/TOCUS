@@ -20,3 +20,4 @@ MonoBehaviour:
   batimentPrixPierre: 2
   scaleBatiment: {x: 0.3, y: 0.4, z: 1}
   nombreBatimentMaxParJoueur: 1000
+  isBatimentPublic: 1

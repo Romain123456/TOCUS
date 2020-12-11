@@ -121,6 +121,8 @@ public class Ennemis : Unites
 
             float degatsEnnemi = uniteDegatsValue;
             float degatsUnitesJoueur = adversaireScript.monUniteJoueur.uniteDegatsValue;
+            float armureEnnemi = uniteArmureValue;
+            float armureUniteJoueur = adversaireScript.monUniteJoueur.uniteArmureValue;
 
             bool isWinner = false;
 
@@ -159,7 +161,7 @@ public class Ennemis : Unites
                     }
 
                     ennemiStateInfo = FinTourAttaque(monAnimator, animName);
-                    AttaquePV_MaJ(degatsEnnemi, adversaireScript);
+                    AttaquePV_MaJ(degatsEnnemi,armureUniteJoueur ,adversaireScript);
 
                     if (adversaireScript.monUniteJoueur.pv <= 0f)
                     {
@@ -200,7 +202,7 @@ public class Ennemis : Unites
                         joueurHiting = adversaireScript.monUniteJoueur.uniteJoueurOwner;
                         adversaireAnimClipInfo = FinTourAttaque(adversaireScript.monUniteJoueur.monAnimator, animName);
 
-                        AttaquePV_MaJ(degatsUnitesJoueur);
+                        AttaquePV_MaJ(degatsUnitesJoueur,armureEnnemi);
 
                         if (pv <= 0)
                         {
@@ -249,7 +251,7 @@ public class Ennemis : Unites
                     joueurHiting = adversaireScript.monUniteJoueur.uniteJoueurOwner;
                     adversaireAnimClipInfo = FinTourAttaque(adversaireScript.monUniteJoueur.monAnimator, animName);
 
-                    AttaquePV_MaJ(degatsUnitesJoueur);
+                    AttaquePV_MaJ(degatsUnitesJoueur,armureEnnemi);
 
                     if (pv <= 0)
                     {
@@ -286,7 +288,7 @@ public class Ennemis : Unites
                         }
 
                         ennemiStateInfo = FinTourAttaque(monAnimator, animName);
-                        AttaquePV_MaJ(degatsEnnemi, adversaireScript);
+                        AttaquePV_MaJ(degatsEnnemi,armureUniteJoueur, adversaireScript);
 
                         if (adversaireScript.monUniteJoueur.pv <= 0)
                         {
@@ -316,6 +318,9 @@ public class Ennemis : Unites
 
             float degatsEnnemi = uniteDegatsValue;
             float degatsUnitesJoueur = adversaireScript.maSuperUniteJoueur.uniteDegatsValue;
+
+            float armureEnnemi = uniteArmureValue;
+            float armureUnitesJoueur = adversaireScript.maSuperUniteJoueur.uniteArmureValue;
 
             bool isWinner = false;
 
@@ -354,7 +359,7 @@ public class Ennemis : Unites
                     }
 
                     ennemiStateInfo = FinTourAttaque(monAnimator, animName);
-                    AttaquePV_MaJ(degatsEnnemi, adversaireScript);
+                    AttaquePV_MaJ(degatsEnnemi,armureUnitesJoueur, adversaireScript);
 
 
                     if (adversaireScript.maSuperUniteJoueur.pv <= 0)
@@ -395,7 +400,7 @@ public class Ennemis : Unites
                         joueurHiting = adversaireScript.maSuperUniteJoueur.uniteJoueurOwner;
                         adversaireAnimClipInfo = FinTourAttaque(adversaireScript.maSuperUniteJoueur.monAnimator, animName);
 
-                        AttaquePV_MaJ(degatsUnitesJoueur);
+                        AttaquePV_MaJ(degatsUnitesJoueur,armureEnnemi);
 
                         if (pv <= 0)
                         {
@@ -443,7 +448,7 @@ public class Ennemis : Unites
                     joueurHiting = adversaireScript.maSuperUniteJoueur.uniteJoueurOwner;
                     adversaireAnimClipInfo = FinTourAttaque(adversaireScript.maSuperUniteJoueur.monAnimator, animName);
 
-                    AttaquePV_MaJ(degatsUnitesJoueur);
+                    AttaquePV_MaJ(degatsUnitesJoueur,armureEnnemi);
 
                     if (pv <= 0)
                     {
@@ -480,7 +485,7 @@ public class Ennemis : Unites
                         }
 
                         ennemiStateInfo = FinTourAttaque(monAnimator, animName);
-                        AttaquePV_MaJ(degatsEnnemi, adversaireScript);
+                        AttaquePV_MaJ(degatsEnnemi,armureUnitesJoueur, adversaireScript);
 
 
                         if (adversaireScript.monUniteJoueur.pv <= 0)

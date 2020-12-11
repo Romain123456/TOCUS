@@ -20,6 +20,7 @@ MonoBehaviour:
   uniteTypeVitalite: 3
   uniteTypeInitiative: 4
   uniteTypeDegats: 3
+  uniteTypeArmure: 4
   uniteSpriteBase:
   - {fileID: -6522286443276129565, guid: a631b0adedc70b447a6942147f840315, type: 3}
   - {fileID: 58927763964944925, guid: 586c657afd0850743bcdd5fca23d3d56, type: 3}

@@ -55,6 +55,7 @@ public class JsonParamGlobaux
     public Objet_tir_mortier objet_tir_mortier;
     public Objet_batiments objet_batiments;
     public Objet_tours_valeurs_textuelles_portee objet_tours_valeurs_textuelles_portee;
+    public Objet_tours_valeurs_textuelles_largeur_visee objet_tours_valeurs_textuelles_largeur_visee;
     public Objet_tours_valeurs_textuelles_cadence objet_tours_valeurs_textuelles_cadence;
     public Objet_tours_valeurs_textuelles_puissance objet_tours_valeurs_textuelles_puissance;
     public Objet_tours_valeurs_textuelles_duree_degats objet_tours_valeurs_textuelles_duree_degats;
@@ -94,6 +95,7 @@ public class JsonParamGlobaux
         fileJson.objet_tir_mortier = JsonUtility.FromJson<Objet_tir_mortier>(jSonString);
         fileJson.objet_batiments = JsonUtility.FromJson<Objet_batiments>(jSonString);
         fileJson.objet_tours_valeurs_textuelles_portee = JsonUtility.FromJson<Objet_tours_valeurs_textuelles_portee>(jSonString);
+        fileJson.objet_tours_valeurs_textuelles_largeur_visee = JsonUtility.FromJson<Objet_tours_valeurs_textuelles_largeur_visee>(jSonString);
         fileJson.objet_tours_valeurs_textuelles_cadence = JsonUtility.FromJson<Objet_tours_valeurs_textuelles_cadence>(jSonString);
         fileJson.objet_tours_valeurs_textuelles_puissance = JsonUtility.FromJson<Objet_tours_valeurs_textuelles_puissance>(jSonString);
         fileJson.objet_tours_valeurs_textuelles_duree_degats = JsonUtility.FromJson<Objet_tours_valeurs_textuelles_duree_degats>(jSonString);
@@ -140,6 +142,7 @@ public class O_Divers
     public int i_vitalite_porte;
     public int[] arr_cout_reparation_porte;
     public int i_gain_solidarite_reparation_porte;
+    public int i_gain_pv_reparation_porte;
 
     public int i_gain_solidarite_par_batiment_public;
 
@@ -152,6 +155,8 @@ public class O_Divers
     public int[] arr_cout_unite_a_la_caserne;
     public int[] arr_cout_creation_super_soldat;
     public int i_nb_assassin_max_par_joueur;
+
+    public float f_temps_entre_hit_degats_tours;
 }
 #endregion
 
@@ -167,14 +172,14 @@ public class Objet_cout_achat_tours_selon_nombre
 [Serializable]
 public class O_cout_achat_tours_selon_nombre
 {
-    public int[] arr_1;
-    public int[] arr_2;
-    public int[] arr_3;
-    public int[] arr_4;
-    public int[] arr_5;
-    public int[] arr_6;
-    public int[] arr_7;
-    public int[] arr_8;
+    public int[] arr_cout_achat_tour_joueur_possede_1;
+    public int[] arr_cout_achat_tour_joueur_possede_2;
+    public int[] arr_cout_achat_tour_joueur_possede_3;
+    public int[] arr_cout_achat_tour_joueur_possede_4;
+    public int[] arr_cout_achat_tour_joueur_possede_5;
+    public int[] arr_cout_achat_tour_joueur_possede_6;
+    public int[] arr_cout_achat_tour_joueur_possede_7;
+    public int[] arr_cout_achat_tour_joueur_possede_8;
 }
 #endregion
 
@@ -257,6 +262,21 @@ public class O_tours_valeurs_textuelles_portee
 }
 #endregion
 
+#region o_tours_valeurs_textuelles_largeur_visee
+[Serializable]
+public class Objet_tours_valeurs_textuelles_largeur_visee
+{
+    public O_tours_valeurs_textuelles_largeur_visee o_tours_valeurs_textuelles_largeur_visee;
+}
+
+[Serializable]
+public class O_tours_valeurs_textuelles_largeur_visee
+{
+    public int petite;
+    public int normale;
+    public int grande;
+}
+#endregion
 
 #region o_tours_valeurs_textuelles_cadence
 [Serializable]

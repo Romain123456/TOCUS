@@ -31,7 +31,7 @@ public class Chateau : ObjetsGeneralites
 
 
         _GainSolidarityPoints = JsonParametresGlobaux.ficParamGlobaux.objet_divers.o_divers.i_gain_solidarite_reparation_porte;
-        _PvPorteReparer = 25;
+        _PvPorteReparer = JsonParametresGlobaux.ficParamGlobaux.objet_divers.o_divers.i_gain_pv_reparation_porte;
     }
 
 

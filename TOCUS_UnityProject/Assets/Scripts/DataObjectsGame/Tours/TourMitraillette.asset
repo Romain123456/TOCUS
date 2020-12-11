@@ -23,4 +23,6 @@ MonoBehaviour:
   tourTypeVisee: 1
   tourTypeCadence: 2
   tourTypePuissance: 5
-  tourTypePortee: 3
+  tourTypePortee: 6
+  tourTypeDureeDegats: 0
+  tourTypeLargeurVisee: 0
