@@ -27,16 +27,18 @@ public class BatimentConstructions : ObjetsGeneralites
     [HideInInspector] public List<SpriteRenderer> spritesUnitesAttente = new List<SpriteRenderer>();
     [HideInInspector] public List<UnitesJoueurRepertoire> unitesJoueurReserve = new List<UnitesJoueurRepertoire>();
     [HideInInspector] public GameObject uniteAttentePrefab;
+    private int[] prixUniteCaserne;
 
 
     //Indice de l'unité améliorable
     [HideInInspector] public GameObject[] boutonsUnitesToUpgrade;
     [HideInInspector] public int indUniteCanUpgrade;
+    private int[] prixAmeliorationUnites;
 
 
     //Pour le mortier
     [HideInInspector] public List<GameObject> listeMunitions;
-    private int coutFerMortier = 1;
+    private int[] coutTirMortier;
     [HideInInspector] public GameObject mortierViseur;          //Viseur du mortier où est placé le script MortierViseur
 
 
@@ -97,7 +99,8 @@ public class BatimentConstructions : ObjetsGeneralites
 
         _InterractionsDisponibles = new GameObject[nbBoutonInterractionsPossible];    //Nombre de boutons du panel
 
-
+        //Cout fer mortier
+        coutTirMortier = JsonParametresGlobaux.ficParamGlobaux.objet_tir_mortier.o_tir_mortier.arr_cout_tirer_mortier;
     }
 
 
@@ -125,6 +128,8 @@ public class BatimentConstructions : ObjetsGeneralites
             spritesUnitesAttente.Add(uniteReserviste.GetComponent<SpriteRenderer>());
             spritesUnitesAttente[ii].sprite = unitesJoueurReserve[ii].uniteSpriteBase[0];   //Sprite dans la file d'attente de la caserne
         }
+        prixUniteCaserne = JsonParametresGlobaux.ficParamGlobaux.objet_divers.o_divers.arr_cout_unite_a_la_caserne;
+        prixAmeliorationUnites = JsonParametresGlobaux.ficParamGlobaux.objet_divers.o_divers.arr_cout_creation_super_soldat;
     }
 
 
@@ -328,7 +333,7 @@ public class BatimentConstructions : ObjetsGeneralites
         }
 
         //Paiement des ressources
-        levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[0] -= _RecrutementMax;     //On paie le prix en ressources
+        levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[0] -= _RecrutementMax * prixUniteCaserne[0];     //On paie le prix en ressources
         for (int ii = 0; ii < levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes.Length; ii++)
         {
             levelManager.tableauJoueurs[levelManager._JoueurActif - 1].AfficheNbRessources(ii);     //Affichage nombre ressources
@@ -409,16 +414,19 @@ public class BatimentConstructions : ObjetsGeneralites
         //Si on a autant ou plus de blé que le nombre d'unités recrutable dans la caserne, on recrute toutes les unités
         if (nbUniteRecrutable > 0)
         {
-            if (levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[0] >= nbUniteRecrutable)
+            if (levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[0] >= nbUniteRecrutable * prixUniteCaserne[0] &&
+                levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[1] >= nbUniteRecrutable * prixUniteCaserne[1] &&
+                levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[2] >= nbUniteRecrutable * prixUniteCaserne[2] &&
+                levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[3] >= nbUniteRecrutable * prixUniteCaserne[3])
             {
                 //Recrutement du nombre d'unités possibles
                 RecrutementUnites(nbUniteRecrutable);
             }
             //Si on a moins de blé, on en recrute autant qu'on peut
-            else if (levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[0] < nbUniteRecrutable && levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[0] > 0)
+            else if (levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[0] < nbUniteRecrutable * prixUniteCaserne[0] && levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[0] > 0)
             {
                 //Recrutement du nombre d'unités possibles
-                RecrutementUnites(levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[0]);
+                RecrutementUnites(levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[0] * prixUniteCaserne[0]);
             }
             else if (levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[0] == 0)
             {
@@ -437,7 +445,10 @@ public class BatimentConstructions : ObjetsGeneralites
 
     public void AmeliorerUnite()
     {
-        if (levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[2] >= levelManager.repertoireSprites.superUnitesJoueurData[indUniteCanUpgrade].unitePrixFer)
+        if (levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[0] >= prixAmeliorationUnites[0] &&
+            levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[1] >= prixAmeliorationUnites[1] &&
+            levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[2] >= prixAmeliorationUnites[2] &&
+            levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[3] >= prixAmeliorationUnites[3])
         {
 
             //Récupérer l'indice de l'unité améliorable indUniteCanUpgrade
@@ -483,9 +494,9 @@ public class BatimentConstructions : ObjetsGeneralites
             levelManager.panelParentBatimentInterract.gameObject.SetActive(false);      //Fermeture du panel
 
             //Paye les ressources
-            levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[2] -= levelManager.repertoireSprites.superUnitesJoueurData[indUniteCanUpgrade].unitePrixFer;     //On paie le prix en ressources
             for (int ii = 0; ii < levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes.Length; ii++)
             {
+                levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[ii] -= prixAmeliorationUnites[ii];     //On paie le prix en ressources
                 levelManager.tableauJoueurs[levelManager._JoueurActif - 1].AfficheNbRessources(ii);     //Affichage nombre ressources
             }
 
@@ -793,12 +804,17 @@ public class BatimentConstructions : ObjetsGeneralites
         canChangeActiveJoueur = false;
 
         //Tester si le joueur a les sous ! (1 de fer)        
-        if (levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[2] >= coutFerMortier)
+        if (levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[0] >= coutTirMortier[0] &&
+            levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[1] >= coutTirMortier[1] &&
+            levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[2] >= coutTirMortier[2] &&
+            levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[3] >= coutTirMortier[3])
         {
             //Le faire payer !!
-            levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[2] -= coutFerMortier;
-            levelManager.tableauJoueurs[levelManager._JoueurActif - 1].AfficheNbRessources(2);
-
+            for (int ii = 0; ii < coutTirMortier.Length; ii++)
+            {
+                levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[ii] -= coutTirMortier[ii];
+                levelManager.tableauJoueurs[levelManager._JoueurActif - 1].AfficheNbRessources(ii);
+            }
             levelManager.buttonSelectedTemp = levelManager.myEventSystem.currentSelectedGameObject.transform.parent.parent.gameObject;
 
 

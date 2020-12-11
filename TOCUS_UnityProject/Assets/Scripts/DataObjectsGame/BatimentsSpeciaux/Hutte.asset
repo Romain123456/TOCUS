@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   batimentNom: Hutte
   batimentSprite: {fileID: 21300022, guid: 5fd53940b7c1b4c4e8be5f7025e586da, type: 3}
-  batimentPrixBle: 0
-  batimentPrixBois: 2
+  batimentPrixBle: 4
+  batimentPrixBois: 4
   batimentPrixFer: 0
   batimentPrixPierre: 0
   scaleBatiment: {x: 0.3, y: 0.4, z: 1}

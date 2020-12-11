@@ -397,5 +397,10 @@
 		"s_initiative":"normale",
 		"s_degats":"tres_faibles",
 		"s_portee":"courte"
-	}
+	},
+
+	"o_boss":
+		{
+
+		}
 }

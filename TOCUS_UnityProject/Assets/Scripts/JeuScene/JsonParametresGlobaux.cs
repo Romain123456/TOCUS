@@ -12,7 +12,7 @@ public class JsonParametresGlobaux : MonoBehaviour
     static public JsonParamGlobaux ficParamGlobaux;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         ficJsonParamGlobaux = "parametres_globaux_1.json";
         pathJsonParamGlobaux = Application.streamingAssetsPath + "/" + ficJsonParamGlobaux;
@@ -28,7 +28,6 @@ public class JsonParametresGlobaux : MonoBehaviour
         ficParamGlobaux.objet_tours_electrique.o_tours_electrique.arr_ameliorations2D = Make2DTableau(ficParamGlobaux.objet_tours_electrique.o_tours_electrique.arr_ameliorations, ficParamGlobaux.objet_tours_electrique.o_tours_electrique.arr_ameliorations2D, 2, 3);
         ficParamGlobaux.objet_tours_laser.o_tours_laser.arr_ameliorations2D = Make2DTableau(ficParamGlobaux.objet_tours_laser.o_tours_laser.arr_ameliorations, ficParamGlobaux.objet_tours_laser.o_tours_laser.arr_ameliorations2D, 2, 3);
         ficParamGlobaux.objet_tours_tromblon.o_tours_tromblon.arr_ameliorations2D = Make2DTableau(ficParamGlobaux.objet_tours_tromblon.o_tours_tromblon.arr_ameliorations, ficParamGlobaux.objet_tours_tromblon.o_tours_tromblon.arr_ameliorations2D, 2, 3);
-        Debug.Log(ficParamGlobaux.objet_monstres_boxeur.o_monstres_boxeur.s_armure);
     }
 
     public string[,] Make2DTableau(string[] monTableau1D,string[,] monTableau2D,int nbLines,int nbCols)

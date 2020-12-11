@@ -99,10 +99,10 @@ public class LevelManager : MonoBehaviour
     [HideInInspector] public GameObject panelDefaite;
     [HideInInspector] public bool isLose;       //Est-ce qu'on a perdu ?
     [HideInInspector] public bool isMaisonConstruite;            //Est-ce qu'on a construit la maison ?
-    public int NbVictoryPointsPerAutel;                     //Nombre de points de victoire par autel
-    public int NbAssassinMaxPerJoueur;                      //Nombre d'Assassins max par joueur
+    [HideInInspector] public int NbVictoryPointsPerAutel;                     //Nombre de points de victoire par autel
+    [HideInInspector] public int NbAssassinMaxPerJoueur;                      //Nombre d'Assassins max par joueur
     [HideInInspector] public GameObject buttonSelectedTemp;             //GameObject Temporaire pour récupérer l'information d'un ancien objet sélectionné. Utile pour le mortier 
-    public int _NbVictoryPointsFosse;                   //Nombre de points de victoire par ennemi tué si on a la fosse
+    [HideInInspector] public int _NbVictoryPointsFosse;                   //Nombre de points de victoire par ennemi tué si on a la fosse
     [HideInInspector] public bool isCabaneEclaireur;          //Est-ce qu'on a construit la cabane d'éclaireur ?
     public int _SecondesBeforeMonstres;                        //Temps (en secondes) avant arrivée de vague pour donner l'alerte
 
@@ -162,6 +162,11 @@ public class LevelManager : MonoBehaviour
         }
 
         isMaisonConstruite = false;         //La maison n'est pas construite
+
+        //Variables publiques des options
+        NbVictoryPointsPerAutel = JsonParametresGlobaux.ficParamGlobaux.objet_divers.o_divers.i_gain_victoire_autel;
+        _NbVictoryPointsFosse = JsonParametresGlobaux.ficParamGlobaux.objet_divers.o_divers.i_gain_victoire_de_la_fosse;
+        NbAssassinMaxPerJoueur = JsonParametresGlobaux.ficParamGlobaux.objet_divers.o_divers.i_nb_assassin_max_par_joueur;
         #endregion
 
 

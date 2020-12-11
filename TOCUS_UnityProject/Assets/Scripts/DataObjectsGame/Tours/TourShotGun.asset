@@ -21,6 +21,6 @@ MonoBehaviour:
   positionTour: {x: 0, y: 0, z: 0}
   scaleTour: {x: 0.25, y: 0.25, z: 1}
   tourTypeVisee: 2
-  tourTypeCadence: 1
-  tourTypePuissance: 1
-  tourTypePortee: 2
+  tourTypeCadence: 4
+  tourTypePuissance: 4
+  tourTypePortee: 3

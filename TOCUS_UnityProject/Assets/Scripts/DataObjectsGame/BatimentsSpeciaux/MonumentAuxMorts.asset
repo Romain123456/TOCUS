@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   batimentNom: Monuments Aux Morts
   batimentSprite: {fileID: 21300018, guid: 5fd53940b7c1b4c4e8be5f7025e586da, type: 3}
-  batimentPrixBle: 1
-  batimentPrixBois: 2
+  batimentPrixBle: 0
+  batimentPrixBois: 0
   batimentPrixFer: 0
-  batimentPrixPierre: 4
+  batimentPrixPierre: 6
   scaleBatiment: {x: 0.3, y: 0.4, z: 1}
   nombreBatimentMaxParJoueur: 3

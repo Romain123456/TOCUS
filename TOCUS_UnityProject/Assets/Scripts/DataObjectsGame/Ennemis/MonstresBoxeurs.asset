@@ -17,12 +17,11 @@ MonoBehaviour:
   uniteScale: {x: 0.15, y: 0.15}
   unitePositionCanvas: {x: 0, y: 1}
   uniteScaleCanvas: {x: 0.5, y: 0.5}
-  uniteTypeVitalite: 3
-  uniteTypeInitiative: 0
-  uniteTypeDegats: 2
+  uniteTypeVitalite: 2
+  uniteTypeInitiative: 3
+  uniteTypeDegats: 6
   ennemiSpeedMove: 1
   ennemiSprite: {fileID: -7046045881008828468, guid: 9e9bd451e94a9c346ad0314f97989c1e,
     type: 3}
   ennemiAnimatorController: {fileID: 9100000, guid: d70b03d6e094b034c8453fcb499addda,
     type: 2}
-  nbPointsVictoire: 1

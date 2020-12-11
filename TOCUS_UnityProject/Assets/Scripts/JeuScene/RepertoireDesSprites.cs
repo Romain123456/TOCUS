@@ -55,7 +55,7 @@ public class RepertoireDesSprites : MonoBehaviour
             ennemiData[ii].ennemiSpeedMove = listeEnnemiObject[ii].ennemiSpeedMove;
             ennemiData[ii].ennemiSprite = listeEnnemiObject[ii].ennemiSprite;
             ennemiData[ii].ennemiAnimatorController = listeEnnemiObject[ii].ennemiAnimatorController;
-            ennemiData[ii].pointVictoireGain = listeEnnemiObject[ii].nbPointsVictoire;
+            ennemiData[ii].pointVictoireGain = JsonParametresGlobaux.ficParamGlobaux.objet_divers.o_divers.i_gain_victoire_par_ennemi_mort;
         }
 
     }
