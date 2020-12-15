@@ -35,13 +35,7 @@ public class CallBacksEnnemis : MonoBehaviour
                 }
             } else if(collision.transform.parent.name == "Mortier")
             {
-                //L'ennemi perd des pv
-                monEnnemi.pv -= collision.transform.parent.Find("MortierViseur").GetComponent<MortierBatiment>().puissanceMortier;
-                monEnnemi.HealthBar_MaJ();
-                if (monEnnemi.pv <= 0)
-                {
-                    monEnnemi.joueurHiting = monEnnemi.levelManager._JoueurActif - 1;
-                }
+                PerteEnnemiPV(collision.transform.parent.Find("MortierViseur").GetComponent<MortierBatiment>());
             }
 
         }
@@ -70,12 +64,29 @@ public class CallBacksEnnemis : MonoBehaviour
     public void PerteEnnemiPV(Tours maTour)
     {
         //L'ennemi perd des pv
-        monEnnemi.pv -= maTour.puissanceTour;
+        if (maTour.puissanceTour > monEnnemi.uniteArmureValue)
+        {
+            monEnnemi.pv = monEnnemi.pv - (maTour.puissanceTour - monEnnemi.uniteArmureValue);
+        }
         monEnnemi.HealthBar_MaJ();
         //Si ses pv sont <= 0, l'ennemi est désactivé
         if (monEnnemi.pv <= 0)
         {
             monEnnemi.joueurHiting = maTour.joueurOwner;
+        }
+    }
+
+    public void PerteEnnemiPV(MortierBatiment monMortier)
+    {
+        //L'ennemi perd des pv
+        if (monMortier.puissanceMortier > monEnnemi.uniteArmureValue)
+        {
+            monEnnemi.pv = monEnnemi.pv - (monMortier.puissanceMortier - monEnnemi.uniteArmureValue);
+        }
+        monEnnemi.HealthBar_MaJ();
+        if (monEnnemi.pv <= 0)
+        {
+            monEnnemi.joueurHiting = monEnnemi.levelManager._JoueurActif - 1;
         }
     }
 

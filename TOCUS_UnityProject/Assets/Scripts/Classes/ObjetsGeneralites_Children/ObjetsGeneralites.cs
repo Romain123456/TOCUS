@@ -257,6 +257,11 @@ public class ObjetsGeneralites : MonoBehaviour
                 }
             }*/
         }
+
+        if(transformObjet.name == "ChantierTours")
+        {
+            levelManager._ChantierTours.AffichePrixTours();
+        }
     }
 
 

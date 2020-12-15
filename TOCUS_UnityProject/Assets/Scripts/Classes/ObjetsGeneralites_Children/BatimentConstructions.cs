@@ -136,6 +136,32 @@ public class BatimentConstructions : ObjetsGeneralites
     }
 
 
+    public void AffichePrixTours()
+    {
+        int ind0prixTourTableau = RecupIndiceNbTourParJoueur();
+        for (int ii = 0; ii < _InterractionsDisponibles.Length; ii++)
+        {
+            for (int jj = 0; jj < 4; jj++)
+            {
+                _InterractionsDisponibles[ii].transform.GetChild(jj + 1).GetChild(0).GetComponent<Text>().text = levelManager.prixToursParToursJoueur[ind0prixTourTableau, jj].ToString();
+            }
+        }
+    }
+
+    public int RecupIndiceNbTourParJoueur()
+    {
+        int ind0prixTourTableau;
+        if (levelManager.tableauJoueurs[levelManager._JoueurActif - 1].nbToursPossedees < levelManager.prixToursParToursJoueur.GetLength(0))
+        {
+            ind0prixTourTableau = levelManager.tableauJoueurs[levelManager._JoueurActif - 1].nbToursPossedees;
+        }
+        else
+        {
+            ind0prixTourTableau = levelManager.prixToursParToursJoueur.GetLength(0);
+        }
+
+        return ind0prixTourTableau;
+    }
 
 
     //Creation des Boutons du panel pour chaque type de batiment en fonction des données du répertoire des Sprites  
@@ -148,10 +174,12 @@ public class BatimentConstructions : ObjetsGeneralites
             {
                 _InterractionsDisponibles[ii].GetComponent<Image>().sprite = repertoireSprite.toursData[ii].tourSprite;
                 _InterractionsDisponibles[ii].transform.GetChild(0).GetComponent<Text>().text = repertoireSprite.toursData[ii].tourNom;
-                _InterractionsDisponibles[ii].transform.GetChild(1).GetChild(0).GetComponent<Text>().text = repertoireSprite.toursData[ii].tourPrixBle.ToString();
-                _InterractionsDisponibles[ii].transform.GetChild(2).GetChild(0).GetComponent<Text>().text = repertoireSprite.toursData[ii].tourPrixBois.ToString();
-                _InterractionsDisponibles[ii].transform.GetChild(3).GetChild(0).GetComponent<Text>().text = repertoireSprite.toursData[ii].tourPrixFer.ToString();
-                _InterractionsDisponibles[ii].transform.GetChild(4).GetChild(0).GetComponent<Text>().text = repertoireSprite.toursData[ii].tourPrixPierre.ToString();
+                // AffichePrixTours();
+                for (int jj = 0; jj < 4; jj++)
+                {
+                    _InterractionsDisponibles[ii].transform.GetChild(jj+1).GetChild(0).GetComponent<Text>().text = levelManager.prixToursParToursJoueur[0, jj].ToString();
+                }
+
             } else if (transformObjet.name == "ChantierBTP")
             {
                 _InterractionsDisponibles[ii].SetActive(true);
@@ -207,6 +235,8 @@ public class BatimentConstructions : ObjetsGeneralites
 
 
 
+
+
     //Selection batiment à construire en fonction du panel ouvert et du type de batiment sélectionné
     public void SelectionCreationConstruire()
     {
@@ -252,11 +282,22 @@ public class BatimentConstructions : ObjetsGeneralites
         tourConstruite = repertoireSprite.toursData[boutonSelect];      //Vérifie quelle tour on veut construire
         isConstructionPossible = false;         //Initialisation de la vérification des ressources du joueurs
         //-1 pour l'indice tableau
+
+        //Etablissement du prix de la tour en fonction du nombre possédé par le joueur
+        int ind0prixTourTableau = RecupIndiceNbTourParJoueur();
+       /* if(levelManager.tableauJoueurs[levelManager._JoueurActif - 1].nbToursPossedees < levelManager.prixToursParToursJoueur.GetLength(0))
+        {
+            ind0prixTourTableau = levelManager.tableauJoueurs[levelManager._JoueurActif - 1].nbToursPossedees;
+        } else
+        {
+            ind0prixTourTableau = levelManager.prixToursParToursJoueur.GetLength(0);
+        }*/
+
         //Si le joueur a les ressources nécessaires, on peut construire, sinon non
-        if (levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[0] >= tourConstruite.tourPrixBle &&
-            levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[1] >= tourConstruite.tourPrixBois &&
-            levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[2] >= tourConstruite.tourPrixFer &&
-            levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[3] >= tourConstruite.tourPrixPierre)
+        if (levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[0] >= levelManager.prixToursParToursJoueur[ind0prixTourTableau,0] &&
+            levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[1] >= levelManager.prixToursParToursJoueur[ind0prixTourTableau, 1] &&
+            levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[2] >= levelManager.prixToursParToursJoueur[ind0prixTourTableau, 2] &&
+            levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[3] >= levelManager.prixToursParToursJoueur[ind0prixTourTableau, 3])
         {
             isConstructionPossible = true;
         }

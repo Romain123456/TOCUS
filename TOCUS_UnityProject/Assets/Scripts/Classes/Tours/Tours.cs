@@ -56,6 +56,11 @@ public class Tours : MonoBehaviour
     #endregion
 
 
+    #region Type Impact
+    public string _TypeImpact;
+
+    #endregion
+
     #region Munition
     private List<GameObject> munitionList;
     private int nbInstanceMunitionPrefab = 5;
@@ -74,6 +79,7 @@ public class Tours : MonoBehaviour
         TourMiseEnPlaceVisee();
         TourMiseEnPlaceDureeDegats();
         TourCadenceTirInit();
+        TourMiseEnPlaceTypeImpact();
         InstantiationMunitions();
 
         //Initialisation du countTir pour tirer rapidement
@@ -439,6 +445,32 @@ public class Tours : MonoBehaviour
     }
     #endregion
 
+
+    #region Type d'impact
+    public void TourMiseEnPlaceTypeImpact()
+    {
+        Debug.Log("Mettre en place les différents types d'impact");
+        if(_TypeImpact == "Individuel")
+        {
+
+        } else if(_TypeImpact == "Double")
+        {
+
+        } else if(_TypeImpact == "Triple")
+        {
+
+        } else if(_TypeImpact == "Rebondissant")
+        {
+
+        } else if(_TypeImpact == "Traversant")
+        {
+
+        } else if(_TypeImpact == "Zone")
+        {
+
+        }
+    }
+    #endregion
 
 
     void PutRotationTour()

@@ -14,10 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tourNom: Tour ShotGun
   tourSprite: {fileID: 21300018, guid: 2979f69b46dab40498b062cf4f1149d5, type: 3}
-  tourPrixBle: 0
-  tourPrixBois: 2
-  tourPrixFer: 0
-  tourPrixPierre: 1
   positionTour: {x: 0, y: 0, z: 0}
   scaleTour: {x: 0.25, y: 0.25, z: 1}
   tourTypeVisee: 2
@@ -26,3 +22,4 @@ MonoBehaviour:
   tourTypePortee: 3
   tourTypeDureeDegats: 0
   tourTypeLargeurVisee: 0
+  tourTypeImpact: 1

@@ -22,14 +22,14 @@
 
 	"o_cout_achat_tours_selon_nombre":
 	{
-		"arr_cout_achat_tour_joueur_possede_1":[0,4,0,4],
-		"arr_cout_achat_tour_joueur_possede_2":[0,4,0,4],
-		"arr_cout_achat_tour_joueur_possede_3":[0,5,0,5],
-		"arr_cout_achat_tour_joueur_possede_4":[0,5,0,5],
-		"arr_cout_achat_tour_joueur_possede_5":[0,6,0,6],
-		"arr_cout_achat_tour_joueur_possede_6":[0,6,0,6],
-		"arr_cout_achat_tour_joueur_possede_7":[0,7,0,7],
-		"arr_cout_achat_tour_joueur_possede_8":[0,7,0,7]
+	"arr_cout_achat_tour_joueur_possede" :[0,4,0,4,
+											0,4,0,4,
+											0,5,0,5,
+											0,5,0,5,
+											0,6,0,6,
+											0,6,0,6,
+											0,7,0,7,
+											0,7,0,7]
 	},
 
 	"o_tir_mortier":

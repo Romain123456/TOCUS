@@ -14,13 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tourNom: Tour Electrique
   tourSprite: {fileID: 21300018, guid: 2979f69b46dab40498b062cf4f1149d5, type: 3}
-  tourPrixBle: 0
-  tourPrixBois: 0
-  tourPrixFer: 0
-  tourPrixPierre: 0
   positionTour: {x: 0, y: 0, z: 0}
   scaleTour: {x: 0.25, y: 0.25, z: 1}
   tourTypeVisee: 1
   tourTypeCadence: 2
   tourTypePuissance: 5
   tourTypePortee: 3
+  tourTypeDureeDegats: 0
+  tourTypeLargeurVisee: 0
+  tourTypeImpact: 3

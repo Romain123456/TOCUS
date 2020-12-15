@@ -1,20 +1,4 @@
 {
-	"o_divers":
-	{
-	},
-
-	"o_cout_achat_tours_selon_nombre":
-	{
-		"arr_1":[0,4,0,4],
-		"arr_2":[0,4,0,4],
-		"arr_3":[0,5,0,5],
-		"arr_4":[0,5,0,5],
-		"arr_5":[0,6,0,6],
-		"arr_6":[0,6,0,6],
-		"arr_7":[0,7,0,7],
-		"arr_8":[0,7,0,7]
-	},
-
 	"o_tir_mortier":
 	{
 		"s_forme":"cercle",
@@ -42,7 +26,6 @@
 
 	"o_tours_sniper":
 	{
-		"s_impact":"individuel",
 		"arr_ameliorations":
 		[
 			 "portee","circulaire_centree", "portee",
@@ -52,7 +35,6 @@
 
 	"o_tours_mitraillette":
 	{
-		"s_impact":"individuel",
 		"arr_ameliorations":
 		[
 			"portee", "cadence", "puissance",
@@ -62,7 +44,6 @@
 
 	"o_tours_shotgun":
 	{
-		"s_impact":"double",
 		"arr_ameliorations":
 		[
 			"portee", "double_cone", "puissance",
@@ -72,7 +53,6 @@
 
 	"o_tours_canon":
 	{
-		"s_impact":"zone",
 		"arr_ameliorations":
 		[
 			"impact", "impact_zone", "cadence",
@@ -82,7 +62,6 @@
 
 	"o_tours_poison":
 	{
-		"s_impact":"individuel",
 		"arr_ameliorations":
 		[
 			"puissance", "cadence", "puissance",
@@ -92,7 +71,6 @@
 
 	"o_tours_feu":
 	{
-		"s_impact":"traversant",
 		"arr_ameliorations":
 		[
 			"portee", "traversant_temporaire_large", "puissance",
@@ -102,7 +80,6 @@
 
 	"o_tours_electrique":
 	{
-		"s_impact":"rebondissant",
 		"arr_ameliorations":
 		[
 			"impact_rebondissant", "impact_rebondissant", "portee",
@@ -112,7 +89,6 @@
 
 	"o_tours_laser":
 	{
-		"s_impact":"individuel",
 		"arr_ameliorations":
 		[
 			"exponentielle", "portee", "exponentielle",
@@ -122,7 +98,6 @@
 
 	"o_tours_tromblon":
 	{
-		"s_impact":"triple",
 		"arr_ameliorations":
 		[
 			"double_cone", "cadence", "quadruple",

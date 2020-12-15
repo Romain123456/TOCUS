@@ -7,10 +7,6 @@ public class TourObject : ScriptableObject
 {
     public string tourNom;                  //Nom de la tour
     public Sprite tourSprite;               //Sprite de la tour
-    public int tourPrixBle;                 //Prix en blé de la tour
-    public int tourPrixBois;                //Prix en bois de la tour
-    public int tourPrixFer;                 //Prix en fer de la tour
-    public int tourPrixPierre;              //Prix en pierre de la tour
 
     public Vector3 positionTour;            //Position de la tour par rapport à l'emplacement
     public Vector3 scaleTour;               //Scale de la tour
@@ -39,4 +35,7 @@ public class TourObject : ScriptableObject
 
     public enum typeLargeurVisee { Grande,Normale,Petite};      //Liste des types de largeur de visée
     public typeLargeurVisee tourTypeLargeurVisee;           //Type de largeur de visée
+
+    public enum typeImpact { Individuel, Double, Triple, Rebondissant, Traversant, Zone};     //Liste des types d'impact
+    public typeImpact tourTypeImpact;       //Type d'impact
 }

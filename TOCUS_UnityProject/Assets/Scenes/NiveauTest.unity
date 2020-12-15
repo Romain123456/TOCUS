@@ -5468,6 +5468,7 @@ MonoBehaviour:
   stockTotalEnnemis:
   - {fileID: 11400000, guid: 2e41258779ec5594b937d84abbff4ad8, type: 2}
   - {fileID: 11400000, guid: f93d24d73f7c896438544c74a6f38972, type: 2}
+  - {fileID: 11400000, guid: e97ea1262aa8e514ba3ddc0d10d79ab1, type: 2}
   unitesJoueurData: []
   listeUniteJoueurObject:
   - {fileID: 11400000, guid: 17f9be35ca5705a43b4aa273cdc7e83e, type: 2}
