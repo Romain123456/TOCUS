@@ -28,6 +28,7 @@ public class JsonParametresGlobaux : MonoBehaviour
         ficParamGlobaux.objet_tours_electrique.o_tours_electrique.arr_ameliorations2D = Make2DTableau(ficParamGlobaux.objet_tours_electrique.o_tours_electrique.arr_ameliorations, ficParamGlobaux.objet_tours_electrique.o_tours_electrique.arr_ameliorations2D, 2, 3);
         ficParamGlobaux.objet_tours_laser.o_tours_laser.arr_ameliorations2D = Make2DTableau(ficParamGlobaux.objet_tours_laser.o_tours_laser.arr_ameliorations, ficParamGlobaux.objet_tours_laser.o_tours_laser.arr_ameliorations2D, 2, 3);
         ficParamGlobaux.objet_tours_tromblon.o_tours_tromblon.arr_ameliorations2D = Make2DTableau(ficParamGlobaux.objet_tours_tromblon.o_tours_tromblon.arr_ameliorations, ficParamGlobaux.objet_tours_tromblon.o_tours_tromblon.arr_ameliorations2D, 2, 3);
+        ficParamGlobaux.objet_cout_achat_tours_selon_nombre.o_cout_achat_tours_selon_nombre.arr_cout_achat_tour_joueur_possede_2D = Make2DTableau(ficParamGlobaux.objet_cout_achat_tours_selon_nombre.o_cout_achat_tours_selon_nombre.arr_cout_achat_tour_joueur_possede, ficParamGlobaux.objet_cout_achat_tours_selon_nombre.o_cout_achat_tours_selon_nombre.arr_cout_achat_tour_joueur_possede_2D, 8, 4);
     }
 
     public string[,] Make2DTableau(string[] monTableau1D,string[,] monTableau2D,int nbLines,int nbCols)
@@ -37,6 +38,21 @@ public class JsonParametresGlobaux : MonoBehaviour
         for(int ii = 0; ii < nbLines; ii++)
         {
             for(int jj = 0; jj < nbCols; jj++)
+            {
+                monTableau2D[ii, jj] = monTableau1D[kk];
+                kk++;
+            }
+        }
+        return monTableau2D;
+    }
+
+    public int[,] Make2DTableau(int[] monTableau1D, int[,] monTableau2D, int nbLines, int nbCols)
+    {
+        monTableau2D = new int[nbLines, nbCols];
+        int kk = 0;
+        for (int ii = 0; ii < nbLines; ii++)
+        {
+            for (int jj = 0; jj < nbCols; jj++)
             {
                 monTableau2D[ii, jj] = monTableau1D[kk];
                 kk++;
@@ -172,14 +188,8 @@ public class Objet_cout_achat_tours_selon_nombre
 [Serializable]
 public class O_cout_achat_tours_selon_nombre
 {
-    public int[] arr_cout_achat_tour_joueur_possede_1;
-    public int[] arr_cout_achat_tour_joueur_possede_2;
-    public int[] arr_cout_achat_tour_joueur_possede_3;
-    public int[] arr_cout_achat_tour_joueur_possede_4;
-    public int[] arr_cout_achat_tour_joueur_possede_5;
-    public int[] arr_cout_achat_tour_joueur_possede_6;
-    public int[] arr_cout_achat_tour_joueur_possede_7;
-    public int[] arr_cout_achat_tour_joueur_possede_8;
+    public int[] arr_cout_achat_tour_joueur_possede;
+    public int[,] arr_cout_achat_tour_joueur_possede_2D;
 }
 #endregion
 

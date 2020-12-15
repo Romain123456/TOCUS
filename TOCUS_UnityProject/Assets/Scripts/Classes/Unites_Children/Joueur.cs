@@ -34,7 +34,8 @@ public class Joueur : MonoBehaviour
     public float _TimeToPlay;               // = +Infini en général, valeur dans certains cas
     public bool isTimer;                    // Est-ce que le joueur a un temps imparti pour jouer ?
     public bool isActivePlayer;             // Est-ce que c'est à son tour de jouer ?
-    public int[] _NbUnites;                 //=0 : soldats, =1 : chevaliers, =2 : barbares, =3 : cavaliers
+    public int[] _NbUnites;                 // =0 : soldats, =1 : chevaliers, =2 : barbares, =3 : cavaliers
+    public int nbToursPossedees;            // Nombre de tours possédées par le joueur
 
     //GameObject relatifs
     public GameObject _panelInterfaceJoueur;        //Panel de l'interface du joueur

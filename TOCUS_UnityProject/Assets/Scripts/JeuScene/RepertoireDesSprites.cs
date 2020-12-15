@@ -229,10 +229,6 @@ public class RepertoireDesSprites : MonoBehaviour
             toursData.Add(new ToursRepertoire());
             toursData[ii].tourNom = listeToursObject[listToursHasard[ii]].tourNom;
             toursData[ii].tourSprite = listeToursObject[listToursHasard[ii]].tourSprite;
-            toursData[ii].tourPrixBle = listeToursObject[listToursHasard[ii]].tourPrixBle;
-            toursData[ii].tourPrixBois = listeToursObject[listToursHasard[ii]].tourPrixBois;
-            toursData[ii].tourPrixFer = listeToursObject[listToursHasard[ii]].tourPrixFer;
-            toursData[ii].tourPrixPierre = listeToursObject[listToursHasard[ii]].tourPrixPierre;
             toursData[ii].positionTour = listeToursObject[listToursHasard[ii]].positionTour;
             toursData[ii].scaleTour = listeToursObject[listToursHasard[ii]].scaleTour;
             toursData[ii].tourTypeVisee = listeToursObject[listToursHasard[ii]].tourTypeVisee.ToString();
@@ -241,6 +237,7 @@ public class RepertoireDesSprites : MonoBehaviour
             toursData[ii].tourTypePortee = listeToursObject[listToursHasard[ii]].tourTypePortee.ToString();
             toursData[ii].tourTypeDureeDegats = listeToursObject[listToursHasard[ii]].tourTypeDureeDegats.ToString();
             toursData[ii].tourTypeLargeurVisee = listeToursObject[listToursHasard[ii]].tourTypeLargeurVisee.ToString();
+            toursData[ii].tourTypeImpact = listeToursObject[listToursHasard[ii]].tourTypeImpact.ToString();
         }
     }
     #endregion
@@ -388,10 +385,6 @@ public class ToursRepertoire
 {
     public string tourNom;                  //Nom de la tour
     public Sprite tourSprite;               //Sprite de la tour
-    public int tourPrixBle;                 //Prix en blé de la tour
-    public int tourPrixBois;                //Prix en bois de la tour
-    public int tourPrixFer;                 //Prix en fer de la tour
-    public int tourPrixPierre;              //Prix en pierre de la tour
 
     public Vector3 positionTour;            //Position de la tour par rapport à l'emplacement
     public Vector3 scaleTour;               //Scale de la tour
@@ -413,6 +406,8 @@ public class ToursRepertoire
     public string tourTypeDureeDegats;      //Type de durée de dégâts
 
     public string tourTypeLargeurVisee;     //Type de largeur de visée
+
+    public string tourTypeImpact;           //Type impact de la tour
 }
 
 #endregion

@@ -20,7 +20,7 @@ public class ParametresCarteOpenning : MonoBehaviour
 
         ficOptionParam = new JsonOptionsParam();
         ficOptionParam = ficOptionParam.OuvertureJsonFile(pathJsonParam);
-        //Debug.Log(ficOptionParam.objet_vagues.o_vagues.o_structure_vagues[1].s_chemin_1);
+       // Debug.Log(ficOptionParam.objet_vagues.o_vagues.o_structure_vagues[1].s_chemin_1);
     }
 
     // Update is called once per frame

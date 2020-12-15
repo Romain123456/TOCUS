@@ -94,7 +94,7 @@ public class LevelManager : MonoBehaviour
     [HideInInspector] public Text textRounds;
     [HideInInspector] public int roundActivationDeploiementEnnemi;                  //Round auquel on lance de déploiement des ennemis (si =0, pas d'ennemis dans cette map) à adapter avec json
     [HideInInspector] public int[] periodeDeploiement;            //Variable temporaire, à adapter avec json
-    [HideInInspector] public int[,] ennemisPerRound;
+    //[HideInInspector] public int[,] ennemisPerRound;
     [HideInInspector] public GameObject panelVictoire;
     [HideInInspector] public GameObject panelDefaite;
     [HideInInspector] public bool isLose;       //Est-ce qu'on a perdu ?
@@ -105,6 +105,7 @@ public class LevelManager : MonoBehaviour
     [HideInInspector] public int _NbVictoryPointsFosse;                   //Nombre de points de victoire par ennemi tué si on a la fosse
     [HideInInspector] public bool isCabaneEclaireur;          //Est-ce qu'on a construit la cabane d'éclaireur ?
     public int _SecondesBeforeMonstres;                        //Temps (en secondes) avant arrivée de vague pour donner l'alerte
+    [HideInInspector] public int[,] prixToursParToursJoueur;        //Prix des tours en fonction du nombre de tours possédées par le joueur
 
     //PopUps pour messages destinés aux joueurs
     [HideInInspector] public Text textPopUps;               //Text PopUps (Changements possibles par la suite, voir le GD !)
@@ -143,7 +144,7 @@ public class LevelManager : MonoBehaviour
 
         //Ennemis par round
         repertoireSprites.EnnemiDataCreate();
-        ennemisPerRound = new int[repertoireSprites.ennemiData.Length, nbMaxRounds];
+        /*ennemisPerRound = new int[repertoireSprites.ennemiData.Length, nbMaxRounds];
         for(int ii = 0; ii < nbMaxRounds; ii++)
         {
             ennemisPerRound[0, ii] = fileJson.nbEnnemisRound_type1[ii];
@@ -151,7 +152,7 @@ public class LevelManager : MonoBehaviour
         for (int ii = 0; ii < nbMaxRounds; ii++)
         {
             ennemisPerRound[1, ii] = fileJson.nbEnnemisRound_type2[ii];
-        }
+        }*/
 
 
         //Gestion du Panel Interraction Batiment
@@ -217,8 +218,8 @@ public class LevelManager : MonoBehaviour
             int jj = 0;
             while (jj < nbInstanceReserves)
             {
-                int way = Random.Range(0, 3);
-                InstanciationEnnemi_AffectationReserve(reserveTypePrefabEnnemis[ii], ii, way);  
+                //int way = Random.Range(0, 3);
+                InstanciationEnnemi_AffectationReserve(reserveTypePrefabEnnemis[ii], ii);  
                 jj++;
             }
         }
@@ -273,6 +274,22 @@ public class LevelManager : MonoBehaviour
 
 
         #endregion
+
+
+        #region Joueur
+        //Joueur
+        joueur1 = new Joueur(repertoireSprites.herosData[0].herosNom, repertoireSprites.herosData[0].herosSprite, false, 1, isModeDebug, repertoireSprites.herosData[0].pionActif);
+        joueur2 = new Joueur(repertoireSprites.herosData[1].herosNom, repertoireSprites.herosData[1].herosSprite, false, 2, isModeDebug, repertoireSprites.herosData[1].pionActif);
+        tableauJoueurs[0] = joueur1;
+        tableauJoueurs[1] = joueur2;
+
+        _JoueurActif = 1;
+        _PionJoueurActif = GameObject.Find("ImagePionJoueurActif");
+        _PionJoueurActifTransform = _PionJoueurActif.GetComponent<RectTransform>();
+        _PionJoueurActifImage = _PionJoueurActifTransform.GetComponent<Image>();
+        SetJoueurActif();
+        #endregion
+
 
 
         #region Les Ressources
@@ -368,6 +385,10 @@ public class LevelManager : MonoBehaviour
         #region Les Tours
         nbTours = fileJson.nbTours;
         tours = new EmptyBatimentsConstruits[nbTours];
+
+        //Prix des tours en fonction du nombre de tours possédées par le joueur 
+        prixToursParToursJoueur = JsonParametresGlobaux.ficParamGlobaux.objet_cout_achat_tours_selon_nombre.o_cout_achat_tours_selon_nombre.arr_cout_achat_tour_joueur_possede_2D;
+
         for (int ii = 0; ii < nbTours; ii++)
         {
             tours[ii] = new EmptyBatimentsConstruits(repertoireSprites.emptyTourSprite, "PlacementTour", true, "EmplacementTour");
@@ -496,20 +517,6 @@ public class LevelManager : MonoBehaviour
         #endregion
 
 
-        #region Joueur
-        //Joueur
-        joueur1 = new Joueur(repertoireSprites.herosData[0].herosNom, repertoireSprites.herosData[0].herosSprite, false, 1,isModeDebug,repertoireSprites.herosData[0].pionActif);
-        joueur2 = new Joueur(repertoireSprites.herosData[1].herosNom, repertoireSprites.herosData[1].herosSprite, false, 2,isModeDebug,repertoireSprites.herosData[1].pionActif);
-        tableauJoueurs[0] = joueur1;
-        tableauJoueurs[1] = joueur2;
-
-        _JoueurActif = 1;
-        _PionJoueurActif = GameObject.Find("ImagePionJoueurActif");
-        _PionJoueurActifTransform = _PionJoueurActif.GetComponent<RectTransform>();
-        _PionJoueurActifImage = _PionJoueurActifTransform.GetComponent<Image>();
-        SetJoueurActif();
-        #endregion
-
         //PopUps
         textPopUps = GameObject.Find("TextPopUps").GetComponent<Text>();
         textPopUps.text = "";
@@ -529,7 +536,7 @@ public class LevelManager : MonoBehaviour
 
 
     //Permet l'instanciation d'un ennemi en choisissant son chemin et son index dans le répertoire pour lui donner ses propriétés
-    void InstanciationEnnemi_AffectationReserve(Transform reserve ,int _IndexRepertoire,int _Chemin)
+    void InstanciationEnnemi_AffectationReserve(Transform reserve ,int _IndexRepertoire)
     {
         Ennemis monEnnemi = new Ennemis(repertoireSprites.ennemiData[_IndexRepertoire].ennemiSprite, repertoireSprites.ennemiData[_IndexRepertoire].uniteBoxCollSize, repertoireSprites.ennemiData[_IndexRepertoire].uniteScaleCanvas, repertoireSprites.ennemiData[_IndexRepertoire].unitePositionCanvas);
         monEnnemi.nomUnite = repertoireSprites.ennemiData[_IndexRepertoire].uniteNom;
@@ -537,8 +544,8 @@ public class LevelManager : MonoBehaviour
         monEnnemi.monTransform.localScale = repertoireSprites.ennemiData[_IndexRepertoire].uniteScale;
         //monEnnemi.weaponHitbox.GetComponent<CallBacksWeapons>().att = repertoireSprites.ennemiData[_IndexRepertoire].ennemiAttaque;
         monEnnemi.speedMove = 10/repertoireSprites.ennemiData[_IndexRepertoire].ennemiSpeedMove;
-        monEnnemi.cheminChoisi = _Chemin;
-        monEnnemi.CheminDefinitionEnnemi(positionsEnnemisChemin);
+        //monEnnemi.cheminChoisi = _Chemin;
+        //monEnnemi.CheminDefinitionEnnemi(positionsEnnemisChemin);
         //monEnnemi.SpriteSheetName = "Sprites/"+monEnnemi.nomUnite+"_SpriteSheet";
         monEnnemi.monTransform.parent = reserve;
         monEnnemi.uniteVitalite = repertoireSprites.ennemiData[_IndexRepertoire].uniteTypeVitalite;
@@ -760,6 +767,7 @@ public class LevelManager : MonoBehaviour
 
             #region New Instances + Activation Ennemis
             //New Instances
+           /* NewInstancesEnnemis();
             for (int ii = 0; ii < reserveTypePrefabEnnemis.Length; ii++)
             {
                 nbInactif = CompteNbInactivesReserves(reserveTypePrefabEnnemis[ii]);
@@ -787,10 +795,10 @@ public class LevelManager : MonoBehaviour
                 }
                 newInstances = 0;
                 needNewInstances = false;
-            }
+            }*/
 
             //Activation Ennemis
-            for (int ii = 0; ii < ennemisPerRound.GetLength(0); ii++)
+           /* for (int ii = 0; ii < ennemisPerRound.GetLength(0); ii++)
             {
                 int ennemisInstance = 0;
                 for(int jj=0;jj< reserveTypePrefabEnnemis[ii].childCount; jj++)
@@ -805,7 +813,7 @@ public class LevelManager : MonoBehaviour
                         ennemisInstance++;
                     }
                 }
-            }
+            }*/
             #endregion
             #endregion
 
@@ -857,12 +865,54 @@ public class LevelManager : MonoBehaviour
     }
 
 
+    //New Instance d'ennemis 
+    public void NewInstancesEnnemis()
+    {
+        bool needNewInstances = false;
+        int nbInactif = 0;
+        int newInstances = 0;
+        for (int ii = 0; ii < reserveTypePrefabEnnemis.Length; ii++)
+        {
+            nbInactif = CompteNbInactivesReserves(reserveTypePrefabEnnemis[ii]);
+            if (nbInactif < nbMiniInstancesInactiveReserves)
+            {
+                needNewInstances = true;
+                newInstances = Mathf.Max(newInstances, nbMiniInstancesInactiveReserves - nbInactif);
+            }
+        }
+        if (needNewInstances)
+        {
+            int oldDimension = prefabEnnemis.GetLength(1);
+            prefabEnnemis = new Transform[reserveTypePrefabEnnemis.Length, oldDimension + newInstances];
+            for (int ii = 0; ii < reserveTypePrefabEnnemis.Length; ii++)
+            {
+                for (int jj = 0; jj < newInstances; jj++)
+                {
+                    //int way = Random.Range(0, 3);
+                    InstanciationEnnemi_AffectationReserve(reserveTypePrefabEnnemis[ii], ii);
+                }
+                for (int jj = 0; jj < prefabEnnemis.GetLength(1); jj++)
+                {
+                    prefabEnnemis[ii, jj] = reserveTypePrefabEnnemis[ii].GetChild(jj);
+                }
+            }
+            newInstances = 0;
+            needNewInstances = false;
+        }
+    }
+
+
 
     //Coroutine de déploiement des ennemis
     IEnumerator DeploiementEnnemis()
     {
         float chrono = 0f;
         int indTableauDeploiement = 0;
+
+        //Initialisation, lancée de la première vague
+        /*Debug.Log("Lancement vague");
+        indTableauDeploiement++;*/
+
         while (!isEndGame)
         {
             float oldChrono = chrono;
@@ -878,7 +928,8 @@ public class LevelManager : MonoBehaviour
                 Debug.Log((int)chrono);
                 if(indTableauDeploiement<periodeDeploiement.Length && (int)chrono == periodeDeploiement[indTableauDeploiement])
                 {
-                    Debug.Log("Lancement vague");
+                    //Debug.Log("Lancement vague");
+                    LancementVagueMonstres(indTableauDeploiement);
                     indTableauDeploiement++;
                 }
             }
@@ -892,6 +943,42 @@ public class LevelManager : MonoBehaviour
     }
 
 
+
+    public void LancementVagueMonstres(int _II)
+    {
+        string[] monstreChemin = new string[3];
+        monstreChemin[0] = ParametresCarteOpenning.ficOptionParam.objet_vagues.o_vagues.o_structure_vagues[_II].s_chemin_1;
+        monstreChemin[1] = ParametresCarteOpenning.ficOptionParam.objet_vagues.o_vagues.o_structure_vagues[_II].s_chemin_2;
+        monstreChemin[2] = ParametresCarteOpenning.ficOptionParam.objet_vagues.o_vagues.o_structure_vagues[_II].s_chemin_3;
+
+        for(int ii = 0; ii < monstreChemin.Length; ii++)
+        {
+            if(monstreChemin[ii] != " ")
+            {
+                for(int jj = 0; jj < reservePrefabEnnemis.childCount; jj++)
+                {
+                    if(reservePrefabEnnemis.GetChild(jj).GetChild(0).name == monstreChemin[ii])
+                    {
+                        //Activation pooling de l'ennemi
+                        for(int kk=0;kk< reservePrefabEnnemis.GetChild(jj).childCount; kk++)
+                        {
+                            if (!reservePrefabEnnemis.GetChild(jj).GetChild(kk).gameObject.activeInHierarchy)
+                            {
+                                reservePrefabEnnemis.GetChild(jj).GetChild(kk).GetComponent<CallBacksEnnemis>().monEnnemi.cheminChoisi = ii;
+                                reservePrefabEnnemis.GetChild(jj).GetChild(kk).GetComponent<CallBacksEnnemis>().monEnnemi.CheminDefinitionEnnemi(positionsEnnemisChemin);
+                                reservePrefabEnnemis.GetChild(jj).GetChild(kk).gameObject.SetActive(true);
+                                if(kk >= reservePrefabEnnemis.GetChild(jj).childCount - 2)
+                                {
+                                    NewInstancesEnnemis();
+                                }
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 
 
 

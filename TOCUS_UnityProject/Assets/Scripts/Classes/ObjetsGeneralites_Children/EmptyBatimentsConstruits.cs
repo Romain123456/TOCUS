@@ -132,6 +132,7 @@ public class EmptyBatimentsConstruits : ObjetsGeneralites
         nouvelleTourConstruite.joueurOwner = levelManager._JoueurActif - 1;
         nouvelleTourConstruite._DureeDegats = batimentGestion.tourConstruite.tourTypeDureeDegats;
         nouvelleTourConstruite._LargeurViseeTir = batimentGestion.tourConstruite.tourTypeLargeurVisee;
+        nouvelleTourConstruite._TypeImpact = batimentGestion.tourConstruite.tourTypeImpact;
 
         if (levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._HasEcoleDeMagie)
         {
@@ -140,15 +141,19 @@ public class EmptyBatimentsConstruits : ObjetsGeneralites
 
 
         //Paiement des ressources
-        levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[0] -= batimentGestion.tourConstruite.tourPrixBle;
-        levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[1] -= batimentGestion.tourConstruite.tourPrixBois;
-        levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[2] -= batimentGestion.tourConstruite.tourPrixFer;
-        levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[3] -= batimentGestion.tourConstruite.tourPrixPierre;
+        //Etablissement du prix de la tour en fonction du nombre possédé par le joueur
+        int ind0prixTourTableau = batimentGestion.RecupIndiceNbTourParJoueur();
+
+        levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[0] -= levelManager.prixToursParToursJoueur[ind0prixTourTableau, 0];
+        levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[1] -= levelManager.prixToursParToursJoueur[ind0prixTourTableau, 1];
+        levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[2] -= levelManager.prixToursParToursJoueur[ind0prixTourTableau, 2];
+        levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[3] -= levelManager.prixToursParToursJoueur[ind0prixTourTableau, 3];
         //Affichage du nouveau nombre de ressources par le joueur
         for (int ii = 0; ii < levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes.Length; ii++)
         {
             levelManager.tableauJoueurs[levelManager._JoueurActif - 1].AfficheNbRessources(ii);
         }
+        levelManager.tableauJoueurs[levelManager._JoueurActif - 1].nbToursPossedees++;      //Incrémentation du nombre de tours possédées
         batimentGestion.panelInteractText.text = "Tour à construire ?";     //Remise du texte du panel à son ancienne valeur
 
         //Retire de la liste la tour construite
