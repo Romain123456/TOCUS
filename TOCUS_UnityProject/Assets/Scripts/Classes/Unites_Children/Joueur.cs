@@ -36,6 +36,11 @@ public class Joueur : MonoBehaviour
     public bool isActivePlayer;             // Est-ce que c'est à son tour de jouer ?
     public int[] _NbUnites;                 // =0 : soldats, =1 : chevaliers, =2 : barbares, =3 : cavaliers
     public int nbToursPossedees;            // Nombre de tours possédées par le joueur
+    public bool[] _UpgradeRecolte;          //=0 : blé, =1 : bois, =2 : fer, =3 : pierre . Est-ce que le joueur a l'upgrade de la récolte
+    public bool isFeuDeCamp;                // Est-ce que le joueur a le feu de camp ?
+    public bool isPalissade;                // Est-ce que le joueur a la palissade ?
+    public bool isEntrepot;                 // Est-ce que le joueur a l'entrepot ?
+    public bool isGrue;                     // Est-ce que le joueur a la grue ?
 
     //GameObject relatifs
     public GameObject _panelInterfaceJoueur;        //Panel de l'interface du joueur
@@ -148,6 +153,7 @@ public class Joueur : MonoBehaviour
 
         //Compétences Passives
         _NombreAutels = 0;
+        _UpgradeRecolte = new bool[4];
     }
 
     //Affiche le nombre de ressources que possède le joueur

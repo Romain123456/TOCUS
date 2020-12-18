@@ -22,7 +22,10 @@ public class BatimentConstructions : ObjetsGeneralites
     [HideInInspector] public int nbBoutonInterractionsPossible;
 
     //Est-ce que le bâtiment est public ?
-    [HideInInspector] public bool isBatimentPublic;     
+    [HideInInspector] public bool isBatimentPublic;
+
+    //Est-ce que c'est un bâtiment personnel ?
+    [HideInInspector] public bool isBatimentPersonnel;
 
 
     //Propre à la Caserne       //Sprite des unités en attente
@@ -285,13 +288,6 @@ public class BatimentConstructions : ObjetsGeneralites
 
         //Etablissement du prix de la tour en fonction du nombre possédé par le joueur
         int ind0prixTourTableau = RecupIndiceNbTourParJoueur();
-       /* if(levelManager.tableauJoueurs[levelManager._JoueurActif - 1].nbToursPossedees < levelManager.prixToursParToursJoueur.GetLength(0))
-        {
-            ind0prixTourTableau = levelManager.tableauJoueurs[levelManager._JoueurActif - 1].nbToursPossedees;
-        } else
-        {
-            ind0prixTourTableau = levelManager.prixToursParToursJoueur.GetLength(0);
-        }*/
 
         //Si le joueur a les ressources nécessaires, on peut construire, sinon non
         if (levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[0] >= levelManager.prixToursParToursJoueur[ind0prixTourTableau,0] &&
@@ -376,6 +372,13 @@ public class BatimentConstructions : ObjetsGeneralites
             levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._NbUnites[uniteEngaged.uniteListeOrdre]++;
         }
 
+        //Si Feu de camp, on offre un bois
+        if (levelManager.tableauJoueurs[levelManager._JoueurActif - 1].isFeuDeCamp)
+        {
+            levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[1]++;
+            levelManager.tableauJoueurs[levelManager._JoueurActif - 1].AfficheNbRessources(1);
+        }
+
         //Paiement des ressources
         levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[0] -= _RecrutementMax * prixUniteCaserne[0];     //On paie le prix en ressources
         for (int ii = 0; ii < levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes.Length; ii++)
@@ -394,6 +397,7 @@ public class BatimentConstructions : ObjetsGeneralites
 
     public void RecrutementUnitesSpeciales(Transform reserveUniteSpeciale)
     {
+        Debug.Log("Unité spéciale recrutée");
         int indiceUniteSpeciale = FindUniteSpecialeIndiceRepertoire(reserveUniteSpeciale.GetChild(0).name);
         uniteEngaged = levelManager.repertoireSprites.unitesSpecialesData[indiceUniteSpeciale];
         bool canRecruter = true;
@@ -581,7 +585,7 @@ public class BatimentConstructions : ObjetsGeneralites
         if (nameBatimentConstruit == "Hopital")
         {
             BatimentHopitalFonction();
-        } else if (nameBatimentConstruit == "Hutte" || nameBatimentConstruit == "Cave")
+        } else if (nameBatimentConstruit == "Hutte" || nameBatimentConstruit == "Cave" || nameBatimentConstruit == "Auberge De Bagarreur")
         {
             BatimentUniteSpecialeFonction();
         } else if(nameBatimentConstruit == "Mortier")
@@ -682,6 +686,68 @@ public class BatimentConstructions : ObjetsGeneralites
         Debug.Log("Afficher le nombre d'autels dans l'interface");
     }
 
+    public void BatimentPortailDemoniaqueFonction()
+    {
+        levelManager.myEventSystem.currentSelectedGameObject.transform.parent.parent.GetChild(1).GetChild(0).GetChild(0).GetComponent<Button>().enabled = false;
+        Debug.Log("Portail Démoniaque fonction à développer");
+    }
+
+    public void BatimentHacheDeGuerreFonction()
+    {
+        levelManager.myEventSystem.currentSelectedGameObject.transform.parent.parent.GetChild(1).GetChild(0).GetChild(0).GetComponent<Button>().enabled = false;
+        Debug.Log("Hache de Guerre fonction à développer");
+    }
+
+    public void BatimentCampEntrainementFonction()
+    {
+        levelManager.myEventSystem.currentSelectedGameObject.transform.parent.parent.GetChild(1).GetChild(0).GetChild(0).GetComponent<Button>().enabled = false;
+        Debug.Log("Camp Entraînement fonction à développer");
+    }
+
+    public void BatimentUpgradeRecolteFonction()
+    {
+        levelManager.myEventSystem.currentSelectedGameObject.transform.parent.parent.GetChild(1).GetChild(0).GetChild(0).GetComponent<Button>().enabled = false;
+        int ressourceToUp = 0;
+        if(batimentBuild.batimentNom == "Moulin")
+        {
+            ressourceToUp = 0;
+        } else if(batimentBuild.batimentNom == "Stock De Bois")
+        {
+            ressourceToUp = 1;
+        } else if(batimentBuild.batimentNom == "Fourneau")
+        {
+            ressourceToUp = 2;
+        } else if(batimentBuild.batimentNom == "Stock De Fer")
+        {
+            ressourceToUp = 3;
+        }
+
+        levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._UpgradeRecolte[ressourceToUp] = true;
+    }
+
+    public void BatimentFeuDeCampFonction()
+    {
+        levelManager.myEventSystem.currentSelectedGameObject.transform.parent.parent.GetChild(1).GetChild(0).GetChild(0).GetComponent<Button>().enabled = false;
+        levelManager.tableauJoueurs[levelManager._JoueurActif - 1].isFeuDeCamp = true;
+    }
+
+    public void BatimentPalissadeFonction()
+    {
+        levelManager.myEventSystem.currentSelectedGameObject.transform.parent.parent.GetChild(1).GetChild(0).GetChild(0).GetComponent<Button>().enabled = false;
+        levelManager.tableauJoueurs[levelManager._JoueurActif - 1].isPalissade = true;
+    }
+
+    public void BatimentEntrepotFonction()
+    {
+        levelManager.myEventSystem.currentSelectedGameObject.transform.parent.parent.GetChild(1).GetChild(0).GetChild(0).GetComponent<Button>().enabled = false;
+        levelManager.tableauJoueurs[levelManager._JoueurActif - 1].isEntrepot = true;
+    }
+
+    public void BatimentGrueFonction()
+    {
+        levelManager.myEventSystem.currentSelectedGameObject.transform.parent.parent.GetChild(1).GetChild(0).GetChild(0).GetComponent<Button>().enabled = false;
+        levelManager.tableauJoueurs[levelManager._JoueurActif - 1].isGrue = true;
+    }
 
     public void BatimentFosseFonction()
     {

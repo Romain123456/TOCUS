@@ -765,56 +765,6 @@ public class LevelManager : MonoBehaviour
 
             #endregion
 
-            #region New Instances + Activation Ennemis
-            //New Instances
-           /* NewInstancesEnnemis();
-            for (int ii = 0; ii < reserveTypePrefabEnnemis.Length; ii++)
-            {
-                nbInactif = CompteNbInactivesReserves(reserveTypePrefabEnnemis[ii]);
-                if (nbInactif < nbMiniInstancesInactiveReserves)
-                {
-                    needNewInstances = true;
-                    newInstances = Mathf.Max(newInstances, nbMiniInstancesInactiveReserves - nbInactif);
-                }
-            }
-            if (needNewInstances)
-            {
-                int oldDimension = prefabEnnemis.GetLength(1);
-                prefabEnnemis = new Transform[reserveTypePrefabEnnemis.Length, oldDimension + newInstances];
-                for (int ii = 0; ii < reserveTypePrefabEnnemis.Length; ii++)
-                {
-                    for (int jj = 0; jj < newInstances; jj++)
-                    {
-                        int way = Random.Range(0, 3);
-                        InstanciationEnnemi_AffectationReserve(reserveTypePrefabEnnemis[ii], ii, way);
-                    }
-                    for (int jj = 0; jj < prefabEnnemis.GetLength(1); jj++)
-                    {
-                        prefabEnnemis[ii, jj] = reserveTypePrefabEnnemis[ii].GetChild(jj);
-                    }
-                }
-                newInstances = 0;
-                needNewInstances = false;
-            }*/
-
-            //Activation Ennemis
-           /* for (int ii = 0; ii < ennemisPerRound.GetLength(0); ii++)
-            {
-                int ennemisInstance = 0;
-                for(int jj=0;jj< reserveTypePrefabEnnemis[ii].childCount; jj++)
-                {
-                    if (ennemisInstance == ennemisPerRound[ii, numeroRound - 1])
-                    {
-                        break;
-                    }
-                    if (!reserveTypePrefabEnnemis[ii].GetChild(jj).gameObject.activeInHierarchy)
-                    {
-                        reserveTypePrefabEnnemis[ii].GetChild(jj).gameObject.SetActive(true);
-                        ennemisInstance++;
-                    }
-                }
-            }*/
-            #endregion
             #endregion
 
 

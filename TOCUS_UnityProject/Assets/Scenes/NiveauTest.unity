@@ -5483,6 +5483,7 @@ MonoBehaviour:
   stockTotalUniteSpeciales:
   - {fileID: 11400000, guid: ab9dfa3918d74d54eb91650476dfad5f, type: 2}
   - {fileID: 11400000, guid: 50f887fa7b001864c906a3ee152b7dbe, type: 2}
+  - {fileID: 11400000, guid: ec74d067bff21ed469d733c3d6f5cb16, type: 2}
   superUnitesJoueurData: []
   listeSuperUniteJoueurObject: []
   stockTotalSuperUnites:
@@ -5507,6 +5508,13 @@ MonoBehaviour:
   stockTotalTours:
   - {fileID: 11400000, guid: 72da5c1aee02a764eb0c1fb02b4fb07b, type: 2}
   - {fileID: 11400000, guid: f582708de291cf447890a388ccf0bf29, type: 2}
+  - {fileID: 11400000, guid: d459fd4e33b5ab944a9e75456d189e5a, type: 2}
+  - {fileID: 11400000, guid: f438a79a6558aa341a0219b7d1d3099c, type: 2}
+  - {fileID: 11400000, guid: f1af301d53cc2354a877bb4781655afb, type: 2}
+  - {fileID: 11400000, guid: e7ac1bc51c9f5bd4bb67ebde30036997, type: 2}
+  - {fileID: 11400000, guid: 7c52b40d9d607494a9849a100ab0b44c, type: 2}
+  - {fileID: 11400000, guid: 85e89e7ad90471641a9f8e8afcfd18e8, type: 2}
+  - {fileID: 11400000, guid: 21f1c8d263fb614448625a6a312313c2, type: 2}
   nbDataTours: 0
   tourCirculaireVisee: {fileID: 21300002, guid: 5fd53940b7c1b4c4e8be5f7025e586da,
     type: 3}
@@ -5518,18 +5526,30 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5a4d40ad77e14374b968ae33a2df942b, type: 2}
   - {fileID: 11400000, guid: a0df06e802b71ac4e8f340825859b2c1, type: 2}
   stockTotalBatiment:
+  - {fileID: 11400000, guid: 82fb0308529fe85429adb8419a2cd605, type: 2}
   - {fileID: 11400000, guid: 48149e43408910146994c3a22649c060, type: 2}
   - {fileID: 11400000, guid: d8a520ac9f9f073438ed89550e3413a1, type: 2}
+  - {fileID: 11400000, guid: 90fa77aa7bb8e49498a1f19d7e1cc582, type: 2}
   - {fileID: 11400000, guid: e8256912b77f12b4b896a2bc4b6bffe8, type: 2}
   - {fileID: 11400000, guid: d9d37ed9df9cfca4784b40248c471552, type: 2}
+  - {fileID: 11400000, guid: 787b278018cf02047aedbb308a6e4982, type: 2}
+  - {fileID: 11400000, guid: 2d90d02957fe2e345b0b7ed62c3696b3, type: 2}
   - {fileID: 11400000, guid: 4cdeb32441e93c949b39a01ae013a3a1, type: 2}
   - {fileID: 11400000, guid: 8c3ce34a204d04e45bb2182ba2c79544, type: 2}
+  - {fileID: 11400000, guid: 6cca8e4145dc5734b8ad4601e1723f25, type: 2}
+  - {fileID: 11400000, guid: d89bb3607ac70c147b166adf4a4f559a, type: 2}
+  - {fileID: 11400000, guid: 8f32effb925658745ae436aaee0eb36f, type: 2}
   - {fileID: 11400000, guid: 0a382dec6947c694c954d4d0fad39a76, type: 2}
   - {fileID: 11400000, guid: 5a4d40ad77e14374b968ae33a2df942b, type: 2}
   - {fileID: 11400000, guid: 8db3eac206b6cd54da5d11bae44a5828, type: 2}
   - {fileID: 11400000, guid: 330c11064ffed064ab9f90e55baccb15, type: 2}
   - {fileID: 11400000, guid: a0df06e802b71ac4e8f340825859b2c1, type: 2}
   - {fileID: 11400000, guid: 12669e4a4b109b144b2c690fcadbbf11, type: 2}
+  - {fileID: 11400000, guid: 8c6f59e4a7431e449bc261aa8d14f282, type: 2}
+  - {fileID: 11400000, guid: a2f7a1ac291a44743b8d366d061c14f6, type: 2}
+  - {fileID: 11400000, guid: 20e4ae83db5a27a4691377033fba84e4, type: 2}
+  - {fileID: 11400000, guid: b40e0ff1810246548be969ea8ec3d2f9, type: 2}
+  - {fileID: 11400000, guid: 20d1cee4d46ffea4487de6f33f4a7e25, type: 2}
   - {fileID: 11400000, guid: d18a8f5252f36104cb3ac6f98d414fb2, type: 2}
 --- !u!114 &497798055
 MonoBehaviour:
