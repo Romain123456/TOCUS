@@ -41,6 +41,8 @@ public class Chateau : ObjetsGeneralites
         levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[0] += 2;     //Ajoute 2 de blé au joueur actif
         levelManager.tableauJoueurs[levelManager._JoueurActif - 1].AfficheNbRessources(0);          //Affiche les ressources du joueur actif
         levelManager.panelParentBatimentInterract.gameObject.SetActive(false);                      //Ferme le panel
+        //Eventualité de présence de la palissade
+        PalissadeFonction();
         //Changer le tour de jeu
         ChangeJoueurActif();        
     }
@@ -51,6 +53,8 @@ public class Chateau : ObjetsGeneralites
         _ReserveRoundActif = true;          //Quelqu'un a pris la main
         levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._ReserveRound = true;        //Le joueur actif a pris la main
         levelManager.panelParentBatimentInterract.gameObject.SetActive(false);          //Fermeture du panel
+        //Eventualité de présence de la palissade
+        PalissadeFonction();
         //Changer le tour de jeu
         ChangeJoueurActif();
     }
@@ -73,18 +77,30 @@ public class Chateau : ObjetsGeneralites
             }
             levelManager._PorteVille.FillAmountHealthBarImage();
 
+            //Eventualité de présence de la palissade
+            PalissadeFonction();
+
             //Gagner points de solidarité
             levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._SolidarityPoints += _GainSolidarityPoints;
             levelManager.tableauJoueurs[levelManager._JoueurActif - 1].AffichePointVictoireSolidarite(levelManager.tableauJoueurs[levelManager._JoueurActif - 1].solidarityPointText, levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._SolidarityPoints);
 
             levelManager.panelParentBatimentInterract.gameObject.SetActive(false);                      //Ferme le panel
-                                                                                                        //Changer le tour de jeu
+                                                                                                        
+            //Changer le tour de jeu
             ChangeJoueurActif();
         } else
         {
             levelManager.PopUpsFonction("Pas assez de ressources !!", levelManager.textPopUps);
         }
+    }
 
 
+    public void PalissadeFonction()
+    {
+        if (levelManager.tableauJoueurs[levelManager._JoueurActif - 1].isPalissade)
+        {
+            levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[1]++;
+            levelManager.tableauJoueurs[levelManager._JoueurActif - 1].AfficheNbRessources(1);
+        }
     }
 }

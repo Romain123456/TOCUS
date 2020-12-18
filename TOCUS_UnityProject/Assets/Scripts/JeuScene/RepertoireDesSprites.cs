@@ -279,7 +279,7 @@ public class RepertoireDesSprites : MonoBehaviour
             batimentsData[ii].scaleBatiment = listeBatiments[listBatimentHasard[ii]].scaleBatiment;
             batimentsData[ii].nombreBatimentMaxParJoueur = listeBatiments[listBatimentHasard[ii]].nombreBatimentMaxParJoueur;
             batimentsData[ii].isBatimentPublic = listeBatiments[listBatimentHasard[ii]].isBatimentPublic;
-
+            batimentsData[ii].isBatimentPersonnel = listeBatiments[listBatimentHasard[ii]].isBatimentPersonnel;
         }
     }
     #endregion
@@ -426,6 +426,7 @@ public class BatimentsRepertoire
     public Vector3 scaleBatiment;       //Scale du batiment
     public int nombreBatimentMaxParJoueur;      //Combien de bâtiments maximum le joueur peut construire ?
     public bool isBatimentPublic;           //Est-ce que le bâtiment est public ?
+    public bool isBatimentPersonnel;        //Est-ce que c'est un bâtiment personnel ?
 }
 
 

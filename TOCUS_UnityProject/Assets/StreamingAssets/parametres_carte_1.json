@@ -1,11 +1,11 @@
 {
     "o_reglages":
 	{
-		"arr_s_batiments_disponibles":["Autel","Cave","Fosse"],
+		"arr_s_batiments_disponibles":["Autel","Cave","Moulin","Entrepot"],
 		"arr_s_tours_disponibles":["TourMitraillette","TourShotGun"],
 		"arr_s_unites_disponibles":["Soldat","Chevalier"],
 		"arr_s_superunites_disponibles":["SuperSoldat","SuperChevalier"],
-		"arr_s_unites_speciales_disponibles":["Assassin","Barbare"],
+		"arr_s_unites_speciales_disponibles":["Assassin","Barbare","Bagarreur"],
 		"arr_s_ennemis_disponibles":["MonstresBase","MonstresBoxeurs"]
 	},
 	"o_vagues":

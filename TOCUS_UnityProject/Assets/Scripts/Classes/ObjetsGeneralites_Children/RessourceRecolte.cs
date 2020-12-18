@@ -63,6 +63,10 @@ public class RessourceRecolte : ObjetsGeneralites
     {
         if (nbDispo > 0)
         {
+            if(levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._UpgradeRecolte[typeRessource])
+            {
+                nbDispo++;
+            }
             levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[typeRessource] += nbDispo;       //Ajout des ressources dispo dans la réserve du joueur actif
             levelManager.tableauJoueurs[levelManager._JoueurActif - 1].AfficheNbRessources(typeRessource);          //Affiche les ressources du joueur
             nbDispo = 0;                //Met le nombre de ressources disponible de l'objet à 0

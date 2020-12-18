@@ -144,10 +144,19 @@ public class EmptyBatimentsConstruits : ObjetsGeneralites
         //Etablissement du prix de la tour en fonction du nombre possédé par le joueur
         int ind0prixTourTableau = batimentGestion.RecupIndiceNbTourParJoueur();
 
-        levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[0] -= levelManager.prixToursParToursJoueur[ind0prixTourTableau, 0];
-        levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[1] -= levelManager.prixToursParToursJoueur[ind0prixTourTableau, 1];
-        levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[2] -= levelManager.prixToursParToursJoueur[ind0prixTourTableau, 2];
-        levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[3] -= levelManager.prixToursParToursJoueur[ind0prixTourTableau, 3];
+        for (int ii = 0; ii < levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes.Length; ii++)
+        {
+            levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[ii] -= levelManager.prixToursParToursJoueur[ind0prixTourTableau, ii];
+        }
+
+        if(levelManager.tableauJoueurs[levelManager._JoueurActif - 1].isGrue)
+        {
+            int ressourceGift = Random.Range(0, 4);
+            levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[ressourceGift]++;
+            levelManager.tableauJoueurs[levelManager._JoueurActif - 1].AfficheNbRessources(ressourceGift);
+        }
+
+
         //Affichage du nouveau nombre de ressources par le joueur
         for (int ii = 0; ii < levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes.Length; ii++)
         {
@@ -212,7 +221,11 @@ public class EmptyBatimentsConstruits : ObjetsGeneralites
         } else if ( batimentGestion.batimentBuild.batimentNom == "Cave")
         {
             batimentGestion.BatimentUniteSpecialesRecrutementInitiatilisation(batimentConstruit.gameObject, "ReserveAssassin", "Assassin");
-        } else if(batimentGestion.batimentBuild.batimentNom == "Mortier")
+        }else if(batimentGestion.batimentBuild.batimentNom == "Auberge De Bagarreur")
+        {
+            batimentGestion.BatimentUniteSpecialesRecrutementInitiatilisation(batimentConstruit.gameObject, "ReserveBagarreur", "Bagarreur");
+        }
+        else if(batimentGestion.batimentBuild.batimentNom == "Mortier")
         {
             batimentGestion.BatimentMortierInitialisation();
         } else if(batimentGestion.batimentBuild.batimentNom == "Fosse")
@@ -230,8 +243,40 @@ public class EmptyBatimentsConstruits : ObjetsGeneralites
         } else if(batimentGestion.batimentBuild.batimentNom == "Market")
         {
             batimentGestion.BatimentMarketInitialisation();
+        } else if(batimentGestion.batimentBuild.batimentNom == "Portail Demoniaque")
+        {
+            batimentGestion.BatimentPortailDemoniaqueFonction();
+        } else if (batimentGestion.batimentBuild.batimentNom == "Hache De Guerre")
+        {
+            batimentGestion.BatimentHacheDeGuerreFonction();
+        } else if(batimentGestion.batimentBuild.batimentNom == "Camp Entrainement")
+        {
+            batimentGestion.BatimentCampEntrainementFonction();
+        } else if(batimentGestion.batimentBuild.batimentNom == "Moulin" || batimentGestion.batimentBuild.batimentNom == "Stock De Pierre" || batimentGestion.batimentBuild.batimentNom == "Stock De Bois" || batimentGestion.batimentBuild.batimentNom == "Fourneau")
+        {
+            batimentGestion.BatimentUpgradeRecolteFonction();
+        } else if(batimentGestion.batimentBuild.batimentNom == "Feu De Camp")
+        {
+            batimentGestion.BatimentFeuDeCampFonction();
+        } else if(batimentGestion.batimentBuild.batimentNom == "Palissade")
+        {
+            batimentGestion.BatimentPalissadeFonction();
+        } else if(batimentGestion.batimentBuild.batimentNom == "Entrepot")
+        {
+            batimentGestion.BatimentEntrepotFonction();
+        } else if(batimentGestion.batimentBuild.batimentNom == "Grue")
+        {
+            batimentGestion.BatimentGrueFonction();
         }
 
+        if (levelManager.tableauJoueurs[levelManager._JoueurActif - 1].isEntrepot && batimentGestion.batimentBuild.batimentNom != "Entrepot")
+        {
+            int ressourceGift = Random.Range(0, 4);
+            levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[ressourceGift]++;
+            levelManager.tableauJoueurs[levelManager._JoueurActif - 1].AfficheNbRessources(ressourceGift);
+        }
+
+        Debug.Log("Batiment Construit");
 
 
 

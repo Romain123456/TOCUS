@@ -5,25 +5,6 @@
 		"s_puissance":"tres_forte"
 	},
 
-	"o_batiments":
-	{
-		"arr_cout_portail_demoniaque":	[0,0,6,6],
-
-		"arr_cout_auberge_bagarreur":	[4,2,0,2],
-
-		"arr_cout_hache_de_guerre":		[0,3,4,3],
-		"arr_cout_camp_entrainement":	[4,2,4,0],
-
-		"arr_cout_moulin":				[0,0,1,2],
-		"arr_cout_stock_de_pierre":		[0,0,0,2],
-		"arr_cout_stock_de_bois":		[0,2,0,0],
-		"arr_cout_fourneau":			[0,0,2,0],
-		"arr_cout_feu_de_camp":			[0,2,0,0],
-		"arr_cout_palissade":			[0,8,0,0],
-		"arr_cout_entrepot":			[2,4,2,2],
-		"arr_cout_grue":				[0,4,6,0]
-	},
-
 	"o_tours_sniper":
 	{
 		"arr_ameliorations":

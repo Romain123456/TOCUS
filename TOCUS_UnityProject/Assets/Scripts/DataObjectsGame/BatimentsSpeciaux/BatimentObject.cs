@@ -18,4 +18,5 @@ public class BatimentObject : ScriptableObject
     public int nombreBatimentMaxParJoueur;          //Combien de bâtiments maximum le joueur peut construire ?
 
     public bool isBatimentPublic;                   //Est-ce que le bâtiment est public ou privé ?
+    public bool isBatimentPersonnel;                //Est-ce que c'est un bâtiment personnel ou pas ?
 }
