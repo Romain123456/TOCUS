@@ -543,7 +543,11 @@ public class LevelManager : MonoBehaviour
         monEnnemi.monTransform.name = monEnnemi.nomUnite;
         monEnnemi.monTransform.localScale = repertoireSprites.ennemiData[_IndexRepertoire].uniteScale;
         //monEnnemi.weaponHitbox.GetComponent<CallBacksWeapons>().att = repertoireSprites.ennemiData[_IndexRepertoire].ennemiAttaque;
-        monEnnemi.speedMove = 10/repertoireSprites.ennemiData[_IndexRepertoire].ennemiSpeedMove;
+
+         
+        monEnnemi.typeSpeedDeplacement = repertoireSprites.ennemiData[_IndexRepertoire].typeSpeedMoveEnnemi;
+
+
         //monEnnemi.cheminChoisi = _Chemin;
         //monEnnemi.CheminDefinitionEnnemi(positionsEnnemisChemin);
         //monEnnemi.SpriteSheetName = "Sprites/"+monEnnemi.nomUnite+"_SpriteSheet";
@@ -553,7 +557,9 @@ public class LevelManager : MonoBehaviour
         monEnnemi.uniteDegats = repertoireSprites.ennemiData[_IndexRepertoire].uniteTypeDegats;
         monEnnemi.monAnimator.runtimeAnimatorController = repertoireSprites.ennemiData[_IndexRepertoire].ennemiAnimatorController;
         monEnnemi._VictoryPointGain = repertoireSprites.ennemiData[_IndexRepertoire].pointVictoireGain;
+        monEnnemi.unitePortee = repertoireSprites.ennemiData[_IndexRepertoire].uniteTypePortee;
         monEnnemi.AttributionCaracteristiques();
+        monEnnemi.AttributionCaracteristiquesEnnemi();
     }
 
 
@@ -583,6 +589,7 @@ public class LevelManager : MonoBehaviour
         monUniteJoueur.uniteDegats = _MesDataUnitesJoueurRepertoire[_IndexRepertoire].uniteTypeDegats;
         monUniteJoueur.uniteDegatsBase = _MesDataUnitesJoueurRepertoire[_IndexRepertoire].uniteTypeDegats;
         monUniteJoueur.uniteOrdreListe = _MesDataUnitesJoueurRepertoire[_IndexRepertoire].uniteListeOrdre;
+        monUniteJoueur.unitePortee = _MesDataUnitesJoueurRepertoire[_IndexRepertoire].uniteTypePortee;
         monUniteJoueur.AttributionCaracteristiques();
     }
     
@@ -603,6 +610,7 @@ public class LevelManager : MonoBehaviour
         maSuperUniteJoueur.uniteDegats = repertoireSprites.superUnitesJoueurData[_IndexRepertoire].uniteTypeDegats;
         maSuperUniteJoueur.uniteDegatsBase = repertoireSprites.superUnitesJoueurData[_IndexRepertoire].uniteTypeDegats;
         maSuperUniteJoueur.uniteOrdreListe = repertoireSprites.superUnitesJoueurData[_IndexRepertoire].uniteListeOrdre;
+        maSuperUniteJoueur.unitePortee = repertoireSprites.superUnitesJoueurData[_IndexRepertoire].uniteTypePortee;
         maSuperUniteJoueur.AttributionCaracteristiques();
     }
 
@@ -875,7 +883,7 @@ public class LevelManager : MonoBehaviour
                 }
 
 
-                Debug.Log((int)chrono);
+                //Debug.Log((int)chrono);
                 if(indTableauDeploiement<periodeDeploiement.Length && (int)chrono == periodeDeploiement[indTableauDeploiement])
                 {
                     //Debug.Log("Lancement vague");

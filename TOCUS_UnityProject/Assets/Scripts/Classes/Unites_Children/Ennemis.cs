@@ -5,7 +5,6 @@ using UnityEngine;
 public class Ennemis : Unites
 {
     //Combat
-    public bool isFighting;                         //Est-ce que l'unité est en train de se battre ?
     public Transform combatAdversaire;              //Adversaire de combat
     [HideInInspector] public bool isCombatWait;                    //Est-ce que le combat est lancé ?
     [HideInInspector] public bool isFightingPorteWait;                //Est-ce que l'ennemi combat la porte ?
@@ -15,6 +14,10 @@ public class Ennemis : Unites
     [HideInInspector] public int _VictoryPointGain;                //Combien de point de victoire l'ennemi donne-t-il ?
     [HideInInspector] public int joueurHiting;                      //Quel joueur tape l'ennemi à ce moment-là ?
 
+
+    //Vitesse de déplacement
+    [HideInInspector] public string typeSpeedDeplacement;
+    [HideInInspector] public float speedMove;                       //Vitesse de déplacement de l'ennemi
 
     //Fonction constructeur de l'ennemi. Appelle la fonction définie dans Unité et attribue les variables spécifiques à la classe Ennemi
     public Ennemis(Sprite _maSpriteBase, Vector2 _SizeBoxCollider, Vector2 _ScaleCanvasHealthBar, Vector2 _PositionCanvasHealthBar)
@@ -28,6 +31,26 @@ public class Ennemis : Unites
         _CallBackScripts = monGO.GetComponent<CallBacksEnnemis>();
 
         monGO.SetActive(false);
+    }
+
+    public void AttributionCaracteristiquesEnnemi()
+    {
+        if(typeSpeedDeplacement == "Tres_Lente")
+        {
+            speedMove = 10/JsonParametresGlobaux.ficParamGlobaux.objet_monstres_valeurs_textuelles_deplacement.o_monstres_valeurs_textuelles_deplacement.tres_lente;
+        } else if (typeSpeedDeplacement == "Lente")
+        {
+            speedMove = 10 / JsonParametresGlobaux.ficParamGlobaux.objet_monstres_valeurs_textuelles_deplacement.o_monstres_valeurs_textuelles_deplacement.lente;
+        } else if(typeSpeedDeplacement == "Normale")
+        {
+            speedMove = 10 / JsonParametresGlobaux.ficParamGlobaux.objet_monstres_valeurs_textuelles_deplacement.o_monstres_valeurs_textuelles_deplacement.normale;
+        } else if(typeSpeedDeplacement == "Rapide")
+        {
+            speedMove = 10 / JsonParametresGlobaux.ficParamGlobaux.objet_monstres_valeurs_textuelles_deplacement.o_monstres_valeurs_textuelles_deplacement.rapide;
+        } else if(typeSpeedDeplacement == "Tres_Rapide")
+        {
+            speedMove = 10 / JsonParametresGlobaux.ficParamGlobaux.objet_monstres_valeurs_textuelles_deplacement.o_monstres_valeurs_textuelles_deplacement.tres_rapide;
+        }
     }
 
 
@@ -108,13 +131,15 @@ public class Ennemis : Unites
         monAnimator.SetBool("MarcheGaucheBool", false);
         monAnimator.SetBool("MarcheDroitBool", false);
         //yield return new WaitForSeconds(FonctionsVariablesUtiles.deltaTime);
-
+        
+        //Si l'unité joueur est en train d'attaquer à distance, on attend la fin de l'attaque avant de lancer le combat
 
         if (_Adversaire.tag == "UniteJoueur")
         {
             CallBacksUnitesJoueur adversaireScript;
             adversaireScript = _Adversaire.GetComponent<CallBacksUnitesJoueur>();
             adversaireScript.ennemiTransform = monTransform;
+            adversaireScript.monUniteJoueur.isFighting = true;
 
             int initiativeEnnemi = uniteVitesseInitiative;
             int initiativeUniteJoueur = adversaireScript.monUniteJoueur.uniteVitesseInitiative;
@@ -304,7 +329,7 @@ public class Ennemis : Unites
 
             isCombatWait = false;     //On est plus en combat
             isFighting = false;
-
+            adversaireScript.monUniteJoueur.isFighting = false;
         }
 
         else if(_Adversaire.tag == "SuperUniteJoueur")
@@ -312,7 +337,7 @@ public class Ennemis : Unites
             CallBacksSuperUnitesJoueur adversaireScript;
             adversaireScript = _Adversaire.GetComponent<CallBacksSuperUnitesJoueur>();
             adversaireScript.ennemiTransform = monTransform;
-
+            adversaireScript.maSuperUniteJoueur.isFighting = true;
             int initiativeEnnemi = uniteVitesseInitiative;
             int initiativeUniteJoueur = adversaireScript.maSuperUniteJoueur.uniteVitesseInitiative;
 
@@ -504,10 +529,7 @@ public class Ennemis : Unites
 
             isCombatWait = false;     //On est plus en combat
             isFighting = false;
-
-
-
-
+            adversaireScript.maSuperUniteJoueur.isFighting = false;
         }
 
     }

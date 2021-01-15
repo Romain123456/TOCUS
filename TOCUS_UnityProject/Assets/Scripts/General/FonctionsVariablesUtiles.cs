@@ -50,6 +50,8 @@ public class FonctionsVariablesUtiles : MonoBehaviour
     }
 
 
+
+
     //Méthode Charger Scène : permet de charger la scène 
     public void ChargerSceneProto(string sceneChoisie)
     {
@@ -82,6 +84,11 @@ public class FonctionsVariablesUtiles : MonoBehaviour
     {
         monPanel.SetActive(false);
     }
+    public void ButtonOpenPanel(GameObject monPanel)
+    {
+        monPanel.SetActive(true);
+    }
+
 
 
     public void ResumeFonction(GameObject monPanel)

@@ -42,25 +42,33 @@ public class Unites : MonoBehaviour
     public float uniteArmureValue;                  //Float de la valeur d'armure
     public Vector2 scaleUnite;                      //Echelle de l'unité
     public string nomUnite;                         //Nom de l'unité
-    public float speedMove;                         //Vitesse de déplacement de l'unité
     public bool isDead;                             //Est-ce que l'unité est morte ?
     public Sprite uniteSprites;                    //Attribué dans les classes enfants
     public int cheminChoisi;                        //Chemin de l'ennemi choisi parmi les 3 proposés
     public int positionOnChemin;                    //Position de l'unité sur le chemin
+    public Unite_Objects.TypePortee unitePortee;    //Type de portée de l'unité
+    public int porteeValue;                         //Valeur de la portée de l'unité
+
+    public bool isFighting;                         //Est-ce que l'unité est en train de se battre ?
 
 
     //Vector de positions de l'unité
     public Vector2[] positionsTableau;               //Positions de l'unité récupérées via le fichier json
 
+    //Combat à distance
+    [HideInInspector] public bool isCombatDistance;
+    [HideInInspector] public bool combatDistanceLaunch;
+    [HideInInspector] public Transform targetDistance;
 
-   /* #region Changement Sprite Anim
-    // The name of the sprite sheet to use
-    public string SpriteSheetName;
-    // The name of the currently loaded sprite sheet
-    private string LoadedSpriteSheetName;
-    // The dictionary containing all the sliced up sprites in the sprite sheet
-    private Dictionary<string, Sprite> spriteSheet;
-    #endregion*/
+
+    /* #region Changement Sprite Anim
+     // The name of the sprite sheet to use
+     public string SpriteSheetName;
+     // The name of the currently loaded sprite sheet
+     private string LoadedSpriteSheetName;
+     // The dictionary containing all the sliced up sprites in the sprite sheet
+     private Dictionary<string, Sprite> spriteSheet;
+     #endregion*/
 
 
 
@@ -98,7 +106,7 @@ public class Unites : MonoBehaviour
     //Fonction permettant de tirer au hasard le chemin choisi par l'unité
     public void ChoixChemin()
     {
-        int way = Random.RandomRange(0, 3);
+        int way = Random.Range(0, 3);
         cheminChoisi = way;
     }
 
@@ -247,6 +255,29 @@ public class Unites : MonoBehaviour
         }
     }
 
+    public void AttributionPortee()
+    {
+        if(unitePortee.ToString() == "Courte")
+        {
+            porteeValue = JsonParametresGlobaux.ficParamGlobaux.objet_unites_monstres_valeurs_textuelles_portee.o_unites_monstres_valeurs_textuelles_portee.courte;
+        } else if(unitePortee.ToString() == "Longue")
+        {
+            porteeValue = JsonParametresGlobaux.ficParamGlobaux.objet_unites_monstres_valeurs_textuelles_portee.o_unites_monstres_valeurs_textuelles_portee.longue;
+        } else if(unitePortee.ToString() == "LongueTraversante")
+        {
+            porteeValue = JsonParametresGlobaux.ficParamGlobaux.objet_unites_monstres_valeurs_textuelles_portee.o_unites_monstres_valeurs_textuelles_portee.longue_traversante;
+        } else if(unitePortee.ToString() == "Tres_Longue")
+        {
+            porteeValue = JsonParametresGlobaux.ficParamGlobaux.objet_unites_monstres_valeurs_textuelles_portee.o_unites_monstres_valeurs_textuelles_portee.tres_longue;
+        } else if(unitePortee.ToString() == "Lointaine")
+        {
+            porteeValue = JsonParametresGlobaux.ficParamGlobaux.objet_unites_monstres_valeurs_textuelles_portee.o_unites_monstres_valeurs_textuelles_portee.lointaine;
+        } else if(unitePortee.ToString() == "Tres_Lointaine")
+        {
+            porteeValue = JsonParametresGlobaux.ficParamGlobaux.objet_unites_monstres_valeurs_textuelles_portee.o_unites_monstres_valeurs_textuelles_portee.tres_lointaine;
+        }
+    }
+
     public void AttributionCaracteristiques()
     {
         //PV
@@ -260,6 +291,9 @@ public class Unites : MonoBehaviour
 
         //Armure
         AttributionArmure();
+
+        //Portee
+        AttributionPortee();
     }
 
 
@@ -270,7 +304,72 @@ public class Unites : MonoBehaviour
         levelManager.positionsCheminLibre[cheminChoisi, positionOnChemin] = null;
     }
 
-   
+
+
+    public void VerificationCheminOccupePortee()
+    {
+        int sensVerif = 1;
+        if(monTransform.tag != "Ennemi" && monTransform.tag != "Boss")
+        {
+            sensVerif = -1;
+        }
+        for (int ii = 2; ii <= porteeValue; ii++)
+        {
+            if(positionOnChemin + sensVerif * ii < levelManager.positionsCheminLibre.GetLength(1) && 
+                positionOnChemin + sensVerif * ii >= 0)
+            {
+                if (levelManager.positionsCheminLibre[cheminChoisi, positionOnChemin + sensVerif * ii] != null)
+                {
+                    Transform target = levelManager.positionsCheminLibre[cheminChoisi, positionOnChemin + sensVerif * ii];
+                    if ((monTransform.tag != "Ennemi" && monTransform.tag != "Boss") && (target.tag == "Ennemi" || target.tag == "Boss") ||
+                        ((monTransform.tag == "Ennemi" || monTransform.tag == "Boss") && (target.tag != "Ennemi" && target.tag != "Boss")))
+                    {
+                        if (!isCombatDistance && !combatDistanceLaunch)
+                        {
+                            isCombatDistance = true;
+                            targetDistance = target;
+                        }
+                        break;
+                    }
+                }
+            }
+        }
+    }
+
+
+    public IEnumerator CombatDistance()
+    {
+        combatDistanceLaunch = true;
+        string anim_name = DeterminationAnimationSensAttaque(monTransform.position.x, targetDistance.position.x, monAnimator);
+
+        yield return new WaitForSeconds(FonctionsVariablesUtiles.deltaTime);
+        stateInfo = monAnimator.GetCurrentAnimatorStateInfo(0);
+
+        while (!stateInfo.IsTag("attack"))
+        {
+            stateInfo = monAnimator.GetCurrentAnimatorStateInfo(0);
+            yield return new WaitForSeconds(FonctionsVariablesUtiles.deltaTime);
+            if (stateInfo.IsTag("attack"))
+            {
+                break;
+            }
+        }
+        while (stateInfo.normalizedTime < 1)
+        {
+            stateInfo = monAnimator.GetCurrentAnimatorStateInfo(0);
+            yield return new WaitForSeconds(FonctionsVariablesUtiles.deltaTime);
+        }
+
+        //Debug.Log("Shoot");
+
+        targetDistance.GetComponent<CallBacksEnnemis>().monEnnemi.AttaquePV_MaJ(uniteDegatsValue, targetDistance.GetComponent<CallBacksEnnemis>().monEnnemi.uniteArmureValue);
+        stateInfo = FinTourAttaque(monAnimator, anim_name);
+
+        targetDistance = null;
+        isCombatDistance = false;
+        combatDistanceLaunch = false;
+    }
+
 
     //Attaque : Détermination sens de l'animation d'attaque + Lancement animation Attaque
     public string DeterminationAnimationSensAttaque(float _MaPosition, float _PositionAdversaire,Animator _MonAnimator)

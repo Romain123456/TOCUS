@@ -53,10 +53,11 @@ public class RepertoireDesSprites : MonoBehaviour
             ennemiData[ii].uniteTypeInitiative = listeEnnemiObject[ii].uniteTypeInitiative;
             ennemiData[ii].uniteTypeDegats = listeEnnemiObject[ii].uniteTypeDegats;
             ennemiData[ii].uniteTypeArmure = listeEnnemiObject[ii].uniteTypeArmure;
-            ennemiData[ii].ennemiSpeedMove = listeEnnemiObject[ii].ennemiSpeedMove;
+            ennemiData[ii].typeSpeedMoveEnnemi = listeEnnemiObject[ii].ennemiSpeedDeplacement.ToString();
             ennemiData[ii].ennemiSprite = listeEnnemiObject[ii].ennemiSprite;
             ennemiData[ii].ennemiAnimatorController = listeEnnemiObject[ii].ennemiAnimatorController;
             ennemiData[ii].pointVictoireGain = JsonParametresGlobaux.ficParamGlobaux.objet_divers.o_divers.i_gain_victoire_par_ennemi_mort;
+            ennemiData[ii].uniteTypePortee = listeEnnemiObject[ii].uniteTypePortee;
         }
 
     }
@@ -110,6 +111,7 @@ public class RepertoireDesSprites : MonoBehaviour
             unitesJoueurData[ii].uniteAnimatorController = listeUniteJoueurObject[ii].uniteAnimatorController;
 
             unitesJoueurData[ii].uniteListeOrdre = listeUniteJoueurObject[ii].uniteListeOrdre;
+            unitesJoueurData[ii].uniteTypePortee = listeUniteJoueurObject[ii].uniteTypePortee;
         }
 
 
@@ -147,6 +149,7 @@ public class RepertoireDesSprites : MonoBehaviour
                 unitesSpecialesData[ii].uniteAnimatorController = listeUniteSpecialesObject[ii].uniteAnimatorController;
 
                 unitesSpecialesData[ii].uniteListeOrdre = listeUniteSpecialesObject[ii].uniteListeOrdre;
+                unitesSpecialesData[ii].uniteTypePortee = listeUniteSpecialesObject[ii].uniteTypePortee;
             }
         }
 
@@ -187,7 +190,7 @@ public class RepertoireDesSprites : MonoBehaviour
             superUnitesJoueurData[ii].uniteAnimatorController = listeSuperUniteJoueurObject[ii].uniteAnimatorController;
 
             superUnitesJoueurData[ii].uniteListeOrdre = listeSuperUniteJoueurObject[ii].uniteListeOrdre;
-
+            superUnitesJoueurData[ii].uniteTypePortee = listeSuperUniteJoueurObject[ii].uniteTypePortee;
         }
     }
 
@@ -318,7 +321,7 @@ public class RepertoireDesSprites : MonoBehaviour
 [System.Serializable]
 public class EnnemiRepertoire : UnitesRepertoire
 {
-    public float ennemiSpeedMove;               //Vitesse de déplacement de l'ennemi
+    public string typeSpeedMoveEnnemi;               //Vitesse de déplacement de l'ennemi
     public Sprite ennemiSprite;         //Sprite principale
     public RuntimeAnimatorController ennemiAnimatorController;          //Animator Controller de l'ennemi
     public int pointVictoireGain;             //Nombre de points de victoire que donne l'ennemi
@@ -342,6 +345,7 @@ public class UnitesRepertoire
     public Unite_Objects.typeInitiative uniteTypeInitiative;              //Type de l'initiative de l'unité
     public Unite_Objects.typeDegats uniteTypeDegats;          //Type de dégats de l'unité
     public Unite_Objects.typeArmure uniteTypeArmure;            //Type d'armure de l'unité
+    public Unite_Objects.TypePortee uniteTypePortee;            //Type de portée de l'unité
 }
 
 [System.Serializable]

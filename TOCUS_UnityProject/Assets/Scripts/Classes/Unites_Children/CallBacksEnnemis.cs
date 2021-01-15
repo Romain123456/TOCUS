@@ -17,6 +17,7 @@ public class CallBacksEnnemis : MonoBehaviour
     {
         //Remise à pvMax des PV
         monEnnemi.pv = monEnnemi.pvMax;
+        monEnnemi.isFighting = false;
         monEnnemi.HealthBar_MaJ();
         StartCoroutine(monEnnemi.DeplacementEnnemi());
     }
@@ -108,10 +109,6 @@ public class CallBacksEnnemis : MonoBehaviour
         if (monEnnemi.pv <= 0 && !monEnnemi.isDead)
         {
             FonctionMortEnnemi();
-            /*StartCoroutine(monEnnemi.MortUnite(monEnnemi.monAnimator));
-            monEnnemi.levelManager.tableauJoueurs[monEnnemi.joueurHiting]._VictoryPoints += monEnnemi._VictoryPointGain;
-            monEnnemi.levelManager.tableauJoueurs[monEnnemi.joueurHiting].AffichePointVictoireSolidarite(monEnnemi.levelManager.tableauJoueurs[monEnnemi.joueurHiting].victoirePointText, monEnnemi.levelManager.tableauJoueurs[monEnnemi.joueurHiting]._VictoryPoints);
-            monEnnemi.isDead = true;*/
         }
 
 
@@ -147,14 +144,11 @@ public class CallBacksEnnemis : MonoBehaviour
     }
 
 
-   /* private void LateUpdate()
-    {
-        monEnnemi.ChangeSpriteAnimation();
-    }*/
+
 
     private void OnDisable()
     {
-        monEnnemi.ChoixChemin();
+        //monEnnemi.ChoixChemin();
         monEnnemi.CheminDefinitionEnnemi(monEnnemi.levelManager.positionsEnnemisChemin);
         monEnnemi.LiberationPositionChemin();
         monEnnemi.isFighting = false;
