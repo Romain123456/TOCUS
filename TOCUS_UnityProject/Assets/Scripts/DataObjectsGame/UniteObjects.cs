@@ -25,6 +25,9 @@ public class Unite_Objects : ScriptableObject
 
     public enum typeArmure { Aucune, Tres_Faible, Faible, Normale,Forte,Tres_Forte,Enorme};     //Liste des types d'armure
     public typeArmure uniteTypeArmure;
+
+    public enum TypePortee { Courte, Longue, LongueTraversante, Tres_Longue, Lointaine, Tres_Lointaine };         //Liste des Types de portée des unités
+    public TypePortee uniteTypePortee;                      //Type de portée des unités
 }
 
 

@@ -71,6 +71,7 @@ public class JsonParamGlobaux
     public Objet_tir_mortier objet_tir_mortier;
     public Objet_batiments objet_batiments;
     public Objet_tours_valeurs_textuelles_portee objet_tours_valeurs_textuelles_portee;
+    public Objet_monstres_valeurs_textuelles_deplacement objet_monstres_valeurs_textuelles_deplacement;
     public Objet_tours_valeurs_textuelles_largeur_visee objet_tours_valeurs_textuelles_largeur_visee;
     public Objet_tours_valeurs_textuelles_cadence objet_tours_valeurs_textuelles_cadence;
     public Objet_tours_valeurs_textuelles_puissance objet_tours_valeurs_textuelles_puissance;
@@ -111,6 +112,7 @@ public class JsonParamGlobaux
         fileJson.objet_tir_mortier = JsonUtility.FromJson<Objet_tir_mortier>(jSonString);
         fileJson.objet_batiments = JsonUtility.FromJson<Objet_batiments>(jSonString);
         fileJson.objet_tours_valeurs_textuelles_portee = JsonUtility.FromJson<Objet_tours_valeurs_textuelles_portee>(jSonString);
+        fileJson.objet_monstres_valeurs_textuelles_deplacement = JsonUtility.FromJson<Objet_monstres_valeurs_textuelles_deplacement>(jSonString);
         fileJson.objet_tours_valeurs_textuelles_largeur_visee = JsonUtility.FromJson<Objet_tours_valeurs_textuelles_largeur_visee>(jSonString);
         fileJson.objet_tours_valeurs_textuelles_cadence = JsonUtility.FromJson<Objet_tours_valeurs_textuelles_cadence>(jSonString);
         fileJson.objet_tours_valeurs_textuelles_puissance = JsonUtility.FromJson<Objet_tours_valeurs_textuelles_puissance>(jSonString);
@@ -271,6 +273,26 @@ public class O_tours_valeurs_textuelles_portee
     public int absolue; 
 }
 #endregion
+
+#region o_monstres_valeurs_textuelles_deplacement
+[Serializable]
+public class Objet_monstres_valeurs_textuelles_deplacement
+{
+    public O_monstres_valeurs_textuelles_deplacement o_monstres_valeurs_textuelles_deplacement;
+}
+
+[Serializable]
+public class O_monstres_valeurs_textuelles_deplacement
+{
+    public float tres_lente;
+    public float lente;
+    public float normale;
+    public float rapide;
+    public float tres_rapide;
+}
+
+#endregion
+
 
 #region o_tours_valeurs_textuelles_largeur_visee
 [Serializable]

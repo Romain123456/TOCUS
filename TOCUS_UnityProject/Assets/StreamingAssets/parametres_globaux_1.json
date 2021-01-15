@@ -310,6 +310,15 @@
 		"tres_lointaine":10
 	},
 
+	"o_monstres_valeurs_textuelles_deplacement":
+	{
+		"tres_lente":0.1,
+		"lente":0.25,
+		"normale":0.5,
+		"rapide":1,
+		"tres_rapide":1.5
+	},
+
 	"o_unites_soldat":
 	{
 		"s_vitalite":"normale",

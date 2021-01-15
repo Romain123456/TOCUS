@@ -13,6 +13,7 @@ public class CallBacksUnitesJoueur : MonoBehaviour
         monUniteJoueur.pv = monUniteJoueur.pvMax;
         monUniteJoueur.HealthBar_MaJ();
         monUniteJoueur.uniteJoueurOwner = monUniteJoueur.levelManager._JoueurActif;
+        monUniteJoueur.isFighting = false;
     }
 
     private void OnDisable()
@@ -40,6 +41,15 @@ public class CallBacksUnitesJoueur : MonoBehaviour
             monUniteJoueur.isDead = true;
             Debug.Log("mort");
             monUniteJoueur.FonctionMortUniteJoueur();
+        }
+
+        if(monUniteJoueur.pv > 0 && !monUniteJoueur.isDead && !monUniteJoueur.isFighting)
+        {
+            monUniteJoueur.VerificationCheminOccupePortee();
+            if (monUniteJoueur.isCombatDistance && !monUniteJoueur.combatDistanceLaunch)
+            {
+                StartCoroutine(monUniteJoueur.CombatDistance());
+            }
         }
         //monUniteJoueur.CheckPlaceSuivanteLibre();
     }

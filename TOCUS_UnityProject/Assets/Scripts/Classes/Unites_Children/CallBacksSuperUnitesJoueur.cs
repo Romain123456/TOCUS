@@ -13,6 +13,7 @@ public class CallBacksSuperUnitesJoueur : CallBacksUnitesJoueur
         maSuperUniteJoueur.pv = maSuperUniteJoueur.pvMax;
         maSuperUniteJoueur.HealthBar_MaJ();
         maSuperUniteJoueur.uniteJoueurOwner = maSuperUniteJoueur.levelManager._JoueurActif;
+        maSuperUniteJoueur.isFighting = false;
     }
 
     private void OnDisable()

@@ -97,60 +97,7 @@
 		"tres_lointaine":10
 	},
 
-	"o_unites_soldat":
-	{
-		"s_portee":"courte"
-	},
-
-	"o_unites_chevalier":
-	{
-		"s_portee":"courte"
-	},
-
-	"o_unites_assassin":
-	{
-		"s_portee":"courte"
-	},
-
-	"o_unites_bagarreur":
-	{
-		"s_portee":"courte"
-	},
-
-	"o_unites_barbare":
-	{
-		"s_portee":"courte"
-	},
-
-	"o_unites_lancier":
-	{
-		"s_portee":"longue_traversante"
-	},
-
-	"o_unites_archer":
-	{
-		"s_portee":"tres_longue"
-	},
-
-	"o_unites_mage":
-	{
-		"s_portee":"lointaine"
-	},
-
-	"o_monstres_basique":
-	{
-		"s_portee":"courte"
-	},
-
-	"o_monstres_costaud":
-	{
-		"s_portee":"courte"
-	},
-
-	"o_monstres_boxeur":
-	{
-		"s_portee":"courte"
-	},
+	
 
 	"o_boss":
 		{

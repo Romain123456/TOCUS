@@ -21,8 +21,10 @@ MonoBehaviour:
   uniteTypeInitiative: 4
   uniteTypeDegats: 3
   uniteTypeArmure: 5
+  uniteTypePortee: 0
   ennemiSpeedMove: 0.5
   ennemiSprite: {fileID: 7567616685797147661, guid: d82dcb9c77e32bb4599706642ce063e4,
     type: 3}
   ennemiAnimatorController: {fileID: 9100000, guid: ca8ab1b9fa83a3d4f810550a64833cc1,
     type: 2}
+  ennemiSpeedDeplacement: 2

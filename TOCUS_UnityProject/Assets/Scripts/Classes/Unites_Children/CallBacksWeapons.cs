@@ -36,7 +36,6 @@ public class CallBacksWeapons : MonoBehaviour
         levelManagerScript._PorteVille.FillAmountHealthBarImage();  //Affichage du nombre de pv de la porte sur sa barre de vie
 
         //Si les pv de la porte sont négatifs ou nuls, la porte est détruite. 
-        // TODO : Faire perdre la partie !
         if (levelManagerScript._PorteVille.pv <= 0)
         {
             Destroy(levelManagerScript._PorteVille.monGO);

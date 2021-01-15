@@ -10,34 +10,34 @@
 	},
 	"o_vagues":
 	{
-		"i_nb_rounds_avant_premiere_vague":2,
+		"i_nb_rounds_avant_premiere_vague":10,
 		"o_structure_vagues":
 		[
 			{
 				"i_tps":3,
 				"s_chemin_1":"Monstres Base",
-				"s_chemin_2":"Monstres Base",
+				"s_chemin_2":" ",
 				"s_chemin_3":"Monstres Base"
 			},
 			{
 				"i_tps":4,
-				"s_chemin_1":" ",
-				"s_chemin_2":" ",
-				"s_chemin_3":" "
+				"s_chemin_1":"Monstres Base",
+				"s_chemin_2":"Monstres Boxeurs",
+				"s_chemin_3":"Monstres Base"
 			},
 			{
 				"i_tps":5,
 				"s_chemin_1":" ",
-				"s_chemin_2":" ",
+				"s_chemin_2":"Monstres Boxeurs",
 				"s_chemin_3":" "
 			},
 			
 			
 
 			{
-				"i_tps":9,
+				"i_tps":13,
 				"s_chemin_1":"Monstres Base",
-				"s_chemin_2":"Monstres Base",
+				"s_chemin_2":" ",
 				"s_chemin_3":"Monstres Base"
 			}
 		]

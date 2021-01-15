@@ -10,5 +10,8 @@ public class EnnemiObject : Unite_Objects
 
     public RuntimeAnimatorController ennemiAnimatorController;               //Animator Controller de l'ennemi
     //public int nbPointsVictoire;            //Combien de points de victoire donne l'ennemi ?
+
+    public enum typeSpeedDeplacement { Tres_Lente,Lente,Normale,Rapide,Tres_Rapide};        //Type de vitesse de déplacement
+    public typeSpeedDeplacement ennemiSpeedDeplacement;     //Vitesse de déplacement
 }
 
