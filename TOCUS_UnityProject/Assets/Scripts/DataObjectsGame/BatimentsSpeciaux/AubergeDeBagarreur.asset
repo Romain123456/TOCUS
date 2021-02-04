@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: AubergeDeBagarreur
   m_EditorClassIdentifier: 
   batimentNom: Auberge De Bagarreur
-  batimentSprite: {fileID: 21300018, guid: 5fd53940b7c1b4c4e8be5f7025e586da, type: 3}
+  batimentSprite: {fileID: 6712051403665912540, guid: 3e570a9a4168113409ce4087b43decea,
+    type: 3}
   batimentPrixBle: 4
   batimentPrixBois: 2
   batimentPrixFer: 0
@@ -21,3 +22,4 @@ MonoBehaviour:
   scaleBatiment: {x: 0.4, y: 0.3, z: 1}
   nombreBatimentMaxParJoueur: 1000
   isBatimentPublic: 1
+  isBatimentPersonnel: 0

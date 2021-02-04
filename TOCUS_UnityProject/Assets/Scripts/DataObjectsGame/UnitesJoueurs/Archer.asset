@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uniteNom: Archer
   uniteBoxCollSize: {x: 1.5, y: 1.7}
-  uniteScale: {x: 0.2, y: 0.2}
+  uniteScale: {x: 0.26, y: 0.26}
   unitePositionCanvas: {x: 0, y: 1}
   uniteScaleCanvas: {x: 0.5, y: 0.5}
   uniteTypeVitalite: 4
@@ -23,10 +23,10 @@ MonoBehaviour:
   uniteTypeArmure: 2
   uniteTypePortee: 3
   uniteSpriteBase:
-  - {fileID: -6522286443276129565, guid: a631b0adedc70b447a6942147f840315, type: 3}
-  - {fileID: 58927763964944925, guid: 586c657afd0850743bcdd5fca23d3d56, type: 3}
+  - {fileID: 4552885115035185688, guid: 6eb769f4883b3e046a25ad3f04c6c1b5, type: 3}
+  - {fileID: 6547411175315144677, guid: 6eb769f4883b3e046a25ad3f04c6c1b5, type: 3}
   unitePrixBle: 1
   uniteListeOrdre: 1
   uniteAnimatorController:
-  - {fileID: 9100000, guid: 51791f6d0e4ac9e4aaf9f978d81b1003, type: 2}
-  - {fileID: 9100000, guid: 3e2a87ca7bf752d4d8eb88aee534c617, type: 2}
+  - {fileID: 9100000, guid: 574593a39356b2240bb1d302e2b9237f, type: 2}
+  - {fileID: 9100000, guid: a8c1806bf6ad28a4ebd089b622f224c8, type: 2}

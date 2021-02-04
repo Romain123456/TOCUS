@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: TourShotGun
   m_EditorClassIdentifier: 
   tourNom: Tour ShotGun
-  tourSprite: {fileID: 21300018, guid: 2979f69b46dab40498b062cf4f1149d5, type: 3}
+  tourSprite: {fileID: 2022747078975153952, guid: 400a9235c3aa9184d9e77ce2f09bdbca,
+    type: 3}
   positionTour: {x: 0, y: 0, z: 0}
   scaleTour: {x: 0.25, y: 0.25, z: 1}
   tourTypeVisee: 2

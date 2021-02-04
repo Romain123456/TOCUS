@@ -1,0 +1,583 @@
+fileFormatVersion: 2
+guid: 54fa1c7859380294193138dc5bb5a43c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3067674869661662559
+    second: monstre laser mort et course_0
+  - first:
+      213: -1925935190374879801
+    second: monstre laser mort et course_1
+  - first:
+      213: -3954341361847808710
+    second: monstre laser mort et course_2
+  - first:
+      213: 6537911033717713850
+    second: monstre laser mort et course_3
+  - first:
+      213: 246440800327282648
+    second: monstre laser mort et course_4
+  - first:
+      213: -481661331114858431
+    second: monstre laser mort et course_5
+  - first:
+      213: -1272952134883093642
+    second: monstre laser mort et course_6
+  - first:
+      213: 3030566843451463322
+    second: monstre laser mort et course_7
+  - first:
+      213: 7204479651103250217
+    second: monstre laser mort et course_8
+  - first:
+      213: -2308625027981866908
+    second: monstre laser mort et course_9
+  - first:
+      213: 1339062027768458759
+    second: monstre laser mort et course_10
+  - first:
+      213: 3337221246244574724
+    second: monstre laser mort et course_12
+  - first:
+      213: -3741292129282645266
+    second: monstre laser mort et course_13
+  - first:
+      213: 7222080851711974096
+    second: monstre laser mort et course_14
+  - first:
+      213: 8100186650435793224
+    second: monstre laser mort et course_15
+  - first:
+      213: -3803668445801690028
+    second: monstre laser mort et course_16
+  - first:
+      213: 928609001831986875
+    second: monstre laser mort et course_18
+  - first:
+      213: 2499887577262929435
+    second: monstre laser mort et course_19
+  - first:
+      213: -8688975160863543057
+    second: monstre laser mort et course_25
+  - first:
+      213: 4967027441459175402
+    second: monstre laser mort et course_26
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: monstre laser mort et course_0
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 711
+        width: 278
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b187d4227438e54180bcc96b3ad2407
+      internalID: 3067674869661662559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser mort et course_1
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 711
+        width: 278
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 978a01859663e1f46a37f915e8bc8aa3
+      internalID: -1925935190374879801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser mort et course_2
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 703
+        width: 280
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcdb87f32ac3e2b4685ec2ac4e5fee72
+      internalID: -3954341361847808710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser mort et course_3
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 710
+        width: 269
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e38ef2a5c41e894783e606768ca8b8c
+      internalID: 6537911033717713850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser mort et course_4
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 711
+        width: 273
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7ac294047eaeb34d90f68f1c2e632ad
+      internalID: 246440800327282648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser mort et course_5
+      rect:
+        serializedVersion: 2
+        x: 1833
+        y: 704
+        width: 270
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97aacc6dbe4868b42b370315de173d6e
+      internalID: -481661331114858431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser mort et course_6
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 567
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f8fae2696f6c0f429f8a2bdc9c59d97
+      internalID: -1272952134883093642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser mort et course_7
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 193
+        width: 232
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bb6be45ab3b41642bc20949eb9d96b0
+      internalID: 3030566843451463322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser mort et course_8
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 153
+        width: 251
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41854f4053c998041aa0cd0a585185bf
+      internalID: 7204479651103250217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser mort et course_9
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 157
+        width: 194
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db7d47955a62bc747a243825a307ae7c
+      internalID: -2308625027981866908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser mort et course_10
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 283
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35a47260f37069e4ebf8e0bb50eda82c
+      internalID: 1339062027768458759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser mort et course_12
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 151
+        width: 185
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c0af6a2e1cead74fb3a7bca4b0aebcd
+      internalID: 3337221246244574724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser mort et course_13
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 177
+        width: 184
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4fa3888736fe7e4fa9ff00522771866
+      internalID: -3741292129282645266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser mort et course_14
+      rect:
+        serializedVersion: 2
+        x: 1787
+        y: 276
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d5e4c4a6b065054687fdd6ca10bd831
+      internalID: 7222080851711974096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser mort et course_15
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 270
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4268f5ba14437af489036e94739469dc
+      internalID: 8100186650435793224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser mort et course_16
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 235
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047c6b5ccf95b6d40877aa2ebf6d2a78
+      internalID: -3803668445801690028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser mort et course_18
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 128
+        width: 141
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5295e2b4492d1b44fb4af50402819fda
+      internalID: 928609001831986875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser mort et course_19
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 228
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0eda47425e00434b97670a41dc937c6
+      internalID: 2499887577262929435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser mort et course_25
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 171
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38b66cb18763b5848ad4dcea8b42011a
+      internalID: -8688975160863543057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser mort et course_26
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 177
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 835ce0e97e3febc46a28ac7317efd928
+      internalID: 4967027441459175402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 3ad17a4b9e4fb0b4693db87fa89a3664
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

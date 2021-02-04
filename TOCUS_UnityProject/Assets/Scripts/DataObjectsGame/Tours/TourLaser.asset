@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: TourLaser
   m_EditorClassIdentifier: 
   tourNom: Tour Laser
-  tourSprite: {fileID: 21300006, guid: 2979f69b46dab40498b062cf4f1149d5, type: 3}
-  tourPrixBle: 0
-  tourPrixBois: 0
-  tourPrixFer: 0
-  tourPrixPierre: 0
+  tourSprite: {fileID: -8014859690942016173, guid: 400a9235c3aa9184d9e77ce2f09bdbca,
+    type: 3}
   positionTour: {x: 0, y: 0, z: 0}
   scaleTour: {x: 0.25, y: 0.25, z: 1}
   tourTypeVisee: 0
   tourTypeCadence: 0
   tourTypePuissance: 0
   tourTypePortee: 3
+  tourTypeDureeDegats: 0
+  tourTypeLargeurVisee: 0
+  tourTypeImpact: 0

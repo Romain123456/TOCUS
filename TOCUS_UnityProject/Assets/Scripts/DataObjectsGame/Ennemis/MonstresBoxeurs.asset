@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uniteNom: Monstres Boxeurs
   uniteBoxCollSize: {x: 1.5, y: 1.7}
-  uniteScale: {x: 0.15, y: 0.15}
+  uniteScale: {x: 0.26, y: 0.26}
   unitePositionCanvas: {x: 0, y: 1}
   uniteScaleCanvas: {x: 0.5, y: 0.5}
   uniteTypeVitalite: 2
@@ -23,7 +23,7 @@ MonoBehaviour:
   uniteTypeArmure: 2
   uniteTypePortee: 0
   ennemiSpeedMove: 1
-  ennemiSprite: {fileID: -7046045881008828468, guid: 9e9bd451e94a9c346ad0314f97989c1e,
+  ennemiSprite: {fileID: 3182636466850743980, guid: dc76e9d365ac05c4f9d0c0c31a849451,
     type: 3}
   ennemiAnimatorController: {fileID: 9100000, guid: d70b03d6e094b034c8453fcb499addda,
     type: 2}

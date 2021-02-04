@@ -39,8 +39,10 @@ public class LevelManager : MonoBehaviour
     //Panel d'interaction avec les bâtiments
     [HideInInspector] public Transform panelParentBatimentInterract;
 
- 
+
     //Objets du niveau
+    public Image backgroundImage;
+    public Image mapImage;
     private int nbEmplacementBTP;
     private EmptyBatimentsConstruits[] batimentsBTP;
     [HideInInspector] public int nbTours;
@@ -114,7 +116,6 @@ public class LevelManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         #region Introdution du Jeu
         fileJson = new JSonParameters();
         fileJson = fileJson.OuvertureJson(nomNiveau);
@@ -144,16 +145,6 @@ public class LevelManager : MonoBehaviour
 
         //Ennemis par round
         repertoireSprites.EnnemiDataCreate();
-        /*ennemisPerRound = new int[repertoireSprites.ennemiData.Length, nbMaxRounds];
-        for(int ii = 0; ii < nbMaxRounds; ii++)
-        {
-            ennemisPerRound[0, ii] = fileJson.nbEnnemisRound_type1[ii];
-        }
-        for (int ii = 0; ii < nbMaxRounds; ii++)
-        {
-            ennemisPerRound[1, ii] = fileJson.nbEnnemisRound_type2[ii];
-        }*/
-
 
         //Gestion du Panel Interraction Batiment
         if (GameObject.Find("PanelBatimentInteract") != null)
@@ -172,6 +163,11 @@ public class LevelManager : MonoBehaviour
 
 
         #region     Initiations objets du plateau
+
+        #region Map
+        backgroundImage.sprite = repertoireSprites.fondMap;
+        mapImage.sprite = repertoireSprites.imageMap;
+        #endregion
 
 
 
@@ -278,8 +274,16 @@ public class LevelManager : MonoBehaviour
 
         #region Joueur
         //Joueur
-        joueur1 = new Joueur(repertoireSprites.herosData[0].herosNom, repertoireSprites.herosData[0].herosSprite, false, 1, isModeDebug, repertoireSprites.herosData[0].pionActif);
-        joueur2 = new Joueur(repertoireSprites.herosData[1].herosNom, repertoireSprites.herosData[1].herosSprite, false, 2, isModeDebug, repertoireSprites.herosData[1].pionActif);
+        if (AvatarGestion.avatarChoisis[0] != null)
+        {
+            joueur1 = new Joueur(AvatarGestion.avatarChoisis[0].nomAvatar, AvatarGestion.avatarChoisis[0].portraitAvatar, false, 1, isModeDebug, repertoireSprites.pionActif[0]);
+            joueur2 = new Joueur(AvatarGestion.avatarChoisis[1].nomAvatar, AvatarGestion.avatarChoisis[1].portraitAvatar, false, 2, isModeDebug, repertoireSprites.pionActif[1]);
+        } else
+        {
+            joueur1 = new Joueur("Testeur 1", null, false, 1, isModeDebug, repertoireSprites.pionActif[0]);
+            joueur2 = new Joueur("Testeur 2", null, false, 2, isModeDebug, repertoireSprites.pionActif[1]);
+        }
+
         tableauJoueurs[0] = joueur1;
         tableauJoueurs[1] = joueur2;
 

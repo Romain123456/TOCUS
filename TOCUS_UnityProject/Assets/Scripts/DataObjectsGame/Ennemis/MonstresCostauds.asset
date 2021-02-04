@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uniteNom: Montres Costauds
   uniteBoxCollSize: {x: 1.5, y: 1.7}
-  uniteScale: {x: 0.15, y: 0.15}
+  uniteScale: {x: 0.26, y: 0.26}
   unitePositionCanvas: {x: 0, y: 1}
   uniteScaleCanvas: {x: 0.5, y: 0.5}
   uniteTypeVitalite: 1
@@ -23,8 +23,8 @@ MonoBehaviour:
   uniteTypeArmure: 5
   uniteTypePortee: 0
   ennemiSpeedMove: 0.5
-  ennemiSprite: {fileID: 7567616685797147661, guid: d82dcb9c77e32bb4599706642ce063e4,
+  ennemiSprite: {fileID: -747550064958047989, guid: d293e5d2063d0874ab771a1f76cca7b9,
     type: 3}
-  ennemiAnimatorController: {fileID: 9100000, guid: ca8ab1b9fa83a3d4f810550a64833cc1,
+  ennemiAnimatorController: {fileID: 9100000, guid: fedda3e24a4ec7a4488d1d5d54862c03,
     type: 2}
   ennemiSpeedDeplacement: 2
