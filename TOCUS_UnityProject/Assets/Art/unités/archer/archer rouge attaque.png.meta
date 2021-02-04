@@ -1,0 +1,1159 @@
+fileFormatVersion: 2
+guid: e1f489c9d74d9084abe8af041199500b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 546084508265073976
+    second: archer rouge attaque_0
+  - first:
+      213: -9072212996968365761
+    second: archer rouge attaque_1
+  - first:
+      213: 5288088178747663737
+    second: archer rouge attaque_2
+  - first:
+      213: 7371966613280687767
+    second: archer rouge attaque_3
+  - first:
+      213: 6753433934196516248
+    second: archer rouge attaque_4
+  - first:
+      213: -6439374918693750947
+    second: archer rouge attaque_5
+  - first:
+      213: -6816044178544020162
+    second: archer rouge attaque_6
+  - first:
+      213: -8962375057676675302
+    second: archer rouge attaque_7
+  - first:
+      213: -7847253003966311317
+    second: archer rouge attaque_8
+  - first:
+      213: 8608898329836058210
+    second: archer rouge attaque_9
+  - first:
+      213: 3467474163452573071
+    second: archer rouge attaque_10
+  - first:
+      213: -5260127963159768810
+    second: archer rouge attaque_11
+  - first:
+      213: -2716241676835158474
+    second: archer rouge attaque_12
+  - first:
+      213: -872040957675434255
+    second: archer rouge attaque_13
+  - first:
+      213: -3129522230328276532
+    second: archer rouge attaque_14
+  - first:
+      213: 7768603809730654457
+    second: archer rouge attaque_15
+  - first:
+      213: 8627480882615101214
+    second: archer rouge attaque_16
+  - first:
+      213: -5899583321901322784
+    second: archer rouge attaque_17
+  - first:
+      213: -1120225480781159123
+    second: archer rouge attaque_18
+  - first:
+      213: -1147368432579282367
+    second: archer rouge attaque_19
+  - first:
+      213: -6930471559565913973
+    second: archer rouge attaque_20
+  - first:
+      213: 4850143796868787190
+    second: archer rouge attaque_21
+  - first:
+      213: 905749155531722036
+    second: archer rouge attaque_22
+  - first:
+      213: -8223865865002514252
+    second: archer rouge attaque_23
+  - first:
+      213: -5159808945375851752
+    second: archer rouge attaque_24
+  - first:
+      213: 2676329035556425338
+    second: archer rouge attaque_25
+  - first:
+      213: 3857060714888157691
+    second: archer rouge attaque_26
+  - first:
+      213: -5030654670804524309
+    second: archer rouge attaque_27
+  - first:
+      213: 8079321063512584391
+    second: archer rouge attaque_28
+  - first:
+      213: 6558599670793481594
+    second: archer rouge attaque_29
+  - first:
+      213: 8861397971884421070
+    second: archer rouge attaque_30
+  - first:
+      213: -4836452916364422515
+    second: archer rouge attaque_31
+  - first:
+      213: 8803541438161582238
+    second: archer rouge attaque_32
+  - first:
+      213: 5331057243445791226
+    second: archer rouge attaque_33
+  - first:
+      213: -8843422550540103941
+    second: archer rouge attaque_34
+  - first:
+      213: 959471315001142363
+    second: archer rouge attaque_35
+  - first:
+      213: 8031295777906938872
+    second: archer rouge attaque_36
+  - first:
+      213: 1533813652383227142
+    second: archer rouge attaque_37
+  - first:
+      213: -5785182686856143885
+    second: archer rouge attaque_38
+  - first:
+      213: 645519077647285305
+    second: archer rouge attaque_39
+  - first:
+      213: 7717762663592751467
+    second: archer rouge attaque_40
+  - first:
+      213: -2196965860465116276
+    second: archer rouge attaque_41
+  - first:
+      213: 8448267424791434322
+    second: archer rouge attaque_42
+  - first:
+      213: 830939409077107466
+    second: archer rouge attaque_43
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: archer rouge attaque_0
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 3165
+        width: 116
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50310c65a971e904ba005b2d366be4bb
+      internalID: 546084508265073976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_1
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 3163
+        width: 118
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36a9a83f0e643a34baafbe1087b1066f
+      internalID: -9072212996968365761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_2
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 3159
+        width: 122
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c260205ac839bb24f9bce5a7870dea8c
+      internalID: 5288088178747663737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_3
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 2973
+        width: 106
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3652fac86f3fb4f4ca32a93256207663
+      internalID: 7371966613280687767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_4
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 2974
+        width: 105
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b78af4b386e39f4d8418c80206310b3
+      internalID: 6753433934196516248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_5
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 2974
+        width: 120
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99f39d6c3d339eb40a0a673550cb6df3
+      internalID: -6439374918693750947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_6
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 2800
+        width: 139
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e20155ff9e4d8a4bace96406b167635
+      internalID: -6816044178544020162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_7
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 2798
+        width: 137
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e3af4b5faacf2447bb1052643bea3e8
+      internalID: -8962375057676675302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_8
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 2800
+        width: 137
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68c4ff0e5c0382b4192bca608bceee17
+      internalID: -7847253003966311317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_9
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 2796
+        width: 137
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e60b94c6039d4247999510c6333d1b1
+      internalID: 8608898329836058210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_10
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 2803
+        width: 137
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88a65575a576cb941bd753362f13dfe2
+      internalID: 3467474163452573071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_11
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 2795
+        width: 137
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d880bd21d80a65d45a8c6f9ca9285271
+      internalID: -5260127963159768810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_12
+      rect:
+        serializedVersion: 2
+        x: 1806
+        y: 2798
+        width: 137
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1805164da119894b81f4f633754a72f
+      internalID: -2716241676835158474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_13
+      rect:
+        serializedVersion: 2
+        x: 1941
+        y: 2821
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b9ed6470a48c514dbed7a2b893d55ab
+      internalID: -872040957675434255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_14
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 2575
+        width: 137
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86a749f265f3f6d4cae11cac4d5a5cb6
+      internalID: -3129522230328276532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_15
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 2570
+        width: 139
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cadbe7d2b4a4fd1418d95d45a5594d89
+      internalID: 7768603809730654457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_16
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 2565
+        width: 137
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99ccb023cd719cd4da791eadad7f9d55
+      internalID: 8627480882615101214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_17
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 2567
+        width: 138
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 451ef52a206856448964a8343c6ace5e
+      internalID: -5899583321901322784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_18
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 2577
+        width: 138
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ac19749da4b9be44840edf9b818d17e
+      internalID: -1120225480781159123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_19
+      rect:
+        serializedVersion: 2
+        x: 1714
+        y: 2567
+        width: 138
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6203771c2f9c4d48b485e2fb08dbbd6
+      internalID: -1147368432579282367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_20
+      rect:
+        serializedVersion: 2
+        x: 1942
+        y: 2593
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15dee57ebc9241747b5c8db0bea41388
+      internalID: -6930471559565913973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_21
+      rect:
+        serializedVersion: 2
+        x: 1943
+        y: 2570
+        width: 137
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c987243adf5d033428a8fe9df67f4168
+      internalID: 4850143796868787190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_22
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 2325
+        width: 127
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df0ebfed56cee2840aa915938b6eaa38
+      internalID: 905749155531722036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_23
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 2324
+        width: 117
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a38db45b2dcc06b4fa800369359f2b45
+      internalID: -8223865865002514252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_24
+      rect:
+        serializedVersion: 2
+        x: 1823
+        y: 2325
+        width: 125
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5f02d6ab6d47dc4ebd7385d312798fa
+      internalID: -5159808945375851752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_25
+      rect:
+        serializedVersion: 2
+        x: 2087
+        y: 2325
+        width: 151
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c8dbb2c677c724caf81b063b3a11dd
+      internalID: 2676329035556425338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_26
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 2063
+        width: 153
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8556ac87f678fa340b020c480df7af5f
+      internalID: 3857060714888157691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_27
+      rect:
+        serializedVersion: 2
+        x: 1642
+        y: 2061
+        width: 125
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6982554dd09abc54c959898ddca483a4
+      internalID: -5030654670804524309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_28
+      rect:
+        serializedVersion: 2
+        x: 1880
+        y: 2060
+        width: 114
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e5410c2d2749214eb3899ebc33e1429
+      internalID: 8079321063512584391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_29
+      rect:
+        serializedVersion: 2
+        x: 2113
+        y: 2061
+        width: 126
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f6d12c1bdbcc1740835c31db3ed8aa6
+      internalID: 6558599670793481594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_30
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 1861
+        width: 198
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d59cf3aaf9a774995a4fd11d980d0f
+      internalID: 8861397971884421070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_31
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 1864
+        width: 197
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 536dfb0a2f2590c4aba182e399be4a63
+      internalID: -4836452916364422515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_32
+      rect:
+        serializedVersion: 2
+        x: 1909
+        y: 1859
+        width: 197
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75bcaabae5d2f4d42b506451f585edc5
+      internalID: 8803541438161582238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_33
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 1664
+        width: 198
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3393ca7f7963483448301aa213edc631
+      internalID: 5331057243445791226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_34
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 1668
+        width: 197
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a95df2b140415fc43858fbbb1b17d42a
+      internalID: -8843422550540103941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_35
+      rect:
+        serializedVersion: 2
+        x: 1909
+        y: 1662
+        width: 197
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fffa39befd0a4047b1648aabc39a0a4
+      internalID: 959471315001142363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_36
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 1484
+        width: 164
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f7af86e940544d47a195df1d06b26c4
+      internalID: 8031295777906938872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_37
+      rect:
+        serializedVersion: 2
+        x: 1654
+        y: 1489
+        width: 150
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed8d8bac24d9f8845bf42563b11cba1e
+      internalID: 1533813652383227142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_38
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 1488
+        width: 153
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04d1e44b21fad954bb19fa1d4c39af31
+      internalID: -5785182686856143885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_39
+      rect:
+        serializedVersion: 2
+        x: 2078
+        y: 1488
+        width: 163
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e138ce3183ab8ae46b17fdcae517833c
+      internalID: 645519077647285305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_40
+      rect:
+        serializedVersion: 2
+        x: 1523
+        y: 1320
+        width: 151
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 139e371627dfd5c4dbfc6af107ba85ea
+      internalID: 7717762663592751467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_41
+      rect:
+        serializedVersion: 2
+        x: 1768
+        y: 1320
+        width: 139
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f376cf4efeed5544d9b9254a4f258f78
+      internalID: -2196965860465116276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_42
+      rect:
+        serializedVersion: 2
+        x: 1960
+        y: 1322
+        width: 139
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 463789d60891893409895417bf3001ac
+      internalID: 8448267424791434322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer rouge attaque_43
+      rect:
+        serializedVersion: 2
+        x: 2131
+        y: 1318
+        width: 153
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e9c7f5a21eea5047b5a2eb756d433a9
+      internalID: 830939409077107466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: a9ca9f2e5062e6b4c9d7b7b497ad4b29
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

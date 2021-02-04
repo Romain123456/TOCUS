@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uniteNom: Soldat
   uniteBoxCollSize: {x: 1.5, y: 1.7}
-  uniteScale: {x: 0.2, y: 0.2}
+  uniteScale: {x: 0.26, y: 0.26}
   unitePositionCanvas: {x: 0, y: 1}
   uniteScaleCanvas: {x: 0.5, y: 0.5}
   uniteTypeVitalite: 3
@@ -23,8 +23,8 @@ MonoBehaviour:
   uniteTypeArmure: 3
   uniteTypePortee: 0
   uniteSpriteBase:
-  - {fileID: -947651009046627900, guid: 8bb029e9cc0f2a54bb7610fed9bb3f0b, type: 3}
-  - {fileID: 6671027429105906956, guid: bb2adfffc00e3374997be38c5fcfd7e8, type: 3}
+  - {fileID: -1467361138625060961, guid: 20e4f93122931e149aaff07e8cfe1aa9, type: 3}
+  - {fileID: 4935363006159813468, guid: 20e4f93122931e149aaff07e8cfe1aa9, type: 3}
   unitePrixBle: 1
   uniteListeOrdre: 0
   uniteAnimatorController:

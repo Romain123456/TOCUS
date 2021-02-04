@@ -1,0 +1,1471 @@
+fileFormatVersion: 2
+guid: cc874576286996d4f875fc326fc5c38b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6251743902009781679
+    second: chevalier bleu new correct_0
+  - first:
+      213: -6820422009471910413
+    second: chevalier bleu new correct_1
+  - first:
+      213: -5606074000371110018
+    second: chevalier bleu new correct_2
+  - first:
+      213: 5089885402600606884
+    second: chevalier bleu new correct_3
+  - first:
+      213: 3599473900824798950
+    second: chevalier bleu new correct_4
+  - first:
+      213: -1134098858514175392
+    second: chevalier bleu new correct_5
+  - first:
+      213: 1816100378949459864
+    second: chevalier bleu new correct_6
+  - first:
+      213: 3950001557167712706
+    second: chevalier bleu new correct_7
+  - first:
+      213: -4332457291431408171
+    second: chevalier bleu new correct_8
+  - first:
+      213: 3981966597182180639
+    second: chevalier bleu new correct_9
+  - first:
+      213: 772345047613237850
+    second: chevalier bleu new correct_12
+  - first:
+      213: 1286430007774137069
+    second: chevalier bleu new correct_13
+  - first:
+      213: -9141849178886588424
+    second: chevalier bleu new correct_14
+  - first:
+      213: -5420201279782610011
+    second: chevalier bleu new correct_16
+  - first:
+      213: 7159208266418876558
+    second: chevalier bleu new correct_17
+  - first:
+      213: -4553724731343649429
+    second: chevalier bleu new correct_18
+  - first:
+      213: -6977714776948136515
+    second: chevalier bleu new correct_19
+  - first:
+      213: -8030497698194113200
+    second: chevalier bleu new correct_20
+  - first:
+      213: 2630690464314895842
+    second: chevalier bleu new correct_21
+  - first:
+      213: -5206660782648918724
+    second: chevalier bleu new correct_22
+  - first:
+      213: -5239653262910318380
+    second: chevalier bleu new correct_23
+  - first:
+      213: 2579401549450707818
+    second: chevalier bleu new correct_24
+  - first:
+      213: -6687375405105590079
+    second: chevalier bleu new correct_25
+  - first:
+      213: 5082853522609061714
+    second: chevalier bleu new correct_26
+  - first:
+      213: -798922387251514016
+    second: chevalier bleu new correct_27
+  - first:
+      213: 1705434802040444885
+    second: chevalier bleu new correct_28
+  - first:
+      213: 4034120347929761958
+    second: chevalier bleu new correct_29
+  - first:
+      213: -809119155029907850
+    second: chevalier bleu new correct_30
+  - first:
+      213: -5146295262031800885
+    second: chevalier bleu new correct_31
+  - first:
+      213: 680130195193189190
+    second: chevalier bleu new correct_32
+  - first:
+      213: -4872087966541287814
+    second: chevalier bleu new correct_33
+  - first:
+      213: -996306774115056837
+    second: chevalier bleu new correct_34
+  - first:
+      213: 4192346264586455509
+    second: chevalier bleu new correct_35
+  - first:
+      213: -5283749380244922754
+    second: chevalier bleu new correct_36
+  - first:
+      213: -2614386226363750955
+    second: chevalier bleu new correct_37
+  - first:
+      213: -3410352085999231735
+    second: chevalier bleu new correct_38
+  - first:
+      213: 8626634034067186591
+    second: chevalier bleu new correct_39
+  - first:
+      213: -6429290518890923648
+    second: chevalier bleu new correct_40
+  - first:
+      213: 545840118665105986
+    second: chevalier bleu new correct_41
+  - first:
+      213: -6711274179188958193
+    second: chevalier bleu new correct_42
+  - first:
+      213: 5098754317503705925
+    second: chevalier bleu new correct_43
+  - first:
+      213: -8779191984442771500
+    second: chevalier bleu new correct_44
+  - first:
+      213: 8680648610256888945
+    second: chevalier bleu new correct_45
+  - first:
+      213: 178070937912581194
+    second: chevalier bleu new correct_46
+  - first:
+      213: 3890766739638007010
+    second: chevalier bleu new correct_47
+  - first:
+      213: 7995341535255120342
+    second: chevalier bleu new correct_49
+  - first:
+      213: 4463350470298291537
+    second: chevalier bleu new correct_51
+  - first:
+      213: -5145332524440680167
+    second: chevalier bleu new correct_53
+  - first:
+      213: 4338484655999787415
+    second: chevalier bleu new correct_55
+  - first:
+      213: 1583995979109022846
+    second: chevalier bleu new correct_57
+  - first:
+      213: 6284965539272568114
+    second: chevalier bleu new correct_60
+  - first:
+      213: 990202594545417863
+    second: chevalier bleu new correct_62
+  - first:
+      213: -9052080544693924026
+    second: chevalier bleu new correct_64
+  - first:
+      213: -3296749621572059340
+    second: chevalier bleu new correct_66
+  - first:
+      213: -6653470512659922646
+    second: chevalier bleu new correct_68
+  - first:
+      213: -4263748489171039174
+    second: chevalier bleu new correct_70
+  - first:
+      213: 1762870555818404026
+    second: chevalier bleu new correct_71
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: chevalier bleu new correct_0
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 3079
+        width: 294
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a58d817ea73d87449b17bde43094bf5
+      internalID: -6251743902009781679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_1
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 3079
+        width: 261
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bb7c1c20713eb846b99a554e3276cf1
+      internalID: -6820422009471910413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_2
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 3075
+        width: 195
+        height: 358
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd098a0a398a9984fb2370466e2ddc8c
+      internalID: -5606074000371110018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_3
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 3079
+        width: 258
+        height: 345
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c416692cd9f65264480d23929e26138c
+      internalID: 5089885402600606884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_4
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 3304
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09939a6ffe0de8e4da917a655bf5b87c
+      internalID: 3599473900824798950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_5
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 3085
+        width: 318
+        height: 343
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec0281ce6a58394185dbb80b63d8878
+      internalID: -1134098858514175392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_6
+      rect:
+        serializedVersion: 2
+        x: 2868
+        y: 3070
+        width: 332
+        height: 363
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab53e08e299b10344b41664e148e1a34
+      internalID: 1816100378949459864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_7
+      rect:
+        serializedVersion: 2
+        x: 1955
+        y: 3093
+        width: 351
+        height: 335
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bcee3397700a8449b2a38d6eab3c46b
+      internalID: 3950001557167712706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_8
+      rect:
+        serializedVersion: 2
+        x: 2422
+        y: 3058
+        width: 303
+        height: 361
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a5f310e9ed312d4b9ec5335a5961a13
+      internalID: -4332457291431408171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_9
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 2643
+        width: 341
+        height: 367
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d511e734e677c74cb5ee5ad6055760e
+      internalID: 3981966597182180639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_12
+      rect:
+        serializedVersion: 2
+        x: 1468
+        y: 2661
+        width: 319
+        height: 340
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c92b53c266df604fa1ab7ab98e43a1f
+      internalID: 772345047613237850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_13
+      rect:
+        serializedVersion: 2
+        x: 1946
+        y: 2911
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2411e6df744018468eb0389bf66ca1f
+      internalID: 1286430007774137069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_14
+      rect:
+        serializedVersion: 2
+        x: 1990
+        y: 2670
+        width: 286
+        height: 325
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ba978079735b5646a5d8f87895af8fa
+      internalID: -9141849178886588424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_16
+      rect:
+        serializedVersion: 2
+        x: 2357
+        y: 2657
+        width: 176
+        height: 340
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a152c1b4587748d4aba396ec43ee913b
+      internalID: -5420201279782610011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_17
+      rect:
+        serializedVersion: 2
+        x: 2653
+        y: 2670
+        width: 298
+        height: 331
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d290905e6bca930409c1838fcc241118
+      internalID: 7159208266418876558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_18
+      rect:
+        serializedVersion: 2
+        x: 3014
+        y: 2657
+        width: 312
+        height: 366
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff88084f45f3f0443980923c86b3e534
+      internalID: -4553724731343649429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_19
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 2665
+        width: 309
+        height: 345
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3612a3bafee13d4caf58f20267e07d4
+      internalID: -6977714776948136515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_20
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 2657
+        width: 334
+        height: 348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 309e6da293521ac41b54f0764da8dd12
+      internalID: -8030497698194113200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_21
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 2336
+        width: 256
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26a72d54735c93c48948864c270065ff
+      internalID: 2630690464314895842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_22
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 2324
+        width: 248
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b8542c919be97d46a127b71d2be3580
+      internalID: -5206660782648918724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_23
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 2322
+        width: 237
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1175cb6f62a13be45898ba49e1cb4bd7
+      internalID: -5239653262910318380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_24
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 2314
+        width: 248
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3c6a97b9c25c894992ebabf75fa471a
+      internalID: 2579401549450707818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_25
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 2305
+        width: 258
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 121c64256cab34c4f8f7871f0ac62384
+      internalID: -6687375405105590079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_26
+      rect:
+        serializedVersion: 2
+        x: 1768
+        y: 2305
+        width: 234
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81acb6498659cf64ba6357b048249bd3
+      internalID: 5082853522609061714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_27
+      rect:
+        serializedVersion: 2
+        x: 2099
+        y: 2300
+        width: 235
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11a7e305392abd847abf5637109f62da
+      internalID: -798922387251514016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_28
+      rect:
+        serializedVersion: 2
+        x: 2439
+        y: 2483
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f0dab089d3e1e419b3480273d3e895
+      internalID: 1705434802040444885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_29
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 2309
+        width: 223
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1951e57e5c7c31458ebaf87f056946f
+      internalID: 4034120347929761958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_30
+      rect:
+        serializedVersion: 2
+        x: 1329
+        y: 2293
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d3b55ab6092f674892fc76877810a45
+      internalID: -809119155029907850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_31
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1919
+        width: 221
+        height: 205
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd76504f5de358149bcab44a9c615704
+      internalID: -5146295262031800885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_32
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 1910
+        width: 235
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7f51bc941f79504fb2703a4f29634a7
+      internalID: 680130195193189190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_33
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 1915
+        width: 234
+        height: 196
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35e456a4b623e0b47972b4582cc9f98b
+      internalID: -4872087966541287814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_34
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 1915
+        width: 258
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1e384456e2d48048a965b5e2b3e12fb
+      internalID: -996306774115056837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_35
+      rect:
+        serializedVersion: 2
+        x: 1513
+        y: 1924
+        width: 248
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a84341b684b79914d8629b4a22f1a024
+      internalID: 4192346264586455509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_36
+      rect:
+        serializedVersion: 2
+        x: 1821
+        y: 1932
+        width: 237
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b1275e33bc6fc7438f164ea1557f3fb
+      internalID: -5283749380244922754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_37
+      rect:
+        serializedVersion: 2
+        x: 2124
+        y: 1934
+        width: 248
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d4214033bc6dd40adf9b978d9014d2
+      internalID: -2614386226363750955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_38
+      rect:
+        serializedVersion: 2
+        x: 2422
+        y: 1946
+        width: 256
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35eb1d8ea8a388b4b92edfc14bd61b39
+      internalID: -3410352085999231735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_39
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 1903
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4992b06907dc3c34089d477ee9ce8cd0
+      internalID: 8626634034067186591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_40
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 1540
+        width: 233
+        height: 183
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e8aa1f54951794db228951915bf7c1
+      internalID: -6429290518890923648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_41
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 1527
+        width: 225
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cd70d23494cad244939094ce3a0a0a7
+      internalID: 545840118665105986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_42
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 1535
+        width: 222
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dd30c7fff6dc7d4a954b8baf0be2e1f
+      internalID: -6711274179188958193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_43
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 1519
+        width: 237
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7865144b4ee6e8542b21635d3e2c454f
+      internalID: 5098754317503705925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_44
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 1515
+        width: 242
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91237c987b1709c42b3e50da0249bcde
+      internalID: -8779191984442771500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_45
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 1502
+        width: 239
+        height: 231
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46dc3eb9d1e098248abb62ce8916a9ed
+      internalID: 8680648610256888945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_46
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 1136
+        width: 251
+        height: 272
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53c5d0ea6bc197c418732c97527129d7
+      internalID: 178070937912581194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_47
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 1147
+        width: 302
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 864c6cad19f329a44b822032f98bb266
+      internalID: 3890766739638007010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_49
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 1137
+        width: 353
+        height: 271
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16ae30353e0d7344292fd0cab26c5f26
+      internalID: 7995341535255120342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_51
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 1113
+        width: 357
+        height: 277
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef929ace27e3b2e49814a4e759863491
+      internalID: 4463350470298291537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_53
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 1104
+        width: 433
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5bf4af73d1f2a94ebec03c0b0ca174b
+      internalID: -5145332524440680167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_55
+      rect:
+        serializedVersion: 2
+        x: 2341
+        y: 1113
+        width: 508
+        height: 299
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50114913e66bdc24c8dcd0af27d42cfb
+      internalID: 4338484655999787415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_57
+      rect:
+        serializedVersion: 2
+        x: 2941
+        y: 1129
+        width: 544
+        height: 279
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e68db5aebbb6094cb4d2cadff8e8eef
+      internalID: 1583995979109022846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_60
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 633
+        width: 545
+        height: 284
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d923c9fe2fd97f4884afd5b3c595e25
+      internalID: 6284965539272568114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_62
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 633
+        width: 510
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5be53b4f9b111b140a2454e659182a31
+      internalID: 990202594545417863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_64
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 633
+        width: 440
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 168772066706860479f39b7c969cbd1f
+      internalID: -9052080544693924026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_66
+      rect:
+        serializedVersion: 2
+        x: 1927
+        y: 638
+        width: 427
+        height: 275
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a60ed06423c3e1946bd08cdd5094d645
+      internalID: -3296749621572059340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_68
+      rect:
+        serializedVersion: 2
+        x: 2415
+        y: 655
+        width: 358
+        height: 258
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 662553666364ccb4a8401bebc324ff63
+      internalID: -6653470512659922646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_70
+      rect:
+        serializedVersion: 2
+        x: 2821
+        y: 633
+        width: 331
+        height: 279
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97ba7a7a8c0707c459ba9b3840576513
+      internalID: -4263748489171039174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chevalier bleu new correct_71
+      rect:
+        serializedVersion: 2
+        x: 3210
+        y: 651
+        width: 291
+        height: 261
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0da30456a0d9604dabc27eadebc033c
+      internalID: 1762870555818404026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: e8cb5a75be90ea1408e42c31c48a36d9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

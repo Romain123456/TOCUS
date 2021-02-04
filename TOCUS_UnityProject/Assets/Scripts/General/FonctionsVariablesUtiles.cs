@@ -12,11 +12,12 @@ public class FonctionsVariablesUtiles : MonoBehaviour
     static public float deltaTime;
     static public string nom_du_niveau;
 
+    EventSystem myEventSystem;
 
     //Start
     void Start()
     {
-        
+        myEventSystem = GameObject.Find("EventSystem").GetComponent<EventSystem>();
     }
 
     //Update
@@ -37,8 +38,7 @@ public class FonctionsVariablesUtiles : MonoBehaviour
     //Méthode Switch Panel : permet d'activer le panel choisi et de désactiver le panel en cours
     public void SwitchPanel (GameObject panelChoisi)
     {
-        EventSystem myEventSystem;
-        myEventSystem = GameObject.Find("EventSystem").GetComponent<EventSystem>();
+        
         GameObject panelDesactiver;
 
         if(myEventSystem.currentSelectedGameObject != null)
@@ -60,11 +60,12 @@ public class FonctionsVariablesUtiles : MonoBehaviour
     }
     public void ChargeScene(string sceneChoisie)
     {
-        EventSystem myEventSystem;
-        myEventSystem = GameObject.Find("EventSystem").GetComponent<EventSystem>();
-
         nom_du_niveau = myEventSystem.currentSelectedGameObject.GetComponent<BoutonMapScript>().nomDuNiveau;
         Time.timeScale = 1;
+        for(int ii=0; ii < AvatarGestion.avatarChoisis.Length; ii++)
+        {
+            Debug.Log(AvatarGestion.avatarChoisis[ii].nomAvatar);
+        }
         StartCoroutine(LoadSceneAsync(sceneChoisie));  
     }
 
@@ -86,6 +87,10 @@ public class FonctionsVariablesUtiles : MonoBehaviour
     }
     public void ButtonOpenPanel(GameObject monPanel)
     {
+        if (myEventSystem.currentSelectedGameObject.transform.name == "ButtonChoisirAvatar")
+        {
+            AvatarGestion.joueurCurrentChoix = myEventSystem.currentSelectedGameObject.transform.parent.GetSiblingIndex();
+        }
         monPanel.SetActive(true);
     }
 

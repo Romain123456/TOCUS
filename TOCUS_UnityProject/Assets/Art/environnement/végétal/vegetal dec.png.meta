@@ -1,0 +1,439 @@
+fileFormatVersion: 2
+guid: e7284d18c71fd644aa01feefeb0b8217
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5001678364139898276
+    second: vegetal dec_0
+  - first:
+      213: -2660925462818062185
+    second: vegetal dec_1
+  - first:
+      213: -5718970400698163608
+    second: vegetal dec_3
+  - first:
+      213: -332162538260861497
+    second: vegetal dec_4
+  - first:
+      213: 3028567684560417667
+    second: vegetal dec_5
+  - first:
+      213: 8139974879788191530
+    second: vegetal dec_7
+  - first:
+      213: -8937804699839178283
+    second: vegetal dec_8
+  - first:
+      213: 2023497575571851117
+    second: vegetal dec_9
+  - first:
+      213: -6524901849086300693
+    second: vegetal dec_10
+  - first:
+      213: -5663529169364718859
+    second: vegetal dec_11
+  - first:
+      213: -5925195086994877941
+    second: vegetal dec_12
+  - first:
+      213: 6876110647814806860
+    second: vegetal dec_14
+  - first:
+      213: 717422709953460416
+    second: vegetal dec_15
+  - first:
+      213: -2390137104409741892
+    second: vegetal dec_19
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: vegetal dec_0
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 1548
+        width: 533
+        height: 691
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c94da8ec7567b9a40ada6e9241749f66
+      internalID: -5001678364139898276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetal dec_1
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1511
+        width: 841
+        height: 805
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7c6fbc3ce421d64399eb4b40611c1fc
+      internalID: -2660925462818062185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetal dec_3
+      rect:
+        serializedVersion: 2
+        x: 2027
+        y: 1965
+        width: 439
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e517dddeda5c27f42895778e4306cb8c
+      internalID: -5718970400698163608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetal dec_4
+      rect:
+        serializedVersion: 2
+        x: 2517
+        y: 1947
+        width: 392
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c729e03ff003e3d4aa733b597fb6034c
+      internalID: -332162538260861497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetal dec_5
+      rect:
+        serializedVersion: 2
+        x: 2986
+        y: 1779
+        width: 478
+        height: 671
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e8ba426183d3a9489ac40b9f6364f35
+      internalID: 3028567684560417667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetal dec_7
+      rect:
+        serializedVersion: 2
+        x: 2005
+        y: 1438
+        width: 444
+        height: 494
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcb01a7840d314e4dba575891775914e
+      internalID: 8139974879788191530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetal dec_8
+      rect:
+        serializedVersion: 2
+        x: 2526
+        y: 1482
+        width: 320
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf1ee09ed3d983648918d10144a58ad8
+      internalID: -8937804699839178283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetal dec_9
+      rect:
+        serializedVersion: 2
+        x: 2935
+        y: 1426
+        width: 295
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0fa69e464c0a434490b170e6b596f26
+      internalID: 2023497575571851117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetal dec_10
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 621
+        width: 508
+        height: 652
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d05834af2fd766043886aee2f7852f9e
+      internalID: -6524901849086300693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetal dec_11
+      rect:
+        serializedVersion: 2
+        x: 2214
+        y: 1169
+        width: 266
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7283ae96e858f24d924bb01ee699b42
+      internalID: -5663529169364718859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetal dec_12
+      rect:
+        serializedVersion: 2
+        x: 2536
+        y: 1167
+        width: 115
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed07525bd0b3df44ba4c4228ecd0001
+      internalID: -5925195086994877941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetal dec_14
+      rect:
+        serializedVersion: 2
+        x: 2834
+        y: 1155
+        width: 209
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7cc1850216ccdb4ca812723983eab6b
+      internalID: 6876110647814806860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetal dec_15
+      rect:
+        serializedVersion: 2
+        x: 3228
+        y: 1176
+        width: 167
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d2d6f79458f698469d0f3ec19f35639
+      internalID: 717422709953460416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegetal dec_19
+      rect:
+        serializedVersion: 2
+        x: 2128
+        y: 1097
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 499f45809aa61c6468f95596744af4f2
+      internalID: -2390137104409741892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 72cbcc261a3f99642aba1a5c612762d9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

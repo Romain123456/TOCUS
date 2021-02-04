@@ -1,0 +1,799 @@
+fileFormatVersion: 2
+guid: 345b395906ee4d044995168e8ca29c0a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 964508648748960752
+    second: monstre laser_0
+  - first:
+      213: -8741480113093835644
+    second: monstre laser_1
+  - first:
+      213: -3371492350416842687
+    second: monstre laser_2
+  - first:
+      213: -571632337835197781
+    second: monstre laser_3
+  - first:
+      213: -2821453753660717979
+    second: monstre laser_4
+  - first:
+      213: -3709192666974638478
+    second: monstre laser_5
+  - first:
+      213: -1619043853993016717
+    second: monstre laser_6
+  - first:
+      213: 2214008297824689047
+    second: monstre laser_7
+  - first:
+      213: 725519216941280061
+    second: monstre laser_8
+  - first:
+      213: 884191653280561289
+    second: monstre laser_9
+  - first:
+      213: -5863458639188675174
+    second: monstre laser_10
+  - first:
+      213: -4042012309245013886
+    second: monstre laser_11
+  - first:
+      213: -6169076116177359646
+    second: monstre laser_12
+  - first:
+      213: -433716767790531444
+    second: monstre laser_13
+  - first:
+      213: 293942459160427822
+    second: monstre laser_14
+  - first:
+      213: 6973222254584364707
+    second: monstre laser_15
+  - first:
+      213: -4524095150646959528
+    second: monstre laser_16
+  - first:
+      213: 1502843924735392818
+    second: monstre laser_17
+  - first:
+      213: -8709003062225131710
+    second: monstre laser_18
+  - first:
+      213: 4607854914530566160
+    second: monstre laser_19
+  - first:
+      213: 1846602884011592698
+    second: monstre laser_20
+  - first:
+      213: -2990033371445599570
+    second: monstre laser_21
+  - first:
+      213: -4619730653377546420
+    second: monstre laser_22
+  - first:
+      213: 931065467939595649
+    second: monstre laser_23
+  - first:
+      213: 8484064794730885488
+    second: monstre laser_24
+  - first:
+      213: 7015572117358108501
+    second: monstre laser_25
+  - first:
+      213: -4230975110325508970
+    second: monstre laser_26
+  - first:
+      213: -6054036059712431141
+    second: monstre laser_27
+  - first:
+      213: 4526037918707191139
+    second: monstre laser_28
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: monstre laser_0
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 3090
+        width: 253
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 797fb1fafc5332b4b8852605061ff95e
+      internalID: 964508648748960752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser_1
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 3079
+        width: 243
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9256ab84fb276294aa3e9d864329fd08
+      internalID: -8741480113093835644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser_2
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 3072
+        width: 251
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9af17999438b87f479af3b927e787a00
+      internalID: -3371492350416842687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser_3
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 3072
+        width: 245
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8895aae84e6a79b4c890a5f0a635986c
+      internalID: -571632337835197781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser_4
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 3060
+        width: 245
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a9be1cc1cc90a54583fb39e1e6f3a86
+      internalID: -2821453753660717979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser_5
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 2836
+        width: 246
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ea1020f7ad5f6f4c92f12989f74b995
+      internalID: -3709192666974638478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser_6
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 2848
+        width: 245
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f36d3af1ed773246bba611df9142d3e
+      internalID: -1619043853993016717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser_7
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 2848
+        width: 250
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f63efdf60ae9e045a3fe9dff28efcdc
+      internalID: 2214008297824689047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser_8
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 2855
+        width: 245
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a339388983702447a81775c7e825b42
+      internalID: 725519216941280061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser_9
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 2867
+        width: 252
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a2e15486a6a63843ae0642d66208e48
+      internalID: 884191653280561289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser_10
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 2594
+        width: 242
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a07716a362a03240bd53858af5e5649
+      internalID: -5863458639188675174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser_11
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 2601
+        width: 203
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1c78d07a95d72342b8d1280b7fc6661
+      internalID: -4042012309245013886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser_12
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 2608
+        width: 236
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ddbcad36d72d06409f6315e00c8feb7
+      internalID: -6169076116177359646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser_13
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 2613
+        width: 226
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ece8fa700add021428dadeaa8bb15302
+      internalID: -433716767790531444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser_14
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 2236
+        width: 262
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf566b68ec7420c449102c077c06a222
+      internalID: 293942459160427822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser_15
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 2240
+        width: 262
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2853b26544c5f84cac1b9b854462dda
+      internalID: 6973222254584364707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser_16
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 2236
+        width: 294
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 056ef00fb8bbc94458d2705d1acf615b
+      internalID: -4524095150646959528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser_17
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 2229
+        width: 310
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e673ca1a0401ca04785c41871339d04a
+      internalID: 1502843924735392818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser_18
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 2255
+        width: 322
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c9c825bc7c05e44b3dcd24f0ae8e71
+      internalID: -8709003062225131710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser_19
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 1702
+        width: 452
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2c1f67b47005ce40a1009331707d2b9
+      internalID: 4607854914530566160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser_20
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 1702
+        width: 517
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 267d3a166d13d0a45ba7682fa4427380
+      internalID: 1846602884011592698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser_21
+      rect:
+        serializedVersion: 2
+        x: 1654
+        y: 1858
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5be98e6944540945b20a283be3c154a
+      internalID: -2990033371445599570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser_22
+      rect:
+        serializedVersion: 2
+        x: 1712
+        y: 1851
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24109e12a5b3bb6409b052e8fefdc93c
+      internalID: -4619730653377546420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser_23
+      rect:
+        serializedVersion: 2
+        x: 1720
+        y: 1695
+        width: 518
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754f461f8469cf044aa0311e87a60ce3
+      internalID: 931065467939595649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser_24
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1775
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2c3bfbd9445a1e41a755dc11fd13066
+      internalID: 8484064794730885488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser_25
+      rect:
+        serializedVersion: 2
+        x: 1676
+        y: 1779
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc44696a0efd528418e9d9c070ab8ff9
+      internalID: 7015572117358108501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser_26
+      rect:
+        serializedVersion: 2
+        x: 1690
+        y: 1764
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00193174bb439b84d9fa99bbacd8ef6b
+      internalID: -4230975110325508970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser_27
+      rect:
+        serializedVersion: 2
+        x: 1703
+        y: 1782
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ba067ee1bc6e644399a9aa390a47ced
+      internalID: -6054036059712431141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monstre laser_28
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 1757
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 512ddcb2d1ba653419894c3b46c2ca92
+      internalID: 4526037918707191139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

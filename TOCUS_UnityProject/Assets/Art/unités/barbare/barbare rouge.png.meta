@@ -1,0 +1,871 @@
+fileFormatVersion: 2
+guid: b8dc153cea9eaf84e99fec8110b8cf90
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2023856957834057354
+    second: barbare rouge_0
+  - first:
+      213: -3357482369186105269
+    second: barbare rouge_1
+  - first:
+      213: 3455052863537968719
+    second: barbare rouge_2
+  - first:
+      213: -5702237047739119970
+    second: barbare rouge_3
+  - first:
+      213: -135657708070372885
+    second: barbare rouge_4
+  - first:
+      213: 3464657997543445640
+    second: barbare rouge_5
+  - first:
+      213: 3578161265923695611
+    second: barbare rouge_6
+  - first:
+      213: 3703688389290967367
+    second: barbare rouge_7
+  - first:
+      213: 1649631592284427149
+    second: barbare rouge_8
+  - first:
+      213: -1030941621779887669
+    second: barbare rouge_9
+  - first:
+      213: -4361270471116240260
+    second: barbare rouge_10
+  - first:
+      213: 7941511695566313412
+    second: barbare rouge_11
+  - first:
+      213: 2652056489061833640
+    second: barbare rouge_12
+  - first:
+      213: -3904279177126070363
+    second: barbare rouge_13
+  - first:
+      213: 7921405429890581220
+    second: barbare rouge_14
+  - first:
+      213: 8593623234246983378
+    second: barbare rouge_15
+  - first:
+      213: -5183824202857195470
+    second: barbare rouge_16
+  - first:
+      213: -4114187559458192388
+    second: barbare rouge_17
+  - first:
+      213: 2545011617497082190
+    second: barbare rouge_18
+  - first:
+      213: 5519912720358830580
+    second: barbare rouge_19
+  - first:
+      213: 2251421674069611133
+    second: barbare rouge_20
+  - first:
+      213: 4130091758868300663
+    second: barbare rouge_21
+  - first:
+      213: 5089419136458441412
+    second: barbare rouge_22
+  - first:
+      213: 4750593244494159598
+    second: barbare rouge_23
+  - first:
+      213: 5267959046713890390
+    second: barbare rouge_24
+  - first:
+      213: 5851399827521358782
+    second: barbare rouge_25
+  - first:
+      213: -6649804509352377267
+    second: barbare rouge_26
+  - first:
+      213: 4435572896477237160
+    second: barbare rouge_27
+  - first:
+      213: -245293930482287031
+    second: barbare rouge_28
+  - first:
+      213: -2512733665602370582
+    second: barbare rouge_29
+  - first:
+      213: 460114734036900074
+    second: barbare rouge_30
+  - first:
+      213: 3563024517145783439
+    second: barbare rouge_31
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: barbare rouge_0
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 3161
+        width: 299
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e23dd4e96710274195f2d58687234a9
+      internalID: -2023856957834057354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barbare rouge_1
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 3158
+        width: 300
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c94dfb1ee8fb1504cad0741b725c07cb
+      internalID: -3357482369186105269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barbare rouge_2
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 2849
+        width: 279
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43db39c790ea6d045ae3d3b60b94f856
+      internalID: 3455052863537968719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barbare rouge_3
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 2835
+        width: 286
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15acdf7731b78384e9c46b0ba83584c4
+      internalID: -5702237047739119970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barbare rouge_4
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 2835
+        width: 286
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30049a886e9a10444b37c941cd3f34e3
+      internalID: -135657708070372885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barbare rouge_5
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 2831
+        width: 279
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35612a13398d586428b09999e35a0d82
+      internalID: 3464657997543445640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barbare rouge_6
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 2855
+        width: 279
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ba60c2b49221d44869ee1c3a14a09d
+      internalID: 3578161265923695611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barbare rouge_7
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 2524
+        width: 279
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d99bca19f248d9489312907801524ec
+      internalID: 3703688389290967367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barbare rouge_8
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 2512
+        width: 281
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55155378662e72f49a2b01864b2e7682
+      internalID: 1649631592284427149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barbare rouge_9
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 2519
+        width: 285
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b201cff703fa4a74e896e35140e4bc54
+      internalID: -1030941621779887669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barbare rouge_10
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 2529
+        width: 279
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b39b5685d18c34da29a12ffaffe074
+      internalID: -4361270471116240260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barbare rouge_11
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 2538
+        width: 279
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc1d85c207111840b22f9e32523e0e2
+      internalID: 7941511695566313412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barbare rouge_12
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 2168
+        width: 344
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 594d7f99c8bdfea4e8769e02dc910825
+      internalID: 2652056489061833640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barbare rouge_13
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 2166
+        width: 335
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58312ba4bd1801445b3cb67a802b58ea
+      internalID: -3904279177126070363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barbare rouge_14
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 2161
+        width: 325
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e7ba28aa14cf9242afc6b376aa51283
+      internalID: 7921405429890581220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barbare rouge_15
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 1784
+        width: 346
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d13480e2afae74ebcab99d18bd90e1
+      internalID: 8593623234246983378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barbare rouge_16
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 1781
+        width: 336
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4dc28f4b6818c041a67d66212f0f453
+      internalID: -5183824202857195470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barbare rouge_17
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 1775
+        width: 329
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ff2ad987cee3854095b41befb7f8d4d
+      internalID: -4114187559458192388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barbare rouge_18
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1373
+        width: 312
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb6f8eef8e642d947925768a97398b9d
+      internalID: 2545011617497082190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barbare rouge_19
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 1388
+        width: 310
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea62d6b952ea4404785970ddd8b38ca1
+      internalID: 5519912720358830580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barbare rouge_20
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 1392
+        width: 293
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45bda408e8fbc7b499425719f7bf01c5
+      internalID: 2251421674069611133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barbare rouge_21
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 1376
+        width: 323
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d2144650884f2b479b9d347dd73d68b
+      internalID: 4130091758868300663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barbare rouge_22
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 1368
+        width: 355
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38febfcb27fc87d4bb3f40129db189dc
+      internalID: 5089419136458441412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barbare rouge_23
+      rect:
+        serializedVersion: 2
+        x: 2085
+        y: 1329
+        width: 374
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3adf7d122b2d9d4e94f4a1324f4a94a
+      internalID: 4750593244494159598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barbare rouge_24
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 876
+        width: 310
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c15859f082b154cba565d6b45f1d8b
+      internalID: 5267959046713890390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barbare rouge_25
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 873
+        width: 310
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4855e87c9796ac444990eccaac68d6ee
+      internalID: 5851399827521358782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barbare rouge_26
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 878
+        width: 292
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a79262a2896f44f4ebd566d02404c7da
+      internalID: -6649804509352377267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barbare rouge_27
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 862
+        width: 337
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56f0a42247b84604581528c6fe9635b3
+      internalID: 4435572896477237160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barbare rouge_28
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 850
+        width: 377
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76cd17ff37b023a4c94485836cb74243
+      internalID: -245293930482287031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barbare rouge_29
+      rect:
+        serializedVersion: 2
+        x: 2082
+        y: 834
+        width: 351
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c530330894f7084cac562570c0ad703
+      internalID: -2512733665602370582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barbare rouge_30
+      rect:
+        serializedVersion: 2
+        x: 2431
+        y: 950
+        width: 16
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80434a66a48a05d48b3365de9b0bfb21
+      internalID: 460114734036900074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barbare rouge_31
+      rect:
+        serializedVersion: 2
+        x: 1916
+        y: 828
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ece2b26408545140a77478079818989
+      internalID: 3563024517145783439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 81eba038e6e25c64ba21de64051b8694
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

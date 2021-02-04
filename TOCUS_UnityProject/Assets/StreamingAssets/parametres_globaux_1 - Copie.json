@@ -85,18 +85,6 @@
 			"quadruple", "puissance", "quintuple"
 		]
 	},
-
-
-	"o_unites_monstres_valeurs_textuelles_portee":
-	{
-		"courte":1,
-		"longue":2,
-		"longue_traversante":2,
-		"tres_longue":4,
-		"lointaine":6,
-		"tres_lointaine":10
-	},
-
 	
 
 	"o_boss":

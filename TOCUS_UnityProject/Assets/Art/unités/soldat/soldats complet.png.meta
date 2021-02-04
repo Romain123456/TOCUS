@@ -1,0 +1,2191 @@
+fileFormatVersion: 2
+guid: d6fd3488f8a41ef468683a2cda5be594
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6768604316551745667
+    second: soldats complet_0
+  - first:
+      213: -4093064425445610415
+    second: soldats complet_1
+  - first:
+      213: 1122390686215620004
+    second: soldats complet_2
+  - first:
+      213: -7001994878923934734
+    second: soldats complet_3
+  - first:
+      213: 7340944690255674743
+    second: soldats complet_4
+  - first:
+      213: 8026837838373404123
+    second: soldats complet_5
+  - first:
+      213: 2020945611013923052
+    second: soldats complet_6
+  - first:
+      213: -8872314105316644613
+    second: soldats complet_7
+  - first:
+      213: -5888176693151772869
+    second: soldats complet_8
+  - first:
+      213: 6569632979081737059
+    second: soldats complet_9
+  - first:
+      213: -3585279096465235430
+    second: soldats complet_10
+  - first:
+      213: 8807215456689803596
+    second: soldats complet_11
+  - first:
+      213: 1530855391537672610
+    second: soldats complet_12
+  - first:
+      213: 2082386027099090242
+    second: soldats complet_13
+  - first:
+      213: -224995318411350459
+    second: soldats complet_14
+  - first:
+      213: -3281663836089050727
+    second: soldats complet_15
+  - first:
+      213: -8729214483803353190
+    second: soldats complet_16
+  - first:
+      213: 4759086012510097021
+    second: soldats complet_17
+  - first:
+      213: -2534309277938519776
+    second: soldats complet_18
+  - first:
+      213: 4667966295099259923
+    second: soldats complet_19
+  - first:
+      213: 3699999772361934753
+    second: soldats complet_20
+  - first:
+      213: 2376446897533498839
+    second: soldats complet_23
+  - first:
+      213: -627408461137696252
+    second: soldats complet_26
+  - first:
+      213: -5238080050145812268
+    second: soldats complet_27
+  - first:
+      213: 5200201609785791239
+    second: soldats complet_28
+  - first:
+      213: 4165018187504146260
+    second: soldats complet_29
+  - first:
+      213: 3406921059380600124
+    second: soldats complet_30
+  - first:
+      213: -4017586179125613436
+    second: soldats complet_31
+  - first:
+      213: 7442345775162905210
+    second: soldats complet_32
+  - first:
+      213: -4390802009774015228
+    second: soldats complet_33
+  - first:
+      213: -9019923655590922087
+    second: soldats complet_34
+  - first:
+      213: -2390753301584750352
+    second: soldats complet_35
+  - first:
+      213: -5894872446231798550
+    second: soldats complet_36
+  - first:
+      213: 3040278011106308496
+    second: soldats complet_37
+  - first:
+      213: -5589820903944622347
+    second: soldats complet_38
+  - first:
+      213: -8986798986291606083
+    second: soldats complet_39
+  - first:
+      213: 8184246260735046325
+    second: soldats complet_40
+  - first:
+      213: -4281576231737614084
+    second: soldats complet_41
+  - first:
+      213: 5590696320172224320
+    second: soldats complet_42
+  - first:
+      213: -3347188124566987642
+    second: soldats complet_43
+  - first:
+      213: 5728989562971765303
+    second: soldats complet_44
+  - first:
+      213: -9085908205752088860
+    second: soldats complet_45
+  - first:
+      213: 7446105115202553091
+    second: soldats complet_46
+  - first:
+      213: -9033248607581753315
+    second: soldats complet_47
+  - first:
+      213: -2493274400681052611
+    second: soldats complet_48
+  - first:
+      213: -8127534859815806844
+    second: soldats complet_49
+  - first:
+      213: -4480227115371680836
+    second: soldats complet_50
+  - first:
+      213: -4422826079988806569
+    second: soldats complet_51
+  - first:
+      213: 5370565789817362054
+    second: soldats complet_52
+  - first:
+      213: -8013494516951650328
+    second: soldats complet_53
+  - first:
+      213: -8438076659406835367
+    second: soldats complet_54
+  - first:
+      213: -5009233787456259549
+    second: soldats complet_55
+  - first:
+      213: 5557405170110359446
+    second: soldats complet_56
+  - first:
+      213: -4704105702545753781
+    second: soldats complet_57
+  - first:
+      213: 4423973485160912799
+    second: soldats complet_58
+  - first:
+      213: -8898546193165178424
+    second: soldats complet_59
+  - first:
+      213: 282142525432225655
+    second: soldats complet_60
+  - first:
+      213: 5276793180179846207
+    second: soldats complet_61
+  - first:
+      213: -5001315209545866624
+    second: soldats complet_62
+  - first:
+      213: -4301479686805983613
+    second: soldats complet_63
+  - first:
+      213: 8279180464324907277
+    second: soldats complet_64
+  - first:
+      213: 8197015777406437809
+    second: soldats complet_65
+  - first:
+      213: 7237401814591976515
+    second: soldats complet_66
+  - first:
+      213: -4610286110517479346
+    second: soldats complet_67
+  - first:
+      213: 656687122477117920
+    second: soldats complet_70
+  - first:
+      213: -4083385568374498343
+    second: soldats complet_73
+  - first:
+      213: 4601163480311244223
+    second: soldats complet_74
+  - first:
+      213: 1579759999536390585
+    second: soldats complet_75
+  - first:
+      213: -3869920188407636291
+    second: soldats complet_76
+  - first:
+      213: 1907856377729917763
+    second: soldats complet_77
+  - first:
+      213: 5514455676019026459
+    second: soldats complet_78
+  - first:
+      213: -522126870443284339
+    second: soldats complet_79
+  - first:
+      213: 2965974092044101652
+    second: soldats complet_80
+  - first:
+      213: 3553556324880801946
+    second: soldats complet_81
+  - first:
+      213: -36155323801698358
+    second: soldats complet_82
+  - first:
+      213: 3720792162902009754
+    second: soldats complet_83
+  - first:
+      213: 1812370504372196491
+    second: soldats complet_84
+  - first:
+      213: -573697987880683517
+    second: soldats complet_85
+  - first:
+      213: -4863045836368738452
+    second: soldats complet_86
+  - first:
+      213: 4732708839283095481
+    second: soldats complet_87
+  - first:
+      213: 4487330598559558904
+    second: soldats complet_88
+  - first:
+      213: -8822056536200886370
+    second: soldats complet_89
+  - first:
+      213: -8216855200215919747
+    second: soldats complet_90
+  - first:
+      213: -6403317558760909319
+    second: soldats complet_91
+  - first:
+      213: 6587385157179805791
+    second: soldats complet_92
+  - first:
+      213: -2526363141601952719
+    second: soldats complet_93
+  - first:
+      213: 8464620500779248043
+    second: soldats complet_94
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: soldats complet_0
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 2852
+        width: 180
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e1709067766edc40a0f0ef78b5c685b
+      internalID: -6768604316551745667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_1
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 2843
+        width: 166
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7491b10c01eb8324ba46fec886bf75e6
+      internalID: -4093064425445610415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_2
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 2838
+        width: 150
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa825e0dde95584cb62b20643d26660
+      internalID: 1122390686215620004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_3
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 2837
+        width: 155
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d01eb9fd0d2f2d04e8dfb497832e85e4
+      internalID: -7001994878923934734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_4
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 2836
+        width: 157
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b88c4606badcb46842dbb0e4ef0bb9
+      internalID: 7340944690255674743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_5
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 2835
+        width: 169
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1779bdf8af89f28409958313007b2461
+      internalID: 8026837838373404123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_6
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 2827
+        width: 168
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6d8603f967a812429b38e53ad7f88a7
+      internalID: 2020945611013923052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_7
+      rect:
+        serializedVersion: 2
+        x: 1883
+        y: 2819
+        width: 166
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17439a8c411d3e14d92bf3f53ac0c0f4
+      internalID: -8872314105316644613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_8
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 2820
+        width: 177
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9487d5907defad43bf934bbf5f7ae61
+      internalID: -5888176693151772869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_9
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 2586
+        width: 162
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7207030a7c7315c43a88ae855a07e726
+      internalID: 6569632979081737059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_10
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 2583
+        width: 173
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c0bcc4c16c15ac4086f40adf21652cd
+      internalID: -3585279096465235430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_11
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 2588
+        width: 182
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 642f437d76dbe9942b3ab9888035cf2c
+      internalID: 8807215456689803596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_12
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 2596
+        width: 169
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e98134c83c20b6141a5c982f516e51c6
+      internalID: 1530855391537672610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_13
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 2595
+        width: 165
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0af7f040159a4c045bacdf9a20da26fd
+      internalID: 2082386027099090242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_14
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 2594
+        width: 156
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e3c773560366ca479e3b6a7b851d3cf
+      internalID: -224995318411350459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_15
+      rect:
+        serializedVersion: 2
+        x: 1579
+        y: 2593
+        width: 165
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d5b586a7e7160d409f214b62789deee
+      internalID: -3281663836089050727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_16
+      rect:
+        serializedVersion: 2
+        x: 1836
+        y: 2595
+        width: 177
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe837e54c0f414340b830304e9b82c1c
+      internalID: -8729214483803353190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_17
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 2602
+        width: 179
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f685897be63864b43a6e875eb9397e49
+      internalID: 4759086012510097021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_18
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 2374
+        width: 153
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eee4c9b92930424ab21e3ad0927b48d
+      internalID: -2534309277938519776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_19
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 2366
+        width: 198
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97e6224517d027a4098686fb38721535
+      internalID: 4667966295099259923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_20
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 2362
+        width: 211
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27fc73cf46ae0114996935f5d67e5dd4
+      internalID: 3699999772361934753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_23
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 2350
+        width: 225
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28cb548d762f93c40a70691b8f21f666
+      internalID: 2376446897533498839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_26
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 2336
+        width: 242
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cba26376b8773e0438d932d1caaed5bd
+      internalID: -627408461137696252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_27
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 2330
+        width: 167
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3b24ba5586fe6d408c6732b41cc869d
+      internalID: -5238080050145812268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_28
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 2333
+        width: 166
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 537a073e6ddf20240876a7dc3a72c085
+      internalID: 5200201609785791239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_29
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 2326
+        width: 179
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9b1b14225bd9304dbf3b7e20908e46b
+      internalID: 4165018187504146260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_30
+      rect:
+        serializedVersion: 2
+        x: 2149
+        y: 2315
+        width: 198
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 219b5be8c9431ee4199909ca96da0522
+      internalID: 3406921059380600124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_31
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 2128
+        width: 149
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2910b1d2e96b4df4f958a205663b10ba
+      internalID: -4017586179125613436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_32
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 2123
+        width: 187
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a76ba844dda6bc440b53651434af974f
+      internalID: 7442345775162905210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_33
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 2120
+        width: 191
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 304d6536d0f63a541ae867617782c1c0
+      internalID: -4390802009774015228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_34
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 2110
+        width: 236
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b830c79b75485444c821ca4dec75496c
+      internalID: -9019923655590922087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_35
+      rect:
+        serializedVersion: 2
+        x: 1219
+        y: 2107
+        width: 251
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 793e9d30aec78004da7be53e4e4c279a
+      internalID: -2390753301584750352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_36
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 2102
+        width: 160
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c934f21d1529f459cb8361e62e3efd
+      internalID: -5894872446231798550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_37
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 2098
+        width: 174
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35ec0548cee0ba241a96c82fd16d1a1d
+      internalID: 3040278011106308496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_38
+      rect:
+        serializedVersion: 2
+        x: 1964
+        y: 2078
+        width: 210
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dc37bed2ce246542aa250d9e9bae473
+      internalID: -5589820903944622347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_39
+      rect:
+        serializedVersion: 2
+        x: 2183
+        y: 2071
+        width: 206
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e302824b1dc094419bfecff12e98689
+      internalID: -8986798986291606083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_40
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1917
+        width: 198
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e971ca1dd08cbe4bb424fba93889191
+      internalID: 8184246260735046325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_41
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1901
+        width: 195
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 048fc3491c25bd046a70d4c1458fe770
+      internalID: -4281576231737614084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_42
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 1826
+        width: 191
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbb81dd99189cde40bbf4c6e39b43abf
+      internalID: 5590696320172224320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_43
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 1826
+        width: 212
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b39993d9b19d894f809df02036fbcd4
+      internalID: -3347188124566987642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_44
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 1826
+        width: 172
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5b02d1e059aaa2488275a5f5c07017a
+      internalID: 5728989562971765303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_45
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 1826
+        width: 210
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b1e7d3b1830b6b4b9934760a5192804
+      internalID: -9085908205752088860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_46
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 1412
+        width: 180
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0977db7aa41d79e4e9fe9cb4b000503f
+      internalID: 7446105115202553091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_47
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 1404
+        width: 166
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b777d484932c8d40944af847f4421b9
+      internalID: -9033248607581753315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_48
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 1398
+        width: 150
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cb29909ccfd2624cb8edf1563f94177
+      internalID: -2493274400681052611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_49
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 1398
+        width: 161
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 391335a7723eaff4a8a554f5f3e25755
+      internalID: -8127534859815806844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_50
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 1398
+        width: 162
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daa51a943b9fc724cadd120a42fada1c
+      internalID: -4480227115371680836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_51
+      rect:
+        serializedVersion: 2
+        x: 1411
+        y: 1396
+        width: 174
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc29659ce2f45d54b8bc4b83ed34a9e3
+      internalID: -4422826079988806569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_52
+      rect:
+        serializedVersion: 2
+        x: 1675
+        y: 1387
+        width: 172
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0643cb735b4dd3449ba634eaf55b41a
+      internalID: 5370565789817362054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_53
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 1378
+        width: 174
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f0cbb3a440f5a447be17b2988b5f084
+      internalID: -8013494516951650328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_54
+      rect:
+        serializedVersion: 2
+        x: 2225
+        y: 1380
+        width: 179
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 580df992dc4723c4e9390701f1e222c3
+      internalID: -8438076659406835367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_55
+      rect:
+        serializedVersion: 2
+        x: 2486
+        y: 1369
+        width: 179
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfa3f7f3c1c3e084e9dd4349a503d106
+      internalID: -5009233787456259549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_56
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1148
+        width: 167
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3402541506319b341b120315778a6900
+      internalID: 5557405170110359446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_57
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1145
+        width: 171
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 155c44a5684da36408990525dba2d20c
+      internalID: -4704105702545753781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_58
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 1150
+        width: 177
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 535dc4d3c1bd2e34fafe12b15310f16b
+      internalID: 4423973485160912799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_59
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 1157
+        width: 179
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eee066de934db374a8f64d47372137fb
+      internalID: -8898546193165178424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_60
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 1156
+        width: 171
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f86dfd65790bb948a16221cca45fdc7
+      internalID: 282142525432225655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_61
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1154
+        width: 156
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12d82e72b9748d342947bd388ac99b12
+      internalID: 5276793180179846207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_62
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 1153
+        width: 166
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a951930061433e44ea25c030a4a613c9
+      internalID: -5001315209545866624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_63
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 1156
+        width: 177
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 328730d83ea21fa4c896a801e6852351
+      internalID: -4301479686805983613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_64
+      rect:
+        serializedVersion: 2
+        x: 2182
+        y: 1162
+        width: 178
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 952e8f099bb383f459dfa3c695d64a1b
+      internalID: 8279180464324907277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_65
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 934
+        width: 153
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f714e01318a9dc34fbd950cb0299838a
+      internalID: 8197015777406437809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_66
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 926
+        width: 198
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8227f73090eb3f84489b26c8fedbbaaa
+      internalID: 7237401814591976515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_67
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 921
+        width: 220
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7908a3668fdf9140b99f70c8e52bb48
+      internalID: -4610286110517479346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_70
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 909
+        width: 226
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcfc974a22c655c49a3f55463bc3e1fd
+      internalID: 656687122477117920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_73
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 896
+        width: 238
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 634d152d458468340928c273754b61b0
+      internalID: -4083385568374498343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_74
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 890
+        width: 167
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 289239c209c90fc4dbf980a10189a738
+      internalID: 4601163480311244223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_75
+      rect:
+        serializedVersion: 2
+        x: 1747
+        y: 893
+        width: 166
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbb71a71d7f759a4bb2e3db9adf3a2f6
+      internalID: 1579759999536390585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_76
+      rect:
+        serializedVersion: 2
+        x: 2013
+        y: 885
+        width: 179
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a58718d8985cd2c4689024e65a718de9
+      internalID: -3869920188407636291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_77
+      rect:
+        serializedVersion: 2
+        x: 2230
+        y: 875
+        width: 198
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecf26bc0ecdd88e4a968b1116d9a0df3
+      internalID: 1907856377729917763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_78
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 688
+        width: 150
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faadb85420d2de844ab8623589e8d73a
+      internalID: 5514455676019026459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_79
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 683
+        width: 187
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05995547c1706c94db6e733bf44f62be
+      internalID: -522126870443284339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_80
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 680
+        width: 191
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdee1e4e7a386064f9bc20038bc3b4b3
+      internalID: 2965974092044101652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_81
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 669
+        width: 235
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87a51acc91bf8c842ae814a7eb8480e9
+      internalID: 3553556324880801946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_82
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 668
+        width: 251
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77ee2704bd1b0e94691a57f416328e26
+      internalID: -36155323801698358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_83
+      rect:
+        serializedVersion: 2
+        x: 1623
+        y: 663
+        width: 160
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 855567c9da8dbfc44afd3003a21de01d
+      internalID: 3720792162902009754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_84
+      rect:
+        serializedVersion: 2
+        x: 1851
+        y: 657
+        width: 174
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee219179b896fa458bce8964ed70383
+      internalID: 1812370504372196491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_85
+      rect:
+        serializedVersion: 2
+        x: 2044
+        y: 638
+        width: 211
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5894eceb11df29342a027420524d411d
+      internalID: -573697987880683517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_86
+      rect:
+        serializedVersion: 2
+        x: 2264
+        y: 630
+        width: 206
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db8d41452d0548444a0c0eeee64de1d0
+      internalID: -4863045836368738452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_87
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 477
+        width: 198
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 765b080768a3b2149b8e4d8f984177de
+      internalID: 4732708839283095481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_88
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 461
+        width: 195
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b58a45de6003b46b9eeef35fa1433d
+      internalID: 4487330598559558904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_89
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 385
+        width: 191
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8e02efa4010f1d4d8e9798f5630ac21
+      internalID: -8822056536200886370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_90
+      rect:
+        serializedVersion: 2
+        x: 1255
+        y: 385
+        width: 212
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad6210b662c1cbd47bba2df6fea673e2
+      internalID: -8216855200215919747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_91
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 385
+        width: 172
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc89b28995db3a64898e4cbf9c2f34a6
+      internalID: -6403317558760909319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_92
+      rect:
+        serializedVersion: 2
+        x: 1857
+        y: 385
+        width: 210
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 822dccf7715a0b442ab80e695d0e93ae
+      internalID: 6587385157179805791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_93
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 111
+        width: 190
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55da1c3aad2c20c4d8c6cf306c31d02c
+      internalID: -2526363141601952719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldats complet_94
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 112
+        width: 190
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c4a7b7bcd7fb24d9baa9edc5cbae12
+      internalID: 8464620500779248043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 154ec2f9a627f544c9da82722e2ae163
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

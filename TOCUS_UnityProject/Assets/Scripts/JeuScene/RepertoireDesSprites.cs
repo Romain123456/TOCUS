@@ -5,6 +5,8 @@ using UnityEngine;
 public class RepertoireDesSprites : MonoBehaviour
 {
     //Sprites des Bâtiments
+    public Sprite fondMap;
+    public Sprite imageMap;
     public Sprite champBleSprite;
     public Sprite mineFerSprite;
     public Sprite recolteBoisSprite;
@@ -18,7 +20,7 @@ public class RepertoireDesSprites : MonoBehaviour
     public Sprite chateauSprite;
     public Sprite flagJ1;
     public Sprite flagJ2;
-
+    public Sprite[] pionActif;                //Image du pion actif
 
     #region Unités + Ennemis
     //Ennemis
@@ -197,9 +199,6 @@ public class RepertoireDesSprites : MonoBehaviour
     #endregion
 
 
-    //Heros
-    public HerosRepertoire[] herosData;
-
     #region Tours
     //Tour
     [HideInInspector] public List<ToursRepertoire> toursData;
@@ -366,21 +365,6 @@ public class SuperUnitesJoueurRepertoire : UnitesJoueurRepertoire
 
 
 #endregion
-
-
-
-
-
-
-[System.Serializable]
-public class HerosRepertoire
-{
-    public string herosNom;                 //Nom du héros
-    public Sprite herosSprite;              //Sprite du héros
-    public Sprite pionActif;                //Image du pion actif
-
-}
-
 
 
 #region Tours

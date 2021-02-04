@@ -74,19 +74,19 @@
 	"o_tours_valeurs_textuelles_portee":
 	{
 		"contact":0,
-		"tres_courte":2,
-		"courte":5,
-		"normale":10,
-		"lointaine":20,
-		"tres_lointaine":50,
+		"tres_courte":0.2,
+		"courte":0.5,
+		"normale":1,
+		"lointaine":2,
+		"tres_lointaine":5,
 		"absolue":1000
 	},
 
 	"o_tours_valeurs_textuelles_largeur_visee" :
 	{
-		"petite":2,
-		"normale":4,
-		"grande":6
+		"petite":1,
+		"normale":3,
+		"grande":5
 	},
 
 	"o_tours_valeurs_textuelles_cadence":

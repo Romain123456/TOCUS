@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Moulin
   m_EditorClassIdentifier: 
   batimentNom: Moulin
-  batimentSprite: {fileID: 21300032, guid: 5fd53940b7c1b4c4e8be5f7025e586da, type: 3}
+  batimentSprite: {fileID: 8601467108494856171, guid: 3e570a9a4168113409ce4087b43decea,
+    type: 3}
   batimentPrixBle: 0
   batimentPrixBois: 0
   batimentPrixFer: 1
