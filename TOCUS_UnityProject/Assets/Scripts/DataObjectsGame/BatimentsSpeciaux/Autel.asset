@@ -18,5 +18,7 @@ MonoBehaviour:
   batimentPrixBois: 0
   batimentPrixFer: 8
   batimentPrixPierre: 0
-  scaleBatiment: {x: 0.3, y: 0.4, z: 1}
+  scaleBatiment: {x: 1, y: 1, z: 1}
   nombreBatimentMaxParJoueur: 3
+  isBatimentPublic: 0
+  isBatimentPersonnel: 0

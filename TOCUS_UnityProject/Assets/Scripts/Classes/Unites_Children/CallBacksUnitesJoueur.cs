@@ -6,24 +6,26 @@ public class CallBacksUnitesJoueur : MonoBehaviour
 {
     [HideInInspector] public UnitesJoueur monUniteJoueur;
     [HideInInspector] public Transform ennemiTransform;
+    public bool isRecruted;
 
     private void OnEnable()
     {
-        monUniteJoueur.UnitesJoueurPositionnementActivation();
         monUniteJoueur.pv = monUniteJoueur.pvMax;
         monUniteJoueur.HealthBar_MaJ();
         monUniteJoueur.uniteJoueurOwner = monUniteJoueur.levelManager._JoueurActif;
         monUniteJoueur.isFighting = false;
+        monUniteJoueur.UnitesJoueurPrendPlace();
+        isRecruted = true;
     }
+
+
 
     private void OnDisable()
     {
-        
         monUniteJoueur.LiberationPositionChemin();
         monUniteJoueur.isDead = false;
         ennemiTransform = null;
         monUniteJoueur.UniteJoueurRetourStatsBases();
-
         if (monUniteJoueur.pv <= 0)
         {
             //On retire 1 au nombre d'unité du type au joueur quand l'unité meurt
@@ -37,6 +39,7 @@ public class CallBacksUnitesJoueur : MonoBehaviour
         
         if(monUniteJoueur.pv <= 0 && !monUniteJoueur.isDead && this.transform.tag == "UniteJoueur")
         {
+            isRecruted = false;
             StartCoroutine(monUniteJoueur.MortUnite(monUniteJoueur.monAnimator,monUniteJoueur.monTransform.position.x,ennemiTransform.position.x));
             monUniteJoueur.isDead = true;
             Debug.Log("mort");

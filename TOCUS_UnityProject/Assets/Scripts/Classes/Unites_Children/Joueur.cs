@@ -48,6 +48,7 @@ public class Joueur : MonoBehaviour
     public GameObject[] imagesAction;               //Tableau des images du nombre d'actions
     public Text victoirePointText;                  //Text du nombre de points de victoire
     public Text solidarityPointText;                //Text du nombre de points de solidarité
+    public GameObject imagePrendreRound;            //Image indiquant que le joueur a pris la main pour le round
 
 
     //Compétences passives personnelles
@@ -116,6 +117,9 @@ public class Joueur : MonoBehaviour
         //Interface Joueur Création
         _panelInterfaceJoueur.transform.GetChild(0).GetChild(1).GetComponent<Image>().sprite = _PortraitJoueur;
         _panelInterfaceJoueur.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = _NomJoueur;
+
+        imagePrendreRound = _panelInterfaceJoueur.transform.GetChild(9).gameObject;
+
         for (int ii = 0; ii < _RessourcesPossedes.Length; ii++)
         {
             if (_isModeDebug)

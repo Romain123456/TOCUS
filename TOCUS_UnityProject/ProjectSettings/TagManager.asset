@@ -15,6 +15,13 @@ TagManager:
   - EmplacementBTP
   - Munition
   - SuperUniteJoueur
+  - Mur
+  - Arbre_Type1
+  - Arbre_Type2
+  - Arbre_Type3
+  - Arbre_Type4
+  - Arbre_Type5
+  - Pierre_Type1
   layers:
   - Default
   - TransparentFX

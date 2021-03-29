@@ -312,11 +312,11 @@
 
 	"o_monstres_valeurs_textuelles_deplacement":
 	{
-		"tres_lente":0.1,
-		"lente":0.25,
-		"normale":0.5,
-		"rapide":1,
-		"tres_rapide":1.5
+		"tres_lente":5.0,
+		"lente":10.0,
+		"normale":15.0,
+		"rapide":20.0,
+		"tres_rapide":25.0
 	},
 
 	"o_unites_soldat":

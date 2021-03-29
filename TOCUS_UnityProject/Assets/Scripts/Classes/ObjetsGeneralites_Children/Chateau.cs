@@ -41,8 +41,22 @@ public class Chateau : ObjetsGeneralites
         levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[0] += 2;     //Ajoute 2 de blé au joueur actif
         levelManager.tableauJoueurs[levelManager._JoueurActif - 1].AfficheNbRessources(0);          //Affiche les ressources du joueur actif
         levelManager.panelParentBatimentInterract.gameObject.SetActive(false);                      //Ferme le panel
+        
+        levelManager.nbRessourcesRecup = 2;
         //Eventualité de présence de la palissade
         PalissadeFonction();
+
+        //Index des sprites
+        levelManager.indexSpriteRessources = new int[levelManager.nbRessourcesRecup];
+        for (int ii = 0; ii < 2; ii++)
+        {
+            levelManager.indexSpriteRessources[ii] = 0;
+        }
+        if(levelManager.tableauJoueurs[levelManager._JoueurActif - 1].isPalissade)
+        {
+            levelManager.indexSpriteRessources[2] = 1;
+        }
+
         //Changer le tour de jeu
         ChangeJoueurActif();        
     }
@@ -53,8 +67,20 @@ public class Chateau : ObjetsGeneralites
         _ReserveRoundActif = true;          //Quelqu'un a pris la main
         levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._ReserveRound = true;        //Le joueur actif a pris la main
         levelManager.panelParentBatimentInterract.gameObject.SetActive(false);          //Fermeture du panel
+
+        //Animation Prendre round Chateau
+        levelManager.nbRessourcesRecup = 1;
+
         //Eventualité de présence de la palissade
         PalissadeFonction();
+
+        levelManager.indexSpriteRessources = new int[levelManager.nbRessourcesRecup];
+        levelManager.indexSpriteRessources[0] = 4;
+        if (levelManager.tableauJoueurs[levelManager._JoueurActif - 1].isPalissade)
+        {
+            levelManager.indexSpriteRessources[levelManager.nbRessourcesRecup - 1] = 1;
+        }
+
         //Changer le tour de jeu
         ChangeJoueurActif();
     }
@@ -69,6 +95,16 @@ public class Chateau : ObjetsGeneralites
             levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[2] >= JsonParametresGlobaux.ficParamGlobaux.objet_divers.o_divers.arr_cout_reparation_porte[2] &&
             levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[3] >= JsonParametresGlobaux.ficParamGlobaux.objet_divers.o_divers.arr_cout_reparation_porte[3])
         {
+
+            int prixBle = JsonParametresGlobaux.ficParamGlobaux.objet_divers.o_divers.arr_cout_reparation_porte[0];
+            int prixBois = JsonParametresGlobaux.ficParamGlobaux.objet_divers.o_divers.arr_cout_reparation_porte[1];
+            int prixFer = JsonParametresGlobaux.ficParamGlobaux.objet_divers.o_divers.arr_cout_reparation_porte[2];
+            int prixPierre = JsonParametresGlobaux.ficParamGlobaux.objet_divers.o_divers.arr_cout_reparation_porte[3];
+
+
+            //Calcul du nombre de ressources nécessaire
+            levelManager.nbRessourcesRecup = prixBle + prixBois + prixFer + prixPierre;
+
             //Répare un peu la porte
             levelManager._PorteVille.pv += _PvPorteReparer;
             if (levelManager._PorteVille.pv >= levelManager._PorteVille.pvMax)
@@ -79,6 +115,29 @@ public class Chateau : ObjetsGeneralites
 
             //Eventualité de présence de la palissade
             PalissadeFonction();
+
+            //Index des sprites
+            levelManager.indexSpriteRessources = new int[levelManager.nbRessourcesRecup];
+            for(int ii = 0; ii < prixBle; ii++)
+            {
+                levelManager.indexSpriteRessources[ii] = 0;
+            }
+            for(int ii = prixBle; ii < prixBle + prixBois; ii++)
+            {
+                levelManager.indexSpriteRessources[ii] = 1;
+            }
+            for(int ii= prixBle + prixBois;ii< prixBle + prixBois + prixFer; ii++)
+            {
+                levelManager.indexSpriteRessources[ii] = 2;
+            }
+            for(int ii= prixBle + prixBois + prixFer;ii < prixBle + prixBois + prixFer + prixPierre; ii++)
+            {
+                levelManager.indexSpriteRessources[ii] = 3;
+            }
+            if(levelManager.tableauJoueurs[levelManager._JoueurActif - 1].isPalissade)
+            {
+                levelManager.indexSpriteRessources[levelManager.nbRessourcesRecup-1] = 1;
+            }
 
             //Gagner points de solidarité
             levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._SolidarityPoints += _GainSolidarityPoints;
@@ -101,6 +160,7 @@ public class Chateau : ObjetsGeneralites
         {
             levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[1]++;
             levelManager.tableauJoueurs[levelManager._JoueurActif - 1].AfficheNbRessources(1);
+            levelManager.nbRessourcesRecup++;
         }
     }
 }
