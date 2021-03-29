@@ -84,11 +84,7 @@ public class Unites : MonoBehaviour
         monRigidBody = monGO.GetComponent<Rigidbody2D>();
         barreVieGO = monTransform.GetChild(0).GetChild(0).gameObject;
         barreVieImage = monTransform.GetChild(0).GetChild(0).GetChild(0).GetComponent<Image>();     //Image de la barre de vie destinée à évoluer
-        /*weaponHitbox = monTransform.GetChild(1).gameObject;
-        weaponHitbox.SetActive(false);*/
         levelManager = GameObject.Find("Main Camera").GetComponent<LevelManager>();
-
-        //hashAttaque = Animator.StringToHash("Base Layer.Attaque");          //ID de l'animation attaque
     }
 
 
@@ -301,7 +297,7 @@ public class Unites : MonoBehaviour
     //Liberation de l'emplacement du chemin
     public void LiberationPositionChemin()
     {
-        levelManager.positionsCheminLibre[cheminChoisi, positionOnChemin] = null;
+        levelManager.cheminOccupantTransform[cheminChoisi][positionOnChemin] = null;
     }
 
 
@@ -315,12 +311,14 @@ public class Unites : MonoBehaviour
         }
         for (int ii = 2; ii <= porteeValue; ii++)
         {
-            if(positionOnChemin + sensVerif * ii < levelManager.positionsCheminLibre.GetLength(1) && 
+            Debug.Log("ICI");
+            if (positionOnChemin + sensVerif * ii < levelManager.cheminOccupantTransform[cheminChoisi].Length &&
                 positionOnChemin + sensVerif * ii >= 0)
             {
-                if (levelManager.positionsCheminLibre[cheminChoisi, positionOnChemin + sensVerif * ii] != null)
+
+                if (levelManager.cheminOccupantTransform[cheminChoisi][positionOnChemin + sensVerif * ii] != null)
                 {
-                    Transform target = levelManager.positionsCheminLibre[cheminChoisi, positionOnChemin + sensVerif * ii];
+                    Transform target = levelManager.cheminOccupantTransform[cheminChoisi][positionOnChemin + sensVerif * ii];
                     if ((monTransform.tag != "Ennemi" && monTransform.tag != "Boss") && (target.tag == "Ennemi" || target.tag == "Boss") ||
                         ((monTransform.tag == "Ennemi" || monTransform.tag == "Boss") && (target.tag != "Ennemi" && target.tag != "Boss")))
                     {
@@ -488,35 +486,7 @@ public class Unites : MonoBehaviour
 
     }
 
-    /*#region Changement Sprite Anim
-    // Runs after the animation has done its work
-    public void ChangeSpriteAnimation()
-    {
-        // Check if the sprite sheet name has changed (possibly manually in the inspector)
-        if (this.LoadedSpriteSheetName != this.SpriteSheetName)
-        {
-            // Load the new sprite sheet
-            this.LoadSpriteSheet();
-        }
-
-        // Swap out the sprite to be rendered by its name
-        // Important: The name of the sprite must be the same!
-        monSpriteRenderer.sprite = spriteSheet[monSpriteRenderer.sprite.name];
-    }
-
-    // Loads the sprites from a sprite sheet
-    public void LoadSpriteSheet()
-    {
-        // Load the sprites from a sprite sheet file (png). 
-        // Note: The file specified must exist in a folder named Resources
-        var sprites = Resources.LoadAll<Sprite>(SpriteSheetName);
-        spriteSheet = sprites.ToDictionary(x => x.name, x => x);
-
-        // Remember the name of the sprite sheet in case it is changed later
-        LoadedSpriteSheetName = SpriteSheetName;
-    }
-    #endregion*/
-
+    
 
     //Actualise l'état d'animation de l'unité
     public void ActualisationStateInfo()
@@ -524,32 +494,5 @@ public class Unites : MonoBehaviour
         stateInfo = monAnimator.GetCurrentAnimatorStateInfo(0);
     }
 
-    //Activation Hitbox arme ==> a faire plus propre avec des valeurs limites en variables
-    //Permet d'activer la boite de collision à des moments clés de l'animation attaque et la désactive ensuite
-   /* public void ActivationHitboxArme()
-    {
-        if(stateInfo.nameHash == hashAttaque)
-        {
-            float animTime = stateInfo.normalizedTime - (int)stateInfo.normalizedTime;
-            
-            if(animTime>0.5f && animTime < 0.8f)
-            {
-                if (!weaponHitbox.activeInHierarchy)
-                {
-                    weaponHitbox.SetActive(true);
-                }
-            } else
-            {
-                weaponHitbox.SetActive(false);
-            }
-        } else
-        {
-            if (weaponHitbox.activeSelf)
-            {
-                weaponHitbox.SetActive(false);
-            }
-        }
-    }
-    */
 
 }

@@ -121,19 +121,39 @@ public class BatimentConstructions : ObjetsGeneralites
             unitesJoueurReserve.Add(levelManager.repertoireSprites.unitesJoueurData[Random.RandomRange(0, levelManager.repertoireSprites.unitesJoueurData.Length)]);
             GameObject uniteReserviste = Instantiate(uniteAttentePrefab, spritesUnitesFiles.transform);
             uniteReserviste.SetActive(true);
+            CreationVFX(uniteReserviste.transform);
             uniteReserviste.transform.localScale = 0.4f * Vector3.one;
-            Vector3 positionAttente = new Vector3(-2 + (ii - line * nbUniteMaxLine), 1 - line, 0);  //-2 : position arbitraire, à régler
-            if (positionAttente.x > 2)
+            Vector3 positionAttente = new Vector3();  
+
+            //positionAttente.x = -2 + (ii - line * nbUniteMaxLine);
+            positionAttente.x = -1.4f - ((ii - line * nbUniteMaxLine)*0.6f);
+            if (positionAttente.x < -4.4f)
+            //if (positionAttente.x > 2)
             {
-                positionAttente.x = -2;
+                positionAttente.x = -1.4f;
                 line++;
             }
-            positionAttente.y = 1 - line;
+            //-2 : position arbitraire, à régler
+            //positionAttente.y = 1 - line;
+            positionAttente.y = -0.8f + (line*0.65f);
+
+            positionAttente.z = 0;
 
             uniteReserviste.transform.localPosition = positionAttente;
             spritesUnitesAttente.Add(uniteReserviste.GetComponent<SpriteRenderer>());
             spritesUnitesAttente[ii].sprite = unitesJoueurReserve[ii].uniteSpriteBase[0];   //Sprite dans la file d'attente de la caserne
         }
+        for (int ii=0;ii< spritesUnitesFiles.transform.childCount; ii++)
+        {
+            if (ii < 15)
+            {
+                spritesUnitesFiles.transform.GetChild(ii).GetComponent<SpriteRenderer>().sortingOrder = spritesUnitesFiles.transform.childCount - ii;
+            } else
+            {
+                spritesUnitesFiles.transform.GetChild(ii).GetComponent<SpriteRenderer>().enabled = false;
+            }
+        }
+
         prixUniteCaserne = JsonParametresGlobaux.ficParamGlobaux.objet_divers.o_divers.arr_cout_unite_a_la_caserne;
         prixAmeliorationUnites = JsonParametresGlobaux.ficParamGlobaux.objet_divers.o_divers.arr_cout_creation_super_soldat;
     }
@@ -355,7 +375,6 @@ public class BatimentConstructions : ObjetsGeneralites
             monUnite.transform.GetComponent<Animator>().runtimeAnimatorController = uniteEngaged.uniteAnimatorController[levelManager._JoueurActif - 1];        //On donne le bon Animator Controller
             monUnite.GetComponent<CallBacksUnitesJoueur>().monUniteJoueur.uniteJoueurOwner = levelManager._JoueurActif - 1;
 
-
             //Si Fortin, amélioration des stats
             if (levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._HasFortin)
             {
@@ -364,10 +383,18 @@ public class BatimentConstructions : ObjetsGeneralites
                 monUnite.GetComponent<CallBacksUnitesJoueur>().monUniteJoueur.HealthBar_MaJ();
             }
 
+            monUnite.GetComponent<CallBacksUnitesJoueur>().monUniteJoueur.CheminDefinitionUnitesJoueur(levelManager.positionsChemin);
+            monUnite.GetComponent<CallBacksUnitesJoueur>().monUniteJoueur.UnitesJoueurPositionnementActivation();
+            levelManager.listUnitesAnimationActionJoueur.Add(spritesUnitesFiles.transform.GetChild(ii).gameObject);
+            levelManager.listUnitesAnimationActionPositions.Add(monUnite.transform.position);
+            levelManager.objetConstruit.Add(monUnite);
+            monUnite.GetComponent<SpriteRenderer>().enabled = false;
+            monUnite.SetActive(false);
 
+            //Sprites dans la caserne
             unitesJoueurReserve.Remove(unitesJoueurReserve[0]);
             spritesUnitesAttente.Remove(spritesUnitesAttente[0]);
-            Destroy(spritesUnitesFiles.transform.GetChild(ii).gameObject);
+
             //Incrémente le compte de soldat d'un même type
             levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._NbUnites[uniteEngaged.uniteListeOrdre]++;
         }
@@ -381,6 +408,15 @@ public class BatimentConstructions : ObjetsGeneralites
 
         //Paiement des ressources
         levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[0] -= _RecrutementMax * prixUniteCaserne[0];     //On paie le prix en ressources
+        //Préparation animation 
+        levelManager.nbRessourcesRecup = _RecrutementMax * prixUniteCaserne[0];
+        //Index des sprites
+        levelManager.indexSpriteRessources = new int[levelManager.nbRessourcesRecup];
+        for (int ii = 0; ii < levelManager.indexSpriteRessources.Length; ii++)
+        {
+            levelManager.indexSpriteRessources[ii] = 0;
+        }
+
         for (int ii = 0; ii < levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes.Length; ii++)
         {
             levelManager.tableauJoueurs[levelManager._JoueurActif - 1].AfficheNbRessources(ii);     //Affichage nombre ressources
@@ -502,17 +538,21 @@ public class BatimentConstructions : ObjetsGeneralites
             //Récupérer l'indice de l'unité améliorable indUniteCanUpgrade
             indUniteCanUpgrade = levelManager.myEventSystem.currentSelectedGameObject.transform.GetSiblingIndex() - 2;
 
-
             //Accéder à la réserve en question
             //Desactiver uniteMinToUpgrade GO dans la réserve d'indice indUniteCanUpgrade. Les unités doivent appartenir au joueur
             int uniteToDesactive = 0;
 
             for (int ii = 0; ii < levelManager.reserveTypePrefabUnitesJoueur[indUniteCanUpgrade].childCount; ii++)
             {
-                if (levelManager.reserveTypePrefabUnitesJoueur[indUniteCanUpgrade].GetChild(ii).gameObject.activeInHierarchy && levelManager.reserveTypePrefabUnitesJoueur[indUniteCanUpgrade].GetChild(ii).GetComponent<CallBacksUnitesJoueur>().monUniteJoueur.uniteJoueurOwner == levelManager._JoueurActif - 1)
+                if (levelManager.reserveTypePrefabUnitesJoueur[indUniteCanUpgrade].GetChild(ii).gameObject.activeInHierarchy && 
+                    levelManager.reserveTypePrefabUnitesJoueur[indUniteCanUpgrade].GetChild(ii).GetComponent<CallBacksUnitesJoueur>().monUniteJoueur.uniteJoueurOwner == levelManager._JoueurActif)
                 {
+                    levelManager.reserveTypePrefabUnitesJoueur[indUniteCanUpgrade].GetChild(ii).GetComponent<CallBacksUnitesJoueur>().isRecruted = false;
 
-                    levelManager.reserveTypePrefabUnitesJoueur[indUniteCanUpgrade].GetChild(ii).gameObject.SetActive(false);
+                    //A changer pour l'animation ! Ligne de désactivation des unités au sol
+                    //levelManager.reserveTypePrefabUnitesJoueur[indUniteCanUpgrade].GetChild(ii).gameObject.SetActive(false);
+                    levelManager.objetConstruit.Add(levelManager.reserveTypePrefabUnitesJoueur[indUniteCanUpgrade].GetChild(ii).gameObject);
+
                     uniteToDesactive++;
                     if (uniteToDesactive >= uniteMinToUpgrade)
                     {
@@ -520,6 +560,8 @@ public class BatimentConstructions : ObjetsGeneralites
                         break;
                     }
                 }
+
+
             }
 
 
@@ -528,6 +570,14 @@ public class BatimentConstructions : ObjetsGeneralites
             maSuperUnite.transform.GetComponent<SpriteRenderer>().sprite = levelManager.repertoireSprites.superUnitesJoueurData[indUniteCanUpgrade].uniteSpriteBase[levelManager._JoueurActif - 1];   //On donne la sprite relative au joueur actif
             maSuperUnite.transform.GetComponent<Animator>().runtimeAnimatorController = levelManager.repertoireSprites.superUnitesJoueurData[indUniteCanUpgrade].uniteAnimatorController[levelManager._JoueurActif - 1];        //On donne le bon Animator Controller
             maSuperUnite.transform.GetComponent<CallBacksSuperUnitesJoueur>().maSuperUniteJoueur.uniteJoueurOwner = levelManager._JoueurActif - 1;
+
+            maSuperUnite.transform.GetComponent<CallBacksSuperUnitesJoueur>().maSuperUniteJoueur.CheminDefinitionUnitesJoueur(levelManager.positionsChemin);
+            maSuperUnite.transform.GetComponent<CallBacksSuperUnitesJoueur>().maSuperUniteJoueur.UnitesJoueurPositionnementActivation();
+            maSuperUnite.SetActive(false);
+            levelManager.objetConstruit.Add(maSuperUnite);      //Dernier indice, les autres indices sont utilisés pour les unités au sol à faire disparaître
+            maSuperUnite.transform.GetComponent<CallBacksSuperUnitesJoueur>().isRecruted = true;
+
+
 
             //Si Fortin, amélioration des stats
             if (levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._HasFortin)
@@ -546,8 +596,18 @@ public class BatimentConstructions : ObjetsGeneralites
             {
                 levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[ii] -= prixAmeliorationUnites[ii];     //On paie le prix en ressources
                 levelManager.tableauJoueurs[levelManager._JoueurActif - 1].AfficheNbRessources(ii);     //Affichage nombre ressources
+
+                //Préparation de l'animation
+                levelManager.nbRessourcesRecup += prixAmeliorationUnites[ii];
+            }
+            //Index des sprites
+            levelManager.indexSpriteRessources = new int[levelManager.nbRessourcesRecup];
+            for (int ii = 0; ii < levelManager.indexSpriteRessources.Length; ii++)
+            {
+                levelManager.indexSpriteRessources[ii] = 2;
             }
 
+            //Désactive les boutons de choix de l'unité à upgrader
             for (int jj = 0; jj < levelManager.reserveTypePrefabUnitesJoueur.Length; jj++)
             {
                 boutonsUnitesToUpgrade[jj].SetActive(false);
@@ -598,6 +658,7 @@ public class BatimentConstructions : ObjetsGeneralites
         //Change le joueur actif;
         if (canChangeActiveJoueur)
         {
+            Debug.Log("Faire animation de changement de joueur");
             ChangeJoueurActif();
         }
     }
@@ -1029,6 +1090,7 @@ public class BatimentConstructions : ObjetsGeneralites
         }
 
         //Changer le joueur actif
+        Debug.Log("Faire animation Changement de joueur");
         ChangeJoueurActif();
     }
 
@@ -1050,6 +1112,7 @@ public class BatimentConstructions : ObjetsGeneralites
         levelManager.panelParentBatimentInterract.gameObject.SetActive(false);
         levelManager.panelParentBatimentInterract.GetChild(4).gameObject.SetActive(false);
         ChangeJoueurActif();
+        Debug.Log("Faire animation Changement de joueur");
     }
 
     public void BatimentMarketFonction()

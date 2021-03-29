@@ -18,11 +18,6 @@ public class UnitesJoueur : Unites
     public UnitesJoueur(Sprite _maSpriteBase, Vector2 _SizeBoxCollider, Vector2 _ScaleCanvasHealthBar, Vector2 _PositionCanvasHealthBar, string _MonTag)
     {
         ConstructeurUnitesJoueur(_maSpriteBase, _SizeBoxCollider,_ScaleCanvasHealthBar,_PositionCanvasHealthBar, _MonTag);
-        /*monTransform.tag = "UniteJoueur";
-        monGO.AddComponent<CallBacksUnitesJoueur>();
-        monGO.GetComponent<CallBacksUnitesJoueur>().monUniteJoueur = this;
-
-        monGO.SetActive(false);*/
     }
 
     public void ConstructeurUnitesJoueur(Sprite _maSpriteBase, Vector2 _SizeBoxCollider, Vector2 _ScaleCanvasHealthBar, Vector2 _PositionCanvasHealthBar,string _MonTag)
@@ -42,30 +37,33 @@ public class UnitesJoueur : Unites
 
 
     //ATTENTION, LES UNITES JOUEURS DOIVENT PARCOURIR LE CHEMIN EN INDICES SENS INVERSES !!!
-    public void CheminDefinitionUnitesJoueur(Vector2[,] _Positions)
+    public void CheminDefinitionUnitesJoueur(Vector2[][] _Positions)
     {
-        positionsTableau = new Vector2[_Positions.GetLength(1)];
-        for(int ii = 0;ii<= positionsTableau.Length - 1; ii++)
+        positionsTableau = new Vector2[_Positions[cheminChoisi].Length];
+        for(int ii = 0;ii <= positionsTableau.Length - 1; ii++)
         {
-            positionsTableau[ii] = _Positions[cheminChoisi, ii];
+            positionsTableau[ii] = _Positions[cheminChoisi][ii];
         }
     }
 
     public void UnitesJoueurPositionnementActivation()
     {
         //Check si la place est libre ! positionOnChemin doit être choisit au hasard !!
-        //positionOnChemin = positionsTableau.Length - 1;
         positionOnChemin = Random.Range(1, positionsTableau.Length);
-        while (levelManager.positionsCheminLibre[cheminChoisi, positionOnChemin] != null)
+        while (levelManager.cheminOccupantTransform[cheminChoisi][positionOnChemin] != null)
         {
             positionOnChemin--;
-            if (levelManager.positionsCheminLibre[cheminChoisi, positionOnChemin] == null)
+            if (levelManager.cheminOccupantTransform[cheminChoisi][positionOnChemin] == null)
             {
                 break;
             }
         }
         monTransform.position = positionsTableau[positionOnChemin];
-        levelManager.positionsCheminLibre[cheminChoisi, positionOnChemin] = monTransform;
+    }
+
+    public void UnitesJoueurPrendPlace()
+    {
+        levelManager.cheminOccupantTransform[cheminChoisi][positionOnChemin] = monTransform;
     }
 
 

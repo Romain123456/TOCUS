@@ -1,0 +1,120 @@
+{
+    "precisionFloat": 100,
+    "nbTours": 4,
+    "positionXTours": [
+        -69,
+        350,
+        103,
+        -289,
+        -226
+    ],
+    "positionYTours": [
+        257,
+        87,
+        44,
+        178,
+        244
+    ],
+    "scaleXTours": [
+        60,
+        60,
+        60,
+        60,
+        60
+    ],
+    "scaleYTours": [
+        30,
+        30,
+        30,
+        30,
+        30
+    ],
+    "modifAccessTours": [
+        2,
+        0,
+        1,
+        0,
+        0
+    ],
+    "nbEmplacementBTP": 4,
+    "positionXBTP": [
+        -150,
+        -407,
+        434,
+        561
+    ],
+    "positionYBTP": [
+        87,
+        238,
+        -128,
+        102
+    ],
+    "scaleXBTP": [
+        80,
+        80,
+        80,
+        80
+    ],
+    "scaleYBTP": [
+        50,
+        50,
+        50,
+        50
+    ],
+    "modifAccesBTP": [
+        0,
+        1,
+        0,
+        2
+    ],
+    "positionXPorte": -245,
+    "positionYPorte": 353,
+    "scaleXPorte": 144,
+    "scaleYPorte": 129,
+    "positionXRecoltes": [
+        158,
+        532,
+        557,
+        -426
+    ],
+    "positionYRecoltes": [
+        555,
+        341,
+        528,
+        380
+    ],
+    "scaleXRecoltes": [
+        161,
+        98,
+        92,
+        148
+    ],
+    "scaleYRecoltes": [
+        90,
+        110,
+        91,
+        85
+    ],
+    "productionRecoltes": [
+        3,
+        3,
+        3,
+        3
+    ],
+    "positionXCampMilitaire": 401,
+    "positionYCampMilitaire": 492,
+    "scaleXCampMilitaire": 84,
+    "scaleYCampMilitaire": 99,
+    "positionXConstructTours": 308,
+    "positionYConstructTours": 370,
+    "scaleXConstructTours": 87,
+    "scaleYConstructTours": 126,
+    "positionXConstructBTP": 83,
+    "positionYConstructBTP": 356,
+    "scaleXConstructBTP": 88,
+    "scaleYConstructBTP": 91,
+    "positionXChateau": -46,
+    "positionYChateau": 519,
+    "scaleXChateau": 152,
+    "scaleYChateau": 163
+}

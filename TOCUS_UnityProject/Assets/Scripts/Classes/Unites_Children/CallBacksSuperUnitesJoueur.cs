@@ -9,7 +9,8 @@ public class CallBacksSuperUnitesJoueur : CallBacksUnitesJoueur
 
     private void OnEnable()
     {
-        maSuperUniteJoueur.UnitesJoueurPositionnementActivation();
+        //maSuperUniteJoueur.UnitesJoueurPositionnementActivation();
+        maSuperUniteJoueur.UnitesJoueurPrendPlace();
         maSuperUniteJoueur.pv = maSuperUniteJoueur.pvMax;
         maSuperUniteJoueur.HealthBar_MaJ();
         maSuperUniteJoueur.uniteJoueurOwner = maSuperUniteJoueur.levelManager._JoueurActif;
@@ -29,9 +30,19 @@ public class CallBacksSuperUnitesJoueur : CallBacksUnitesJoueur
     {
         if (maSuperUniteJoueur.pv <= 0 && !maSuperUniteJoueur.isDead && this.transform.tag == "SuperUniteJoueur")
         {
+            isRecruted = false;
             StartCoroutine(maSuperUniteJoueur.MortUnite(maSuperUniteJoueur.monAnimator, maSuperUniteJoueur.monTransform.position.x, ennemiTransform.position.x));
             maSuperUniteJoueur.isDead = true;
             maSuperUniteJoueur.FonctionMortUniteJoueur();
+        }
+
+        if (maSuperUniteJoueur.pv > 0 && !maSuperUniteJoueur.isDead && !maSuperUniteJoueur.isFighting)
+        {
+            maSuperUniteJoueur.VerificationCheminOccupePortee();
+            if (maSuperUniteJoueur.isCombatDistance && !maSuperUniteJoueur.combatDistanceLaunch)
+            {
+                StartCoroutine(maSuperUniteJoueur.CombatDistance());
+            }
         }
     }
 }

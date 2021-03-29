@@ -149,7 +149,7 @@ public class CallBacksEnnemis : MonoBehaviour
     private void OnDisable()
     {
         //monEnnemi.ChoixChemin();
-        monEnnemi.CheminDefinitionEnnemi(monEnnemi.levelManager.positionsEnnemisChemin);
+        monEnnemi.CheminDefinitionEnnemi(monEnnemi.levelManager.positionsChemin);
         monEnnemi.LiberationPositionChemin();
         monEnnemi.isFighting = false;
         monEnnemi.isFightingPorteWait = false;

@@ -17,6 +17,7 @@ public class RessourceRecolte : ObjetsGeneralites
     [HideInInspector] public Text nbRessourceText;          //Text pour l'affichage du nombre de ressources disponibles
 
 
+
     //Fonction constructeur de RessourceRecolte. Attribue les variables propres à la classe et détruit les composants du prefab inutiles.
     public RessourceRecolte(Sprite _spriteBaseObjet, string _NomObjet, bool _IsInteractable)
     {
@@ -43,6 +44,11 @@ public class RessourceRecolte : ObjetsGeneralites
         {
             typeRessource = 3;
         }
+        transformObjet.tag = "Ressources";
+
+        //Instanciation des VFX de Production
+        CreationVFX(transformObjet);
+        vfxProd.SetActive(false);
     }
 
     //Affiche le nombre de ressources disponibles sur le lieu de récolte
@@ -63,11 +69,20 @@ public class RessourceRecolte : ObjetsGeneralites
     {
         if (nbDispo > 0)
         {
+
             if(levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._UpgradeRecolte[typeRessource])
             {
                 nbDispo++;
             }
+            levelManager.nbRessourcesRecup = nbDispo;
             levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[typeRessource] += nbDispo;       //Ajout des ressources dispo dans la réserve du joueur actif
+            //Index des sprites
+            levelManager.indexSpriteRessources = new int[levelManager.nbRessourcesRecup];
+            for (int ii = 0; ii < levelManager.indexSpriteRessources.Length; ii++)
+            {
+                levelManager.indexSpriteRessources[ii] = typeRessource;
+            }
+
             levelManager.tableauJoueurs[levelManager._JoueurActif - 1].AfficheNbRessources(typeRessource);          //Affiche les ressources du joueur
             nbDispo = 0;                //Met le nombre de ressources disponible de l'objet à 0
             SetNbRessourceDispo();      //Met à jour l'affichage du nombre de ressources disponibles
@@ -82,6 +97,13 @@ public class RessourceRecolte : ObjetsGeneralites
     {
         nbDispo += levelManager.productionRecoltes[typeRessource];      //Augmente le nombre de ressources disponible de l'incrément du niveau
         SetNbRessourceDispo();                  //Met à jour l'affichage
+    }
+
+    public IEnumerator DesactivationVFXProduction()
+    {
+        vfxProd.SetActive(true);
+        yield return new WaitForSeconds(desactivVFX);
+        vfxProd.SetActive(false);
     }
 
 }

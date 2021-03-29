@@ -17,6 +17,7 @@ public class ObjetsGeneralites : MonoBehaviour
     [HideInInspector] public Button buttonObjet;                    //Composant bouton de l'objet
     [HideInInspector] public GameObject healthBarMax_GO;            //GameObject de la barre de vie Max de l'objet
     [HideInInspector] public GameObject nbTextRessources_GO;        //GameObject du texte affichant le nombre de ressources de l'objet
+    [HideInInspector] public GameObject imageOccupe;                //GameObject contenant l'image de batiment occupé
 
     [HideInInspector] public Sprite spriteBaseObjet;        //Déclaré ici mais utilisé dans la classe enfant (exemple champBle)
     [HideInInspector] public int nbSpritesObjet;        //Déclaré ici mais utilisé dans la classe enfant (exemple champBle)
@@ -44,6 +45,10 @@ public class ObjetsGeneralites : MonoBehaviour
     [HideInInspector] public int uniteMinToUpgrade;
 
 
+    //VFX Production
+    [HideInInspector] public GameObject vfxProd;            //Objet des vfx lors de la production de ressources
+    [HideInInspector] public float desactivVFX;                  //Temps de désactivation des VFX
+
     //Fonction Constructeur de la classe. Attribue les valeurs aux variables communes à tous les types d'objets définies ci-dessus.
     public ObjetsGeneralites()
     {
@@ -58,10 +63,11 @@ public class ObjetsGeneralites : MonoBehaviour
         imageFlagJoueur = transformObjet.GetChild(0).GetChild(3).gameObject;
         imageObjet = boutonGOObjet.GetComponent<Image>();
         buttonObjet = boutonGOObjet.GetComponent<Button>();
-        batimentConstruit = monGO.transform.GetChild(1).gameObject;
+        batimentConstruit = transformObjet.GetChild(1).gameObject;
         spritesUnitesFiles = transformObjet.GetChild(2).gameObject;
-
-
+        imageOccupe = transformObjet.GetChild(0).Find("ImageOccupe").gameObject;
+        imageOccupe.SetActive(false);
+           
         if (!levelManager.isModeDebug)
         {
             uniteMinToUpgrade = 4;
@@ -100,52 +106,14 @@ public class ObjetsGeneralites : MonoBehaviour
     {
         levelManager.tableauJoueurs[levelManager._JoueurActif - 1].DesactiveImageActionRound(levelManager.nbActionRealised);    //Retire une action au joueur actif
 
-        //Vérifie le nouveau joueur actif
-        if (levelManager._JoueurActif == 1)
-        {
-            levelManager._JoueurActif = 2;
-        }
-        else if (levelManager._JoueurActif == 2)
-        {
-            levelManager._JoueurActif = 1;
-        }
-
         //Change le joueur actif
         levelManager.SetJoueurActif();
 
-
         //Lève l'interaction possible avec un batiment
-        if (!levelManager.isModeDebug)
+        Debug.Log("Remettre la condition pour le mode Debug");
+        //if (!levelManager.isModeDebug)
         {
             InterractBatiment(false);
-        }
-
-        //Gère le round
-        levelManager.GestionActionRound();
-
-
-
-        //Réactive les objets si on reprend un nouveau round
-        if(levelManager.nbActionRealised == 0)
-        {
-            levelManager._ChampBle.CheckBoutonInteract(true);
-            levelManager._MineFer.CheckBoutonInteract(true);
-            levelManager._CarrierePierre.CheckBoutonInteract(true);
-            levelManager._RecolteBois.CheckBoutonInteract(true); 
-            levelManager._CampMilitaire.CheckBoutonInteract(true);
-            levelManager._ChantierTours.CheckBoutonInteract(true);
-            levelManager._ChantierBTP.CheckBoutonInteract(true);
-            levelManager._Chateau.CheckBoutonInteract(true);
-            if (GameObject.FindGameObjectsWithTag("EmplacementBTP").Length > 0)
-            {
-                GameObject[] emplacementBatiment = GameObject.FindGameObjectsWithTag("EmplacementBTP");
-                for(int ii=0;ii< GameObject.FindGameObjectsWithTag("EmplacementBTP").Length; ii++)
-                {
-                    emplacementBatiment[ii].transform.GetChild(1).GetChild(0).GetChild(0).GetComponent<Button>().interactable = true;
-                }
-            }
-            levelManager.joueur1.ActiveImagesActionRound();
-            levelManager.joueur2.ActiveImagesActionRound();
         }
     }
 
@@ -266,10 +234,14 @@ public class ObjetsGeneralites : MonoBehaviour
 
 
 
-
-
-
-
-
-
+    //Création de VFX à l'apparition
+    public void CreationVFX(Transform _Parent)
+    {
+        //Instanciation des VFX de Production
+        vfxProd = (GameObject)Instantiate(Resources.Load("Prefab/ProductionVFX"));
+        vfxProd.transform.parent = _Parent;
+        vfxProd.transform.localScale = Vector3.one;
+        vfxProd.transform.localPosition = Vector3.zero;
+        desactivVFX = vfxProd.GetComponent<ParticleSystem>().main.duration;
+    }
 }

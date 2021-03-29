@@ -29,7 +29,7 @@ public class Ennemis : Unites
         monGO.AddComponent<CallBacksEnnemis>();
         monGO.GetComponent<CallBacksEnnemis>().monEnnemi = this;
         _CallBackScripts = monGO.GetComponent<CallBacksEnnemis>();
-
+        Destroy(monGO.GetComponent<Animation>());
         monGO.SetActive(false);
     }
 
@@ -55,12 +55,12 @@ public class Ennemis : Unites
 
 
     //Attribue les valeurs de positions de l'ennemi qu'il emprunte lors de ses déplacements et initialise la position de l'ennemi à la position 0
-    public void CheminDefinitionEnnemi(Vector2[,] _Positions)
+    public void CheminDefinitionEnnemi(Vector2[][] _Positions)
     {
-        positionsTableau = new Vector2[_Positions.GetLength(1)];
+        positionsTableau = new Vector2[_Positions[cheminChoisi].Length];
         for (int ii = 0; ii < positionsTableau.Length; ii++)
         {
-            positionsTableau[ii] = _Positions[cheminChoisi,ii];
+            positionsTableau[ii] = _Positions[cheminChoisi][ii];
         }
         monTransform.position = positionsTableau[0];
     }
@@ -82,7 +82,7 @@ public class Ennemis : Unites
             if (positionOnChemin < positionsTableau.Length - 1)     //Si on ne se bat pas et que la position de l'ennemi est inférieure à la dimension du nombre de positions
             {
                 //Si le point de chemin suivant est libre, on met le point actuel libre et le point suivant non libre
-                while (levelManager.positionsCheminLibre[cheminChoisi, positionOnChemin + 1] != null)     //On attend tant que le point de chemin suivant n'est pas libre
+                while (levelManager.cheminOccupantTransform[cheminChoisi][positionOnChemin + 1] != null)     //On attend tant que le point de chemin suivant n'est pas libre
                 {
                     if (!isFighting)
                     {
@@ -90,7 +90,7 @@ public class Ennemis : Unites
                         monAnimator.SetBool("MarcheDroitBool", false);
                     }
                     yield return new WaitForSeconds(FonctionsVariablesUtiles.deltaTime);
-                    if(levelManager.positionsCheminLibre[cheminChoisi, positionOnChemin + 1] == null)     
+                    if(levelManager.cheminOccupantTransform[cheminChoisi][positionOnChemin + 1] == null)     
                     {
                         break;
                     }
@@ -107,9 +107,8 @@ public class Ennemis : Unites
                     monAnimator.SetBool("MarcheDroitBool", false);
                 }
 
-
-                levelManager.positionsCheminLibre[cheminChoisi, positionOnChemin] = null;
-                levelManager.positionsCheminLibre[cheminChoisi, positionOnChemin + 1] = monTransform;
+                levelManager.cheminOccupantTransform[cheminChoisi][positionOnChemin] = null;
+                levelManager.cheminOccupantTransform[cheminChoisi][positionOnChemin + 1] = monTransform;
                 positionOnChemin++;
             }
             else
@@ -611,14 +610,14 @@ public class Ennemis : Unites
             if (positionOnChemin + 1 < positionsTableau.Length)
             {
                 //Si devant, il y a une unité joueur, combat.
-                if (levelManager.positionsCheminLibre[cheminChoisi, positionOnChemin + 1] != null && (levelManager.positionsCheminLibre[cheminChoisi, positionOnChemin + 1].tag == "UniteJoueur" || levelManager.positionsCheminLibre[cheminChoisi, positionOnChemin + 1].tag == "SuperUniteJoueur"))
+                if (levelManager.cheminOccupantTransform[cheminChoisi][positionOnChemin + 1] != null && (levelManager.cheminOccupantTransform[cheminChoisi][positionOnChemin + 1].tag == "UniteJoueur" || levelManager.cheminOccupantTransform[cheminChoisi][positionOnChemin + 1].tag == "SuperUniteJoueur"))
                 {
                     if (!isFighting)
                     {
                         isFighting = true;
                         isCombatWait = true;
                         //On assigne l'adversaire du combat
-                        combatAdversaire = levelManager.positionsCheminLibre[cheminChoisi, positionOnChemin + 1];
+                        combatAdversaire = levelManager.cheminOccupantTransform[cheminChoisi][positionOnChemin + 1];
                     }
                 }
                 else

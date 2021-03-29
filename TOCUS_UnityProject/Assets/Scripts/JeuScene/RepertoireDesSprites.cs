@@ -5,8 +5,8 @@ using UnityEngine;
 public class RepertoireDesSprites : MonoBehaviour
 {
     //Sprites des Bâtiments
-    public Sprite fondMap;
-    public Sprite imageMap;
+    //public Sprite fondMap;
+    //public Sprite imageMap;
     public Sprite champBleSprite;
     public Sprite mineFerSprite;
     public Sprite recolteBoisSprite;

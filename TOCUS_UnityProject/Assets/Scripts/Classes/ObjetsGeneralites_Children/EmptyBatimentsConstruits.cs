@@ -33,9 +33,6 @@ public class EmptyBatimentsConstruits : ObjetsGeneralites
         {
             Destroy(batimentConstruit.transform.GetChild(0).gameObject);
         }
-        /*accesColor[0] = new Color(1, 1, 1);
-        accesColor[1] = new Color(0, 1, 0);
-        accesColor[2] = new Color(0, 0, 1);*/
     }
 
 
@@ -75,7 +72,8 @@ public class EmptyBatimentsConstruits : ObjetsGeneralites
         //Si on peut construire, construction
         if (canConstruct)
         {
-            batimentConstruit.SetActive(true);              //Activation du GameObject du batiment construit, enfant de l'emplacement
+            //batimentConstruit.SetActive(true);              //Activation du GameObject du batiment construit, enfant de l'emplacement
+            Debug.Log("Ligne à supprimer puisque gérée ensuite dans l'animation");
             if (batimentConstruit.GetComponent<SpriteRenderer>() != null)
             {
                 batimentConstruit.GetComponent<SpriteRenderer>().sortingOrder = 1;              //L'ordre de rendu de la sprite du batiment est passé au dessus de celle de l'emplacement
@@ -104,10 +102,80 @@ public class EmptyBatimentsConstruits : ObjetsGeneralites
             //Changer le tour de jeu
             if (batimentGestion.nomObjet != "ChantierTours")
             {
+                //Tout ce qui est requis pour l'animation
+                AnimationAchatConstructionUtilitaire(batimentConstruit, batimentGestion.batimentBuild);
                 ChangeJoueurActif();
             }
         }
     }
+
+
+    public void AnimationAchatConstructionUtilitaire(GameObject maConstruction,BatimentsRepertoire monBatiment)         //Cas Batiments
+    {
+        maConstruction.SetActive(false);
+        maConstruction.GetComponent<Animation>().enabled = true;
+        levelManager.objetConstruit.Add(maConstruction);
+        levelManager.nbRessourcesRecup = monBatiment.batimentPrixBle + monBatiment.batimentPrixBois + monBatiment.batimentPrixFer + monBatiment.batimentPrixPierre;
+        levelManager.scaleConstruction = monBatiment.scaleBatiment;
+
+        //Index des sprites
+        levelManager.indexSpriteRessources = new int[levelManager.nbRessourcesRecup];
+        for (int ii = 0; ii < monBatiment.batimentPrixBle; ii++)
+        {
+            levelManager.indexSpriteRessources[ii] = 0;
+        }
+        int blePbois = monBatiment.batimentPrixBle + monBatiment.batimentPrixBois;
+        for (int ii = monBatiment.batimentPrixBle; ii < blePbois; ii++)
+        {
+            levelManager.indexSpriteRessources[ii] = 1;
+        }
+        int blePboisPfer = monBatiment.batimentPrixBle + monBatiment.batimentPrixBois + monBatiment.batimentPrixFer;
+        for (int ii = blePbois; ii < blePboisPfer; ii++)
+        {
+            levelManager.indexSpriteRessources[ii] = 2;
+        }
+        for (int ii = blePboisPfer; ii < levelManager.nbRessourcesRecup; ii++)
+        {
+            levelManager.indexSpriteRessources[ii] = 3;
+        }
+    }
+
+
+    public void AnimationAchatConstructionUtilitaire(GameObject maConstruction, ToursRepertoire monBatiment)            //Cas Tours
+    {
+        int ind0prixTourTableau = batimentGestion.RecupIndiceNbTourParJoueur();
+        int prixBle = levelManager.prixToursParToursJoueur[ind0prixTourTableau, 0];
+        int prixBois = levelManager.prixToursParToursJoueur[ind0prixTourTableau, 1];
+        int prixFer = levelManager.prixToursParToursJoueur[ind0prixTourTableau, 2];
+        int prixPierre = levelManager.prixToursParToursJoueur[ind0prixTourTableau, 3];
+
+        levelManager.objetConstruit.Add(maConstruction);
+        levelManager.nbRessourcesRecup = prixBle + prixBois + prixFer + prixPierre;
+        levelManager.scaleConstruction = monBatiment.scaleTour;
+
+        //Index des sprites
+        levelManager.indexSpriteRessources = new int[levelManager.nbRessourcesRecup];
+        for (int ii = 0; ii < prixBle; ii++)
+        {
+            levelManager.indexSpriteRessources[ii] = 0;
+        }
+        int blePbois = prixBle +prixBois;
+        for (int ii = prixBle; ii < blePbois; ii++)
+        {
+            levelManager.indexSpriteRessources[ii] = 1;
+        }
+        int blePboisPfer = prixBle + prixBois + prixFer;
+        for (int ii = blePbois; ii < blePboisPfer; ii++)
+        {
+            levelManager.indexSpriteRessources[ii] = 2;
+        }
+        for (int ii = blePboisPfer; ii < levelManager.nbRessourcesRecup; ii++)
+        {
+            levelManager.indexSpriteRessources[ii] = 3;
+        }
+    }
+
+
 
 
 
@@ -115,6 +183,9 @@ public class EmptyBatimentsConstruits : ObjetsGeneralites
     public void ConstructionDeTour()
     {
         batimentConstruit.GetComponent<SpriteRenderer>().sprite = batimentGestion.tourConstruite.tourSprite;        //La sprite de la tour est donnée depuis la tour choisie par le joueur
+        batimentConstruit.GetComponent<SpriteRenderer>().color = new Color(0.1f, 0.1f, 0.1f);       //La sprite est girsée
+        batimentConstruit.SetActive(true);
+
         batimentConstruit.transform.name = batimentGestion.tourConstruite.tourNom;
         batimentConstruit.transform.localPosition = batimentGestion.tourConstruite.positionTour;
         batimentConstruit.transform.localScale = batimentGestion.tourConstruite.scaleTour;
@@ -191,7 +262,7 @@ public class EmptyBatimentsConstruits : ObjetsGeneralites
         batimentGestion.CreationBouton();
         #endregion
 
-
+        AnimationAchatConstructionUtilitaire(batimentConstruit, batimentGestion.tourConstruite);
 
         //Apparition du curseur pour la rotation de la tour
         levelManager._GuizmoRotationTour.SetActive(true);
@@ -278,16 +349,8 @@ public class EmptyBatimentsConstruits : ObjetsGeneralites
 
         Debug.Log("Batiment Construit");
 
-
-
         batimentConstruit.transform.GetChild(0).GetChild(0).GetComponent<Image>().sprite = batimentGestion.batimentBuild.batimentSprite;          //La sprite du batiment est donnée depuis la tour choisie par le joueur
         batimentConstruit.transform.name = batimentGestion.batimentBuild.batimentNom;
-
-
-        //Echelle du batiment
-        //batimentConstruit.transform.localScale = batimentGestion.batimentBuild.scaleBatiment;
-        batimentConstruit.transform.localScale = Vector3.one;
-
 
         //Fonction du batiment construit
         batimentGestion.levelManager.AttributeFonctionBatiment(batimentConstruit.transform.GetChild(0).GetChild(0).GetComponent<Button>());
@@ -340,6 +403,7 @@ public class EmptyBatimentsConstruits : ObjetsGeneralites
     {
         levelManager._GuizmoRotationTour.SetActive(false);
         ChangeJoueurActif();
+        Debug.Log("Faire animation Changement de joueur");
     }
 
 }
