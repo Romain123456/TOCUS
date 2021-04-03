@@ -226,6 +226,9 @@ public class Ennemis : Unites
                         joueurHiting = adversaireScript.monUniteJoueur.uniteJoueurOwner;
                         adversaireAnimClipInfo = FinTourAttaque(adversaireScript.monUniteJoueur.monAnimator, animName);
 
+                        //Teste si on verse le premier sang
+                        FirstBlood(adversaireScript);
+
                         AttaquePV_MaJ(degatsUnitesJoueur,armureEnnemi);
 
                         if (pv <= 0)
@@ -274,6 +277,9 @@ public class Ennemis : Unites
 
                     joueurHiting = adversaireScript.monUniteJoueur.uniteJoueurOwner;
                     adversaireAnimClipInfo = FinTourAttaque(adversaireScript.monUniteJoueur.monAnimator, animName);
+
+                    //Teste si on verse le premier sang
+                    FirstBlood(adversaireScript);
 
                     AttaquePV_MaJ(degatsUnitesJoueur,armureEnnemi);
 
@@ -355,6 +361,7 @@ public class Ennemis : Unites
                 //Tant que les pv de l'ennemi ou de l'unité joueur sont > 0
                 while (pv > 0 || adversaireScript.maSuperUniteJoueur.pv > 0)
                 {
+                    
                     string animName = "";
 
                     #region Attaque de l'Ennemi
@@ -424,6 +431,9 @@ public class Ennemis : Unites
                         joueurHiting = adversaireScript.maSuperUniteJoueur.uniteJoueurOwner;
                         adversaireAnimClipInfo = FinTourAttaque(adversaireScript.maSuperUniteJoueur.monAnimator, animName);
 
+                        //Teste si on verse le premier sang
+                        FirstBlood(adversaireScript);
+
                         AttaquePV_MaJ(degatsUnitesJoueur,armureEnnemi);
 
                         if (pv <= 0)
@@ -471,7 +481,10 @@ public class Ennemis : Unites
                     }
                     joueurHiting = adversaireScript.maSuperUniteJoueur.uniteJoueurOwner;
                     adversaireAnimClipInfo = FinTourAttaque(adversaireScript.maSuperUniteJoueur.monAnimator, animName);
-
+                    
+                    //Teste si on verse le premier sang
+                    FirstBlood(adversaireScript);
+                   
                     AttaquePV_MaJ(degatsUnitesJoueur,armureEnnemi);
 
                     if (pv <= 0)
@@ -531,10 +544,21 @@ public class Ennemis : Unites
             adversaireScript.maSuperUniteJoueur.isFighting = false;
         }
 
+
+        
     }
 
+    void FirstBlood(CallBacksUnitesJoueur uniteJoueur)
+    {
+        if(!levelManager.joueur1._FirstBlood && !levelManager.joueur2._FirstBlood)
+        {
+            levelManager.tableauJoueurs[uniteJoueur.monUniteJoueur.uniteJoueurOwner - 1]._FirstBlood = true;
+            Debug.Log("First Blood !!");
+        }
 
- 
+       // Debug.Log("Unité : "+ uniteJoueur.monUniteJoueur.cheminChoisi + " Ennemi : "+cheminChoisi);
+        
+    }
 
 
 

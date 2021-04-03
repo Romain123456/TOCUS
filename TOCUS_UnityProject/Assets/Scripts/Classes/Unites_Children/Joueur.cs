@@ -158,6 +158,9 @@ public class Joueur : MonoBehaviour
         //Compétences Passives
         _NombreAutels = 0;
         _UpgradeRecolte = new bool[4];
+
+        //Initialisation abritraire du temps pour jouer 
+        _TimeToMakeAction = Mathf.Infinity;
     }
 
     //Affiche le nombre de ressources que possède le joueur

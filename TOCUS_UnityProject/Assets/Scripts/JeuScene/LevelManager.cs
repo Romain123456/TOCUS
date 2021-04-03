@@ -140,6 +140,22 @@ public class LevelManager : MonoBehaviour
     #endregion
 
 
+    #region Elements des Achievements
+    public GameObject imageAchRessources;
+    public GameObject imageAchNbUnites;
+    public GameObject imageAchNbSuperUnites;
+    public GameObject imageAchTours;
+    public GameObject imageAchBatiments;
+    public GameObject imageAchReparerPorte;
+    public GameObject imageAchRapidite;
+
+    private bool topChrono;
+    #endregion
+
+
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -197,11 +213,13 @@ public class LevelManager : MonoBehaviour
         #region Création de la Map
         paramCarte = this.GetComponent<ParametresCarteOpenning>();
         paramCarte.backgroundImage.sprite = paramCarte._ReserveFondsCartes[paramCarte.level - 1];
-        paramCarte.mursTransform.GetComponent<SpriteRenderer>().sprite = paramCarte._ReserveMurs[paramCarte.level - 1];
-        paramCarte.mursTransform.position = new Vector3((float)fileJson.posMurVilleX / fileJson.precisionFloat,
+        GameObject mursTransform = new GameObject("MursObject");
+        mursTransform.AddComponent<SpriteRenderer>();
+        mursTransform.GetComponent<SpriteRenderer>().sprite = paramCarte._ReserveMurs[paramCarte.level - 1];
+        mursTransform.transform.position = new Vector3((float)fileJson.posMurVilleX / fileJson.precisionFloat,
             (float)fileJson.posMurVilleY / fileJson.precisionFloat,
             (float)fileJson.posMurVilleZ / fileJson.precisionFloat);
-        paramCarte.mursTransform.localScale = new Vector3((float)fileJson.scaleXMurVille / fileJson.precisionFloat,
+        mursTransform.transform.localScale = new Vector3((float)fileJson.scaleXMurVille / fileJson.precisionFloat,
             (float)fileJson.scaleYMurVille / fileJson.precisionFloat,
             (float)fileJson.scaleZMurVille / fileJson.precisionFloat);
 
@@ -285,7 +303,15 @@ public class LevelManager : MonoBehaviour
         #endregion
         #endregion
 
-
+        #region Achievements
+        imageAchRessources.SetActive(false);
+        imageAchNbUnites.SetActive(false);
+        imageAchNbSuperUnites.SetActive(false);
+        imageAchTours.SetActive(false);
+        imageAchBatiments.SetActive(false);
+        imageAchReparerPorte.SetActive(false);
+        imageAchRapidite.SetActive(false);
+        #endregion
 
         #region Attribution des réserves et instanciation des réserves
         nbInstanceReserves = 5;
@@ -899,6 +925,8 @@ public class LevelManager : MonoBehaviour
 
     public IEnumerator AnimChangementJoueur()
     {
+        topChrono = false;
+
         if (myEventSystem.currentSelectedGameObject != null)
         {
             #region Détermine quelle action le joueur a réalisé
@@ -1183,6 +1211,17 @@ public class LevelManager : MonoBehaviour
             yield return new WaitForSeconds(FonctionsVariablesUtiles.deltaTime);
             #endregion
 
+
+            #region Mise à jour statistiques achievements
+            StartCoroutine(MoveImageAchievement(joueur1._NbRessourcesRecoltees,joueur2._NbRessourcesRecoltees,imageAchRessources));
+            StartCoroutine(MoveImageAchievement(joueur1._NbUnitesRecrutees, joueur2._NbUnitesRecrutees, imageAchNbUnites));
+            StartCoroutine(MoveImageAchievement(joueur1._NbSuperUnitesRecrutees, joueur2._NbSuperUnitesRecrutees, imageAchNbSuperUnites));
+            StartCoroutine(MoveImageAchievement(joueur1.nbToursPossedees, joueur2.nbToursPossedees, imageAchTours));
+            StartCoroutine(MoveImageAchievement(joueur1._NbBatimentsConstruits, joueur2._NbBatimentsConstruits, imageAchBatiments));
+            StartCoroutine(MoveImageAchievement((int)joueur1._NbPvReparePorte, (int)joueur2._NbPvReparePorte, imageAchReparerPorte));
+            StartCoroutine(MoveImageAchievement((int)(joueur1._TimeToMakeAction * 1000), (int)(joueur2._TimeToMakeAction * 1000),imageAchRapidite));
+            #endregion
+
             #region Change le joueur actif
             if (_JoueurActif == 1)
             {
@@ -1210,6 +1249,12 @@ public class LevelManager : MonoBehaviour
                 {
                     isEndGame = true;
                     panelVictoire.SetActive(true);
+
+                    #region Calcul des achievments 
+                    CalculAchievements();
+                    #endregion
+
+
                 }
                 #endregion
 
@@ -1504,7 +1549,27 @@ public class LevelManager : MonoBehaviour
         listUnitesAnimationActionJoueur.Clear();
         listUnitesAnimationActionPositions.Clear();
         nbRessourcesRecup = 0;
+
+        StartCoroutine(CompteTemps());
     }
+
+    
+    private IEnumerator CompteTemps()
+    {
+        topChrono = true;
+        float temps = 0;
+        while (topChrono)
+        {
+            temps += FonctionsVariablesUtiles.deltaTime;
+            yield return new WaitForSeconds(FonctionsVariablesUtiles.deltaTime);
+        }
+
+        if(temps < tableauJoueurs[_JoueurActif - 1]._TimeToMakeAction)
+        {
+            tableauJoueurs[_JoueurActif - 1]._TimeToMakeAction = temps;
+        }
+    }
+
 
 
     void VFX_MoveRessources(Transform pionToMove, Transform startPion,Vector3 dirToGo,Vector3 target,float speed, float speedScale,Sprite spriteToGet)
@@ -1797,7 +1862,161 @@ public class LevelManager : MonoBehaviour
     {
         monButton.onClick.AddListener(delegate {_ChantierBTP.FonctionBatimentsSpeciauxGenerale(); });
     }
-#endregion
+    #endregion
+
+
+
+    #region Achievements
+    public IEnumerator MoveImageAchievement(int ressourceJ1,int ressourceJ2,GameObject imageRessource)
+    {
+        if (!imageRessource.activeSelf && ressourceJ1 != ressourceJ2)
+        {
+            imageRessource.SetActive(true);
+        }
+
+        float posFinX = 720f;
+        float currentPosX = imageRessource.GetComponent<RectTransform>().anchoredPosition.x;
+
+        if (ressourceJ1 > ressourceJ2)
+        {
+            while (currentPosX > -posFinX)
+            {
+                currentPosX -= 20f;
+                imageRessource.GetComponent<RectTransform>().anchoredPosition = new Vector2(currentPosX, imageRessource.GetComponent<RectTransform>().anchoredPosition.y);
+                yield return new WaitForSeconds(FonctionsVariablesUtiles.deltaTime);
+                if(currentPosX <= -posFinX)
+                {
+                    imageRessource.GetComponent<RectTransform>().anchoredPosition = new Vector2(-posFinX, imageRessource.GetComponent<RectTransform>().anchoredPosition.y);
+                    break;
+                }
+            }
+        } else if (ressourceJ1 < ressourceJ2)
+        {
+            while (currentPosX < posFinX)
+            {
+                currentPosX += 20f;
+                imageRessource.GetComponent<RectTransform>().anchoredPosition = new Vector2(currentPosX, imageRessource.GetComponent<RectTransform>().anchoredPosition.y);
+                yield return new WaitForSeconds(FonctionsVariablesUtiles.deltaTime);
+                if (currentPosX >=  posFinX)
+                {
+                    imageRessource.GetComponent<RectTransform>().anchoredPosition = new Vector2(posFinX, imageRessource.GetComponent<RectTransform>().anchoredPosition.y);
+                    break;
+                }
+            }
+        }
+
+
+
+        
+        
+
+    }
+
+    public void CalculAchievements()
+    {
+        #region Récolte Ressources
+        if (joueur1._NbRessourcesRecoltees > joueur2._NbRessourcesRecoltees)
+        {
+            joueur1._MoreRecolteRessources = true;
+            Debug.Log("Joueur 1 a récolté le plus de ressources");
+        }
+        else if (joueur2._NbRessourcesRecoltees > joueur1._NbRessourcesRecoltees)
+        {
+            joueur2._MoreRecolteRessources = true;
+            Debug.Log("Joueur 2 a récolté le plus de ressources");
+        }
+        #endregion
+        #region Solidarity Points
+        if (joueur1._SolidarityPoints > joueur2._SolidarityPoints)
+        {
+            joueur1._MoreSolidarityPoints = true;
+        }
+        else if (joueur1._SolidarityPoints < joueur2._SolidarityPoints)
+        {
+            joueur2._MoreSolidarityPoints = true;
+        }
+        #endregion
+        #region Victory Points
+        if (joueur1._VictoryPoints > joueur2._VictoryPoints)
+        {
+            joueur1._MoreVictoryPoints = true;
+        }
+        else if (joueur1._VictoryPoints < joueur2._VictoryPoints)
+        {
+            joueur2._MoreVictoryPoints = true;
+        }
+        #endregion
+        #region Nombre d'unités recrutées
+        if (joueur1._NbUnitesRecrutees > joueur2._NbUnitesRecrutees)
+        {
+            joueur1._MoreUnitesRecrutees = true;
+        }
+        else if (joueur1._NbUnitesRecrutees < joueur2._NbUnitesRecrutees)
+        {
+            joueur2._MoreUnitesRecrutees = true;
+        }
+        #endregion
+        #region Nombre de super unités recrutées
+        if (joueur1._NbSuperUnitesRecrutees > joueur2._NbSuperUnitesRecrutees)
+        {
+            joueur1._MoreSuperUnitesRecrutees = true;
+        }
+        else if (joueur1._NbSuperUnitesRecrutees < joueur2._NbSuperUnitesRecrutees)
+        {
+            joueur2._MoreSuperUnitesRecrutees = true;
+        }
+        #endregion
+        #region Nombre d'ennemis tués
+        if (joueur1._NbEnnemisKilled > joueur2._NbEnnemisKilled)
+        {
+            joueur1._MoreEnnemisKilled = true;
+        }
+        else if (joueur1._NbEnnemisKilled < joueur2._NbEnnemisKilled)
+        {
+            joueur2._MoreEnnemisKilled = true;
+        }
+        #endregion
+        #region Nombre de tours construites
+        if (joueur1.nbToursPossedees > joueur2.nbToursPossedees)
+        {
+            joueur1._MoreTowersConstruites = true;
+        }
+        else if (joueur1.nbToursPossedees < joueur2.nbToursPossedees)
+        {
+            joueur2._MoreTowersConstruites = true;
+        }
+        #endregion
+        #region Nombre de batiments construits
+        if (joueur1._NbBatimentsConstruits > joueur2._NbBatimentsConstruits)
+        {
+            joueur1._MoreBatimentsConstruits = true;
+        }
+        else if (joueur1._NbBatimentsConstruits < joueur2._NbBatimentsConstruits)
+        {
+            joueur2._MoreBatimentsConstruits = true;
+        }
+        #endregion
+        #region Réparer porte de la ville
+        if (joueur1._NbPvReparePorte > joueur2._NbPvReparePorte)
+        {
+            joueur1._MoreReparePorte = true;
+        }
+        else if (joueur1._NbPvReparePorte < joueur2._NbPvReparePorte)
+        {
+            joueur2._MoreReparePorte = true;
+        }
+        #endregion
+        #region Temps pour jouer
+        if(joueur1._TimeToMakeAction < joueur2._TimeToMakeAction)
+        {
+            joueur1._FastestPlayer = true;
+        } else if(joueur1._TimeToMakeAction > joueur2._TimeToMakeAction)
+        {
+            joueur2._FastestPlayer = true;
+        }
+        #endregion
+    }
+    #endregion
 }
 
 

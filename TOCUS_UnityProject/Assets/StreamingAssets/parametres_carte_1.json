@@ -8,7 +8,7 @@
 		"arr_s_ennemis_disponibles": [ "MonstresBase", "MonstresBoxeurs" ]
 	},
 	"o_vagues": {
-		"i_nb_rounds_avant_premiere_vague": 4,
+		"i_nb_rounds_avant_premiere_vague": 30,
 		"o_structure_vagues": [
 			{
 				"i_tps": 3,
@@ -39,5 +39,5 @@
 			}
 		]
 	},
-	"i_nb_rounds_carte": 30
+	"i_nb_rounds_carte": 5
 }

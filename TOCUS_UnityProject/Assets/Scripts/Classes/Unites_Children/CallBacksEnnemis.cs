@@ -131,8 +131,8 @@ public class CallBacksEnnemis : MonoBehaviour
 
     void FonctionMortEnnemi()
     {
-        StartCoroutine(monEnnemi.MortUnite(monEnnemi.monAnimator));
-        monEnnemi.levelManager.tableauJoueurs[monEnnemi.joueurHiting]._VictoryPoints += monEnnemi._VictoryPointGain;
+        monEnnemi.levelManager.tableauJoueurs[monEnnemi.joueurHiting]._NbEnnemisKilled++;
+        //monEnnemi.levelManager.tableauJoueurs[monEnnemi.joueurHiting]._VictoryPoints += monEnnemi._VictoryPointGain;
         if (monEnnemi.levelManager.tableauJoueurs[monEnnemi.joueurHiting]._HasFosse)
         {
             monEnnemi.levelManager.tableauJoueurs[monEnnemi.joueurHiting]._VictoryPoints += monEnnemi.levelManager._NbVictoryPointsFosse;
@@ -141,6 +141,7 @@ public class CallBacksEnnemis : MonoBehaviour
 
         monEnnemi.levelManager.tableauJoueurs[monEnnemi.joueurHiting].AffichePointVictoireSolidarite(monEnnemi.levelManager.tableauJoueurs[monEnnemi.joueurHiting].victoirePointText, monEnnemi.levelManager.tableauJoueurs[monEnnemi.joueurHiting]._VictoryPoints);
         monEnnemi.isDead = true;
+        StartCoroutine(monEnnemi.MortUnite(monEnnemi.monAnimator));
     }
 
 

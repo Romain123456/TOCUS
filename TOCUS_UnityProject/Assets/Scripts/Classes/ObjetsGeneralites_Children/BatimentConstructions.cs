@@ -406,6 +406,10 @@ public class BatimentConstructions : ObjetsGeneralites
             levelManager.tableauJoueurs[levelManager._JoueurActif - 1].AfficheNbRessources(1);
         }
 
+        //Achievement recrutement unité
+        levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._NbUnitesRecrutees += _RecrutementMax;
+
+
         //Paiement des ressources
         levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._RessourcesPossedes[0] -= _RecrutementMax * prixUniteCaserne[0];     //On paie le prix en ressources
         //Préparation animation 
@@ -612,6 +616,10 @@ public class BatimentConstructions : ObjetsGeneralites
             {
                 boutonsUnitesToUpgrade[jj].SetActive(false);
             }
+
+            //Achievement
+            levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._NbSuperUnitesRecrutees++;
+
 
             //Changer le tour de jeu
             ChangeJoueurActif();

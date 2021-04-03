@@ -18,7 +18,6 @@ public class ParametresCarteOpenning : MonoBehaviour
     public Sprite[] _ReserveFondsCartes;
     public Sprite[] _ReserveMurs;
     public Image backgroundImage;
-    public Transform mursTransform;
     #endregion
 
     #region Types d'arbres
