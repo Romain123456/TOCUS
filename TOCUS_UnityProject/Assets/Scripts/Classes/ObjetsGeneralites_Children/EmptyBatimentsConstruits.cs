@@ -268,6 +268,9 @@ public class EmptyBatimentsConstruits : ObjetsGeneralites
         levelManager._GuizmoRotationTour.SetActive(true);
         levelManager._GuizmoRotationTour.transform.position = transformObjet.position;
         levelManager._GuizmoRotationTour.GetComponent<RotationTourPlace>().tourToRotate = nouvelleTourConstruite.transform;
+
+        //Achievement nombre de tours
+        levelManager.tableauJoueurs[levelManager._JoueurActif - 1].nbToursPossedees++;
     }
 
 
@@ -354,6 +357,9 @@ public class EmptyBatimentsConstruits : ObjetsGeneralites
 
         //Fonction du batiment construit
         batimentGestion.levelManager.AttributeFonctionBatiment(batimentConstruit.transform.GetChild(0).GetChild(0).GetComponent<Button>());
+
+        //Achievement nombre de batiments
+        levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._NbBatimentsConstruits++;
 
 
         //Si le batiment est public, on ajoute des points de solidarité

@@ -106,6 +106,7 @@ public class Chateau : ObjetsGeneralites
             levelManager.nbRessourcesRecup = prixBle + prixBois + prixFer + prixPierre;
 
             //Répare un peu la porte
+            levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._NbPvReparePorte += _PvPorteReparer;
             levelManager._PorteVille.pv += _PvPorteReparer;
             if (levelManager._PorteVille.pv >= levelManager._PorteVille.pvMax)
             {

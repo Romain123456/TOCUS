@@ -432,6 +432,9 @@ public class Unites : MonoBehaviour
         _MonAnimator.SetBool("MarcheFrontBool", false);
         _MonAnimator.SetBool("MarcheBackBool", false);
         _MonAnimator.SetBool("MortBool", true);
+
+        levelManager.tableauJoueurs[monTransform.GetComponent<CallBacksEnnemis>().monEnnemi.joueurHiting]._VictoryPoints += monTransform.GetComponent<CallBacksEnnemis>().monEnnemi._VictoryPointGain;
+
         AnimatorStateInfo monAnimatorStateInfo = _MonAnimator.GetCurrentAnimatorStateInfo(0);
         while (!monAnimatorStateInfo.IsName("Mort"))
         {

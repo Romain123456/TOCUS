@@ -83,6 +83,9 @@ public class RessourceRecolte : ObjetsGeneralites
                 levelManager.indexSpriteRessources[ii] = typeRessource;
             }
 
+            //Augmente la stat de nombre de ressources récoltées
+            levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._NbRessourcesRecoltees += nbDispo;
+
             levelManager.tableauJoueurs[levelManager._JoueurActif - 1].AfficheNbRessources(typeRessource);          //Affiche les ressources du joueur
             nbDispo = 0;                //Met le nombre de ressources disponible de l'objet à 0
             SetNbRessourceDispo();      //Met à jour l'affichage du nombre de ressources disponibles
