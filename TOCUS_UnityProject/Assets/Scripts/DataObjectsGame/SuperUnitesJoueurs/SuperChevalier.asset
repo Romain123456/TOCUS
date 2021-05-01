@@ -14,12 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uniteNom: Super Chevalier
   uniteBoxCollSize: {x: 1.5, y: 1.7}
-  uniteScale: {x: 0.3, y: 0.3}
+  uniteScale: {x: 0.5, y: 0.5}
   unitePositionCanvas: {x: 0, y: 1}
   uniteScaleCanvas: {x: 0.5, y: 0.5}
   uniteTypeVitalite: 4
   uniteTypeInitiative: 4
   uniteTypeDegats: 5
+  uniteTypeArmure: 0
+  uniteTypePortee: 0
   uniteSpriteBase:
   - {fileID: 9030459049769729838, guid: a631b0adedc70b447a6942147f840315, type: 3}
   - {fileID: 5105534447250023900, guid: 586c657afd0850743bcdd5fca23d3d56, type: 3}

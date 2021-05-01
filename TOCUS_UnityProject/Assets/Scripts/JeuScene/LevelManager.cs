@@ -60,27 +60,32 @@ public class LevelManager : MonoBehaviour
     #endregion
 
     #region Unités et ennemis
+    public GameObject uniteBasePrefab;
+
+    [HideInInspector] public int nbInstanceReserves;
+    [HideInInspector] public int nbMiniInstancesInactiveReserves;                   //Nombre minimum d'instances inactives
+    [HideInInspector] public Transform reservePrefabUnitesJoueur;
+    [HideInInspector] public Transform reservePrefabEnnemis;
+    [HideInInspector] public Transform reservePrefabSuperUnitesJoueur;
+
     //Unites
     //Chemins
     [HideInInspector] public Vector2[][] positionsChemin;           //Tableau de tableaux des positions des chemins //=0 : Libre, =1 : Unité joueur, =2 : Ennemi
     [HideInInspector] public Transform[][] cheminOccupantTransform; //Tableau de tableaux des occupants des chemins
     private JsonEnnemiPositions dataCheminsJson;             //Json des données des chemins
- 
+
     //Emptys de réserve
-    [HideInInspector] public int nbInstanceReserves;
-    [HideInInspector] public int nbMiniInstancesInactiveReserves;                   //Nombre minimum d'instances inactives
+    /*
+    
     //Unites
-    [HideInInspector] public Transform reservePrefabUnitesJoueur;
     [HideInInspector] public Transform[] reserveTypePrefabUnitesJoueur;
     [HideInInspector] public Transform[,] prefabUnitesJoueur;
     //Ennemis
-    [HideInInspector] public Transform reservePrefabEnnemis;
     [HideInInspector] public Transform[] reserveTypePrefabEnnemis;
     [HideInInspector] public Transform[,] prefabEnnemis;
     //Super Unités
-    [HideInInspector] public Transform reservePrefabSuperUnitesJoueur;
     [HideInInspector] public Transform[] reserveTypePrefabSuperUnitesJoueur;
-    [HideInInspector] public Transform[,] prefabSuperUnitesJoueur;
+    [HideInInspector] public Transform[,] prefabSuperUnitesJoueur;*/
     #endregion
 
     #region Joueurs
@@ -154,7 +159,7 @@ public class LevelManager : MonoBehaviour
 
 
 
-
+   
 
     // Start is called before the first frame update
     void Start()
@@ -188,6 +193,102 @@ public class LevelManager : MonoBehaviour
         {
             periodeDeploiement[ii] = ParametresCarteOpenning.ficOptionParam.objet_vagues.o_vagues.o_structure_vagues[ii].i_tps;
         }
+
+
+        #region Unités Création
+        #region PositionChemins
+        dataCheminsJson = new JsonEnnemiPositions();
+        dataCheminsJson = dataCheminsJson.OuvertureJson(nomNiveau + "_EnnemisPaths");
+        positionsChemin = new Vector2[3][];
+        cheminOccupantTransform = new Transform[3][];
+
+        positionsChemin[0] = new Vector2[dataCheminsJson.ennemi1PosX.Length];
+        cheminOccupantTransform[0] = new Transform[positionsChemin[0].Length];
+        positionsChemin[1] = new Vector2[dataCheminsJson.ennemi2PosX.Length];
+        cheminOccupantTransform[1] = new Transform[positionsChemin[1].Length];
+        positionsChemin[2] = new Vector2[dataCheminsJson.ennemi3PosX.Length];
+        cheminOccupantTransform[2] = new Transform[positionsChemin[2].Length];
+
+
+        for (int jj = 0; jj < positionsChemin[0].Length; jj++)
+        {
+            positionsChemin[0][jj].x = (float)(dataCheminsJson.ennemi1PosX[jj]) / precisionFloat;
+            positionsChemin[0][jj].y = (float)(dataCheminsJson.ennemi1PosY[jj]) / precisionFloat;
+        }
+        for (int jj = 0; jj < positionsChemin[1].Length; jj++)
+        {
+            positionsChemin[1][jj].x = (float)(dataCheminsJson.ennemi2PosX[jj]) / precisionFloat;
+            positionsChemin[1][jj].y = (float)(dataCheminsJson.ennemi2PosY[jj]) / precisionFloat;
+        }
+        for (int jj = 0; jj < positionsChemin[2].Length; jj++)
+        {
+            positionsChemin[2][jj].x = (float)(dataCheminsJson.ennemi3PosX[jj]) / precisionFloat;
+            positionsChemin[2][jj].y = (float)(dataCheminsJson.ennemi3PosY[jj]) / precisionFloat;
+        }
+
+
+        for (int ii = 0; ii < cheminOccupantTransform.Length; ii++)
+        {
+            for(int jj = 0; jj < cheminOccupantTransform[ii].Length; jj++)
+            {
+                cheminOccupantTransform[ii][jj] = null;
+            }
+        }
+        #endregion
+
+        nbInstanceReserves = 5;
+        nbMiniInstancesInactiveReserves = 4;
+        #region Unités Joueur
+        reservePrefabUnitesJoueur = GameObject.Find("ReservePrefabUnitesJoueur").transform;
+        repertoireSprites.UniteJoueurCreate();
+        InstantiateReservesEmpty(repertoireSprites.unitesJoueurData.Length, "ReservePrefabUnitesJoueur_Type", reservePrefabUnitesJoueur,repertoireSprites.unitesJoueurData);         //On instantie les réserves d'unités
+
+        for (int jj = 0; jj < nbInstanceReserves; jj++)
+        {
+            for (int ii = 0; ii < reservePrefabUnitesJoueur.childCount; ii++)
+            {
+                InstantiateUnite(ii);
+            }
+        }
+        #endregion
+
+        #region Super Unités
+        reservePrefabSuperUnitesJoueur = GameObject.Find("ReservePrefabSuperUnitesJoueur").transform;
+        repertoireSprites.SuperUnitesJoueurCreate();
+        InstantiateReservesEmpty(repertoireSprites.superUnitesJoueurData.Length,"ReservePrefabSuperUnitesJoueur_Type",reservePrefabSuperUnitesJoueur,repertoireSprites.superUnitesJoueurData);
+
+        for (int jj = 0; jj < nbInstanceReserves; jj++)
+        {
+            for (int ii = 0; ii < reservePrefabSuperUnitesJoueur.childCount; ii++)
+            {
+                InstantiateSuperUnite(ii);
+            }
+        }
+        #endregion
+
+        #region Ennemi
+        reservePrefabEnnemis = GameObject.Find("ReservePrefabEnnemis").transform;
+        repertoireSprites.EnnemiDataCreate();
+        InstantiateReservesEmpty(repertoireSprites.ennemiData.Length,"ReservePrefabEnnemis_Type",reservePrefabEnnemis,repertoireSprites.ennemiData);
+
+        for (int jj = 0; jj < nbInstanceReserves; jj++)
+        {
+            for (int ii = 0; ii < reservePrefabEnnemis.childCount; ii++)
+            {
+                InstantiateEnnemi(ii);
+            }
+        }
+        #endregion
+
+
+
+        #endregion
+
+
+
+
+
+
 
         //Ennemis par round
         repertoireSprites.EnnemiDataCreate();
@@ -314,51 +415,14 @@ public class LevelManager : MonoBehaviour
         #endregion
 
         #region Attribution des réserves et instanciation des réserves
-        nbInstanceReserves = 5;
-        nbMiniInstancesInactiveReserves = 4;
 
-        #region PositionChemins
-        dataCheminsJson = new JsonEnnemiPositions();
-        dataCheminsJson = dataCheminsJson.OuvertureJson(nomNiveau + "_EnnemisPaths");
-        positionsChemin = new Vector2[3][];
-        cheminOccupantTransform = new Transform[3][];
-
-        positionsChemin[0] = new Vector2[dataCheminsJson.ennemi1PosX.Length];
-        cheminOccupantTransform[0] = new Transform[positionsChemin[0].Length];
-        positionsChemin[1] = new Vector2[dataCheminsJson.ennemi2PosX.Length];
-        cheminOccupantTransform[1] = new Transform[positionsChemin[1].Length];
-        positionsChemin[2] = new Vector2[dataCheminsJson.ennemi3PosX.Length];
-        cheminOccupantTransform[2] = new Transform[positionsChemin[2].Length];
-
-        for(int ii = 0; ii < cheminOccupantTransform.Length; ii++)
-        {
-            for(int jj = 0; jj < cheminOccupantTransform[ii].Length; jj++)
-            {
-                cheminOccupantTransform[ii][jj] = null;
-            }
-        }
-
-        #endregion
+        
 
 
         #region Les Ennemis
         //Tableau des Chemins des ennemis
         //On réunit dans une seule variable tous les chemins précalculés pour les ennemis
-        for(int jj=0;jj< positionsChemin[0].Length; jj++)
-        {
-            positionsChemin[0][jj].x = (float)(dataCheminsJson.ennemi1PosX[jj]) / precisionFloat;
-            positionsChemin[0][jj].y = (float)(dataCheminsJson.ennemi1PosY[jj]) / precisionFloat;
-        }
-        for (int jj = 0; jj < positionsChemin[1].Length; jj++)
-        {
-            positionsChemin[1][jj].x = (float)(dataCheminsJson.ennemi2PosX[jj]) / precisionFloat;
-            positionsChemin[1][jj].y = (float)(dataCheminsJson.ennemi2PosY[jj]) / precisionFloat;
-        }
-        for (int jj = 0; jj < positionsChemin[2].Length; jj++)
-        {
-            positionsChemin[2][jj].x = (float)(dataCheminsJson.ennemi3PosX[jj]) / precisionFloat;
-            positionsChemin[2][jj].y = (float)(dataCheminsJson.ennemi3PosY[jj]) / precisionFloat;
-        }
+        /*
 
 
         reservePrefabEnnemis = GameObject.Find("ReservePrefabEnnemis").transform;
@@ -376,13 +440,13 @@ public class LevelManager : MonoBehaviour
                 InstanciationEnnemi_AffectationReserve(reserveTypePrefabEnnemis[ii], ii);  
                 jj++;
             }
-        }
+        }*/
         #endregion
 
 
 
         #region Unites Joueur
-        reservePrefabUnitesJoueur = GameObject.Find("ReservePrefabUnitesJoueur").transform;
+        /*reservePrefabUnitesJoueur = GameObject.Find("ReservePrefabUnitesJoueur").transform;
         repertoireSprites.UniteJoueurCreate();          //Crée les objets unités dans le répertoire
         InstantiateReservesEmpty(repertoireSprites.unitesJoueurData.Length, "ReservePrefabUnitesJoueur_Type", reservePrefabUnitesJoueur);         //On instantie les réserves d'unités
 
@@ -399,12 +463,12 @@ public class LevelManager : MonoBehaviour
                 prefabUnitesJoueur[ii, jj] = reserveTypePrefabUnitesJoueur[ii].GetChild(jj);
                 jj++;
             }
-        }
+        }*/
         #endregion
 
 
         #region Super Unites Joueur
-        reservePrefabSuperUnitesJoueur = GameObject.Find("ReservePrefabSuperUnitesJoueur").transform;
+        /*reservePrefabSuperUnitesJoueur = GameObject.Find("ReservePrefabSuperUnitesJoueur").transform;
         repertoireSprites.SuperUnitesJoueurCreate();
         InstantiateReservesEmpty(repertoireSprites.superUnitesJoueurData.Length, "ReservePrefabSuperUnitesJoueur_Type", reservePrefabSuperUnitesJoueur);    //On instantie les réserves de superunités
 
@@ -421,7 +485,7 @@ public class LevelManager : MonoBehaviour
                 prefabSuperUnitesJoueur[ii, jj] = reserveTypePrefabSuperUnitesJoueur[ii].GetChild(jj);
                 jj++;
             }
-        }
+        }*/
         #endregion
 
 
@@ -552,7 +616,7 @@ public class LevelManager : MonoBehaviour
         _CampMilitaire._InterractionsDisponibles[0].GetComponent<Button>().onClick.AddListener(delegate { _CampMilitaire.SelectionCreationConstruire(); });
 
         //Bouton Améliorer Unité assignation (Mettre Fonction activer boutons d'amélioration si on a plus d'1 type d'unités
-        if (reserveTypePrefabUnitesJoueur.Length <= 1)
+        if (reservePrefabUnitesJoueur.childCount <= 1)
         {
             _CampMilitaire._InterractionsDisponibles[1].GetComponent<Button>().onClick.AddListener(delegate { _CampMilitaire.AmeliorerUnite(); });
         } else
@@ -734,7 +798,7 @@ public class LevelManager : MonoBehaviour
 
     #region Instantiation Réserve des ennemis
     //Permet l'instanciation d'un ennemi en choisissant son chemin et son index dans le répertoire pour lui donner ses propriétés
-    void InstanciationEnnemi_AffectationReserve(Transform reserve ,int _IndexRepertoire)
+    /*void InstanciationEnnemi_AffectationReserve(Transform reserve ,int _IndexRepertoire)
     {
         Ennemis monEnnemi = new Ennemis(repertoireSprites.ennemiData[_IndexRepertoire].ennemiSprite, repertoireSprites.ennemiData[_IndexRepertoire].uniteBoxCollSize, repertoireSprites.ennemiData[_IndexRepertoire].uniteScaleCanvas, repertoireSprites.ennemiData[_IndexRepertoire].unitePositionCanvas);
         monEnnemi.nomUnite = repertoireSprites.ennemiData[_IndexRepertoire].uniteNom;
@@ -753,11 +817,46 @@ public class LevelManager : MonoBehaviour
         monEnnemi.unitePortee = repertoireSprites.ennemiData[_IndexRepertoire].uniteTypePortee;
         monEnnemi.AttributionCaracteristiques();
         monEnnemi.AttributionCaracteristiquesEnnemi();
-    }
+    }*/
 
 
     //Instanciation des Prefabs des Unites et affectation dans une réserve
-    public void InstanciationUnites_AffectationReserve(Transform reserve,int _IndexRepertoire,int _Chemin, UnitesJoueurRepertoire[] _MesDataUnitesJoueurRepertoire)
+     public void InstantiateUnite(int _Index)
+    {
+        GameObject monUniteJoueur = Instantiate(uniteBasePrefab);
+        monUniteJoueur.transform.parent = reservePrefabUnitesJoueur.GetChild(_Index);
+        UniteJoueur scriptUniteJoueur = monUniteJoueur.AddComponent<UniteJoueur>();
+        scriptUniteJoueur.InitialisationUniteParent("UniteJoueur");
+        scriptUniteJoueur.UniteJoueurInitialisation(repertoireSprites.unitesJoueurData[_Index]);
+        scriptUniteJoueur.AttributionCaracteristiques();
+        monUniteJoueur.SetActive(false);
+    }
+
+    public void InstantiateSuperUnite(int _Index)
+    {
+        GameObject maSuperUniteJoueur = Instantiate(uniteBasePrefab);
+        maSuperUniteJoueur.transform.parent = reservePrefabSuperUnitesJoueur.GetChild(_Index);
+        SuperUniteJoueur scriptUniteJoueur = maSuperUniteJoueur.AddComponent<SuperUniteJoueur>();
+        scriptUniteJoueur.InitialisationUniteParent("SuperUniteJoueur");
+        scriptUniteJoueur.UniteJoueurInitialisation(repertoireSprites.superUnitesJoueurData[_Index]);
+        scriptUniteJoueur.AttributionCaracteristiques();
+        maSuperUniteJoueur.SetActive(false);
+    }
+
+    public void InstantiateEnnemi(int _Index)
+    {
+        GameObject monEnnemi = Instantiate(uniteBasePrefab);
+        monEnnemi.transform.parent = reservePrefabEnnemis.GetChild(_Index);
+        Ennemi scriptEnnemi = monEnnemi.AddComponent<Ennemi>();
+        scriptEnnemi.InitialisationUniteParent("Ennemi");
+        scriptEnnemi.EnnemiInitialisation(repertoireSprites.ennemiData[_Index]);
+        scriptEnnemi.AttributionCaracteristiques();
+        scriptEnnemi.AttributionCaracteristiquesEnnemi();
+        monEnnemi.SetActive(false);
+    }
+
+
+    /*public void InstanciationUnites_AffectationReserve(Transform reserve,int _IndexRepertoire,int _Chemin, UnitesJoueurRepertoire[] _MesDataUnitesJoueurRepertoire)
     {
         //Constructeur renseigne les éléments principaux
         UnitesJoueur monUniteJoueur = new UnitesJoueur(_MesDataUnitesJoueurRepertoire[_IndexRepertoire].uniteSpriteBase[0], _MesDataUnitesJoueurRepertoire[_IndexRepertoire].uniteBoxCollSize, _MesDataUnitesJoueurRepertoire[_IndexRepertoire].uniteScaleCanvas, _MesDataUnitesJoueurRepertoire[_IndexRepertoire].unitePositionCanvas, "UniteJoueur");
@@ -806,6 +905,7 @@ public class LevelManager : MonoBehaviour
         maSuperUniteJoueur.unitePortee = repertoireSprites.superUnitesJoueurData[_IndexRepertoire].uniteTypePortee;
         maSuperUniteJoueur.AttributionCaracteristiques();
     }
+   */
     #endregion
 
 
@@ -881,7 +981,7 @@ public class LevelManager : MonoBehaviour
         for (int ii = 1; ii < target1.Length; ii++)
         {
             elmtToMove[ii].gameObject.SetActive(false);
-            elmtToMove[ii].GetComponent<CallBacksUnitesJoueur>().isRecruted = false;
+            //elmtToMove[ii].GetComponent<CallBacksUnitesJoueur>().isRecruted = false;
         }
         #endregion
 
@@ -916,7 +1016,7 @@ public class LevelManager : MonoBehaviour
             yield return new WaitForSeconds(FonctionsVariablesUtiles.deltaTime);
         }
         elmtToMove[0].gameObject.SetActive(false);
-        elmtToMove[0].GetComponent<CallBacksUnitesJoueur>().isRecruted = false;
+        //elmtToMove[0].GetComponent<CallBacksUnitesJoueur>().isRecruted = false;
         #endregion
 
         objectToActive.SetActive(true);
@@ -1101,7 +1201,7 @@ public class LevelManager : MonoBehaviour
                 for (int ii = 0; ii < listUnitesAnimationActionJoueur.Count; ii++)
                 {
                     objetConstruit[ii].SetActive(true);
-                    objetConstruit[ii].GetComponent<SpriteRenderer>().enabled = true;
+                    NewRoundAlimentationReserve(reservePrefabUnitesJoueur);
                     Destroy(listUnitesAnimationActionJoueur[ii].gameObject,2);
                 }
             }
@@ -1131,7 +1231,7 @@ public class LevelManager : MonoBehaviour
                 }
                 yield return fusion;
 
-                //objetConstruit[objetConstruit.Count-1].SetActive(true);     //SuperUnité à activer (dernier indice de la liste, les autres sont les unités à faire disparaître)
+                objetConstruit[objetConstruit.Count-1].SetActive(true);     //SuperUnité à activer (dernier indice de la liste, les autres sont les unités à faire disparaître)
             }
             #endregion
             #region Actions du Chateau
@@ -1374,45 +1474,16 @@ public class LevelManager : MonoBehaviour
 
                     #region Instance d'unités à la Caserne
                     //Compter le nombre d'actifs dans les réserves Ennemis et Unités
-                    bool needNewInstances = false;
-                    int nbInactif = 0;
-                    int newInstances = 0;
 
-                    #region New Instances Unités
-                    //Unités
-                    for (int ii = 0; ii < reserveTypePrefabUnitesJoueur.Length; ii++)
-                    {
-                        nbInactif = CompteNbInactivesReserves(reserveTypePrefabUnitesJoueur[ii]);
-                        if (nbInactif < nbMiniInstancesInactiveReserves)
-                        {
-                            needNewInstances = true;
-                            newInstances = Mathf.Max(newInstances, nbMiniInstancesInactiveReserves - nbInactif);
-                        }
-                    }
-                    if (needNewInstances)
-                    {
-                        int oldDimension = prefabUnitesJoueur.GetLength(1);
-                        prefabUnitesJoueur = new Transform[reserveTypePrefabUnitesJoueur.Length, oldDimension + newInstances];
-                        for (int ii = 0; ii < reserveTypePrefabUnitesJoueur.Length; ii++)
-                        {
-                            for (int jj = 0; jj < newInstances; jj++)
-                            {
-                                int way = Random.Range(0, 3);
-                                InstanciationUnites_AffectationReserve(reserveTypePrefabUnitesJoueur[ii], ii, way, repertoireSprites.unitesJoueurData);
-                            }
-                            for (int jj = 0; jj < prefabUnitesJoueur.GetLength(1); jj++)
-                            {
-                                prefabUnitesJoueur[ii, jj] = reserveTypePrefabUnitesJoueur[ii].GetChild(jj);
-                            }
-                        }
-                        newInstances = 0;
-                        needNewInstances = false;
-                    }
+
+                    #region New Instances Unités/Super Unités
+                    NewRoundAlimentationReserve(reservePrefabUnitesJoueur);
+                    NewRoundAlimentationReserve(reservePrefabSuperUnitesJoueur);
                     #endregion
 
 
                     #region New Instances SuperUnites
-                    for (int ii = 0; ii < reserveTypePrefabSuperUnitesJoueur.Length; ii++)
+                    /*for (int ii = 0; ii < reserveTypePrefabSuperUnitesJoueur.Length; ii++)
                     {
                         nbInactif = CompteNbInactivesReserves(reserveTypePrefabSuperUnitesJoueur[ii]);
                         if (nbInactif < nbMiniInstancesInactiveReserves)
@@ -1441,7 +1512,7 @@ public class LevelManager : MonoBehaviour
 
                         newInstances = 0;
                         needNewInstances = false;
-                    }
+                    }*/
 
                     #endregion
 
@@ -1553,6 +1624,37 @@ public class LevelManager : MonoBehaviour
         StartCoroutine(CompteTemps());
     }
 
+
+    public void NewRoundAlimentationReserve(Transform _Reserve)
+    {
+        bool needNewInstances = false;
+        int nbInactif = 0;
+        int newInstances = 0;
+        for (int ii = 0; ii < _Reserve.childCount; ii++)
+        {
+            nbInactif = CompteNbInactivesReserves(_Reserve.GetChild(ii));
+            if (nbInactif < nbMiniInstancesInactiveReserves)
+            {
+                needNewInstances = true;
+                newInstances = Mathf.Max(newInstances, nbMiniInstancesInactiveReserves - nbInactif);
+            }
+            if (needNewInstances)
+            {
+                if (_Reserve.name == "ReservePrefabUnitesJoueur")
+                {
+                    InstantiateUnite(ii);
+                } else if(_Reserve.name == "ReservePrefabSuperUnitesJoueur")
+                {
+                    InstantiateSuperUnite(ii);
+                }
+
+                needNewInstances = false;
+                newInstances = 0;
+            }
+        }
+    }
+
+
     
     private IEnumerator CompteTemps()
     {
@@ -1629,7 +1731,7 @@ public class LevelManager : MonoBehaviour
         bool needNewInstances = false;
         int nbInactif = 0;
         int newInstances = 0;
-        for (int ii = 0; ii < reserveTypePrefabEnnemis.Length; ii++)
+        /*for (int ii = 0; ii < reserveTypePrefabEnnemis.Length; ii++)
         {
             nbInactif = CompteNbInactivesReserves(reserveTypePrefabEnnemis[ii]);
             if (nbInactif < nbMiniInstancesInactiveReserves)
@@ -1656,7 +1758,7 @@ public class LevelManager : MonoBehaviour
             }
             newInstances = 0;
             needNewInstances = false;
-        }
+        }*/
     }
 
 
@@ -1713,7 +1815,7 @@ public class LevelManager : MonoBehaviour
         {
             if(monstreChemin[ii] != " ")
             {
-                for(int jj = 0; jj < reservePrefabEnnemis.childCount; jj++)
+                /*for(int jj = 0; jj < reservePrefabEnnemis.childCount; jj++)
                 {
                     if(reservePrefabEnnemis.GetChild(jj).GetChild(0).name == monstreChemin[ii])
                     {
@@ -1735,7 +1837,7 @@ public class LevelManager : MonoBehaviour
                             }
                         }
                     }
-                }
+                }*/
             }
         }
     }
@@ -1745,7 +1847,7 @@ public class LevelManager : MonoBehaviour
 
 
     //Instantiation des reserves d'Ennemis et d'Unités Joueurs
-    void InstantiateReservesEmpty(int _TailleReserve,string _BaseName,Transform _ParentReserve)
+    void InstantiateReservesEmpty(int _TailleReserve,string _BaseName,Transform _ParentReserve,UnitesRepertoire[] _UniteRepertoire)
     {
         for (int ii = 0; ii < _TailleReserve; ii++)
         {
@@ -1753,6 +1855,7 @@ public class LevelManager : MonoBehaviour
             GameObject newGO_Reserve;
             newGO_Reserve = new GameObject(nameGO);
             newGO_Reserve.transform.parent = _ParentReserve;
+            newGO_Reserve.transform.localScale = _UniteRepertoire[ii].uniteScale;
         }
     }
 
@@ -1787,7 +1890,8 @@ public class LevelManager : MonoBehaviour
     public IEnumerator FonctionsBoutonsAmeliorationUnite()
     {
         yield return new WaitForSeconds(FonctionsVariablesUtiles.deltaTime);
-        for(int jj = 0;jj< reserveTypePrefabUnitesJoueur.Length; jj++)
+        
+        for(int jj = 0;jj< reservePrefabUnitesJoueur.childCount; jj++)
         {
             _CampMilitaire.boutonsUnitesToUpgrade[jj].GetComponent<Button>().onClick.AddListener(delegate { _CampMilitaire.AmeliorerUnite(); });
             _CampMilitaire.boutonsUnitesToUpgrade[jj].SetActive(false);
@@ -1796,25 +1900,25 @@ public class LevelManager : MonoBehaviour
 
 
     //Object Pooling activation GameObject
-    public GameObject ActivationObjectListe(Transform[,] monRepertoire,int _IndexObjet)             //Cas Unités
+    public GameObject ActivationObjectListe(int _IndexObjet,Transform _Reserve)             //Cas Unités
     {
-        Transform[] listeObjets = new Transform[monRepertoire.GetLongLength(1)];
-        int choix = 0;
-        for(int ii = 0; ii < listeObjets.Length; ii++)
+        Transform[] maListeUnites = new Transform[_Reserve.GetChild(_IndexObjet).childCount];
+        for(int ii = 0; ii < maListeUnites.Length; ii++)
         {
-            listeObjets[ii] = monRepertoire[_IndexObjet, ii];
+            maListeUnites[ii] = _Reserve.GetChild(_IndexObjet).GetChild(ii);
         }
 
-        for(int ii = 0; ii < listeObjets.Length; ii++)
+        int choix = 0;
+        for (int ii = 0; ii < maListeUnites.Length; ii++)
         {
-            if (!listeObjets[ii].gameObject.activeInHierarchy && !listeObjets[ii].gameObject.GetComponent<CallBacksUnitesJoueur>().isRecruted)
+            if (!maListeUnites[ii].gameObject.GetComponent<UniteJoueur>().isRecruted)
             {
-                listeObjets[ii].gameObject.SetActive(true);
+                maListeUnites[ii].gameObject.GetComponent<UniteJoueur>().isRecruted = true;
                 choix = ii;
                 break;
             }
         }
-        return listeObjets[choix].gameObject;
+        return maListeUnites[choix].gameObject;
     }
 
     public GameObject ActivationObjectListe(Transform _MaListeObject)

@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 87cff0f03fa2f8a4aafe12b29ef101c4, type: 3}
-  m_Name: MonstresBase
+  m_Name: Monstre_Base
   m_EditorClassIdentifier: 
-  uniteNom: Monstres Base
+  uniteNom: Monstre_Base
   uniteBoxCollSize: {x: 1.5, y: 1.7}
   uniteScale: {x: 0.35, y: 0.35}
   unitePositionCanvas: {x: 0, y: 1}
