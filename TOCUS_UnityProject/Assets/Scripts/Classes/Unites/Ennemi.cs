@@ -12,8 +12,8 @@ public class Ennemi : UnitesParent
     // Start is called before the first frame update
     void Start()
     {
-        EnnemiPositionnementOnChemin();
-        StartCoroutine(DeplacementEnnemi());
+        /*EnnemiPositionnementOnChemin();
+        StartCoroutine(DeplacementEnnemi());*/
     }
 
     // Update is called once per frame
@@ -73,7 +73,7 @@ public class Ennemi : UnitesParent
     #region Deplacement Ennemi
     public void EnnemiPositionnementOnChemin()
     {
-        way = 0;
+        //way = 0;
         placeChemin = 0;
         monTransform.position = levelManager.positionsChemin[way][placeChemin];
         levelManager.cheminOccupantTransform[way][placeChemin] = monTransform;
@@ -107,7 +107,11 @@ public class Ennemi : UnitesParent
                 }
             }
             placeChemin++;
-            LiberationPlaceChemin(way, placeChemin - 1);
+            if (placeChemin < levelManager.positionsChemin[way].Length)
+            {
+                LiberationPlaceChemin(way, placeChemin - 1);
+            }
+
             yield return new WaitForSeconds(FonctionsVariablesUtiles.deltaTime * speedMove);
         }
     }
