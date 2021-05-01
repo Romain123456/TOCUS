@@ -49,8 +49,35 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: d7e35e1aecd90a40a6c69739bca59c16
     GuidInternal: 
-    m_lastTime: -8585945067527218903
-    List: []
+    m_lastTime: -8585817355641532176
+    List:
+    - name: Lvl
+      guid: 4b32fdc68d73594da0d7e4b1b7954999
+      id: 964811649
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Lvl
+        ObjectType: 7
+      Path: Default Work Unit\Lvl
+    - name: Menu
+      guid: ad3d45d8fa3d3f4abde1d46179a33385
+      id: 2607556080
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Menu
+        ObjectType: 7
+      Path: Default Work Unit\Menu
+    - name: Music
+      guid: e3e733d2a1845849a4bd6f385307a07c
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 7
+      Path: Default Work Unit\Music
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -59,8 +86,473 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 2812926b4428224c82a79ef2d966fd79
     GuidInternal: 
-    m_lastTime: -8585945067527118875
-    List: []
+    m_lastTime: -8585817360930179086
+    List:
+    - name: Character
+      guid: e1c8b77d0629c84dbadfa6970fd18a66
+      id: 436743010
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: LEVEL
+        ObjectType: 4
+      - ElementName: Character
+        ObjectType: 4
+      Path: Default Work Unit\LEVEL\Character
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: LEVEL
+      guid: 3daf3c448c183e41881ae6e8ebac1767
+      id: 2782712965
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: LEVEL
+        ObjectType: 4
+      Path: Default Work Unit\LEVEL
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Lvl_Archer_ARROW
+      guid: 03c2e41376bb2e4e8ef03a9f9ee50272
+      id: 301478959
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: LEVEL
+        ObjectType: 4
+      - ElementName: Character
+        ObjectType: 4
+      - ElementName: Lvl_Archer_ARROW
+        ObjectType: 3
+      Path: Default Work Unit\LEVEL\Character\Lvl_Archer_ARROW
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Lvl_Barbarian_HAMMER
+      guid: 1cca5f54fa5f02479ec594158c4075b7
+      id: 790041419
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: LEVEL
+        ObjectType: 4
+      - ElementName: Character
+        ObjectType: 4
+      - ElementName: Lvl_Barbarian_HAMMER
+        ObjectType: 3
+      Path: Default Work Unit\LEVEL\Character\Lvl_Barbarian_HAMMER
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Lvl_Soldier_SWORD
+      guid: dc3a8dbe10d25a48afa578ac0993bef4
+      id: 2951450528
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: LEVEL
+        ObjectType: 4
+      - ElementName: Character
+        ObjectType: 4
+      - ElementName: Lvl_Soldier_SWORD
+        ObjectType: 3
+      Path: Default Work Unit\LEVEL\Character\Lvl_Soldier_SWORD
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Lvl_T_CANON
+      guid: f618293a136412469b28d717b1838f57
+      id: 4236686904
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: LEVEL
+        ObjectType: 4
+      - ElementName: Tower
+        ObjectType: 4
+      - ElementName: Lvl_T_CANON
+        ObjectType: 3
+      Path: Default Work Unit\LEVEL\Tower\Lvl_T_CANON
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Lvl_T_FIREBALL
+      guid: 9c8605a76ab60f47b39017a416a8ae92
+      id: 4020394976
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: LEVEL
+        ObjectType: 4
+      - ElementName: Tower
+        ObjectType: 4
+      - ElementName: Lvl_T_FIREBALL
+        ObjectType: 3
+      Path: Default Work Unit\LEVEL\Tower\Lvl_T_FIREBALL
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Lvl_T_MachineGun
+      guid: 6ddfdaa325e55f47a5633b64de4d09fc
+      id: 766198348
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: LEVEL
+        ObjectType: 4
+      - ElementName: Tower
+        ObjectType: 4
+      - ElementName: Lvl_T_MachineGun
+        ObjectType: 3
+      Path: Default Work Unit\LEVEL\Tower\Lvl_T_MachineGun
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Lvl_T_POISON
+      guid: 37c3223122fb734dbfcb7053149f4499
+      id: 752214867
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: LEVEL
+        ObjectType: 4
+      - ElementName: Tower
+        ObjectType: 4
+      - ElementName: Lvl_T_POISON
+        ObjectType: 3
+      Path: Default Work Unit\LEVEL\Tower\Lvl_T_POISON
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: MENU
+      guid: aa44edbab98a6f478cf48a514d38c2e4
+      id: 2607556080
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MENU
+        ObjectType: 4
+      Path: Default Work Unit\MENU
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Tower
+      guid: db7aa10980c65d43b0625ba96be0ef6a
+      id: 1737926756
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: LEVEL
+        ObjectType: 4
+      - ElementName: Tower
+        ObjectType: 4
+      Path: Default Work Unit\LEVEL\Tower
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI
+      guid: 246a1ab55b76ab4fb43baec30675091e
+      id: 1551306167
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MENU
+        ObjectType: 4
+      - ElementName: UI
+        ObjectType: 4
+      Path: Default Work Unit\MENU\UI
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI
+      guid: 412e4b8dde19f847b974738c758ff44d
+      id: 1551306167
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: LEVEL
+        ObjectType: 4
+      - ElementName: UI
+        ObjectType: 4
+      Path: Default Work Unit\LEVEL\UI
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI_Lvl_BUILDING_IN
+      guid: 6e7c1ef1dca8b84d96129eca947ef716
+      id: 2017918543
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: LEVEL
+        ObjectType: 4
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: UI_Lvl_BUILDING_IN
+        ObjectType: 3
+      Path: Default Work Unit\LEVEL\UI\UI_Lvl_BUILDING_IN
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI_Lvl_FEEDBACK_NEXT
+      guid: 64b3eb510ab1e94c9529bfd659b6ceab
+      id: 1272078110
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: LEVEL
+        ObjectType: 4
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: UI_Lvl_FEEDBACK_NEXT
+        ObjectType: 3
+      Path: Default Work Unit\LEVEL\UI\UI_Lvl_FEEDBACK_NEXT
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI_Lvl_NEXT_ROUND
+      guid: 8a4eb09e8cb08c4ea64c997d3197d21e
+      id: 955475069
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: LEVEL
+        ObjectType: 4
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: UI_Lvl_NEXT_ROUND
+        ObjectType: 3
+      Path: Default Work Unit\LEVEL\UI\UI_Lvl_NEXT_ROUND
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI_Lvl_PAUSE
+      guid: 473aa80427b61f4cbe71e12a20d9702f
+      id: 3386736491
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: LEVEL
+        ObjectType: 4
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: UI_Lvl_PAUSE
+        ObjectType: 3
+      Path: Default Work Unit\LEVEL\UI\UI_Lvl_PAUSE
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI_Lvl_T_BUILD
+      guid: 2caf02868381424f85f882777ff7a160
+      id: 1641659536
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: LEVEL
+        ObjectType: 4
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: UI_Lvl_T_BUILD
+        ObjectType: 3
+      Path: Default Work Unit\LEVEL\UI\UI_Lvl_T_BUILD
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI_Lvl_T_PLACE
+      guid: 8922fabaaecbb34497ef93de19cbd3b9
+      id: 4246664561
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: LEVEL
+        ObjectType: 4
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: UI_Lvl_T_PLACE
+        ObjectType: 3
+      Path: Default Work Unit\LEVEL\UI\UI_Lvl_T_PLACE
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI_Lvl_T_ROTATE_L
+      guid: e691743bafd2834390cf4250a39a153b
+      id: 2346663996
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: LEVEL
+        ObjectType: 4
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: UI_Lvl_T_ROTATE_L
+        ObjectType: 3
+      Path: Default Work Unit\LEVEL\UI\UI_Lvl_T_ROTATE_L
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI_Lvl_TAKE_RESSOURCES
+      guid: 80051c61fe58c94191ebcda5815dbe0a
+      id: 1632294641
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: LEVEL
+        ObjectType: 4
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: UI_Lvl_TAKE_RESSOURCES
+        ObjectType: 3
+      Path: Default Work Unit\LEVEL\UI\UI_Lvl_TAKE_RESSOURCES
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI_Lvl_UNPAUSE
+      guid: 98819856e8275841a5a66c6a9f9495db
+      id: 1405603808
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: LEVEL
+        ObjectType: 4
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: UI_Lvl_UNPAUSE
+        ObjectType: 3
+      Path: Default Work Unit\LEVEL\UI\UI_Lvl_UNPAUSE
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI_menu_IN
+      guid: a166d69b6e6a8d49bcd1d2cc172f4381
+      id: 1669272439
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MENU
+        ObjectType: 4
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: UI_menu_IN
+        ObjectType: 3
+      Path: Default Work Unit\MENU\UI\UI_menu_IN
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI_menu_MOVE
+      guid: 6c371d6ef86e3c40bd812257caaa14fc
+      id: 3173259453
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MENU
+        ObjectType: 4
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: UI_menu_MOVE
+        ObjectType: 3
+      Path: Default Work Unit\MENU\UI\UI_menu_MOVE
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI_menu_OUT
+      guid: af23bbf569484c4190ba2a5017a8a6ab
+      id: 286266890
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MENU
+        ObjectType: 4
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: UI_menu_OUT
+        ObjectType: 3
+      Path: Default Work Unit\MENU\UI\UI_menu_OUT
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI_menu_PLAYGAME
+      guid: fdffa44b52d3a54abe1a936f9cb12804
+      id: 1141681130
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MENU
+        ObjectType: 4
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: UI_menu_PLAYGAME
+        ObjectType: 3
+      Path: Default Work Unit\MENU\UI\UI_menu_PLAYGAME
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI_menu_VALIDATION
+      guid: c108d01ffd46d84f9a24a3565789ed61
+      id: 1356260595
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MENU
+        ObjectType: 4
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: UI_menu_VALIDATION
+        ObjectType: 3
+      Path: Default Work Unit\MENU\UI\UI_menu_VALIDATION
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  - PhysicalPath: Events\MUSIC.wwu
+    PathAndIcons:
+    - ElementName: MUSIC
+      ObjectType: 12
+    ParentPath: MUSIC
+    guid: d74f96f9d7905442a786971d1c00d847
+    GuidInternal: 
+    m_lastTime: -8585817355741318674
+    List:
+    - name: MUS_Lvl_01
+      guid: a090f53aaec6bc44a6b65ba94c8b8d87
+      id: 2250091753
+      PathAndIcons:
+      - ElementName: MUSIC
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: MUS_Lvl_01
+        ObjectType: 3
+      Path: MUSIC\Music\MUS_Lvl_01
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: MUS_menu_L
+      guid: 2def1d0cfc321b44938c4d6bc7338f8c
+      id: 1367297773
+      PathAndIcons:
+      - ElementName: MUSIC
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: MUS_menu_L
+        ObjectType: 3
+      Path: MUSIC\Music\MUS_menu_L
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Music
+      guid: 8bae9ac66bb0a64bb90e55397ac68c8d
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: MUSIC
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      Path: MUSIC\Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -81,6 +573,52 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585945067527088868
     List: []
+  - PhysicalPath: States\Music.wwu
+    PathAndIcons:
+    - ElementName: Music
+      ObjectType: 12
+    ParentPath: Music
+    guid: a5695fe84e07c8459bd9c7f78cda4ff0
+    GuidInternal: 
+    m_lastTime: -8585819156799509481
+    List:
+    - name: Music_Lvl1
+      guid: 66aa3c1fa8c653489de868f7c4813d92
+      id: 3380345082
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Music_Lvl1
+        ObjectType: 9
+      Path: Music\Music_Lvl1
+      values:
+      - name: Battle
+        guid: a60eed6dc22f0c46a16ab5b213bab238
+        id: 2937832959
+        PathAndIcons:
+        - ElementName: Battle
+          ObjectType: 8
+      - name: Boss
+        guid: d42c09c3c43d384b9c4d50007e8f035f
+        id: 1560169506
+        PathAndIcons:
+        - ElementName: Boss
+          ObjectType: 8
+      - name: Idle
+        guid: 971c7b16313e574a93ab8b98df862b5f
+        id: 1874288895
+        PathAndIcons:
+        - ElementName: Idle
+          ObjectType: 8
+      - name: None
+        guid: 9ab5532cda319c488ccc5773297aa82e
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -99,8 +637,30 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 3a32113d7085334690630312794f6da7
     GuidInternal: 
-    m_lastTime: -8585945067527128878
+    m_lastTime: -8585863865781271907
     List: []
-  ExpandedItems: []
+  - PhysicalPath: Triggers\Music.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    - ElementName: Music
+      ObjectType: 12
+    ParentPath: Default Work Unit\Music
+    guid: 84e45b93aad45b4cbb7de009b31f7f17
+    GuidInternal: 
+    m_lastTime: -8585863797650495299
+    List: []
+  ExpandedItems:
+  - /TOCUS
+  - /TOCUS/Events
+  - /TOCUS/Events/Default Work Unit
+  - /TOCUS/Events/Default Work Unit/LEVEL
+  - /TOCUS/Events/Default Work Unit/LEVEL/UI
+  - /TOCUS/Events/Default Work Unit/MENU
+  - /TOCUS/Events/Default Work Unit/MENU/UI
+  - /TOCUS/Events/MUSIC
+  - /TOCUS/Events/MUSIC/Music
+  - /TOCUS/SoundBanks
+  - /TOCUS/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
