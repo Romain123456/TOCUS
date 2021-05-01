@@ -17,7 +17,7 @@ MonoBehaviour:
   uniteScale: {x: 0.26, y: 0.26}
   unitePositionCanvas: {x: 0, y: 1}
   uniteScaleCanvas: {x: 0.5, y: 0.5}
-  uniteTypeVitalite: 3
+  uniteTypeVitalite: 4
   uniteTypeInitiative: 3
   uniteTypeDegats: 4
   uniteTypeArmure: 3

@@ -197,33 +197,6 @@ public class ObjetsGeneralites : MonoBehaviour
                     levelManager._CampMilitaire.boutonsUnitesToUpgrade[ii].GetComponent<Button>().interactable = false;
                 }
             }
-
-            
-
-
-            //Bouton 1 : Recruter unité
-            /*for (int ii = 0; ii < _InterractionsDisponibles.Length; ii++)
-            {
-                //En fonction du joueur actif, on gère la sprite de l'unité affichée ainsi que son orientation pour le Camp Militaire
-                _InterractionsDisponibles[ii].GetComponent<Image>().sprite = repertoireSprite.unitesJoueurData[ii].uniteSpriteBase[levelManager._JoueurActif - 1];
-                if(levelManager._JoueurActif == 1)
-                {
-                    _InterractionsDisponibles[ii].GetComponent<RectTransform>().localScale = new Vector2(_InterractionsDisponibles[ii].GetComponent<RectTransform>().localScale.x, _InterractionsDisponibles[ii].GetComponent<RectTransform>().localScale.y);
-                    for (int jj = 0; jj < _InterractionsDisponibles[ii].transform.childCount; jj++)
-                    {
-                        _InterractionsDisponibles[ii].transform.GetChild(jj).GetComponent<RectTransform>().localScale = new Vector2(_InterractionsDisponibles[ii].transform.GetChild(jj).GetComponent<RectTransform>().localScale.x, _InterractionsDisponibles[ii].transform.GetChild(jj).GetComponent<RectTransform>().localScale.y);
-                        _InterractionsDisponibles[ii].transform.GetChild(jj).GetComponent<RectTransform>().anchoredPosition = new Vector2(_InterractionsDisponibles[ii].transform.GetChild(jj).GetComponent<RectTransform>().anchoredPosition.x, _InterractionsDisponibles[ii].transform.GetChild(jj).GetComponent<RectTransform>().anchoredPosition.y);
-                    }
-                } else if(levelManager._JoueurActif == 2)
-                {
-                    _InterractionsDisponibles[ii].GetComponent<RectTransform>().localScale = new Vector2(-_InterractionsDisponibles[ii].GetComponent<RectTransform>().localScale.x, _InterractionsDisponibles[ii].GetComponent<RectTransform>().localScale.y);
-                    for(int jj = 0; jj < _InterractionsDisponibles[ii].transform.childCount; jj++)
-                    {
-                        _InterractionsDisponibles[ii].transform.GetChild(jj).GetComponent<RectTransform>().localScale = new Vector2(-_InterractionsDisponibles[ii].transform.GetChild(jj).GetComponent<RectTransform>().localScale.x, _InterractionsDisponibles[ii].transform.GetChild(jj).GetComponent<RectTransform>().localScale.y);
-                        _InterractionsDisponibles[ii].transform.GetChild(jj).GetComponent<RectTransform>().anchoredPosition = new Vector2(-_InterractionsDisponibles[ii].transform.GetChild(jj).GetComponent<RectTransform>().anchoredPosition.x, _InterractionsDisponibles[ii].transform.GetChild(jj).GetComponent<RectTransform>().anchoredPosition.y);
-                    }
-                }
-            }*/
         }
 
         if(transformObjet.name == "ChantierTours")

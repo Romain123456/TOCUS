@@ -203,7 +203,8 @@ public class BatimentConstructions : ObjetsGeneralites
                     _InterractionsDisponibles[ii].transform.GetChild(jj+1).GetChild(0).GetComponent<Text>().text = levelManager.prixToursParToursJoueur[0, jj].ToString();
                 }
 
-            } else if (transformObjet.name == "ChantierBTP")
+            } 
+            else if (transformObjet.name == "ChantierBTP")
             {
                 _InterractionsDisponibles[ii].SetActive(true);
                 _InterractionsDisponibles[ii].GetComponent<Image>().sprite = repertoireSprite.batimentsData[ii].batimentSprite;
@@ -212,11 +213,10 @@ public class BatimentConstructions : ObjetsGeneralites
                 _InterractionsDisponibles[ii].transform.GetChild(2).GetChild(0).GetComponent<Text>().text = repertoireSprite.batimentsData[ii].batimentPrixBois.ToString();
                 _InterractionsDisponibles[ii].transform.GetChild(3).GetChild(0).GetComponent<Text>().text = repertoireSprite.batimentsData[ii].batimentPrixFer.ToString();
                 _InterractionsDisponibles[ii].transform.GetChild(4).GetChild(0).GetComponent<Text>().text = repertoireSprite.batimentsData[ii].batimentPrixPierre.ToString();
-            } else if (transformObjet.name == "CampMilitaire")
+            } 
+            else if (transformObjet.name == "CampMilitaire")
             {
                 //Bouton 1 : Recruter une unité
-                //_InterractionsDisponibles[ii].GetComponent<Image>().sprite = repertoireSprite.unitesData[ii].uniteSpriteBase[levelManager._JoueurActif-1];
-                //_InterractionsDisponibles[ii].transform.GetChild(0).GetComponent<Text>().text = repertoireSprite.unitesJoueurData[ii].uniteNom;
                 if (ii == 0)
                 {
                     _InterractionsDisponibles[ii].transform.GetChild(0).GetComponent<Text>().text = "Recruter unité";
@@ -228,8 +228,8 @@ public class BatimentConstructions : ObjetsGeneralites
                     _InterractionsDisponibles[ii].transform.GetChild(1).GetChild(0).GetComponent<Text>().text = "2";
 
                     //Création des boutons pour choisir l'unité à améliorer si plusieurs sont améliorables
-                    boutonsUnitesToUpgrade = new GameObject[levelManager.reserveTypePrefabUnitesJoueur.Length];
-                    for (int jj = 0; jj < levelManager.reserveTypePrefabUnitesJoueur.Length; jj++)
+                    boutonsUnitesToUpgrade = new GameObject[levelManager.reservePrefabUnitesJoueur.childCount];
+                    for (int jj = 0; jj < levelManager.reservePrefabUnitesJoueur.childCount; jj++)
                     {
                         GameObject boutonUnitesToUpload = new GameObject();
                         boutonUnitesToUpload.AddComponent<RectTransform>();
@@ -242,15 +242,15 @@ public class BatimentConstructions : ObjetsGeneralites
                         newPos.z = 0;
                         boutonUnitesToUpload.GetComponent<RectTransform>().anchoredPosition3D = newPos;
                         boutonUnitesToUpload.GetComponent<Button>().targetGraphic = boutonUnitesToUpload.GetComponent<Image>();
-                        //boutonUnitesToUpload.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,1);
+                        boutonUnitesToUpload.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,100);
                         boutonUnitesToUpload.name = "BoutonAmelioreUnite_Type" + (jj + 1).ToString();
 
-                        //boutonUnitesToUpload.GetComponent<Button>().onClick.AddListener(delegate { AmeliorerUnite(); });
+                        boutonUnitesToUpload.GetComponent<Button>().onClick.AddListener(delegate { AmeliorerUnite(); });
 
                         boutonsUnitesToUpgrade[jj] = boutonUnitesToUpload;
                     }
                 }
-                //_InterractionsDisponibles[ii].transform.GetChild(1).GetChild(0).GetComponent<Text>().text = repertoireSprite.unitesJoueurData[ii].unitePrixBle.ToString();
+                _InterractionsDisponibles[ii].transform.GetChild(1).GetChild(0).GetComponent<Text>().text = repertoireSprite.unitesJoueurData[ii].unitePrixBle.ToString();
             }
 
         }
@@ -370,25 +370,22 @@ public class BatimentConstructions : ObjetsGeneralites
         for (int ii = 0; ii < _RecrutementMax; ii++)
         {
             uniteEngaged = unitesJoueurReserve[0];
-            GameObject monUnite = levelManager.ActivationObjectListe(levelManager.prefabUnitesJoueur, uniteEngaged.uniteListeOrdre);        //On active dans la liste l'unité choisie
-            monUnite.transform.GetComponent<SpriteRenderer>().sprite = uniteEngaged.uniteSpriteBase[levelManager._JoueurActif - 1];   //On donne la sprite relative au joueur actif
-            monUnite.transform.GetComponent<Animator>().runtimeAnimatorController = uniteEngaged.uniteAnimatorController[levelManager._JoueurActif - 1];        //On donne le bon Animator Controller
-            monUnite.GetComponent<CallBacksUnitesJoueur>().monUniteJoueur.uniteJoueurOwner = levelManager._JoueurActif - 1;
+            GameObject monUnite = levelManager.ActivationObjectListe(uniteEngaged.uniteListeOrdre,levelManager.reservePrefabUnitesJoueur);        //On active dans la liste l'unité choisie
+            monUnite.GetComponent<UniteJoueur>().PositionnementOnChemin();
+            monUnite.GetComponent<UniteJoueur>().ActivationUnite();
 
             //Si Fortin, amélioration des stats
-            if (levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._HasFortin)
+            /*if (levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._HasFortin)
             {
                 monUnite.GetComponent<CallBacksUnitesJoueur>().monUniteJoueur.UniteJoueurAmeliorationStatistiques(monUnite.GetComponent<CallBacksUnitesJoueur>());
                 monUnite.GetComponent<CallBacksUnitesJoueur>().monUniteJoueur.pv = monUnite.GetComponent<CallBacksUnitesJoueur>().monUniteJoueur.pvMax;
                 monUnite.GetComponent<CallBacksUnitesJoueur>().monUniteJoueur.HealthBar_MaJ();
-            }
+            }*/
 
-            monUnite.GetComponent<CallBacksUnitesJoueur>().monUniteJoueur.CheminDefinitionUnitesJoueur(levelManager.positionsChemin);
-            monUnite.GetComponent<CallBacksUnitesJoueur>().monUniteJoueur.UnitesJoueurPositionnementActivation();
+            //Positionnement de l'unité
             levelManager.listUnitesAnimationActionJoueur.Add(spritesUnitesFiles.transform.GetChild(ii).gameObject);
             levelManager.listUnitesAnimationActionPositions.Add(monUnite.transform.position);
             levelManager.objetConstruit.Add(monUnite);
-            monUnite.GetComponent<SpriteRenderer>().enabled = false;
             monUnite.SetActive(false);
 
             //Sprites dans la caserne
@@ -398,7 +395,7 @@ public class BatimentConstructions : ObjetsGeneralites
             //Incrémente le compte de soldat d'un même type
             levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._NbUnites[uniteEngaged.uniteListeOrdre]++;
         }
-
+        
         //Si Feu de camp, on offre un bois
         if (levelManager.tableauJoueurs[levelManager._JoueurActif - 1].isFeuDeCamp)
         {
@@ -433,9 +430,9 @@ public class BatimentConstructions : ObjetsGeneralites
         ChangeJoueurActif();
         levelManager.panelParentBatimentInterract.gameObject.SetActive(false);      //Fermeture du panel
     }
+    
 
-
-    public void RecrutementUnitesSpeciales(Transform reserveUniteSpeciale)
+    /*public void RecrutementUnitesSpeciales(Transform reserveUniteSpeciale)
     {
         Debug.Log("Unité spéciale recrutée");
         int indiceUniteSpeciale = FindUniteSpecialeIndiceRepertoire(reserveUniteSpeciale.GetChild(0).name);
@@ -494,7 +491,7 @@ public class BatimentConstructions : ObjetsGeneralites
         }
 
     }
-
+    */
 
 
     public void SelectionUniteConstruction()
@@ -546,16 +543,16 @@ public class BatimentConstructions : ObjetsGeneralites
             //Desactiver uniteMinToUpgrade GO dans la réserve d'indice indUniteCanUpgrade. Les unités doivent appartenir au joueur
             int uniteToDesactive = 0;
 
-            for (int ii = 0; ii < levelManager.reserveTypePrefabUnitesJoueur[indUniteCanUpgrade].childCount; ii++)
+            for (int ii = 0; ii < levelManager.reservePrefabUnitesJoueur.GetChild(indUniteCanUpgrade).childCount; ii++)
             {
-                if (levelManager.reserveTypePrefabUnitesJoueur[indUniteCanUpgrade].GetChild(ii).gameObject.activeInHierarchy && 
-                    levelManager.reserveTypePrefabUnitesJoueur[indUniteCanUpgrade].GetChild(ii).GetComponent<CallBacksUnitesJoueur>().monUniteJoueur.uniteJoueurOwner == levelManager._JoueurActif)
+                if (levelManager.reservePrefabUnitesJoueur.GetChild(indUniteCanUpgrade).GetChild(ii).gameObject.activeInHierarchy && 
+                    levelManager.reservePrefabUnitesJoueur.GetChild(indUniteCanUpgrade).GetChild(ii).GetComponent<UniteJoueur>().joueurOwner == levelManager._JoueurActif-1)
                 {
-                    levelManager.reserveTypePrefabUnitesJoueur[indUniteCanUpgrade].GetChild(ii).GetComponent<CallBacksUnitesJoueur>().isRecruted = false;
+                    levelManager.reservePrefabUnitesJoueur.GetChild(indUniteCanUpgrade).GetChild(ii).GetComponent<UniteJoueur>().isRecruted = false;
 
                     //A changer pour l'animation ! Ligne de désactivation des unités au sol
                     //levelManager.reserveTypePrefabUnitesJoueur[indUniteCanUpgrade].GetChild(ii).gameObject.SetActive(false);
-                    levelManager.objetConstruit.Add(levelManager.reserveTypePrefabUnitesJoueur[indUniteCanUpgrade].GetChild(ii).gameObject);
+                    levelManager.objetConstruit.Add(levelManager.reservePrefabUnitesJoueur.GetChild(indUniteCanUpgrade).GetChild(ii).gameObject);
 
                     uniteToDesactive++;
                     if (uniteToDesactive >= uniteMinToUpgrade)
@@ -569,26 +566,21 @@ public class BatimentConstructions : ObjetsGeneralites
             }
 
 
-            GameObject maSuperUnite = levelManager.ActivationObjectListe(levelManager.prefabSuperUnitesJoueur, indUniteCanUpgrade);
-            //Sprite de l'Unité
-            maSuperUnite.transform.GetComponent<SpriteRenderer>().sprite = levelManager.repertoireSprites.superUnitesJoueurData[indUniteCanUpgrade].uniteSpriteBase[levelManager._JoueurActif - 1];   //On donne la sprite relative au joueur actif
-            maSuperUnite.transform.GetComponent<Animator>().runtimeAnimatorController = levelManager.repertoireSprites.superUnitesJoueurData[indUniteCanUpgrade].uniteAnimatorController[levelManager._JoueurActif - 1];        //On donne le bon Animator Controller
-            maSuperUnite.transform.GetComponent<CallBacksSuperUnitesJoueur>().maSuperUniteJoueur.uniteJoueurOwner = levelManager._JoueurActif - 1;
+            GameObject maSuperUnite = levelManager.ActivationObjectListe(indUniteCanUpgrade,levelManager.reservePrefabSuperUnitesJoueur);
+            maSuperUnite.GetComponent<UniteJoueur>().PositionnementOnChemin();
+            maSuperUnite.GetComponent<UniteJoueur>().ActivationUnite();
 
-            maSuperUnite.transform.GetComponent<CallBacksSuperUnitesJoueur>().maSuperUniteJoueur.CheminDefinitionUnitesJoueur(levelManager.positionsChemin);
-            maSuperUnite.transform.GetComponent<CallBacksSuperUnitesJoueur>().maSuperUniteJoueur.UnitesJoueurPositionnementActivation();
             maSuperUnite.SetActive(false);
             levelManager.objetConstruit.Add(maSuperUnite);      //Dernier indice, les autres indices sont utilisés pour les unités au sol à faire disparaître
-            maSuperUnite.transform.GetComponent<CallBacksSuperUnitesJoueur>().isRecruted = true;
-
+            
 
 
             //Si Fortin, amélioration des stats
             if (levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._HasFortin)
             {
-                maSuperUnite.GetComponent<CallBacksSuperUnitesJoueur>().maSuperUniteJoueur.SuperUniteJoueurAmeliorationStatistiques(maSuperUnite.GetComponent<CallBacksSuperUnitesJoueur>());
+                /*maSuperUnite.GetComponent<CallBacksSuperUnitesJoueur>().maSuperUniteJoueur.SuperUniteJoueurAmeliorationStatistiques(maSuperUnite.GetComponent<CallBacksSuperUnitesJoueur>());
                 maSuperUnite.GetComponent<CallBacksSuperUnitesJoueur>().maSuperUniteJoueur.pv = maSuperUnite.GetComponent<CallBacksSuperUnitesJoueur>().maSuperUniteJoueur.pvMax;
-                maSuperUnite.GetComponent<CallBacksSuperUnitesJoueur>().maSuperUniteJoueur.HealthBar_MaJ();
+                maSuperUnite.GetComponent<CallBacksSuperUnitesJoueur>().maSuperUniteJoueur.HealthBar_MaJ();*/
             }
 
 
@@ -612,7 +604,7 @@ public class BatimentConstructions : ObjetsGeneralites
             }
 
             //Désactive les boutons de choix de l'unité à upgrader
-            for (int jj = 0; jj < levelManager.reserveTypePrefabUnitesJoueur.Length; jj++)
+            for (int jj = 0; jj < levelManager.reservePrefabUnitesJoueur.childCount; jj++)
             {
                 boutonsUnitesToUpgrade[jj].SetActive(false);
             }
@@ -634,7 +626,7 @@ public class BatimentConstructions : ObjetsGeneralites
 
     public void ActiveAmeliorationUnite()
     {
-        for (int jj = 0; jj < levelManager.reserveTypePrefabUnitesJoueur.Length; jj++)
+        for (int jj = 0; jj < levelManager.reservePrefabUnitesJoueur.childCount; jj++)
         {
             boutonsUnitesToUpgrade[jj].SetActive(true);
         }
@@ -675,7 +667,7 @@ public class BatimentConstructions : ObjetsGeneralites
     {
         Debug.Log("Soigne les unités du joueur qui l'invoque");  //On accède directement à chaque réserve d'unités
 
-        for (int ii = 0; ii < levelManager.reservePrefabUnitesJoueur.childCount; ii++)
+        /*for (int ii = 0; ii < levelManager.reservePrefabUnitesJoueur.childCount; ii++)
         {
             for (int jj = 0; jj < levelManager.reserveTypePrefabUnitesJoueur[ii].childCount; jj++)
             {
@@ -685,9 +677,9 @@ public class BatimentConstructions : ObjetsGeneralites
                     levelManager.reserveTypePrefabUnitesJoueur[ii].GetChild(jj).GetComponent<CallBacksUnitesJoueur>().monUniteJoueur.HealthBar_MaJ();
                 }
             }
-        }
+        }*/
 
-        for(int ii= 0; ii < levelManager.reservePrefabSuperUnitesJoueur.childCount; ii++)
+        /*for(int ii= 0; ii < levelManager.reservePrefabSuperUnitesJoueur.childCount; ii++)
         {
             for(int jj = 0; jj < levelManager.reserveTypePrefabSuperUnitesJoueur[ii].childCount; jj++)
             {
@@ -697,14 +689,14 @@ public class BatimentConstructions : ObjetsGeneralites
                     levelManager.reserveTypePrefabSuperUnitesJoueur[ii].GetChild(jj).GetComponent<CallBacksSuperUnitesJoueur>().maSuperUniteJoueur.HealthBar_MaJ();
                 }
             }
-        }
+        }*/
 
         Debug.Log("Ajouter soin des unités spéciales");
     }
 
     public void BatimentUniteSpecialeFonction()
     {
-        RecrutementUnitesSpeciales(levelManager.myEventSystem.currentSelectedGameObject.transform.parent.parent.GetChild(1));
+        //RecrutementUnitesSpeciales(levelManager.myEventSystem.currentSelectedGameObject.transform.parent.parent.GetChild(1));
     }
 
 
@@ -720,7 +712,7 @@ public class BatimentConstructions : ObjetsGeneralites
         int way = Random.RandomRange(0, 3);
         int indiceUniteSpeciale = FindUniteSpecialeIndiceRepertoire(_NomUniteSpeciale);
 
-        levelManager.InstanciationUnites_AffectationReserve(reserveBatimentPrefab.transform, indiceUniteSpeciale, way, levelManager.repertoireSprites.unitesSpecialesData);       //0 : correspond aux barbares
+        //levelManager.InstanciationUnites_AffectationReserve(reserveBatimentPrefab.transform, indiceUniteSpeciale, way, levelManager.repertoireSprites.unitesSpecialesData);       //0 : correspond aux barbares
     }
 
 
@@ -860,25 +852,25 @@ public class BatimentConstructions : ObjetsGeneralites
         {
             for(int ii = 0; ii < unites.Length; ii++)
             {
-                if(unites[ii].GetComponent<CallBacksUnitesJoueur>().monUniteJoueur.uniteJoueurOwner == _JoueurInd)
+                /*if(unites[ii].GetComponent<CallBacksUnitesJoueur>().monUniteJoueur.uniteJoueurOwner == _JoueurInd)
                 {
                     listeUnites.Add(unites[ii]);
-                }
+                }*/
             }
         }
 
         if(superUnites.Length != 0)
         {
-            for(int ii = 0; ii < superUnites.Length; ii++)
+            /*for(int ii = 0; ii < superUnites.Length; ii++)
             {
                 if(superUnites[ii].GetComponent<CallBacksSuperUnitesJoueur>().maSuperUniteJoueur.uniteJoueurOwner == _JoueurInd)
                 {
                     listeUnites.Add(superUnites[ii]);
                 }
-            }
+            }*/
         }
 
-        int indUniteSoigner = Random.RandomRange(0, listeUnites.Count);
+        /*int indUniteSoigner = Random.RandomRange(0, listeUnites.Count);
         if (listeUnites[indUniteSoigner].CompareTag("UniteJoueur"))
         {
             listeUnites[indUniteSoigner].GetComponent<CallBacksUnitesJoueur>().monUniteJoueur.pv = listeUnites[indUniteSoigner].GetComponent<CallBacksUnitesJoueur>().monUniteJoueur.pvMax;
@@ -887,7 +879,7 @@ public class BatimentConstructions : ObjetsGeneralites
         {
             listeUnites[indUniteSoigner].GetComponent<CallBacksSuperUnitesJoueur>().maSuperUniteJoueur.pv = listeUnites[indUniteSoigner].GetComponent<CallBacksSuperUnitesJoueur>().maSuperUniteJoueur.pvMax;
             listeUnites[indUniteSoigner].GetComponent<CallBacksSuperUnitesJoueur>().maSuperUniteJoueur.HealthBar_MaJ();
-        }
+        }*/
 
         /*for(int ii = 0; ii < listeUnites.Count; ii++)
         {
@@ -900,7 +892,7 @@ public class BatimentConstructions : ObjetsGeneralites
     public void BatimentFortinCreationFonction()
     {
         #region Amélioration des Unités déjà en place
-        for (int ii = 0; ii < levelManager.reserveTypePrefabUnitesJoueur.Length; ii++)
+        /*for (int ii = 0; ii < levelManager.reserveTypePrefabUnitesJoueur.Length; ii++)
         {
             for (int jj = 0; jj < levelManager.reserveTypePrefabUnitesJoueur[ii].childCount; jj++)
             {
@@ -909,11 +901,11 @@ public class BatimentConstructions : ObjetsGeneralites
                     levelManager.reserveTypePrefabUnitesJoueur[ii].GetChild(jj).GetComponent<CallBacksUnitesJoueur>().monUniteJoueur.UniteJoueurAmeliorationStatistiques(levelManager.reserveTypePrefabUnitesJoueur[ii].GetChild(jj).GetComponent<CallBacksUnitesJoueur>());
                 }
             }
-        }
+        }*/
         #endregion
 
         #region Amélioration SuperUnités déjà en place
-        for (int ii = 0; ii < levelManager.reserveTypePrefabSuperUnitesJoueur.Length; ii++)
+        /*for (int ii = 0; ii < levelManager.reserveTypePrefabSuperUnitesJoueur.Length; ii++)
         {
             for (int jj = 0; jj < levelManager.reserveTypePrefabSuperUnitesJoueur[ii].childCount; jj++)
             {
@@ -922,7 +914,7 @@ public class BatimentConstructions : ObjetsGeneralites
                     levelManager.reserveTypePrefabSuperUnitesJoueur[ii].GetChild(jj).GetComponent<CallBacksSuperUnitesJoueur>().maSuperUniteJoueur.SuperUniteJoueurAmeliorationStatistiques(levelManager.reserveTypePrefabSuperUnitesJoueur[ii].GetChild(jj).GetComponent<CallBacksSuperUnitesJoueur>());
                 }
             }
-        }
+        }*/
         #endregion
 
         levelManager.tableauJoueurs[levelManager._JoueurActif - 1]._HasFortin = true;

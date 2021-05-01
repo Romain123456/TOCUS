@@ -10,21 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 87cff0f03fa2f8a4aafe12b29ef101c4, type: 3}
-  m_Name: MonstresCostauds
+  m_Name: Monstre_Boxeur
   m_EditorClassIdentifier: 
-  uniteNom: Montres Costauds
+  uniteNom: Monstre_Boxeur
   uniteBoxCollSize: {x: 1.5, y: 1.7}
   uniteScale: {x: 0.35, y: 0.35}
   unitePositionCanvas: {x: 0, y: 1}
   uniteScaleCanvas: {x: 0.5, y: 0.5}
-  uniteTypeVitalite: 1
-  uniteTypeInitiative: 4
-  uniteTypeDegats: 3
-  uniteTypeArmure: 5
+  uniteTypeVitalite: 2
+  uniteTypeInitiative: 3
+  uniteTypeDegats: 6
+  uniteTypeArmure: 2
   uniteTypePortee: 0
-  ennemiSpeedMove: 0.5
-  ennemiSprite: {fileID: -747550064958047989, guid: d293e5d2063d0874ab771a1f76cca7b9,
+  ennemiSprite: {fileID: 3182636466850743980, guid: dc76e9d365ac05c4f9d0c0c31a849451,
     type: 3}
-  ennemiAnimatorController: {fileID: 9100000, guid: fedda3e24a4ec7a4488d1d5d54862c03,
+  ennemiAnimatorController: {fileID: 9100000, guid: d70b03d6e094b034c8453fcb499addda,
     type: 2}
-  ennemiSpeedDeplacement: 2
+  ennemiSpeedDeplacement: 3
