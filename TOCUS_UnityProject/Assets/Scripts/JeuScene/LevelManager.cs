@@ -284,15 +284,6 @@ public class LevelManager : MonoBehaviour
 
         #endregion
 
-
-
-
-
-
-
-        //Ennemis par round
-        repertoireSprites.EnnemiDataCreate();
-
         //Gestion du Panel Interraction Batiment
         if (GameObject.Find("PanelBatimentInteract") != null)
         {
@@ -412,85 +403,6 @@ public class LevelManager : MonoBehaviour
         imageAchBatiments.SetActive(false);
         imageAchReparerPorte.SetActive(false);
         imageAchRapidite.SetActive(false);
-        #endregion
-
-        #region Attribution des réserves et instanciation des réserves
-
-        
-
-
-        #region Les Ennemis
-        //Tableau des Chemins des ennemis
-        //On réunit dans une seule variable tous les chemins précalculés pour les ennemis
-        /*
-
-
-        reservePrefabEnnemis = GameObject.Find("ReservePrefabEnnemis").transform;
-        InstantiateReservesEmpty(repertoireSprites.ennemiData.Length, "ReservePrefabEnnemis", reservePrefabEnnemis);
-
-
-        reserveTypePrefabEnnemis = new Transform[reservePrefabEnnemis.childCount];
-        prefabEnnemis = new Transform[reserveTypePrefabEnnemis.Length, nbInstanceReserves];
-        for (int ii = 0; ii < reserveTypePrefabEnnemis.Length; ii++)
-        {
-            reserveTypePrefabEnnemis[ii] = reservePrefabEnnemis.GetChild(ii);
-            int jj = 0;
-            while (jj < nbInstanceReserves)
-            {
-                InstanciationEnnemi_AffectationReserve(reserveTypePrefabEnnemis[ii], ii);  
-                jj++;
-            }
-        }*/
-        #endregion
-
-
-
-        #region Unites Joueur
-        /*reservePrefabUnitesJoueur = GameObject.Find("ReservePrefabUnitesJoueur").transform;
-        repertoireSprites.UniteJoueurCreate();          //Crée les objets unités dans le répertoire
-        InstantiateReservesEmpty(repertoireSprites.unitesJoueurData.Length, "ReservePrefabUnitesJoueur_Type", reservePrefabUnitesJoueur);         //On instantie les réserves d'unités
-
-        reserveTypePrefabUnitesJoueur = new Transform[reservePrefabUnitesJoueur.childCount];
-        prefabUnitesJoueur = new Transform[reserveTypePrefabUnitesJoueur.Length, nbInstanceReserves];
-        for (int ii = 0; ii < reserveTypePrefabUnitesJoueur.Length; ii++)
-        {
-            reserveTypePrefabUnitesJoueur[ii] = reservePrefabUnitesJoueur.GetChild(ii);
-            int jj = 0;
-            while (jj < nbInstanceReserves)
-            {
-                int way = Random.Range(0, 3);
-                InstanciationUnites_AffectationReserve(reserveTypePrefabUnitesJoueur[ii], ii, way,repertoireSprites.unitesJoueurData);
-                prefabUnitesJoueur[ii, jj] = reserveTypePrefabUnitesJoueur[ii].GetChild(jj);
-                jj++;
-            }
-        }*/
-        #endregion
-
-
-        #region Super Unites Joueur
-        /*reservePrefabSuperUnitesJoueur = GameObject.Find("ReservePrefabSuperUnitesJoueur").transform;
-        repertoireSprites.SuperUnitesJoueurCreate();
-        InstantiateReservesEmpty(repertoireSprites.superUnitesJoueurData.Length, "ReservePrefabSuperUnitesJoueur_Type", reservePrefabSuperUnitesJoueur);    //On instantie les réserves de superunités
-
-        reserveTypePrefabSuperUnitesJoueur = new Transform[reservePrefabSuperUnitesJoueur.childCount];
-        prefabSuperUnitesJoueur = new Transform[reserveTypePrefabSuperUnitesJoueur.Length, nbInstanceReserves];
-        for(int ii = 0; ii < reserveTypePrefabSuperUnitesJoueur.Length; ii++)
-        {
-            reserveTypePrefabSuperUnitesJoueur[ii] = reservePrefabSuperUnitesJoueur.GetChild(ii);
-            int jj = 0;
-            while (jj < nbInstanceReserves)
-            {
-                int way = Random.Range(0, 3);
-                InstanciationSuperUnites_AffectationReserve(reserveTypePrefabSuperUnitesJoueur[ii], ii, way);
-                prefabSuperUnitesJoueur[ii, jj] = reserveTypePrefabSuperUnitesJoueur[ii].GetChild(jj);
-                jj++;
-            }
-        }*/
-        #endregion
-
-
-
-
         #endregion
 
 
@@ -797,28 +709,6 @@ public class LevelManager : MonoBehaviour
 
 
     #region Instantiation Réserve des ennemis
-    //Permet l'instanciation d'un ennemi en choisissant son chemin et son index dans le répertoire pour lui donner ses propriétés
-    /*void InstanciationEnnemi_AffectationReserve(Transform reserve ,int _IndexRepertoire)
-    {
-        Ennemis monEnnemi = new Ennemis(repertoireSprites.ennemiData[_IndexRepertoire].ennemiSprite, repertoireSprites.ennemiData[_IndexRepertoire].uniteBoxCollSize, repertoireSprites.ennemiData[_IndexRepertoire].uniteScaleCanvas, repertoireSprites.ennemiData[_IndexRepertoire].unitePositionCanvas);
-        monEnnemi.nomUnite = repertoireSprites.ennemiData[_IndexRepertoire].uniteNom;
-        monEnnemi.monTransform.name = monEnnemi.nomUnite;
-         
-        monEnnemi.typeSpeedDeplacement = repertoireSprites.ennemiData[_IndexRepertoire].typeSpeedMoveEnnemi;
-
-        monEnnemi.monTransform.parent = reserve;
-        monEnnemi.monTransform.parent.localScale = repertoireSprites.ennemiData[_IndexRepertoire].uniteScale;
-        monEnnemi.monTransform.localScale = Vector3.one;
-        monEnnemi.uniteVitalite = repertoireSprites.ennemiData[_IndexRepertoire].uniteTypeVitalite;
-        monEnnemi.uniteInitiative = repertoireSprites.ennemiData[_IndexRepertoire].uniteTypeInitiative;
-        monEnnemi.uniteDegats = repertoireSprites.ennemiData[_IndexRepertoire].uniteTypeDegats;
-        monEnnemi.monAnimator.runtimeAnimatorController = repertoireSprites.ennemiData[_IndexRepertoire].ennemiAnimatorController;
-        monEnnemi._VictoryPointGain = repertoireSprites.ennemiData[_IndexRepertoire].pointVictoireGain;
-        monEnnemi.unitePortee = repertoireSprites.ennemiData[_IndexRepertoire].uniteTypePortee;
-        monEnnemi.AttributionCaracteristiques();
-        monEnnemi.AttributionCaracteristiquesEnnemi();
-    }*/
-
 
     //Instanciation des Prefabs des Unites et affectation dans une réserve
      public void InstantiateUnite(int _Index)
@@ -854,58 +744,6 @@ public class LevelManager : MonoBehaviour
         scriptEnnemi.AttributionCaracteristiquesEnnemi();
         monEnnemi.SetActive(false);
     }
-
-
-    /*public void InstanciationUnites_AffectationReserve(Transform reserve,int _IndexRepertoire,int _Chemin, UnitesJoueurRepertoire[] _MesDataUnitesJoueurRepertoire)
-    {
-        //Constructeur renseigne les éléments principaux
-        UnitesJoueur monUniteJoueur = new UnitesJoueur(_MesDataUnitesJoueurRepertoire[_IndexRepertoire].uniteSpriteBase[0], _MesDataUnitesJoueurRepertoire[_IndexRepertoire].uniteBoxCollSize, _MesDataUnitesJoueurRepertoire[_IndexRepertoire].uniteScaleCanvas, _MesDataUnitesJoueurRepertoire[_IndexRepertoire].unitePositionCanvas, "UniteJoueur");
-
-        //Met l'unité dans la bonne réserve
-        monUniteJoueur.monTransform.parent = reserve;
-
-        //Taille et nom de l'unité
-        monUniteJoueur.nomUnite = _MesDataUnitesJoueurRepertoire[_IndexRepertoire].uniteNom;
-        monUniteJoueur.monTransform.name = monUniteJoueur.nomUnite;
-        monUniteJoueur.monTransform.parent.localScale = _MesDataUnitesJoueurRepertoire[_IndexRepertoire].uniteScale;
-        monUniteJoueur.monTransform.localScale = Vector3.one;
-
-        //Place l'unité
-        monUniteJoueur.cheminChoisi = _Chemin;
-
-        //Attribue les caractéristiques
-        monUniteJoueur.uniteVitalite = _MesDataUnitesJoueurRepertoire[_IndexRepertoire].uniteTypeVitalite;
-        monUniteJoueur.uniteVitaliteBase = _MesDataUnitesJoueurRepertoire[_IndexRepertoire].uniteTypeVitalite;
-        monUniteJoueur.uniteInitiative = _MesDataUnitesJoueurRepertoire[_IndexRepertoire].uniteTypeInitiative;
-        monUniteJoueur.uniteInitiativeBase = _MesDataUnitesJoueurRepertoire[_IndexRepertoire].uniteTypeInitiative;
-        monUniteJoueur.uniteDegats = _MesDataUnitesJoueurRepertoire[_IndexRepertoire].uniteTypeDegats;
-        monUniteJoueur.uniteDegatsBase = _MesDataUnitesJoueurRepertoire[_IndexRepertoire].uniteTypeDegats;
-        monUniteJoueur.uniteOrdreListe = _MesDataUnitesJoueurRepertoire[_IndexRepertoire].uniteListeOrdre;
-        monUniteJoueur.unitePortee = _MesDataUnitesJoueurRepertoire[_IndexRepertoire].uniteTypePortee;
-        monUniteJoueur.AttributionCaracteristiques();
-    }
-    
-
-    void InstanciationSuperUnites_AffectationReserve(Transform reserve, int _IndexRepertoire, int _Chemin)
-    {
-        SuperUnitesJoueur maSuperUniteJoueur = new SuperUnitesJoueur(repertoireSprites.superUnitesJoueurData[_IndexRepertoire].uniteSpriteBase[0], repertoireSprites.superUnitesJoueurData[_IndexRepertoire].uniteBoxCollSize, repertoireSprites.superUnitesJoueurData[_IndexRepertoire].uniteScaleCanvas, repertoireSprites.superUnitesJoueurData[_IndexRepertoire].unitePositionCanvas, "SuperUniteJoueur");
-        maSuperUniteJoueur.monTransform.parent = reserve;
-        maSuperUniteJoueur.nomUnite = repertoireSprites.superUnitesJoueurData[_IndexRepertoire].uniteNom;
-        maSuperUniteJoueur.monTransform.name = maSuperUniteJoueur.nomUnite;
-        maSuperUniteJoueur.monTransform.localScale = repertoireSprites.superUnitesJoueurData[_IndexRepertoire].uniteScale;
-        maSuperUniteJoueur.cheminChoisi = _Chemin;
-
-        maSuperUniteJoueur.uniteVitalite = repertoireSprites.superUnitesJoueurData[_IndexRepertoire].uniteTypeVitalite;
-        maSuperUniteJoueur.uniteVitaliteBase = repertoireSprites.superUnitesJoueurData[_IndexRepertoire].uniteTypeVitalite;
-        maSuperUniteJoueur.uniteInitiative = repertoireSprites.superUnitesJoueurData[_IndexRepertoire].uniteTypeInitiative;
-        maSuperUniteJoueur.uniteInitiativeBase = repertoireSprites.superUnitesJoueurData[_IndexRepertoire].uniteTypeInitiative;
-        maSuperUniteJoueur.uniteDegats = repertoireSprites.superUnitesJoueurData[_IndexRepertoire].uniteTypeDegats;
-        maSuperUniteJoueur.uniteDegatsBase = repertoireSprites.superUnitesJoueurData[_IndexRepertoire].uniteTypeDegats;
-        maSuperUniteJoueur.uniteOrdreListe = repertoireSprites.superUnitesJoueurData[_IndexRepertoire].uniteListeOrdre;
-        maSuperUniteJoueur.unitePortee = repertoireSprites.superUnitesJoueurData[_IndexRepertoire].uniteTypePortee;
-        maSuperUniteJoueur.AttributionCaracteristiques();
-    }
-   */
     #endregion
 
 
@@ -1482,40 +1320,6 @@ public class LevelManager : MonoBehaviour
                     #endregion
 
 
-                    #region New Instances SuperUnites
-                    /*for (int ii = 0; ii < reserveTypePrefabSuperUnitesJoueur.Length; ii++)
-                    {
-                        nbInactif = CompteNbInactivesReserves(reserveTypePrefabSuperUnitesJoueur[ii]);
-                        if (nbInactif < nbMiniInstancesInactiveReserves)
-                        {
-                            needNewInstances = true;
-                            newInstances = Mathf.Max(newInstances, nbMiniInstancesInactiveReserves - nbInactif);
-                        }
-                    }
-                    if (needNewInstances)
-                    {
-                        int oldDimension = prefabSuperUnitesJoueur.GetLength(1);
-                        prefabSuperUnitesJoueur = new Transform[reserveTypePrefabSuperUnitesJoueur.Length, oldDimension + newInstances];
-
-                        for (int ii = 0; ii < reserveTypePrefabSuperUnitesJoueur.Length; ii++)
-                        {
-                            for (int jj = 0; jj < newInstances; jj++)
-                            {
-                                int way = Random.Range(0, 3);
-                                InstanciationSuperUnites_AffectationReserve(reserveTypePrefabSuperUnitesJoueur[ii], ii, way);
-                            }
-                            for (int jj = 0; jj < prefabSuperUnitesJoueur.GetLength(1); jj++)
-                            {
-                                prefabSuperUnitesJoueur[ii, jj] = reserveTypePrefabSuperUnitesJoueur[ii].GetChild(jj);
-                            }
-                        }
-
-                        newInstances = 0;
-                        needNewInstances = false;
-                    }*/
-
-                    #endregion
-
                     #region Ennemis Déploiement
                     //Lancement Coroutine du déploiement des ennemis. Lancement unique au round approprié
                     if (numeroRound != 0 && numeroRound == roundActivationDeploiementEnnemi)
@@ -1596,8 +1400,6 @@ public class LevelManager : MonoBehaviour
             #endregion
             #endregion
 
-
-
         }
 
 
@@ -1646,6 +1448,9 @@ public class LevelManager : MonoBehaviour
                 } else if(_Reserve.name == "ReservePrefabSuperUnitesJoueur")
                 {
                     InstantiateSuperUnite(ii);
+                } else if(_Reserve.name == "ReservePrefabEnnemis")
+                {
+                    InstantiateEnnemi(ii);
                 }
 
                 needNewInstances = false;
@@ -1654,8 +1459,6 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-
-    
     private IEnumerator CompteTemps()
     {
         topChrono = true;
@@ -1725,44 +1528,9 @@ public class LevelManager : MonoBehaviour
     #endregion
 
 
-    //New Instance d'ennemis 
-    public void NewInstancesEnnemis()
-    {
-        bool needNewInstances = false;
-        int nbInactif = 0;
-        int newInstances = 0;
-        /*for (int ii = 0; ii < reserveTypePrefabEnnemis.Length; ii++)
-        {
-            nbInactif = CompteNbInactivesReserves(reserveTypePrefabEnnemis[ii]);
-            if (nbInactif < nbMiniInstancesInactiveReserves)
-            {
-                needNewInstances = true;
-                newInstances = Mathf.Max(newInstances, nbMiniInstancesInactiveReserves - nbInactif);
-            }
-        }
-        if (needNewInstances)
-        {
-            int oldDimension = prefabEnnemis.GetLength(1);
-            prefabEnnemis = new Transform[reserveTypePrefabEnnemis.Length, oldDimension + newInstances];
-            for (int ii = 0; ii < reserveTypePrefabEnnemis.Length; ii++)
-            {
-                for (int jj = 0; jj < newInstances; jj++)
-                {
-                    //int way = Random.Range(0, 3);
-                    InstanciationEnnemi_AffectationReserve(reserveTypePrefabEnnemis[ii], ii);
-                }
-                for (int jj = 0; jj < prefabEnnemis.GetLength(1); jj++)
-                {
-                    prefabEnnemis[ii, jj] = reserveTypePrefabEnnemis[ii].GetChild(jj);
-                }
-            }
-            newInstances = 0;
-            needNewInstances = false;
-        }*/
-    }
 
 
-
+    #region Instance Ennemis
     //Coroutine de déploiement des ennemis
     IEnumerator DeploiementEnnemis()
     {
@@ -1802,8 +1570,6 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-
-
     public void LancementVagueMonstres(int _II)
     {
         string[] monstreChemin = new string[3];
@@ -1815,7 +1581,7 @@ public class LevelManager : MonoBehaviour
         {
             if(monstreChemin[ii] != " ")
             {
-                /*for(int jj = 0; jj < reservePrefabEnnemis.childCount; jj++)
+                for(int jj = 0; jj < reservePrefabEnnemis.childCount; jj++)
                 {
                     if(reservePrefabEnnemis.GetChild(jj).GetChild(0).name == monstreChemin[ii])
                     {
@@ -1824,24 +1590,23 @@ public class LevelManager : MonoBehaviour
                         {
                             if (!reservePrefabEnnemis.GetChild(jj).GetChild(kk).gameObject.activeInHierarchy)
                             {
-                                reservePrefabEnnemis.GetChild(jj).GetChild(kk).GetComponent<CallBacksEnnemis>().monEnnemi.cheminChoisi = ii;
-
-                               reservePrefabEnnemis.GetChild(jj).GetChild(kk).GetComponent<CallBacksEnnemis>().monEnnemi.CheminDefinitionEnnemi(positionsChemin);
-
+                                reservePrefabEnnemis.GetChild(jj).GetChild(kk).GetComponent<Ennemi>().way = ii;
+                                reservePrefabEnnemis.GetChild(jj).GetChild(kk).GetComponent<Ennemi>().EnnemiPositionnementOnChemin();
+                                StartCoroutine(reservePrefabEnnemis.GetChild(jj).GetChild(kk).GetComponent<Ennemi>().DeplacementEnnemi());
                                 reservePrefabEnnemis.GetChild(jj).GetChild(kk).gameObject.SetActive(true);
                                 if(kk >= reservePrefabEnnemis.GetChild(jj).childCount - 2)
                                 {
-                                    NewInstancesEnnemis();
+                                    NewRoundAlimentationReserve(reservePrefabEnnemis);
                                 }
                                 break;
                             }
                         }
                     }
-                }*/
+                }
             }
         }
     }
-
+    #endregion
 
 
 
