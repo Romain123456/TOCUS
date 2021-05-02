@@ -25,7 +25,7 @@ public class UnitesParent : MonoBehaviour
 
 
     //Caractéristiques
-    [HideInInspector] public float pv;                                //PV en cours de l'unité
+    public float pv;                                //PV en cours de l'unité
     [HideInInspector] public float pvMax;                             //PV max de l'unité
     [HideInInspector] public Unite_Objects.typeVitalite uniteVitalite;                    //Vitalité de l'unité
     [HideInInspector] public Unite_Objects.typeInitiative uniteInitiative;                  //Initiative de l'unité
@@ -44,11 +44,12 @@ public class UnitesParent : MonoBehaviour
 
 
     [HideInInspector] public bool isFighting;                         //Est-ce que l'unité est en train de se battre ?
+    public bool isRecruted;
 
     //Coordonnées unités
     [HideInInspector] public int way = -999;
     [HideInInspector] public int placeChemin = -999;
-
+    [HideInInspector] public int sens = 0;
 
     //Fonction Constructeur de la classe Unite
     public void InitialisationUniteParent(string _MonTag)
@@ -86,6 +87,40 @@ public class UnitesParent : MonoBehaviour
         }
     }
 
+
+    public void ChangeAnimation(string _AnimationToActivate)
+    {
+        string[] _AnimationsName = new string[7];
+        _AnimationsName[0] = "MarcheGaucheBool";
+        _AnimationsName[1] = "MarcheFrontBool";
+        _AnimationsName[2] = "MarcheBackBool";
+        _AnimationsName[3] = "MarcheDroitBool";
+        _AnimationsName[4] = "AttackGaucheBool";
+        _AnimationsName[5] = "AttackDroitBool";
+        _AnimationsName[6] = "MortBool";
+
+        if (_AnimationToActivate == "Idle")
+        {
+            for(int ii = 0; ii < _AnimationsName.Length; ii++)
+            {
+                monAnimator.SetBool(_AnimationsName[ii], false);
+            }
+        }
+        else
+        {
+            for(int ii = 0; ii < _AnimationsName.Length; ii++)
+            {
+                if(_AnimationsName[ii] == _AnimationToActivate)
+                {
+                    monAnimator.SetBool(_AnimationsName[ii], true);
+                } else
+                {
+                    monAnimator.SetBool(_AnimationsName[ii], false);
+                }
+            }
+        }
+
+    }
 
 
     #region Statistiques et caractéristiques
@@ -275,6 +310,33 @@ public class UnitesParent : MonoBehaviour
     public void LiberationPlaceChemin(int _Way,int _PlaceChemin)
     {
         levelManager.cheminOccupantTransform[_Way][_PlaceChemin] = null;
+    }
+    #endregion
+
+    #region Sens de la marche
+    public int SensCalcul(float _maPosX,float _OtherPosX)
+    {
+        int _Sens = 0;
+        if(_OtherPosX > _maPosX)
+        {
+            _Sens = 1;
+        }
+        else if (_OtherPosX < _maPosX)
+        {
+            _Sens = -1;
+        }
+        return _Sens;
+    }
+    #endregion
+
+
+    #region Mort de l'Unité
+    public void MortUnite()
+    {
+        LiberationPlaceChemin(way, placeChemin);
+        isRecruted = false;
+        isFighting = false;
+        monTransform.gameObject.SetActive(false);
     }
     #endregion
 }
