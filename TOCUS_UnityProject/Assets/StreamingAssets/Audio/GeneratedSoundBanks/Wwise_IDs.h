@@ -23,11 +23,17 @@ namespace AK
         static const AkUniqueID MUS_LVL_01 = 2250091753U;
         static const AkUniqueID MUS_MENU_L = 1367297773U;
         static const AkUniqueID UI_LVL_T_ROTATE_L = 2346663996U;
+        static const AkUniqueID UI_MENU_HERO_CREATE = 393080029U;
+        static const AkUniqueID UI_MENU_HERO_RIP = 2323317386U;
         static const AkUniqueID UI_MENU_IN = 1669272439U;
         static const AkUniqueID UI_MENU_MOVE = 3173259453U;
         static const AkUniqueID UI_MENU_OUT = 286266890U;
         static const AkUniqueID UI_MENU_PLAYGAME = 1141681130U;
         static const AkUniqueID UI_MENU_VALIDATION = 1356260595U;
+        static const AkUniqueID UI_MENU_VX_HERO_01 = 2945137483U;
+        static const AkUniqueID UI_MENU_VX_HERO_02 = 2945137480U;
+        static const AkUniqueID UI_MENU_VX_HERO_03 = 2945137481U;
+        static const AkUniqueID UI_MENU_VX_HERO_04 = 2945137486U;
     } // namespace EVENTS
 
     namespace STATES

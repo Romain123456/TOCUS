@@ -49,7 +49,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: d7e35e1aecd90a40a6c69739bca59c16
     GuidInternal: 
-    m_lastTime: -8585817355641532176
+    m_lastTime: -8585817219899148741
     List:
     - name: Lvl
       guid: 4b32fdc68d73594da0d7e4b1b7954999
@@ -86,7 +86,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 2812926b4428224c82a79ef2d966fd79
     GuidInternal: 
-    m_lastTime: -8585817360930179086
+    m_lastTime: -8585817219899088727
     List:
     - name: Character
       guid: e1c8b77d0629c84dbadfa6970fd18a66
@@ -504,6 +504,84 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: UI_menu_VX_HERO_01
+      guid: fbc7c0041d2af1449d71563f57d6c0dc
+      id: 2945137483
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MENU
+        ObjectType: 4
+      - ElementName: VX_hero
+        ObjectType: 4
+      - ElementName: UI_menu_VX_HERO_01
+        ObjectType: 3
+      Path: Default Work Unit\MENU\VX_hero\UI_menu_VX_HERO_01
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI_menu_VX_HERO_02
+      guid: 6f13e511456147459758070990678603
+      id: 2945137480
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MENU
+        ObjectType: 4
+      - ElementName: VX_hero
+        ObjectType: 4
+      - ElementName: UI_menu_VX_HERO_02
+        ObjectType: 3
+      Path: Default Work Unit\MENU\VX_hero\UI_menu_VX_HERO_02
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI_menu_VX_HERO_03
+      guid: ee3435b92f9f6c45bf7f6b2ecb4d8126
+      id: 2945137481
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MENU
+        ObjectType: 4
+      - ElementName: VX_hero
+        ObjectType: 4
+      - ElementName: UI_menu_VX_HERO_03
+        ObjectType: 3
+      Path: Default Work Unit\MENU\VX_hero\UI_menu_VX_HERO_03
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI_menu_VX_HERO_04
+      guid: f7bff5631758624b9a8c981f1b0dc0ea
+      id: 2945137486
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MENU
+        ObjectType: 4
+      - ElementName: VX_hero
+        ObjectType: 4
+      - ElementName: UI_menu_VX_HERO_04
+        ObjectType: 3
+      Path: Default Work Unit\MENU\VX_hero\UI_menu_VX_HERO_04
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: VX_hero
+      guid: 1bf64f5d8df37c4b906f37fdf2ef1ef6
+      id: 832323686
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MENU
+        ObjectType: 4
+      - ElementName: VX_hero
+        ObjectType: 4
+      Path: Default Work Unit\MENU\VX_hero
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\MUSIC.wwu
     PathAndIcons:
     - ElementName: MUSIC
@@ -658,6 +736,7 @@ MonoBehaviour:
   - /TOCUS/Events/Default Work Unit/LEVEL/UI
   - /TOCUS/Events/Default Work Unit/MENU
   - /TOCUS/Events/Default Work Unit/MENU/UI
+  - /TOCUS/Events/Default Work Unit/MENU/VX_hero
   - /TOCUS/Events/MUSIC
   - /TOCUS/Events/MUSIC/Music
   - /TOCUS/SoundBanks

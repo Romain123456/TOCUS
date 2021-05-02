@@ -29,8 +29,38 @@ public class SoundButtons : MonoBehaviour
         AkSoundEngine.PostEvent("UI_menu_PLAYGAME", gameObject);
     }
 
+    public void menuHERO01()
+    {
+        AkSoundEngine.PostEvent("UI_menu_VX_HERO_01", gameObject);
+    }
+
+    public void menuHERO02()
+    {
+        AkSoundEngine.PostEvent("UI_menu_VX_HERO_02", gameObject);
+    }
+
+    public void menuHERO03()
+    {
+        AkSoundEngine.PostEvent("UI_menu_VX_HERO_03", gameObject);
+    }
+
+    public void menuHERO04()
+    {
+        AkSoundEngine.PostEvent("UI_menu_VX_HERO_04", gameObject);
+    }
 
 
+    public void menuHERO_RIP()
+    {
+        AkSoundEngine.PostEvent("UI_menu_hero_RIP", gameObject);
+    }
+
+    public void menuHERO_CREATE()
+    {
+        AkSoundEngine.PostEvent("UI_menu_hero_CREATE", gameObject);
+    }
+
+   
 
 
     // Start is called before the first frame update
