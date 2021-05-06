@@ -13,6 +13,6 @@ public class SuperUniteJoueur : UniteJoueur
     // Update is called once per frame
     void Update()
     {
-        
+        stateInfo = monAnimator.GetCurrentAnimatorStateInfo(0);
     }
 }

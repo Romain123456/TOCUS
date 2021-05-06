@@ -6,7 +6,7 @@ public class UniteJoueur : UnitesParent
 {
     [HideInInspector] public UnitesJoueurRepertoire infosUnite;
     public int joueurOwner;
-    public bool isRecruted;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +18,7 @@ public class UniteJoueur : UnitesParent
     // Update is called once per frame
     void Update()
     {
-        
+        stateInfo = monAnimator.GetCurrentAnimatorStateInfo(0);
     }
 
     private void OnEnable()
@@ -50,6 +50,7 @@ public class UniteJoueur : UnitesParent
 
     public void ActivationUnite()
     {
+        pv = pvMax;
         joueurOwner = levelManager._JoueurActif - 1;
         uniteSprites = infosUnite.uniteSpriteBase[joueurOwner];
         monSpriteRenderer.sprite = uniteSprites;

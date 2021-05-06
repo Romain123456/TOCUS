@@ -19,7 +19,7 @@ public class Ennemi : UnitesParent
     // Update is called once per frame
     void Update()
     {
-        
+        stateInfo = monAnimator.GetCurrentAnimatorStateInfo(0);
     }
 
     public void EnnemiInitialisation(EnnemiRepertoire _EnnemiRepertoire)
@@ -73,7 +73,7 @@ public class Ennemi : UnitesParent
     #region Deplacement Ennemi
     public void EnnemiPositionnementOnChemin()
     {
-        //way = 0;
+        pv = pvMax;
         placeChemin = 0;
         monTransform.position = levelManager.positionsChemin[way][placeChemin];
         levelManager.cheminOccupantTransform[way][placeChemin] = monTransform;
@@ -84,25 +84,48 @@ public class Ennemi : UnitesParent
     {
         while(placeChemin < levelManager.positionsChemin[way].Length)
         {
+            //Si les pv de l'ennemi sont < 0, on casse tout !
+            if(pv < 0)
+            {
+                MortUnite();
+                break;
+            }
+
             monTransform.position = levelManager.positionsChemin[way][placeChemin];
             levelManager.cheminOccupantTransform[way][placeChemin] = monTransform;
             if (placeChemin + 1 < levelManager.positionsChemin[way].Length)
             {
-                if(levelManager.positionsChemin[way][placeChemin+1].x > levelManager.positionsChemin[way][placeChemin].x)
+                sens = SensCalcul(levelManager.positionsChemin[way][placeChemin].x, levelManager.positionsChemin[way][placeChemin + 1].x);
+                if(sens == 1)
                 {
-                    monAnimator.SetBool("MarcheGaucheBool", false);
-                    monAnimator.SetBool("MarcheDroitBool", true);
-                } else if (levelManager.positionsChemin[way][placeChemin + 1].x < levelManager.positionsChemin[way][placeChemin].x)
-                {
-                    monAnimator.SetBool("MarcheGaucheBool", true);
-                    monAnimator.SetBool("MarcheDroitBool", false);
+                    ChangeAnimation("MarcheDroitBool");
                 }
-
+                else if (sens == -1)
+                {
+                    ChangeAnimation("MarcheGaucheBool");
+                }
 
                 while (levelManager.cheminOccupantTransform[way][placeChemin + 1] != null)
                 {
-                    monAnimator.SetBool("MarcheGaucheBool", false);
-                    monAnimator.SetBool("MarcheDroitBool", false);
+                    //Test Attaque
+                    if ((levelManager.cheminOccupantTransform[way][placeChemin + 1].CompareTag("UniteJoueur") ||
+                        levelManager.cheminOccupantTransform[way][placeChemin + 1].CompareTag("SuperUniteJoueur")) && pv >= 0)
+                    {
+                        isFighting = true;
+                        StartCoroutine(CombatUnites());
+                        while (isFighting)
+                        {
+                            yield return new WaitForSeconds(FonctionsVariablesUtiles.deltaTime);
+                            if (!isFighting)
+                            {
+                                break;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        ChangeAnimation("Idle");
+                    }
                     yield return new WaitForSeconds(FonctionsVariablesUtiles.deltaTime);
                 }
             }
@@ -111,12 +134,139 @@ public class Ennemi : UnitesParent
             {
                 LiberationPlaceChemin(way, placeChemin - 1);
             }
-
-            yield return new WaitForSeconds(FonctionsVariablesUtiles.deltaTime * speedMove);
+            yield return new WaitForSeconds(FonctionsVariablesUtiles.deltaTime * 25);
         }
     }
     #endregion
 
 
+
+    #region Attaque 
+    private bool _Attacking;
+    public IEnumerator CombatUnites()
+    {
+        UnitesParent adversaire = levelManager.cheminOccupantTransform[way][placeChemin + 1].GetComponent<UnitesParent>();
+        UnitesParent ennemi = monTransform.GetComponent<UnitesParent>();
+
+        if(adversaire.uniteVitesseInitiative >= uniteVitesseInitiative)
+        {
+
+            while (adversaire.pv > 0 && ennemi.pv > 0)
+            {
+                //Unité joueur attaque en premier
+                StartCoroutine(AttaqueFonction(adversaire, ennemi));
+                while (_Attacking)
+                {
+                    yield return new WaitForSeconds(FonctionsVariablesUtiles.deltaTime);
+                    if (!_Attacking)
+                    {
+                        break;
+                    }
+                }
+
+                if (ennemi.pv > 0)
+                {
+                    yield return new WaitForSeconds(0.5f);
+                    StartCoroutine(AttaqueFonction(ennemi, adversaire));
+                    while (_Attacking)
+                    {
+                        yield return new WaitForSeconds(FonctionsVariablesUtiles.deltaTime);
+                        if (!_Attacking)
+                        {
+                            break;
+                        }
+                    }
+                    if (adversaire.pv <= 0)
+                    {
+                        adversaire.MortUnite();
+                        Debug.Log("Adversaire Mort !");
+                        break;
+                    }
+                }
+                else if (ennemi.pv <= 0)
+                {
+                    ennemi.MortUnite();
+                    Debug.Log("Ennemi Mort !");
+                    break;
+                }
+            }
+        }
+        else if(adversaire.uniteVitesseInitiative < uniteVitesseInitiative)
+        {
+
+            while (ennemi.pv > 0 && adversaire.pv > 0)
+            {
+                //Ennemi attaque en premier
+                StartCoroutine(AttaqueFonction(ennemi, adversaire));
+                while (_Attacking)
+                {
+                    yield return new WaitForSeconds(FonctionsVariablesUtiles.deltaTime);
+                    if (!_Attacking)
+                    {
+                        break;
+                    }
+                }
+
+                if (adversaire.pv > 0)
+                {
+                    yield return new WaitForSeconds(0.5f);
+                    StartCoroutine(AttaqueFonction(adversaire, ennemi));
+                    while (_Attacking)
+                    {
+                        yield return new WaitForSeconds(FonctionsVariablesUtiles.deltaTime);
+                        if (!_Attacking)
+                        {
+                            break;
+                        }
+                    }
+                    if (ennemi.pv <= 0)
+                    {
+                        ennemi.MortUnite();
+                        Debug.Log("Ennemi Mort !");
+                        break;
+                    }
+                }
+                else if (adversaire.pv <= 0)
+                {
+                    adversaire.MortUnite();
+                    Debug.Log("Adversaire Mort !");
+                    break;
+                }
+            }
+        }
+        isFighting = false;
+    }
+    #endregion
+
+
+    public IEnumerator AttaqueFonction(UnitesParent _Unite1,UnitesParent _Unite2)
+    {
+        _Attacking = true;
+        _Unite1.sens = _Unite1.SensCalcul(_Unite1.monTransform.position.x,_Unite2.monTransform.position.x);
+        if (_Unite1.sens == 1)
+        {
+            _Unite1.ChangeAnimation("AttackDroitBool");
+        } else if(_Unite1.sens == -1)
+        {
+            _Unite1.ChangeAnimation("AttackGaucheBool");
+        }
+
+        yield return new WaitForSeconds(FonctionsVariablesUtiles.deltaTime);
+        if (_Unite1.stateInfo.IsTag("attack"))
+        {
+            while(_Unite1.stateInfo.normalizedTime <= 1.01f)
+            {
+                yield return new WaitForSeconds(FonctionsVariablesUtiles.deltaTime);
+                if(_Unite1.stateInfo.normalizedTime > 1.01f)
+                {
+                    _Unite1.ChangeAnimation("Idle");
+                }
+            }
+        }
+        _Unite2.pv -= _Unite1.uniteDegatsValue;
+        _Unite2.HealthBar_MaJ();
+
+        _Attacking = false;
+    }
 
 }
