@@ -160,7 +160,7 @@ public class Joueur : MonoBehaviour
         _UpgradeRecolte = new bool[4];
 
         //Initialisation abritraire du temps pour jouer 
-        _TimeToMakeAction = Mathf.Infinity;
+        _TimeToMakeAction = 10000f;
     }
 
     //Affiche le nombre de ressources que possède le joueur

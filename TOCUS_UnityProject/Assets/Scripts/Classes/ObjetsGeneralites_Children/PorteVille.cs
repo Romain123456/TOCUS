@@ -48,6 +48,7 @@ public class PorteVille : ObjetsGeneralites
             healthBarMax_GO.SetActive(true);
         } else if(pv >= pvMax)
         {
+            pv = pvMax;
             healthBarMax_GO.SetActive(false);
         } 
     }

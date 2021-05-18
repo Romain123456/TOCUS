@@ -9,11 +9,12 @@ public class Ennemi : UnitesParent
     [HideInInspector] public float speedMove;                       //Vitesse de déplacement de l'ennemi
 
 
+
+
     // Start is called before the first frame update
     void Start()
     {
-        /*EnnemiPositionnementOnChemin();
-        StartCoroutine(DeplacementEnnemi());*/
+
     }
 
     // Update is called once per frame
@@ -74,6 +75,7 @@ public class Ennemi : UnitesParent
     public void EnnemiPositionnementOnChemin()
     {
         pv = pvMax;
+        HealthBar_MaJ();
         placeChemin = 0;
         monTransform.position = levelManager.positionsChemin[way][placeChemin];
         levelManager.cheminOccupantTransform[way][placeChemin] = monTransform;
@@ -82,12 +84,11 @@ public class Ennemi : UnitesParent
 
     public IEnumerator DeplacementEnnemi()
     {
-        while(placeChemin < levelManager.positionsChemin[way].Length)
+        while(placeChemin < levelManager.positionsChemin[way].Length && pv > 0)
         {
             //Si les pv de l'ennemi sont < 0, on casse tout !
-            if(pv < 0)
+            if(pv <= 0 || placeChemin >= levelManager.positionsChemin[way].Length)
             {
-                MortUnite();
                 break;
             }
 
@@ -129,6 +130,7 @@ public class Ennemi : UnitesParent
                     yield return new WaitForSeconds(FonctionsVariablesUtiles.deltaTime);
                 }
             }
+            yield return new WaitForSeconds(FonctionsVariablesUtiles.deltaTime);
             placeChemin++;
             if (placeChemin < levelManager.positionsChemin[way].Length)
             {
@@ -136,17 +138,51 @@ public class Ennemi : UnitesParent
             }
             yield return new WaitForSeconds(FonctionsVariablesUtiles.deltaTime * 25);
         }
+
+        if(pv > 0)
+        {
+            StartCoroutine(AttaquePorte());
+        }
+    }
+
+
+    public IEnumerator AttaquePorte()
+    {
+        sens = SensCalcul(monTransform.position.x, levelManager._PorteVille.transformObjet.position.x);
+        if(sens == 1)
+        {
+            ChangeAnimation("AttackDroitBool");
+        } else if(sens == -1)
+        {
+            ChangeAnimation("AttackGaucheBool");
+        }
+        yield return new WaitForSeconds(FonctionsVariablesUtiles.deltaTime);
+        while (levelManager._PorteVille.pv > 0)
+        {
+            yield return new WaitForSeconds(0.8f);
+            levelManager._PorteVille.pv -= uniteDegatsValue;
+            levelManager._PorteVille.FillAmountHealthBarImage();
+
+            if(levelManager._PorteVille.pv <= 0)
+            {
+                levelManager._PorteVille.transformObjet.gameObject.SetActive(false);
+                levelManager.panelDefaite.SetActive(true);
+                break;
+            }
+        }
     }
     #endregion
 
 
 
     #region Attaque 
-    private bool _Attacking;
     public IEnumerator CombatUnites()
     {
         UnitesParent adversaire = levelManager.cheminOccupantTransform[way][placeChemin + 1].GetComponent<UnitesParent>();
         UnitesParent ennemi = monTransform.GetComponent<UnitesParent>();
+
+        adversaire.isFighting = true;
+        ennemi.isFighting = true;
 
         if(adversaire.uniteVitesseInitiative >= uniteVitesseInitiative)
         {
@@ -234,39 +270,29 @@ public class Ennemi : UnitesParent
                 }
             }
         }
-        isFighting = false;
+        ennemi.isFighting = false;
+        adversaire.isFighting = false;
     }
+   
+    
     #endregion
 
 
-    public IEnumerator AttaqueFonction(UnitesParent _Unite1,UnitesParent _Unite2)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        _Attacking = true;
-        _Unite1.sens = _Unite1.SensCalcul(_Unite1.monTransform.position.x,_Unite2.monTransform.position.x);
-        if (_Unite1.sens == 1)
+        if (collision.CompareTag("Munition"))
         {
-            _Unite1.ChangeAnimation("AttackDroitBool");
-        } else if(_Unite1.sens == -1)
-        {
-            _Unite1.ChangeAnimation("AttackGaucheBool");
-        }
-
-        yield return new WaitForSeconds(FonctionsVariablesUtiles.deltaTime);
-        if (_Unite1.stateInfo.IsTag("attack"))
-        {
-            while(_Unite1.stateInfo.normalizedTime <= 1.01f)
+            if(collision.transform.parent.GetComponent<Tours>() != null)
             {
-                yield return new WaitForSeconds(FonctionsVariablesUtiles.deltaTime);
-                if(_Unite1.stateInfo.normalizedTime > 1.01f)
+                Debug.Log("Temporaire : prendre en compte les types d'impact des tours");
+                pv -= collision.transform.parent.GetComponent<Tours>().puissanceTour;
+                HealthBar_MaJ();
+                if(pv <= 0)
                 {
-                    _Unite1.ChangeAnimation("Idle");
+                    MortUnite();
                 }
             }
         }
-        _Unite2.pv -= _Unite1.uniteDegatsValue;
-        _Unite2.HealthBar_MaJ();
-
-        _Attacking = false;
     }
 
 }

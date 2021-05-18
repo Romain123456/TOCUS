@@ -44,6 +44,7 @@ public class UnitesParent : MonoBehaviour
 
 
     [HideInInspector] public bool isFighting;                         //Est-ce que l'unité est en train de se battre ?
+    [HideInInspector] public bool _Attacking;        //Attaque
     public bool isRecruted;
 
     //Coordonnées unités
@@ -90,14 +91,15 @@ public class UnitesParent : MonoBehaviour
 
     public void ChangeAnimation(string _AnimationToActivate)
     {
-        string[] _AnimationsName = new string[7];
+        string[] _AnimationsName = new string[8];
         _AnimationsName[0] = "MarcheGaucheBool";
         _AnimationsName[1] = "MarcheFrontBool";
         _AnimationsName[2] = "MarcheBackBool";
         _AnimationsName[3] = "MarcheDroitBool";
         _AnimationsName[4] = "AttackGaucheBool";
         _AnimationsName[5] = "AttackDroitBool";
-        _AnimationsName[6] = "MortBool";
+        _AnimationsName[6] = "MortDroiteBool";
+        _AnimationsName[7] = "MortGaucheBool";
 
         if (_AnimationToActivate == "Idle")
         {
@@ -333,10 +335,76 @@ public class UnitesParent : MonoBehaviour
     #region Mort de l'Unité
     public void MortUnite()
     {
+        StartCoroutine(CoroutineMort());
+    }
+
+    public IEnumerator CoroutineMort()
+    {
+        if(sens == 0)
+        {
+            sens = SensCalcul(levelManager.positionsChemin[way][placeChemin].x, levelManager.positionsChemin[way][placeChemin + 1].x);
+        }
+        if(sens == 1)
+        {
+            ChangeAnimation("MortDroiteBool");
+        } else if(sens == -1)
+        {
+            ChangeAnimation("MortGaucheBool");
+        }
+        yield return new WaitForSeconds(FonctionsVariablesUtiles.deltaTime);
+
+        while (stateInfo.normalizedTime <= 1.01f)
+        {
+            yield return new WaitForSeconds(FonctionsVariablesUtiles.deltaTime);
+            if(stateInfo.normalizedTime > 1.01f)
+            {
+                ChangeAnimation("Idle");
+                break;
+            }
+        }
+
         LiberationPlaceChemin(way, placeChemin);
         isRecruted = false;
         isFighting = false;
         monTransform.gameObject.SetActive(false);
+    }
+
+    #endregion
+
+
+    #region Attaque
+    public IEnumerator AttaqueFonction(UnitesParent _Unite1, UnitesParent _Unite2)
+    {
+        _Attacking = true;
+        _Unite1.sens = _Unite1.SensCalcul(_Unite1.monTransform.position.x, _Unite2.monTransform.position.x);
+        if (_Unite1.sens == 1)
+        {
+            _Unite1.ChangeAnimation("AttackDroitBool");
+        }
+        else if (_Unite1.sens == -1)
+        {
+            _Unite1.ChangeAnimation("AttackGaucheBool");
+        }
+
+        yield return new WaitForSeconds(FonctionsVariablesUtiles.deltaTime);
+        if (_Unite1.stateInfo.IsTag("attack"))
+        {
+            while (_Unite1.stateInfo.normalizedTime <= 1.01f)
+            {
+                yield return new WaitForSeconds(FonctionsVariablesUtiles.deltaTime);
+            }
+        }
+        _Unite1.ChangeAnimation("Idle");
+        yield return new WaitForSeconds(FonctionsVariablesUtiles.deltaTime);
+        _Unite2.pv -= _Unite1.uniteDegatsValue;
+        _Unite2.HealthBar_MaJ();
+
+        if(!_Unite2.isFighting && _Unite2.pv <= 0 && _Unite2.gameObject.activeSelf)
+        {
+            _Unite2.MortUnite();
+        }
+
+        _Attacking = false;
     }
     #endregion
 }

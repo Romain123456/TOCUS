@@ -754,8 +754,11 @@ public class LevelManager : MonoBehaviour
     }
 
     #region Transition de joueur
+
+    private bool attenteVFX;
     IEnumerator MoveElementUI(Transform elmtToMove, Vector3 dirToMove, Vector3 target, float speedMove, float speedScale)
     {
+        attenteVFX = true;
         yield return new WaitForSeconds(FonctionsVariablesUtiles.deltaTime);
 
         float midDistY = (elmtToMove.position.y - target.y) / 2f;
@@ -765,9 +768,17 @@ public class LevelManager : MonoBehaviour
         {
             sens = -1;
         }
-        while (Vector3.Magnitude(elmtToMove.position - target) > 0.25f)
+
+        while (Vector3.Magnitude(elmtToMove.position - target) > 0.25f && elmtToMove.localScale.magnitude >0.1f)
         {
-            elmtToMove.Translate(sens * dirToMove.normalized * speedMove * FonctionsVariablesUtiles.deltaTime);
+            if (dirToMove.y > 0)
+            {
+                elmtToMove.Translate(-sens * dirToMove.normalized * speedMove * FonctionsVariablesUtiles.deltaTime);
+            }
+            else
+            {
+                elmtToMove.Translate(sens * dirToMove.normalized * speedMove * FonctionsVariablesUtiles.deltaTime);
+            }
 
             if (sens * elmtToMove.position.y > sens * (posY0 - midDistY))
             {
@@ -785,6 +796,7 @@ public class LevelManager : MonoBehaviour
         }
         elmtToMove.localScale = Vector3.one;
         elmtToMove.gameObject.SetActive(false);
+        attenteVFX = false;
     }
 
 
@@ -1142,8 +1154,15 @@ public class LevelManager : MonoBehaviour
             speedScale = 0;     //1 : scale à gagner;
             reservePionsUI.GetChild(0).localScale = Vector3.one * 0.5f;
             VFX_MoveRessources(reservePionsUI.GetChild(0), cibleElementGraph, dirToGo, batimentUtilise.transform.position, speed, speedScale, pionOccupesSprites[_JoueurActif - 1]);
-            yield return new WaitForSeconds(0.5f + dirToGo.magnitude / speed);
-
+            yield return new WaitForSeconds(FonctionsVariablesUtiles.deltaTime);
+            while (attenteVFX)
+            {
+                yield return new WaitForSeconds(FonctionsVariablesUtiles.deltaTime);
+                if (!attenteVFX)
+                {
+                    break;
+                }
+            }
             batimentUtilise.transform.Find("CanvasInfos").Find("ImageOccupe").gameObject.GetComponent<Image>().sprite = pionOccupesSprites[_JoueurActif - 1];
             batimentUtilise.transform.Find("CanvasInfos").Find("ImageOccupe").gameObject.SetActive(true);
             yield return new WaitForSeconds(FonctionsVariablesUtiles.deltaTime);
@@ -1462,16 +1481,18 @@ public class LevelManager : MonoBehaviour
     private IEnumerator CompteTemps()
     {
         topChrono = true;
+        int joueurChrono = 2-_JoueurActif;
         float temps = 0;
+
         while (topChrono)
         {
             temps += FonctionsVariablesUtiles.deltaTime;
             yield return new WaitForSeconds(FonctionsVariablesUtiles.deltaTime);
         }
 
-        if(temps < tableauJoueurs[_JoueurActif - 1]._TimeToMakeAction)
+        if(temps < tableauJoueurs[joueurChrono]._TimeToMakeAction)
         {
-            tableauJoueurs[_JoueurActif - 1]._TimeToMakeAction = temps;
+            tableauJoueurs[joueurChrono]._TimeToMakeAction = temps;
         }
     }
 
