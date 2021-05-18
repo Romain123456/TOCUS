@@ -129,6 +129,8 @@ public class AvatarGestion : MonoBehaviour
         avatarChoisis[joueurCurrentChoix].nomAvatar = myEventSystem.currentSelectedGameObject.transform.parent.Find("TextNomAvatar").GetComponent<Text>().text;
         avatarChoisis[joueurCurrentChoix].portraitAvatar = myEventSystem.currentSelectedGameObject.transform.parent.Find("ImagePortraitAvatar").GetComponent<Image>().sprite;
 
+        panelMatch.gameObject.SetActive(true);
+
         if (panelMatch.GetChild(joueurCurrentChoix).Find("ButtonSupprimer") != null)
         {
             Destroy(panelMatch.GetChild(joueurCurrentChoix).Find("ButtonSupprimer").gameObject);
@@ -140,7 +142,7 @@ public class AvatarGestion : MonoBehaviour
         panelMatch.GetChild(joueurCurrentChoix).gameObject.SetActive(true);
         panelMatch.GetChild(joueurCurrentChoix).Find("TextNomAvatar").GetComponent<Text>().text = avatarChoisis[joueurCurrentChoix].nomAvatar;
         panelMatch.GetChild(joueurCurrentChoix).Find("ImagePortraitAvatar").GetComponent<Image>().sprite = avatarChoisis[joueurCurrentChoix].portraitAvatar;
-        if(panelMatch.GetChild(0).gameObject.activeInHierarchy && panelMatch.GetChild(1).gameObject.activeInHierarchy)
+        if(panelMatch.GetChild(0).gameObject.activeSelf && panelMatch.GetChild(1).gameObject.activeSelf)
         {
             panelMatch.GetChild(2).gameObject.SetActive(true);
         }

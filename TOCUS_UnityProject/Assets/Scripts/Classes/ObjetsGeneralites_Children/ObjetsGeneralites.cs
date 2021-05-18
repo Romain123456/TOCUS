@@ -137,8 +137,15 @@ public class ObjetsGeneralites : MonoBehaviour
                 {
                     levelManager._Chateau.CheckBoutonInteract(_IsInteractable);
                 }
-
             }
+            else if(levelManager.myEventSystem.currentSelectedGameObject.transform.parent.parent.parent != null && levelManager.myEventSystem.currentSelectedGameObject.transform.parent.parent.parent.tag == "PanelConstruct")
+            {
+                if (levelManager.myEventSystem.currentSelectedGameObject.transform.parent.parent.parent.name == "PanelConstructUnites")
+                {
+                    levelManager._CampMilitaire.CheckBoutonInteract(_IsInteractable);
+                }
+            }
+
             else if (levelManager.myEventSystem.currentSelectedGameObject.transform.parent.parent.parent != null && levelManager.myEventSystem.currentSelectedGameObject.transform.parent.parent.parent.tag == "EmplacementTour")
             {
                 levelManager._ChantierTours.CheckBoutonInteract(_IsInteractable);

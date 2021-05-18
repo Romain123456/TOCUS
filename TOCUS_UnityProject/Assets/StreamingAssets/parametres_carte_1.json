@@ -8,7 +8,7 @@
 		"arr_s_ennemis_disponibles": [ "Monstre_Base", "Monstre_Boxeur","Monstre_Costaud" ]
 	},
 	"o_vagues": {
-		"i_nb_rounds_avant_premiere_vague": 2,
+		"i_nb_rounds_avant_premiere_vague": 20,
 		"o_structure_vagues": [
 			{
 				"i_tps": 3,
